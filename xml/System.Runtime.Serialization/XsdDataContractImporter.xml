@@ -21,7 +21,7 @@
  Conversely, use the <xref:System.Runtime.Serialization.XsdDataContractExporter> class when you have created a Web service that incorporates data represented by CLR types and when you need to export XML schemas for each data type to be consumed by other Web services. That is, <xref:System.Runtime.Serialization.XsdDataContractExporter> transforms a set of CLR types into a set of XML schemas.  
   
 > [!NOTE]
->  To generate CLR types from XML schemas at design time, use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md). To generated code from XSD files, use the `/dataContractOnly` switch of the tool. You can also use the <xref:System.Runtime.Serialization.XsdDataContractImporter> if you need more control over the process or need to do it programmatically.  
+>  To generate CLR types from XML schemas at design time, use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). To generated code from XSD files, use the `/dataContractOnly` switch of the tool. You can also use the <xref:System.Runtime.Serialization.XsdDataContractImporter> if you need more control over the process or need to do it programmatically.  
   
    
   
@@ -205,7 +205,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md).  
+ For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
  ]]></format>
         </remarks>
@@ -333,7 +333,7 @@
 ## Remarks  
  When generating CLR types for schema types, known types are also generated for all derived types that are present in the schema. In many cases, these known types are added using attributes to the generated code. (For example, see the <xref:System.Runtime.Serialization.KnownTypeAttribute> class. ) However, for the top-level type, there needs to be a way to return the set of known types generated. This method returns the <xref:System.CodeDom.CodeTypeReference> for known types that were generated for a specific schema type.  
   
- For more information, see [Data Contract Known Types](../Topic/Data%20Contract%20Known%20Types.md).  
+ For more information, see [Data Contract Known Types](~/docs/framework/wcf/feature-details/data-contract-known-types.md).  
   
  ]]></format>
         </remarks>
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](../Topic/Types%20Supported%20by%20the%20Data%20Contract%20Serializer.md).  
+ For more information about types that can be imported, see [Types Supported by the Data Contract Serializer](~/docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).  
   
  ]]></format>
         </remarks>

@@ -175,7 +175,7 @@
 ## Remarks  
  The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used. In the current implementation the default assembly list is: `WindowsBase`, `PresentationCore`, `PresentationFramework`.  
   
- Using the default mapper does not mean that you cannot use custom assemblies/types in XAML at all. It only means that if you do use custom types/assemblies, you must then use the conventional XAML technique of creating the mappings as `xmlns` attributes in each XAML page where the types/assemblies are referenced, as opposed to a type mapper API. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ Using the default mapper does not mean that you cannot use custom assemblies/types in XAML at all. It only means that if you do use custom types/assemblies, you must then use the conventional XAML technique of creating the mappings as `xmlns` attributes in each XAML page where the types/assemblies are referenced, as opposed to a type mapper API. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
  ]]></format>
         </remarks>

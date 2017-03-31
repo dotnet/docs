@@ -364,11 +364,11 @@
 <a name="xamlValues_Value"></a>   
 ## XAML Values  
  *value*  
- An object or a markup extension. See [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md).  
+ An object or a markup extension. See [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md).  
   
  Note that you must specify both the <xref:System.Windows.Setter.Property%2A> and <xref:System.Windows.Setter.Value%2A> properties on a <xref:System.Windows.Setter> or an exception will be thrown.  
   
- Data binding and dynamic resources within the object is supported if the specified value is a <xref:System.Windows.Freezable> object. See [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md) and [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).  
+ Data binding and dynamic resources within the object is supported if the specified value is a <xref:System.Windows.Freezable> object. See [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md) and [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
   
    
   

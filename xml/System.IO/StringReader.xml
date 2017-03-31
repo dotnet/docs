@@ -41,16 +41,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
    
   
@@ -98,16 +98,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
    
   
@@ -147,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an example of creating a file and writing text to a file, see [How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md). For an example of reading text from a file, see [How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md).  
+ For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
   
  This method overrides the <xref:System.IO.Stream.Close%2A?displayProperty=fullName> method.  
   
@@ -246,9 +246,9 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
   
  ]]></format>
@@ -293,16 +293,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
    
   
@@ -364,16 +364,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
  ]]></format>
         </remarks>
@@ -546,16 +546,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
    
   
@@ -659,16 +659,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
    
   

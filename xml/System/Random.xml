@@ -91,7 +91,7 @@
 ## The System.Random class and thread safety  
  Instead of instantiating individual <xref:System.Random> objects, we recommend that you create a single <xref:System.Random> instance to generate all the random numbers needed by your app. However, <xref:System.Random> objects are not thread safe. If your app calls <xref:System.Random> methods from multiple threads, you must use a synchronization object to ensure that only one thread can access the random number generator at a time. If you don't ensure that the <xref:System.Random> object is accessed in a thread-safe way, calls to methods that return random numbers return 0.  
   
- The following example uses the C# [lock Statement](../Topic/lock%20Statement%20\(C%23%20Reference\).md) and the Visual Basic [SyncLock statement](../Topic/SyncLock%20Statement.md) to ensure that a single random number generator is accessed by 11 threads in a thread-safe manner. Each thread generates 2 million random numbers, counts the number of random numbers generated and calculates their sum, and then updates the totals for all threads when it finishes executing.  
+ The following example uses the C# [lock Statement](~/docs/csharp/language-reference/keywords/lock-statement.md) and the Visual Basic [SyncLock statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md) to ensure that a single random number generator is accessed by 11 threads in a thread-safe manner. Each thread generates 2 million random numbers, counts the number of random numbers generated and calculates their sum, and then updates the totals for all threads when it finishes executing.  
   
  [!code-cpp[System.Random#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/threadsafeex1.cpp#3)]
  [!code-csharp[System.Random#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/threadsafeex1.cs#3)]
@@ -235,7 +235,7 @@ Random.NextDouble() * (maxValue – minValue) + minValue
  [!code-csharp[System.Random#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/booleans1.cs#8)]
  [!code-vb[System.Random#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Random/vb/booleans1.vb#8)]  
   
- Instead of creating a separate class to generate random <xref:System.Boolean> values, the example could simply have defined a single method. In that case, however, the <xref:System.Random> object should have been defined as a class-level variable to avoid instantiating a new <xref:System.Random> instance in each method call. In Visual Basic, the Random instance can be defined as a [Static](../Topic/Static%20\(Visual%20Basic\).md) variable in the `NextBoolean` method.  The following example provides an implementation.  
+ Instead of creating a separate class to generate random <xref:System.Boolean> values, the example could simply have defined a single method. In that case, however, the <xref:System.Random> object should have been defined as a class-level variable to avoid instantiating a new <xref:System.Random> instance in each method call. In Visual Basic, the Random instance can be defined as a [Static](~/docs/visual-basic/language-reference/modifiers/static.md) variable in the `NextBoolean` method.  The following example provides an implementation.  
   
  [!code-cpp[System.Random#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Random/cpp/booleans2.cpp#20)]
  [!code-csharp[System.Random#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Random/cs/booleans2.cs#20)]

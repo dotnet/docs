@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about how to construct fonts, see [How to: Construct Font Families and Fonts](../Topic/How%20to:%20Construct%20Font%20Families%20and%20Fonts.md). Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If you attempt to use a font that is not supported, or the font is not installed on the machine that is running the application, the Microsoft Sans Serif font will be substituted.  
+ For more information about how to construct fonts, see [How to: Construct Font Families and Fonts](~/docs/framework/winforms/advanced/how-to-construct-font-families-and-fonts.md). Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If you attempt to use a font that is not supported, or the font is not installed on the machine that is running the application, the Microsoft Sans Serif font will be substituted.  
   
    
   
@@ -599,7 +599,7 @@
 ## Remarks  
  Calling <xref:System.Drawing.Font.Dispose%2A> allows the resources used by this <xref:System.Drawing.Font> to be reallocated for other purposes.  
   
- Call <xref:System.Drawing.Font.Dispose%2A> when you are finished using the <xref:System.Drawing.Font>. The <xref:System.Drawing.Font.Dispose%2A> method leaves the <xref:System.Drawing.Font> in an unusable state. After calling <xref:System.Drawing.Font.Dispose%2A>, you must release all references to the <xref:System.Drawing.Font> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Font> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ Call <xref:System.Drawing.Font.Dispose%2A> when you are finished using the <xref:System.Drawing.Font>. The <xref:System.Drawing.Font.Dispose%2A> method leaves the <xref:System.Drawing.Font> in an unusable state. After calling <xref:System.Drawing.Font.Dispose%2A>, you must release all references to the <xref:System.Drawing.Font> so the garbage collector can reclaim the memory that the <xref:System.Drawing.Font> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Drawing.Font.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Font>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Font> object's `Finalize` method.  

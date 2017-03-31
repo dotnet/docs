@@ -127,7 +127,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For any property that is currently being animated, the source reported by <xref:System.Windows.ValueSource.BaseValueSource%2A> is not immediately relevant, because the animation operates at higher dependency property precedence than the base value. For more information about precedence and animations, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ For any property that is currently being animated, the source reported by <xref:System.Windows.ValueSource.BaseValueSource%2A> is not immediately relevant, because the animation operates at higher dependency property precedence than the base value. For more information about precedence and animations, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  ]]></format>
         </remarks>
@@ -155,7 +155,7 @@
 ## Remarks  
  If coercion is acting on a property value, the property retains a desired value, and the property value will attempt to reach that desired value if the constraints of the specific coercion are changed or lifted. A coerced property that is not at its desired value will report that <xref:System.Windows.ValueSource.IsCoerced%2A> is `true`.  
   
- Coercion acts at higher precedence than the base value, and is not strictly speaking a participant in how the base value is set. Therefore the state of being coerced is reported by this property, rather than by a value of the <xref:System.Windows.BaseValueSource> enumeration. For more information about coercion, base values, and precedence, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ Coercion acts at higher precedence than the base value, and is not strictly speaking a participant in how the base value is set. Therefore the state of being coerced is reported by this property, rather than by a value of the <xref:System.Windows.BaseValueSource> enumeration. For more information about coercion, base values, and precedence, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  ]]></format>
         </remarks>
@@ -193,7 +193,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that declares whether this value resulted from an evaluated expression. This might be a <see cref="T:System.Windows.Data.BindingExpression" /> supporting a binding, or an internal expression such as those that support the [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).</summary>
+        <summary>Gets a value that declares whether this value resulted from an evaluated expression. This might be a <see cref="T:System.Windows.Data.BindingExpression" /> supporting a binding, or an internal expression such as those that support the [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).</summary>
         <value>
           <see langword="true" /> if the value came from an evaluated expression; otherwise, <see langword="false" />.</value>
         <remarks>

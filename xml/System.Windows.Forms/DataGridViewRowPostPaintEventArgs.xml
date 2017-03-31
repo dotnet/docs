@@ -21,7 +21,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.RowPostPaint> event to make the content of a cell span the entire row. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.RowPostPaint> event to make the content of a cell span the entire row. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#30)]  
@@ -143,7 +143,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.DrawFocus%2A> method to draw a focus around the visible cells of the row. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.DrawFocus%2A> method to draw a focus around the visible cells of the row. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#30)]  
@@ -213,7 +213,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.Graphics%2A> property to paint a custom background. Although the code actually uses the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.Graphics%2A?displayProperty=fullName> property, this property is nearly identical to the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.Graphics%2A> property of <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.Graphics%2A> property to paint a custom background. Although the code actually uses the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.Graphics%2A?displayProperty=fullName> property, this property is nearly identical to the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.Graphics%2A> property of <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#25)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#25)]  
@@ -248,7 +248,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.InheritedRowStyle%2A> to determine the color to use to draw the content. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.InheritedRowStyle%2A> to determine the color to use to draw the content. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#34](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#34)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#34](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#34)]  
@@ -464,7 +464,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowBounds%2A> property to determine the bounds of the visible cells in a row. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowBounds%2A> property to determine the bounds of the visible cells in a row. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#30)]  
@@ -497,7 +497,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex%2A> property to access the current row. The code gets the value of the cell at the intersection of the selected row and the third column, and then paints this value over the entire row. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex%2A> property to access the current row. The code gets the value of the cell at the intersection of the selected row and the third column, and then paints this value over the entire row. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#35](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#35)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#35](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#35)]  
@@ -530,7 +530,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.State%2A> property to determine whether the current row is selected. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.State%2A> property to determine whether the current row is selected. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#34](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#34)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#34](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#34)]  

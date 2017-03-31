@@ -1083,7 +1083,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `format` parameter is `null` or an empty string (""), the return value is formatted with the general format specifier ("G"). For more information about numeric format specifiers, see the [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) topic.  
+ If the `format` parameter is `null` or an empty string (""), the return value is formatted with the general format specifier ("G"). For more information about numeric format specifiers, see the [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) topic.  
   
  The return value is formatted using the invariant culture.  
   

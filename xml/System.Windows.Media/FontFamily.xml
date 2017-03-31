@@ -61,7 +61,7 @@ Example of typefaces that are members of the "Times New Roman" font family
   
  [!code-xml[FontSnippets#FontPackageSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
   
- A [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application can package fonts as either a content item, a resource item, or a library resource item. For more information, see [Packaging Fonts with Applications](../Topic/Packaging%20Fonts%20with%20Applications.md).  
+ A [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] application can package fonts as either a content item, a resource item, or a library resource item. For more information, see [Packaging Fonts with Applications](~/docs/framework/wpf/advanced/packaging-fonts-with-applications.md).  
   
 ## Font Fallback  
  Font fallback refers to the automatic substitution of a font other than the font that is selected by the client application. There are two primary reasons why font fallback is invoked:  

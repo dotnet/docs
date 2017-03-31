@@ -38,7 +38,7 @@
    
   
 ## Examples  
- The following console application demonstrates how you can use <xref:System.IO.IsolatedStorage.IsolatedStorageFile> and <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> to write data to an Isolated Storage file. The user is requested to log in. If the user is a new user, a News URL and a Sports URL are recorded as personal preferences in Isolated Storage. If the user is a returning user, the user's current preferences are displayed. The code examples used throughout this namespace are presented in the context of this sample application. You can use the [Storeadm.exe (Isolated Storage Tool)](../Topic/Storeadm.exe%20\(Isolated%20Storage%20Tool\).md) utility to list and remove the Isolated Storage files that are created with this console application.  
+ The following console application demonstrates how you can use <xref:System.IO.IsolatedStorage.IsolatedStorageFile> and <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> to write data to an Isolated Storage file. The user is requested to log in. If the user is a new user, a News URL and a Sports URL are recorded as personal preferences in Isolated Storage. If the user is a returning user, the user's current preferences are displayed. The code examples used throughout this namespace are presented in the context of this sample application. You can use the [Storeadm.exe (Isolated Storage Tool)](~/docs/framework/tools/storeadm-exe-isolated-storage-tool.md) utility to list and remove the Isolated Storage files that are created with this console application.  
   
  [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#1)]
  [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#1)]
@@ -692,9 +692,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see cref="M:System.IDisposable.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.IDisposable.Dispose" />. For more information about how to implement <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see cref="M:System.IDisposable.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.IDisposable.Dispose" />. For more information about how to implement <see cref="M:System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>

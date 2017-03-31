@@ -65,7 +65,7 @@
 ## Remarks  
  You should be aware of the strengths and weaknesses of the relevant algorithms when making modifications to this setting.  
   
- If you set this property to a value other than the default and generate a configuration file using [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md), it is not generated correctly and you must manually edit the configuration file to set the corresponding configuration attribute to the desired value.  
+ If you set this property to a value other than the default and generate a configuration file using [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md), it is not generated correctly and you must manually edit the configuration file to set the corresponding configuration attribute to the desired value.  
   
    
   

@@ -85,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -212,7 +212,7 @@
 > [!CAUTION]
 >  Using the underlying stream while reading or while using the `BinaryReader` can cause data loss and corruption. For example, the same bytes might be read more than once, bytes might be skipped, or character reading might become unpredictable.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -291,7 +291,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.IO.BinaryReader>. The `Dispose` method leaves the <xref:System.IO.BinaryReader> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.IO.BinaryReader> so the garbage collector can reclaim the memory that the <xref:System.IO.BinaryReader> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.IO.BinaryReader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.BinaryReader> object's `Finalize` method.  
@@ -342,9 +342,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see cref="M:System.IO.BinaryReader.Dispose(System.Boolean)" /> can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement this method, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see cref="M:System.IO.BinaryReader.Dispose(System.Boolean)" /> can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>
@@ -383,7 +383,7 @@
 ## Remarks  
  The internal buffer size is the larger value between 16 and the value returned by <xref:System.Text.Encoding.GetMaxByteCount%2A> for the specified encoding.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -425,7 +425,7 @@
 ## Remarks  
  If surrogate characters can be expected in the stream use the <xref:System.IO.BinaryReader.ReadChars%2A> method, then set the stream back to the original position.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -466,7 +466,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -523,7 +523,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -598,7 +598,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -659,7 +659,7 @@
   
  If the integer will fit in seven bits, the integer takes only one byte of space. The integer is expected to have been written through <xref:System.IO.BinaryWriter.Write7BitEncodedInt%2A?displayProperty=fullName>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -703,7 +703,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -761,7 +761,7 @@
   
 -   ISCII  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -815,7 +815,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read operation.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -881,7 +881,7 @@
   
 -   ISCII  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -994,7 +994,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1043,7 +1043,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1096,7 +1096,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1140,7 +1140,7 @@
   
  <xref:System.IO.BinaryReader> reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1192,7 +1192,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1239,7 +1239,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1288,7 +1288,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1338,7 +1338,7 @@
 ## Remarks  
  <xref:System.IO.BinaryReader> does not restore the file position after an unsuccessful read.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1395,7 +1395,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1444,7 +1444,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1493,7 +1493,7 @@
   
  `BinaryReader` reads this data type in little-endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>

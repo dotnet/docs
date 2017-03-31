@@ -22,7 +22,7 @@
   
 -   The <xref:System.Windows.Input.Cursor> class performs type conversion on any [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] attribute that takes type <xref:System.Windows.Input.Cursor>, such that a value of the <xref:System.Windows.Input.CursorType> enumeration specified as the attribute value will evaluate to one of the static <xref:System.Windows.Input.Cursors> properties.  
   
--   A static property value can be used through the [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md).  
+-   A static property value can be used through the [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md).  
   
  ]]></format>
     </remarks>

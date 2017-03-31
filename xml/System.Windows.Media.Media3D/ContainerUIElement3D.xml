@@ -27,7 +27,7 @@
   
  This class does not set the <xref:System.Windows.Media.Media3D.Visual3D.Visual3DModel%2A> property.  
   
- <xref:System.Windows.Media.Media3D.ContainerUIElement3D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.ContainerUIElement3D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.ContainerUIElement3D.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.ContainerUIElement3D.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -95,7 +95,7 @@
 ## Remarks  
  The <xref:System.Windows.Media.Media3D.ContainerUIElement3D.Children%2A> collection of a <xref:System.Windows.Media.Media3D.ContainerUIElement3D> element can only consist of <xref:System.Windows.UIElement3D> objects. Adding a <xref:System.Windows.UIElement3D> child to a <xref:System.Windows.Media.Media3D.ContainerUIElement3D> implicitly adds it to the <xref:System.Windows.Media.Media3D.Visual3DCollection> for the <xref:System.Windows.Media.Media3D.ContainerUIElement3D> element.  
   
- <xref:System.Windows.Media.Media3D.ContainerUIElement3D.Children%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.ContainerUIElement3D.Children%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

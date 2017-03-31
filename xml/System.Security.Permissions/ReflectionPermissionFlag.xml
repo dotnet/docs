@@ -24,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This enumeration is used by the <xref:System.Security.Permissions.ReflectionPermission> and <xref:System.Security.Permissions.ReflectionPermissionAttribute> classes. If no <xref:System.Security.Permissions.ReflectionPermission> is granted, reflection is allowed on all types and members, but invocation operations are allowed only on visible types and members. For more information, see [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).  
+ This enumeration is used by the <xref:System.Security.Permissions.ReflectionPermission> and <xref:System.Security.Permissions.ReflectionPermissionAttribute> classes. If no <xref:System.Security.Permissions.ReflectionPermission> is granted, reflection is allowed on all types and members, but invocation operations are allowed only on visible types and members. For more information, see [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).  
   
 > [!CAUTION]
 >  Because <xref:System.Security.Permissions.ReflectionPermission> can provide access to private class members, we recommend that you grant <xref:System.Security.Permissions.ReflectionPermission> to Internet code only with the RestrictedMemberAccess flag, and not with any other flags.  
@@ -43,7 +43,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Security.Permissions.ReflectionPermissionFlag> enumeration to initialize a new instance of the <xref:System.Security.Permissions.ReflectionPermission> class that represents the right to perform restricted member access. This example is part of a larger example that is provided for the <xref:System.Security.Permissions.ReflectionPermission> class.  
   
- For an example that shows how to use the RestrictedMemberAccess flag with Internet code, see [Walkthrough: Emitting Code in Partial Trust Scenarios](../Topic/Walkthrough:%20Emitting%20Code%20in%20Partial%20Trust%20Scenarios.md).  
+ For an example that shows how to use the RestrictedMemberAccess flag with Internet code, see [Walkthrough: Emitting Code in Partial Trust Scenarios](~/docs/framework/reflection-and-codedom/walkthrough-emitting-code-in-partial-trust-scenarios.md).  
   
  [!code-csharp[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/CS/reflectionpermission.cs#8)]
  [!code-vb[System.Security.Permissions.ReflectionPermission#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.ReflectionPermission/VB/reflectionpermission.vb#8)]  

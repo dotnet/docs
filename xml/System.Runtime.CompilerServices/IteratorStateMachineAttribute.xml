@@ -33,7 +33,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You shouldn't apply the `IteratorStateMachine` attribute to methods in your code. For methods in Visual Basic that have the [Iterator](../Topic/Iterator%20\(Visual%20Basic\).md) modifier, the compiler will apply the `IteratorStateMachine` attribute in the IL that it emits.  
+ You shouldn't apply the `IteratorStateMachine` attribute to methods in your code. For methods in Visual Basic that have the [Iterator](~/docs/visual-basic/language-reference/modifiers/iterator.md) modifier, the compiler will apply the `IteratorStateMachine` attribute in the IL that it emits.  
   
  When a method (*MethodName*) in Visual Basic has the `Iterator` modifier, the compiler emits IL that includes a state machine structure. That structure contains the code in the method. That IL also contains a stub method (*MethodName*) that calls into the state machine. The compiler adds the `IteratorStateMachine` attribute to the stub method so that tools can identify the corresponding state machine. Details of the emitted IL might change in future releases of the compilers.  
   
@@ -49,7 +49,7 @@
   
 -   Obtains a <xref:System.Reflection.MethodInfo> object for the method name by using <xref:System.Type.GetMethod%2A?displayProperty=fullName>.  
   
--   Obtains a <xref:System.Type> object for the attribute by using [GetType Operator](../Topic/GetType%20Operator%20\(Visual%20Basic\).md).  
+-   Obtains a <xref:System.Type> object for the attribute by using [GetType Operator](~/docs/visual-basic/language-reference/operators/gettype-operator.md).  
   
 -   Obtains an attribute object for the method and attribute type by using `MethodInfo.GetCustomAttribute`. If `GetCustomAttribute` returns `Nothing` (Visual Basic), the method doesn't contain the attribute.  
   

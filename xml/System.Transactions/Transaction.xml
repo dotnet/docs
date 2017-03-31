@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information on ambient transactions, please see the "Managing transaction flow using TransactionScopeOption" section of the [Implementing an Implicit Transaction using Transaction Scope](../Topic/Implementing%20an%20Implicit%20Transaction%20using%20Transaction%20Scope.md) topic.  
+ For more information on ambient transactions, please see the "Managing transaction flow using TransactionScopeOption" section of the [Implementing an Implicit Transaction using Transaction Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) topic.  
   
  Although you can set the ambient transaction using this property, you should use the <xref:System.Transactions.TransactionScope> object to manipulate the ambient transaction whenever possible.  
   

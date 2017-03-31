@@ -26,11 +26,11 @@
 ## Remarks  
  Dynamic resource references are necessary when referencing content that might change at run-time. The reasons for the content change might be application-initiated or might be external. One example is if you are including styles that rely on system resources that report user-configured preferences, such as themes, font settings and so on.  
   
- This class is a markup extension implementation. Markup extension classes in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by the markup extension classes are not typically called from directly user code. This class particularly supports the [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. For more information about dynamic resource references, see [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).  
+ This class is a markup extension implementation. Markup extension classes in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] exist mainly to provide infrastructure support for some aspect of the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and the members exposed by the markup extension classes are not typically called from directly user code. This class particularly supports the [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) usage from [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. For more information about dynamic resource references, see [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
   
 <a name="xamlTextUsage_DynamicResourceExtension"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
   
  ]]></format>
     </remarks>
@@ -70,7 +70,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is used by [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processors when processing the attribute syntax for the [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).  
+ This constructor is used by [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processors when processing the attribute syntax for the [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
   
  ]]></format>
         </remarks>
@@ -99,7 +99,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method supports [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and is not intended to be called directly. The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation uses this method for proper handling of [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) values during object creation.  
+ This method supports [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation, and is not intended to be called directly. The [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] processor implementation uses this method for proper handling of [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) values during object creation.  
   
  The property to be set by the provided value must be of type <xref:System.Windows.DependencyProperty>.  
   
@@ -138,7 +138,7 @@
   
 <a name="xamlTextUsage_ResourceKey"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md).  
   
  ]]></format>
         </remarks>

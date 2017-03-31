@@ -30,7 +30,7 @@
   
  In a XAML file, if the `xmlns` attribute for an object element or property element matches the <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> in the <xref:System.Windows.Markup.XmlnsDefinitionAttribute>, the XAML processor uses the <xref:System.Windows.Markup.XmlnsDefinitionAttribute.ClrNamespace%2A> and <xref:System.Windows.Markup.XmlnsDefinitionAttribute.AssemblyName%2A> stored in the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> for type resolution against types in the assembly.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsDefinitionAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsDefinitionAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 <a name="xamlTextUsage_XmlnsDefinitionAttribute"></a>   
 ## XAML Text Usage  

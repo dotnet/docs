@@ -157,7 +157,7 @@
  For example, if the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property is set to `"<b> Hello </b>"`, the `<` and `>` characters are not converted to `&lt;` and `&gt;`, respectively. The rendered output would still be: \<b> Hello \</b>. The browser will detect the `<b>` tags and display the text, Hello, in a bold font.  
   
 > [!CAUTION]
->  Because the text is not HTML encoded, it possible to embed script within HTML tags in the text. If this property is set dynamically using user input, be sure to validate the value to reduce security vulnerabilities. For more information, see [Security and User Input](../Topic/Security%20and%20User%20Input.md).  
+>  Because the text is not HTML encoded, it possible to embed script within HTML tags in the text. If this property is set dynamically using user input, be sure to validate the value to reduce security vulnerabilities. For more information, see [Security and User Input](~/docs/standard/security/security-and-user-input.md).  
   
  To provide automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property.  
   

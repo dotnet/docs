@@ -20,7 +20,7 @@
   
  An alternative syntax to setting the <xref:System.Windows.Controls.ExceptionValidationRule> explicitly is to set the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true` on your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object.  
   
- You can create a custom rule by creating a class that derives from <xref:System.Windows.Controls.ValidationRule>. For more information and a detailed discussion of data validation, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ You can create a custom rule by creating a class that derives from <xref:System.Windows.Controls.ValidationRule>. For more information and a detailed discussion of data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
    
   
@@ -31,7 +31,7 @@
   
  By default, when there is a validation error, the <xref:System.Windows.Controls.TextBox> appears with a red border. Optionally, you can write a custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> to specify how you want to notify the user when there is a validation error.  
   
- For more information about data validation, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information about data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  For the complete sample, see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
   

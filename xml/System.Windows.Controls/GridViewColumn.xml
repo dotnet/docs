@@ -41,7 +41,7 @@
   
 -   <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A>  
   
- The <xref:System.Windows.Controls.GridViewColumn> class also contains properties that you can use to define and customize the column header for the column. The <xref:System.Windows.Controls.GridViewColumn.Header%2A> property can define the content of the column header. Other properties such as <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> and <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> can also specify content and style for the column header. Some of these properties are also found on other classes such as the <xref:System.Windows.Controls.GridViewColumnHeader> class. For more information about the properties that are used to define styles and templates for column headers, and for information about the order of precedence for these properties, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ The <xref:System.Windows.Controls.GridViewColumn> class also contains properties that you can use to define and customize the column header for the column. The <xref:System.Windows.Controls.GridViewColumn.Header%2A> property can define the content of the column header. Other properties such as <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> and <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> can also specify content and style for the column header. Some of these properties are also found on other classes such as the <xref:System.Windows.Controls.GridViewColumnHeader> class. For more information about the properties that are used to define styles and templates for column headers, and for information about the order of precedence for these properties, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
  The <xref:System.Windows.Controls.GridViewColumn> class implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface. This interface provides the ability to subscribe to the events that occur when a change occurs to a property value, such as the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property value.  
   
@@ -138,13 +138,13 @@
 <a name="xamlValues_CellTemplate"></a>   
 ## XAML Values  
  *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *TemplateResourceKey*  
  The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_CellTemplate"></a>   
 ## Dependency Property Information  
@@ -244,13 +244,13 @@
 <a name="xamlValues_CellTemplateSelector"></a>   
 ## XAML Values  
  *MyDataTemplateSelectorImplementation*  
- A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
  *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *DataTemplateSelectorClassKey*  
- The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
+ The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
   
 <a name="dependencyPropertyInfo_CellTemplateSelector"></a>   
 ## Dependency Property Information  
@@ -358,7 +358,7 @@
 ## Remarks  
  The <xref:System.Windows.Controls.GridViewColumn.Header%2A> property can be set to an object that is as simple as a `string`, or to an object that is as complex as a <xref:System.Windows.Controls.StackPanel> that has embedded content. The default column header in a <xref:System.Windows.Controls.GridView> view mode is styled as a button that is derived from <xref:System.Windows.Controls.Primitives.ButtonBase> and that has the content of the <xref:System.Windows.Controls.GridViewColumn.Header%2A> property as its child. To specify a template for the column header, see the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> or <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> property descriptions.  
   
- Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="dependencyPropertyInfo_Header"></a>   
 ## Dependency Property Information  
@@ -421,9 +421,9 @@
 ## Remarks  
  The <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> property and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property can together define property values and the visual tree for column header content. The <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> property can also specify the visual tree by defining a <xref:System.Windows.Controls.ControlTemplate>.  
   
- Properties that define the content, layout, and style of a column header are found in many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ Properties that define the content, layout, and style of a column header are found in many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
- When you set a style, some restrictions apply. For more information, see the [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ When you set a style, some restrictions apply. For more information, see the [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
 <a name="xamlAttributeUsage_HeaderContainerStyle"></a>   
 ## XAML Attribute Usage  
@@ -438,13 +438,13 @@
 <a name="xamlValues_HeaderContainerStyle"></a>   
 ## XAML Values  
  *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *StyleResourceKey*  
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_HeaderContainerStyle"></a>   
 ## Dependency Property Information  
@@ -604,7 +604,7 @@
   
  You can also define the display of a column header by specifying a <xref:System.Windows.Controls.ControlTemplate> as part of a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A?displayProperty=fullName>.  
   
- Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="xamlAttributeUsage_HeaderTemplate"></a>   
 ## XAML Attribute Usage  
@@ -619,13 +619,13 @@
 <a name="xamlValues_HeaderTemplate"></a>   
 ## XAML Values  
  *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *TemplateResourceKey*  
  The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_HeaderTemplate"></a>   
 ## Dependency Property Information  
@@ -698,7 +698,7 @@
 ## Remarks  
  If both the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> property and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property are set, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property takes precedence.  
   
- Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="xamlAttributeUsage_HeaderTemplateSelector"></a>   
 ## XAML Attribute Usage  
@@ -721,13 +721,13 @@
 <a name="xamlValues_HeaderTemplateSelector"></a>   
 ## XAML Values  
  *ResourceExtension*  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *DataTemplateSelectorClassKey*  
- The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
+ The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
   
  *MyDataTemplateSelectorImplementation*  
- A class that derives from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ A class that derives from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 <a name="dependencyPropertyInfo_HeaderTemplateSelector"></a>   
 ## Dependency Property Information  

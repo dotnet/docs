@@ -18,7 +18,7 @@
 ## Remarks  
  An <xref:System.Windows.Media.Animation.AnimationTimeline> is a type of <xref:System.Windows.Media.Animation.Timeline> object that generates output values based on its timing progress. All animation types inherit from <xref:System.Windows.Media.Animation.AnimationTimeline>.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Animation.AnimationTimeline> class provides several special features: <xref:System.Windows.Media.Animation.AnimationTimeline> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Animation.AnimationTimeline> class provides several special features: <xref:System.Windows.Media.Animation.AnimationTimeline> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>
@@ -33,9 +33,9 @@
   
 -   <see cref="P:System.Windows.Media.Animation.AnimationTimeline.TargetPropertyType" /> – Override this property to indicate the <see cref="T:System.Type" /> of output your animation produces.  
   
- If the class does not use dependency properties to store its data or it requires extra initialization after creation, you might need to override additional methods; see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md) for more information.  
+ If the class does not use dependency properties to store its data or it requires extra initialization after creation, you might need to override additional methods; see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md) for more information.  
   
- For more information about creating custom animations, see the [Custom Animations Overview](../Topic/Custom%20Animations%20Overview.md).</para>
+ For more information about creating custom animations, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).</para>
     </block>
   </Docs>
   <Members>

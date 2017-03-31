@@ -214,12 +214,12 @@
         <ReturnType>System.Data.EntityKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A simple <see cref="T:System.Data.EntityKey" /> identifying an entity that resulted from a failed [TREAT](../Topic/TREAT%20\(Entity%20SQL\).md) operation.</summary>
+        <summary>A simple <see cref="T:System.Data.EntityKey" /> identifying an entity that resulted from a failed [TREAT](~/docs/framework/data/adonet/ef/language-reference/treat-entity-sql.md) operation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are various ways to get an invalid entity. The most common scenario is when an [!INCLUDE[esql](~/includes/esql-md.md)] query uses the [TREAT](../Topic/TREAT%20\(Entity%20SQL\).md) operator to interpret an instance of a polymorphic type as a particular type, and the instance in question does not match. ([TREAT](../Topic/TREAT%20\(Entity%20SQL\).md) is similar to the C# `as` operator). In this case, the query returns an entity that is not valid, and the entity key of the resulting entity is set to <xref:System.Data.EntityKey.EntityNotValidKey>.  
+ There are various ways to get an invalid entity. The most common scenario is when an [!INCLUDE[esql](~/includes/esql-md.md)] query uses the [TREAT](~/docs/framework/data/adonet/ef/language-reference/treat-entity-sql.md) operator to interpret an instance of a polymorphic type as a particular type, and the instance in question does not match. ([TREAT](~/docs/framework/data/adonet/ef/language-reference/treat-entity-sql.md) is similar to the C# `as` operator). In this case, the query returns an entity that is not valid, and the entity key of the resulting entity is set to <xref:System.Data.EntityKey.EntityNotValidKey>.  
   
  ]]></format>
         </remarks>

@@ -55,11 +55,11 @@
  The `UInt32` value type represents unsigned integers with values ranging from 0 to 4,294,967,295.  
   
 > [!IMPORTANT]
->  The <xref:System.UInt32> type is not CLS-compliant. The CLS-compliant alternative type is <xref:System.Int64>. <xref:System.Int32> can be used instead to replace a <xref:System.UInt32> value that ranges from zero to <xref:System.Int32.MaxValue>. For more information about CLS compliance, see [Language Independence and Language-Independent Components](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md).  
+>  The <xref:System.UInt32> type is not CLS-compliant. The CLS-compliant alternative type is <xref:System.Int64>. <xref:System.Int32> can be used instead to replace a <xref:System.UInt32> value that ranges from zero to <xref:System.Int32.MaxValue>. For more information about CLS compliance, see [Language Independence and Language-Independent Components](~/docs/standard/language-independence-and-language-independent-components.md).  
   
  `UInt32` provides methods to compare instances of this type, convert the value of an instance to its <xref:System.String> representation, and convert the <xref:System.String> representation of a number to an instance of this type.  
   
- For information about how format specification codes control the <xref:System.String> representation of value types, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ For information about how format specification codes control the <xref:System.String> representation of value types, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  ]]></format>
     </remarks>
@@ -1690,13 +1690,13 @@
 |Default ("G") format|A specific culture|<xref:System.UInt32.ToString%28System.IFormatProvider%29>|  
 |A specific format|A specific culture|<xref:System.UInt32.ToString%28System.String%2CSystem.IFormatProvider%29>|  
   
- The `format` parameter can be any valid [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md), or any combination of [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.UInt32> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.UInt32> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about support for formatting in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about support for formatting in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The format of the returned string is determined by the <xref:System.Globalization.NumberFormatInfo> object for the current culture. Depending on the `format` parameter, this object controls symbols such as the group separator and the decimal point symbol in the output string. To provide formatting information for cultures other than the current culture, call the <xref:System.UInt32.ToString%28System.String%2CSystem.IFormatProvider%29> overload.  
   
@@ -1763,13 +1763,13 @@
 |Default ("G") format|A specific culture|<xref:System.UInt32.ToString%28System.IFormatProvider%29>|  
 |A specific format|Default (current) culture|<xref:System.UInt32.ToString%28System.String%29>|  
   
- The `format` parameter can be any valid [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md), or any combination of [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.UInt32> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
+ The `format` parameter can be any valid [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), or any combination of [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md). If `format` is equal to <xref:System.String.Empty?displayProperty=fullName> or is `null`, the return value of the current <xref:System.UInt32> object is formatted with the general format specifier ("G"). If `format` is any other value, the method throws a <xref:System.FormatException>.  
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the string returned by this method. When the <xref:System.UInt32.ToString%28System.String%2CSystem.IFormatProvider%29> method is invoked, it calls the `provider` parameter's <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method and passes it a <xref:System.Type> object that represents the <xref:System.Globalization.NumberFormatInfo> type. The <xref:System.IFormatProvider.GetFormat%2A> method then returns the <xref:System.Globalization.NumberFormatInfo> object that provides information for formatting the current <xref:System.UInt32> value, such as the group separator symbol or the decimal point symbol. There are three ways to use the `provider` parameter to supply formatting information to the <xref:System.UInt32.ToString%28System.String%2CSystem.IFormatProvider%29> method:  
   

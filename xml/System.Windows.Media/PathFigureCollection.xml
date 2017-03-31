@@ -42,7 +42,7 @@
 ## Remarks  
  Except as noted, members of this class behave exactly as described by the <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.ICollection%601>, and <xref:System.Collections.Generic.IEnumerable%601> documentation.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.PathFigureCollection> class provides several special features: <xref:System.Windows.Media.PathFigureCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.PathFigureCollection> class provides several special features: <xref:System.Windows.Media.PathFigureCollection> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
 <a name="xamlImplicitCollectionUsage_PathFigureCollection"></a>   
 ## XAML Implicit Collection Usage  
@@ -65,7 +65,7 @@
 <a name="xamlValues_PathFigureCollection"></a>   
 ## XAML Values  
  *drawingCommands*  
- A space-delimited list of drawing commands, starting with a move-to command. For more information, see the [Path Markup Syntax](../Topic/Path%20Markup%20Syntax.md) overview.  
+ A space-delimited list of drawing commands, starting with a move-to command. For more information, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
   
  *oneOrMorePathFigureObjectElements*  
  One or more <xref:System.Windows.Media.PathFigure> objects, declared using object element syntax.  

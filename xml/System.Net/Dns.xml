@@ -77,7 +77,7 @@
  The <xref:System.Net.Dns.BeginGetHostAddresses%2A> method asynchronously queries a DNS server for the IP addresses that are associated with a host name. If `hostNameOrAddress` is an IP address, this address is returned without querying the DNS server.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host for all operating systems except Windows Server 2003; for Windows Server 2003, both IPv4 and IPv6 addresses for the local host are returned.  
   
@@ -85,7 +85,7 @@
   
  This method does not block until the operation is complete. To block until the operation is complete, use the <xref:System.Net.Dns.GetHostAddresses%2A> method.  
   
- For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
  ]]></format>
         </remarks>
@@ -139,10 +139,10 @@
   
  This method does not block until the operation is complete. To block until the operation is complete, use the <xref:System.Net.Dns.GetHostByName%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -186,13 +186,13 @@
 ## Remarks  
  The <xref:System.Net.Dns.BeginGetHostEntry%2A> method asynchronously queries a DNS server for the IP addresses and aliases associated with an IP address.  
   
- **Note** This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ **Note** This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  The asynchronous <xref:System.Net.Dns.BeginGetHostEntry%2A> operation must be completed by calling the <xref:System.Net.Dns.EndGetHostEntry%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
   
  This method does not block until the operation is complete. To block until the operation is complete, use the <xref:System.Net.Dns.GetHostEntry%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
    
   
@@ -247,13 +247,13 @@
 ## Remarks  
  The <xref:System.Net.Dns.BeginGetHostEntry%2A> method queries a DNS server for the IP address that is associated with a host name or IP address.  
   
- **Note** This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ **Note** This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  The asynchronous <xref:System.Net.Dns.BeginGetHostEntry%2A> operation must be completed by calling the <xref:System.Net.Dns.EndGetHostEntry%2A> method. Typically, the method is invoked by the `requestCallback` delegate.  
   
  This method does not block until the operation is complete. To block until the operation is complete, use the <xref:System.Net.Dns.GetHostEntry%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
    
   
@@ -316,10 +316,10 @@
   
  This method does not block until the operation is complete. To block until the operation is complete, use the <xref:System.Net.Dns.Resolve%2A> method.  
   
- For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -371,7 +371,7 @@
  When an empty string is passed as the host name, this method returns the IPv4 addresses of the local host for all operating systems except Windows Server 2003; for Windows Server 2003, both IPv4 and IPv6 addresses for the local host are returned.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -417,7 +417,7 @@
  If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -460,7 +460,7 @@
  To perform this operation synchronously, use a <xref:System.Net.Dns.GetHostEntry%2A> method.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -508,7 +508,7 @@
  To perform this operation synchronously, use the <xref:System.Net.Dns.Resolve%2A> method.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -560,7 +560,7 @@
  IPv6 addresses are filtered from the results of the <xref:System.Net.Dns.GetHostAddresses%2A> method if the local computer does not have IPv6 installed. As a result, it is possible to get back an empty <xref:System.Net.IPAddress> instance if only IPv6 results where available for the `hostNameOrAddress`.parameter.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -667,7 +667,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -721,7 +721,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -773,7 +773,7 @@
  If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -828,7 +828,7 @@
  The <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -904,7 +904,7 @@
  The <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -967,7 +967,7 @@
  The <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1041,7 +1041,7 @@
  The <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1132,7 +1132,7 @@
  If the <xref:System.Net.Configuration.Ipv6Element.Enabled%2A?displayProperty=fullName> property is set to `true`, the <xref:System.Net.IPHostEntry.Aliases%2A> property of the <xref:System.Net.IPHostEntry> instance returned is not populated by this method and will always be empty.  
   
 > [!NOTE]
->  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member emits trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   

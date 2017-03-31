@@ -43,7 +43,7 @@
  You can change the value of any <xref:System.Diagnostics.ProcessStartInfo> property up to the time that the process starts. After you start the process, changing these values has no effect.  
   
 > [!NOTE]
->  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about security demands, see [Link Demands](../Topic/Link%20Demands.md).  
+>  This class contains a link demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the immediate caller does not have full-trust permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md).  
   
    
   

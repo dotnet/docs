@@ -28,7 +28,7 @@
  You cannot include placeholder text in the splash screen that is later added by your code. If you want to include text in the splash screen, you must add it to the image file.  
   
 > [!NOTE]
->  It is not necessary to write any code to display a splash screen. Starting in [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)] SP1, you can quickly configure a splash screen with default settings. For more information, see [How to: Add a Splash Screen to a WPF Application](../Topic/How%20to:%20Add%20a%20Splash%20Screen%20to%20a%20WPF%20Application.md).  
+>  It is not necessary to write any code to display a splash screen. Starting in [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)] SP1, you can quickly configure a splash screen with default settings. For more information, see [How to: Add a Splash Screen to a WPF Application](~/docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md).  
   
  The <xref:System.Windows.SplashScreen> class displays the splash screen as soon as possible after the application is started. The splash screen is displayed by using native code, before the WPF application instance is created. The splash screen is displayed in the center of the screen. When the application is loaded, the splash screen fades.  
   

@@ -50,7 +50,7 @@
 ## Remarks  
  A module is a portable executable file, such as type.dll or application.exe, consisting of one or more classes and interfaces. There may be multiple namespaces contained in a single module, and a namespace may span multiple modules.  
   
- One or more modules deployed as a unit compose an assembly. For information about creating an assembly with more than one module, see [Multifile Assemblies](../Topic/Multifile%20Assemblies.md).  
+ One or more modules deployed as a unit compose an assembly. For information about creating an assembly with more than one module, see [Multifile Assemblies](~/docs/framework/app-domains/multifile-assemblies.md).  
   
  Note that a .NET Framework module is not the same as a module in Visual Basic, which is used by a programmers to organize functions and subroutines in an application.  
   
@@ -992,7 +992,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
   
@@ -1070,7 +1070,7 @@
 ## Remarks  
   
 > [!NOTE]
->  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
   
@@ -1153,7 +1153,7 @@
  The `throwOnError` parameter affects only what happens when the type is not found. It does not affect any other exceptions that might be thrown. In particular, if the type is found but cannot be loaded, <xref:System.TypeLoadException> can be thrown even if `throwOnError` is `false`.  
   
 > [!NOTE]
->  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If the type has been forwarded to another assembly, it is still returned by this method. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  A type can be retrieved from a specific module using <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName>. Calling <xref:System.Reflection.Module.GetType%2A?displayProperty=fullName> on the module that contains the manifest will not search the entire assembly. To retrieve a type from an assembly, regardless of which module it is in, you must call <xref:System.Reflection.Assembly.GetType%2A?displayProperty=fullName>.  
   
@@ -1225,7 +1225,7 @@
  For example, if the class initializers of one of the classes throws an exception while it is being loaded, a `TargetInvocationException` is stored in the corresponding element of the `LoaderExceptions` array.  
   
 > [!NOTE]
->  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](../Topic/Type%20Forwarding%20in%20the%20Common%20Language%20Runtime.md).  
+>  If a type has been forwarded to another assembly, it is not included in the returned array. For information on type forwarding, see [Type Forwarding in the Common Language Runtime](~/docs/framework/app-domains/type-forwarding-in-the-common-language-runtime.md).  
   
  ]]></format>
         </remarks>

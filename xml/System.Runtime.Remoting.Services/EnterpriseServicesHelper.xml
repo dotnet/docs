@@ -24,7 +24,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
+>  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
   
  ]]></format>
     </remarks>
@@ -97,7 +97,7 @@
       <Docs>
         <param name="oldcp">A proxy that represents the old instance of a class that is referenced by a CCW.</param>
         <param name="newcp">A proxy that represents the new instance of a class that is referenced by a CCW.</param>
-        <summary>Switches a [COM Callable Wrapper](../Topic/COM%20Callable%20Wrapper.md) (CCW) from one instance of a class to another instance of the same class.</summary>
+        <summary>Switches a [COM Callable Wrapper](~/docs/framework/interop/com-callable-wrapper.md) (CCW) from one instance of a class to another instance of the same class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -130,7 +130,7 @@
       </Parameters>
       <Docs>
         <param name="punk">A pointer to the <see langword="IUnknown" /> COM interface to wrap.</param>
-        <summary>Wraps the specified <see langword="IUnknown" /> COM interface with a [Runtime Callable Wrapper](../Topic/Runtime%20Callable%20Wrapper.md) (RCW).</summary>
+        <summary>Wraps the specified <see langword="IUnknown" /> COM interface with a [Runtime Callable Wrapper](~/docs/framework/interop/runtime-callable-wrapper.md) (RCW).</summary>
         <returns>The RCW where the specified <see langword="IUnknown" /> is wrapped.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

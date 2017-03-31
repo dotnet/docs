@@ -36,7 +36,7 @@
 ## Remarks  
  A <xref:System.Threading.CancellationToken> enables cooperative cancellation between threads, thread pool work items, or <xref:System.Threading.Tasks.Task> objects. You create a cancellation token by instantiating a <xref:System.Threading.CancellationTokenSource> object, which manages cancellation tokens retrieved from its <xref:System.Threading.CancellationTokenSource.Token%2A?displayProperty=fullName> property. You then  pass the cancellation token to any number of threads, tasks, or operations that should receive notice of cancellation. The token cannot be used to initiate cancellation. When the owning object calls <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=fullName>, the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property on every copy of the cancellation token is set to `true`. The objects that receive the notification can respond in whatever manner is appropriate.  
   
- For more information and code examples see [Cancellation in Managed Threads](../Topic/Cancellation%20in%20Managed%20Threads.md).  
+ For more information and code examples see [Cancellation in Managed Threads](~/docs/standard/threading/cancellation-in-managed-threads.md).  
   
    
   
@@ -305,7 +305,7 @@
 ## Remarks  
  The cancellation token returned by this property cannot be canceled; that is, its <xref:System.Threading.CancellationToken.CanBeCanceled%2A> property is `false`.  
   
- You can also use the C#  [default(CancellationToken)](../Topic/default%20\(C%23%20Reference\).md) statement to create an empty cancellation token.  
+ You can also use the C#  [default(CancellationToken)](~/docs/csharp/language-reference/keywords/default.md) statement to create an empty cancellation token.  
   
  ]]></format>
         </remarks>

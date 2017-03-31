@@ -35,7 +35,7 @@
   
  An application raises events that can be handled by custom modules that implement the <xref:System.Web.IHttpModule> interface or by event handler code that is defined in the Global.asax file. Custom modules that implement the <xref:System.Web.IHttpModule> interface can be put in the App_Code folder or in a DLL in the Bin folder.  
   
- <xref:System.Web.HttpApplication> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 > [!NOTE]
 >  When running IIS 7.0 in Integrated mode, custom modules in the App_Code folder or Bin folder apply to all requests in the request pipeline. Event handler code in the Global.asax file only applies to requests that are mapped to an ASP.NET handler.  
@@ -462,7 +462,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -517,7 +517,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -716,7 +716,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -1611,7 +1611,7 @@ public override string GetOutputCacheProviderName(HttpContext context)
   
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
- <xref:System.Web.HttpApplication.LogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.LogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1647,7 +1647,7 @@ public override string GetOutputCacheProviderName(HttpContext context)
   
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
- <xref:System.Web.HttpApplication.MapRequestHandler> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.MapRequestHandler> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -1777,7 +1777,7 @@ public override string GetOutputCacheProviderName(HttpContext context)
 ## Remarks  
  For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
- <xref:System.Web.HttpApplication.PostLogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.PostLogRequest> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -2378,7 +2378,7 @@ public override string GetOutputCacheProviderName(HttpContext context)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -2395,7 +2395,7 @@ public override string GetOutputCacheProviderName(HttpContext context)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -2412,7 +2412,7 @@ public override string GetOutputCacheProviderName(HttpContext context)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

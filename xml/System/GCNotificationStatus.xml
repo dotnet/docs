@@ -25,7 +25,7 @@
    
   
 ## Examples  
- The following example obtains a <xref:System.GCNotificationStatus> enumeration from the <xref:System.GC.WaitForFullGCApproach%2A> method. If the enumeration returns Succeeded, it calls the custom method `OnFullGCApproachNotify` to perform actions in response to the approaching full garbage collection. This code example is part of a larger example provided for [Garbage Collection Notifications](../Topic/Garbage%20Collection%20Notifications.md) topic.  
+ The following example obtains a <xref:System.GCNotificationStatus> enumeration from the <xref:System.GC.WaitForFullGCApproach%2A> method. If the enumeration returns Succeeded, it calls the custom method `OnFullGCApproachNotify` to perform actions in response to the approaching full garbage collection. This code example is part of a larger example provided for [Garbage Collection Notifications](~/docs/standard/garbagecollection/notifications.md) topic.  
   
  [!code-cpp[GCNotification#8](~/samples/snippets/cpp/VS_Snippets_CLR/GCNotification/cpp/program.cpp#8)]
  [!code-csharp[GCNotification#8](~/samples/snippets/csharp/VS_Snippets_CLR/GCNotification/cs/Program.cs#8)]
@@ -95,7 +95,7 @@
         <ReturnType>System.GCNotificationStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This result can be caused by the following: there is no current registration for a garbage collection notification, concurrent garbage collection is enabled, or the time specified for the <paramref name="millisecondsTimeout" /> parameter has expired and no garbage collection notification was obtained. (See the [&lt;gcConcurrent&gt;](../Topic/%3CgcConcurrent%3E%20Element.md) runtime setting for information about how to disable concurrent garbage collection.)</summary>
+        <summary>This result can be caused by the following: there is no current registration for a garbage collection notification, concurrent garbage collection is enabled, or the time specified for the <paramref name="millisecondsTimeout" /> parameter has expired and no garbage collection notification was obtained. (See the [&lt;gcConcurrent&gt;](~/docs/framework/configuring-apps/file-schema/runtime/gcconcurrent-element.md) runtime setting for information about how to disable concurrent garbage collection.)</summary>
       </Docs>
     </Member>
     <Member MemberName="Succeeded">

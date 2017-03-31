@@ -48,9 +48,9 @@
  Most languages implement a `delegate` keyword, and compilers for those languages are able to derive from the <xref:System.MulticastDelegate> class; therefore, users should use the `delegate` keyword provided by the language.  
   
 > [!NOTE]
->  The common language runtime provides an `Invoke` method for each delegate type, with the same signature as the delegate. You do not have to call this method explicitly from C#, Visual Basic, or Visual C++, because the compilers call it automatically. The `Invoke` method is useful in [reflection](../Topic/Reflection%20in%20the%20.NET%20Framework.md) when you want to find the signature of the delegate type.  
+>  The common language runtime provides an `Invoke` method for each delegate type, with the same signature as the delegate. You do not have to call this method explicitly from C#, Visual Basic, or Visual C++, because the compilers call it automatically. The `Invoke` method is useful in [reflection](~/docs/framework/reflection-and-codedom/reflection.md) when you want to find the signature of the delegate type.  
   
- The common language runtime provides each delegate type with `BeginInvoke` and `EndInvoke` methods, to enable asynchronous invocation of the delegate. For more information about these methods, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ The common language runtime provides each delegate type with `BeginInvoke` and `EndInvoke` methods, to enable asynchronous invocation of the delegate. For more information about these methods, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  The declaration of a delegate type establishes a contract that specifies the signature of one or more methods. A delegate is an instance of a delegate type that has references to:  
   
@@ -80,7 +80,7 @@
 > [!NOTE]
 >  Managed languages use the <xref:System.Delegate.Combine%2A> and <xref:System.Delegate.Remove%2A> methods to implement delegate operations. Examples include the `AddHandler` and `RemoveHandler` statements in Visual Basic and the += and -= operators on delegate types in C#.  
   
- Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], generic delegate types can have variant type parameters. Contravariant type parameters can be used as parameter types of the delegate, and a covariant type parameter can be used as the return type. This feature allows generic delegate types that are constructed from the same generic type definition to be assignment-compatible if their type arguments are reference types with an inheritance relationship, as explained in [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20in%20Generics.md).  
+ Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], generic delegate types can have variant type parameters. Contravariant type parameters can be used as parameter types of the delegate, and a covariant type parameter can be used as the return type. This feature allows generic delegate types that are constructed from the same generic type definition to be assignment-compatible if their type arguments are reference types with an inheritance relationship, as explained in [Covariance and Contravariance](~/docs/standard/generics/covariance-and-contravariance.md).  
   
 > [!NOTE]
 >  Generic delegates that are assignment-compatible because of variance are not necessarily combinable. To be combinable, the types must match exactly. For example, suppose that a class named `Derived` is derived from a class named `Base`. A delegate of type `Action<Base>` (`Action(Of Base)` in Visual Basic) can be assigned to a variable of type `Action<Derived>`, but the two delegates cannot be combined because the types do not match exactly.  
@@ -278,7 +278,7 @@
  The invocation list can contain duplicate entries; that is, entries that refer to the same method on the same object.  
   
 > [!NOTE]
->  Generic delegates that are assignment-compatible because of variance are not necessarily combinable. To be combinable, the types must match exactly. For example, suppose that a class named `Derived` is derived from a class named `Base`. A delegate of type `Action<Base>` (`Action(Of Base)` in Visual Basic) can be assigned to a variable of type `Action<Derived>`, as explained in [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20in%20Generics.md), but the two delegates cannot be combined because the types do not match exactly.  
+>  Generic delegates that are assignment-compatible because of variance are not necessarily combinable. To be combinable, the types must match exactly. For example, suppose that a class named `Derived` is derived from a class named `Base`. A delegate of type `Action<Base>` (`Action(Of Base)` in Visual Basic) can be assigned to a variable of type `Action<Derived>`, as explained in [Covariance and Contravariance](~/docs/standard/generics/covariance-and-contravariance.md), but the two delegates cannot be combined because the types do not match exactly.  
   
  <xref:System.Delegate.Combine%2A> is useful for creating event handlers that call multiple methods each time an event occurs.  
   
@@ -328,7 +328,7 @@
  The invocation list can contain duplicate entries; that is, entries that refer to the same method on the same object.  
   
 > [!NOTE]
->  Generic delegates that are assignment-compatible because of variance are not necessarily combinable. To be combinable, the types must match exactly. For example, suppose that a class named `Derived` is derived from a class named `Base`. A delegate of type `Action<Base>` (`Action(Of Base)` in Visual Basic) can be assigned to a variable of type `Action<Derived>`, as explained in [Covariance and Contravariance](../Topic/Covariance%20and%20Contravariance%20in%20Generics.md), but the two delegates cannot be combined because the types do not match exactly.  
+>  Generic delegates that are assignment-compatible because of variance are not necessarily combinable. To be combinable, the types must match exactly. For example, suppose that a class named `Derived` is derived from a class named `Base`. A delegate of type `Action<Base>` (`Action(Of Base)` in Visual Basic) can be assigned to a variable of type `Action<Derived>`, as explained in [Covariance and Contravariance](~/docs/standard/generics/covariance-and-contravariance.md), but the two delegates cannot be combined because the types do not match exactly.  
   
  <xref:System.Delegate.Combine%2A> is useful for creating event handlers that call multiple methods each time an event occurs.  
   
@@ -416,7 +416,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Reflection.MethodInfo%2CSystem.Boolean%29> method overload and specifying `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -562,7 +562,7 @@
 -   If the signature of `type` begins with the second parameter of `method` and the rest of the parameter types are compatible, then the delegate is said to be closed over a null reference. When the delegate is invoked, a null reference is passed to the first parameter of `method`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -727,7 +727,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `false` for `ignoreCase` and `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -801,7 +801,7 @@
 >  This method overload should be used when the delegate is not closed over its first argument, because it is somewhat faster in that case.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -927,7 +927,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `false` for `ignoreCase` and `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1032,7 +1032,7 @@
 -   If the signature of `type` begins with the second parameter of `method` and the rest of the parameter types are compatible, then the delegate is said to be closed over a null reference. When the delegate is invoked, a null reference is passed to the first parameter of `method`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1199,7 +1199,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Object%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1273,7 +1273,7 @@
  This method overload is equivalent to calling the <xref:System.Delegate.CreateDelegate%28System.Type%2CSystem.Type%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%29> method overload, specifying `true` for `throwOnBindFailure`.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1356,7 +1356,7 @@
  This method creates delegates for instance methods only. An instance method is a method that is associated with an instance of a class; a static method is a method that is associated with the class itself.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   
@@ -1431,7 +1431,7 @@
  This method creates delegates for static methods only. An instance method is a method that is associated with an instance of a class; a static method is a method that is associated with the class itself.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](../Topic/Security%20Considerations%20for%20Reflection.md).)  
+>  Starting with the [!INCLUDE[net_v20sp1_long](~/includes/net-v20sp1-long-md.md)], this method can be used to access non-public methods if the caller has been granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag and if the grant set of the non-public methods is restricted to the caller’s grant set, or a subset thereof. (See [Security Considerations for Reflection](~/docs/framework/reflection-and-codedom/security-considerations-for-reflection.md).)  
 >   
 >  To use this functionality, your application should target the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)] or later.  
   

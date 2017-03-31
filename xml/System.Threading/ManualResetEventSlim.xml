@@ -43,7 +43,7 @@
    
   
 ## Examples  
- The following example shows how to use a <xref:System.Threading.ManualResetEventSlim>. For more information about the use of `SpinCount` and other best practices concerning the use of this type, see [ManualResetEvent and ManualResetEventSlim](../Topic/ManualResetEvent%20and%20ManualResetEventSlim.md).  
+ The following example shows how to use a <xref:System.Threading.ManualResetEventSlim>. For more information about the use of `SpinCount` and other best practices concerning the use of this type, see [ManualResetEvent and ManualResetEventSlim](~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md).  
   
  [!code-csharp[System.Threading.ManualResetEventSlim#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.manualreseteventslim/cs/mres.cs#01)]
  [!code-vb[System.Threading.ManualResetEventSlim#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.manualreseteventslim/vb/mres.vb#01)]  
@@ -169,7 +169,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Threading.ManualResetEventSlim>. The `Dispose` method leaves the <xref:System.Threading.ManualResetEventSlim> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Threading.ManualResetEventSlim> so the garbage collector can reclaim the memory that the <xref:System.Threading.ManualResetEventSlim> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Threading.ManualResetEventSlim>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Threading.ManualResetEventSlim> object's `Finalize` method.  

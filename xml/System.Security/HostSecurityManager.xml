@@ -149,7 +149,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](../Topic/%3CNetFx40_LegacySecurityPolicy%3E%20Element.md).</exception>
+        <exception cref="T:System.NotSupportedException">This method uses code access security (CAS) policy, which is obsolete in the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]. To enable CAS policy for compatibility with earlier versions of the .NET Framework, use the [&lt;legacyCasPolicy&gt; element](~/docs/framework/configuring-apps/file-schema/runtime/netfx40-legacysecuritypolicy-element.md).</exception>
       </Docs>
     </Member>
     <Member MemberName="Flags">

@@ -48,7 +48,7 @@
 > [!IMPORTANT]
 >  In the .NET Framework, the C++ compiler supports deterministic disposal of resources and does not allow direct implementation of the <xref:System.IDisposable.Dispose%2A> method.  
   
- For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=fullName> method are used, see the [Garbage Collection](../Topic/Garbage%20Collection.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md) topics.  
+ For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=fullName> method are used, see the [Garbage Collection](../Topic/Garbage%20Collection.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md) topics.  
   
 ## Using an object that implements IDisposable  
  Implement <xref:System.IDisposable> only if you are using unmanaged resources directly. If your app simply uses an object that implements <xref:System.IDisposable>, don't provide an <xref:System.IDisposable> implementation. Instead, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation when you are finished using it. Depending on your programming language, you can do this in one of two ways:  
@@ -62,14 +62,14 @@
   
 <a name="Using"></a>   
 ### The C# and Visual Basic Using statement  
- If your language supports a construct such as the [using](../Topic/using%20\(C%23%20Reference\).md) statement in C# and the [Using](../Topic/Using%20Statement%20\(Visual%20Basic\).md) statement in Visual Basic, you can use it instead of explicitly calling <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yourself. The following example uses this approach in defining a `WordCount` class that preserves information about a file and the number of words in it.  
+ If your language supports a construct such as the [using](~/docs/csharp/language-reference/keywords/using.md) statement in C# and the [Using](~/docs/visual-basic/language-reference/statements/using-statement.md) statement in Visual Basic, you can use it instead of explicitly calling <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> yourself. The following example uses this approach in defining a `WordCount` class that preserves information about a file and the number of words in it.  
   
  [!code-csharp[System.IDisposable#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/calling1.cs#1)]
  [!code-vb[System.IDisposable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/calling1.vb#1)]  
   
  The `using` statement is actually a syntactic convenience. At compile time, the language compiler implements the intermediate language (IL) for a `try`/`catch` block.  
   
- For more information about the `using` statement, see the [Using Statement](../Topic/Using%20Statement%20\(Visual%20Basic\).md) or [using Statement](../Topic/using%20Statement%20\(C%23%20Reference\).md) topics.  
+ For more information about the `using` statement, see the [Using Statement](~/docs/visual-basic/language-reference/statements/using-statement.md) or [using Statement](~/docs/csharp/language-reference/keywords/using-statement.md) topics.  
   
 ### The Try/Catch block  
  If your programming language does not support a construct like the `using` statement in C# or Visual Basic, or if you prefer not to use it, you can call the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation from the `finally` block of a `try`/`catch` statement. The following example replaces the `using` block in the previous example with a `try`/`catch`/`finally` block.  
@@ -77,7 +77,7 @@
  [!code-csharp[System.IDisposable#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.idisposable/cs/calling2.cs#2)]
  [!code-vb[System.IDisposable#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.idisposable/vb/calling2.vb#2)]  
   
- For more information about the `try`/`finally` pattern, see [Try...Catch...Finally Statement](../Topic/Try...Catch...Finally%20Statement%20\(Visual%20Basic\).md), [try-finally](../Topic/try-finally%20\(C%23%20Reference\).md), or [try-finally Statement](../Topic/try-finally%20Statement%20\(C\).md).  
+ For more information about the `try`/`finally` pattern, see [Try...Catch...Finally Statement](~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md), [try-finally](~/docs/csharp/language-reference/keywords/try-finally.md), or [try-finally Statement](../Topic/try-finally%20Statement%20\(C\).md).  
   
 ## Implementing IDisposable  
  You should implement <xref:System.IDisposable> only if your type uses unmanaged resources directly. The consumers of your type can call your <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation to free resources when the instance is no longer needed. To handle cases in which they fail to call <xref:System.IDisposable.Dispose%2A>, you should either use a class derived from <xref:System.Runtime.InteropServices.SafeHandle> to wrap the unmanaged resources, or you should override the <xref:System.Object.Finalize%2A?displayProperty=fullName> method for a reference type. In either case, you use the <xref:System.IDisposable.Dispose%2A> method to perform whatever cleanup is necessary after using the unmanaged resources, such as freeing, releasing, or resetting the unmanaged resources.  

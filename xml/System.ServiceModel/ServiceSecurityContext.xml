@@ -23,7 +23,7 @@
  You can retrieve an instance of the <xref:System.ServiceModel.ServiceSecurityContext> from the <xref:System.ServiceModel.OperationContext.Current%2A> property of the <xref:System.ServiceModel.OperationContext> class, or use it from within a service operation method, as shown in the following example.  
   
 ## Parsing a ClaimSet  
- A common use of the class is to retrieve the current set of claims for the purpose of identifying or authorizing a client when accessing a method. The <xref:System.IdentityModel.Claims.ClaimSet> class contains a collection of <xref:System.IdentityModel.Claims.Claim> objects, and each can be parsed to determine whether a specific claim is present. If the specified claim is provided, authorization can be granted. This functionality is provided by overriding the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method of the <xref:System.ServiceModel.ServiceAuthorizationManager> class.  For a complete example, see the [Authorization Policy](../Topic/Authorization%20Policy.md).  
+ A common use of the class is to retrieve the current set of claims for the purpose of identifying or authorizing a client when accessing a method. The <xref:System.IdentityModel.Claims.ClaimSet> class contains a collection of <xref:System.IdentityModel.Claims.Claim> objects, and each can be parsed to determine whether a specific claim is present. If the specified claim is provided, authorization can be granted. This functionality is provided by overriding the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method of the <xref:System.ServiceModel.ServiceAuthorizationManager> class.  For a complete example, see the [Authorization Policy](~/docs/framework/wcf/samples/authorization-policy.md).  
   
 ## Cookie Mode and IsAuthenticated  
  Note that under some circumstances, the <xref:System.Security.Principal.IIdentity.IsAuthenticated%2A> property of the <xref:System.Security.Principal.IIdentity> interface returns `true` even if the remote client is authenticated as an anonymous user. (The <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> property returns an implementation of the <xref:System.Security.Principal.IIdentity> interface.) The following circumstances must be true for this to occur:  
@@ -32,11 +32,11 @@
   
 -   The service allows anonymous logons.  
   
--   The binding is a [\&lt;customBinding\&gt;](../Topic/%3CcustomBinding%3E.md).  
+-   The binding is a [\&lt;customBinding\&gt;](~/docs/framework/configuring-apps/file-schema/wcf/custombinding.md).  
   
 -   The custom binding includes a `<security>` element.  
   
--   The `<security>` element includes a [\&lt;secureConversationBootstrap\&gt;](../Topic/%3CsecureConversationBootstrap%3E.md) with the `requireSecurityContextCancellation` attribute set to `false`.  
+-   The `<security>` element includes a [\&lt;secureConversationBootstrap\&gt;](~/docs/framework/configuring-apps/file-schema/wcf/secureconversationbootstrap.md) with the `requireSecurityContextCancellation` attribute set to `false`.  
   
    
   
@@ -180,7 +180,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [Managing Claims and Authorization with the Identity Model](../Topic/Managing%20Claims%20and%20Authorization%20with%20the%20Identity%20Model.md)  
+ [Managing Claims and Authorization with the Identity Model](~/docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)  
   
  ]]></format>
         </remarks>
@@ -251,7 +251,7 @@
    
   
 ## Examples  
- For an example of using the `PrimaryIdentity` property to authorize a client using a certificate, see [How to: Examine the Security Context](../Topic/How%20to:%20Examine%20the%20Security%20Context.md).  
+ For an example of using the `PrimaryIdentity` property to authorize a client using a certificate, see [How to: Examine the Security Context](~/docs/framework/wcf/how-to-examine-the-security-context.md).  
   
  ]]></format>
         </remarks>

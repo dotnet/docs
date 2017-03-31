@@ -28,7 +28,7 @@
   
 -   Cancel the manipulation by setting the <xref:System.Windows.Input.ManipulationStartingEventArgs.Cancel%2A?displayProperty=fullName> property to `true`.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
     </remarks>
@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -131,7 +131,7 @@
 ## Remarks  
  You can specify that the position should be relative to another element by setting the <xref:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer%2A> property. For example, you can make the manipulation positions relative to the parent of the element that receives the manipulation events. The <xref:System.Windows.UIElement.ManipulationStarting> event handler is the only place in which you can set the <xref:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer%2A>.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  ]]></format>
         </remarks>
@@ -202,12 +202,12 @@
 ## Remarks  
  When you set the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> property, the manipulation will contain rotation data when the user uses one finger during a manipulation.  This is to simulate real-world situations where you can use one finger to rotate an object, such as a piece of paper on a table.  If the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> is `null`, the user must use two fingers to cause rotation.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event and sets the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property. To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md) and replace the code in step 4 with this code.  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event and sets the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property. To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md) and replace the code in step 4 with this code.  
   
  [!code-csharp[BasicManipulation#ManipulationPivot](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/reportboundaryfeedbackexample.xaml.cs#manipulationpivot)]
  [!code-vb[BasicManipulation#ManipulationPivot](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/reportboundaryfeedbackexample.xaml.vb#manipulationpivot)]  

@@ -24,7 +24,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface to transmit [Principal and Identity Objects](../Topic/Principal%20and%20Identity%20Objects.md) to a remote location for identification. To view the code for the `HelloServiceClass` class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class.  
+ The following code example demonstrates the use of the <xref:System.Runtime.Remoting.Messaging.ILogicalThreadAffinative> interface to transmit [Principal and Identity Objects](~/docs/standard/security/principal-and-identity-objects.md) to a remote location for identification. To view the code for the `HelloServiceClass` class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext.GetData%2A> method. To view the code for the server class used in this sample, see example for the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterActivatedServiceType%2A> class. To view the code for the client class used in the sample, see the example for the <xref:System.Runtime.Remoting.Messaging.CallContext> class.  
   
  [!code-cpp[CallContext#2](~/samples/snippets/cpp/VS_Snippets_Remoting/CallContext/CPP/service.cpp#2)]
  [!code-csharp[CallContext#2](~/samples/snippets/csharp/VS_Snippets_Remoting/CallContext/CS/service.cs#2)]

@@ -40,7 +40,7 @@
   
 -   <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus?displayProperty=fullName>  
   
- The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  If the <xref:System.Windows.Input.Keyboard.PreviewGotKeyboardFocus> event or the <xref:System.Windows.Input.Keyboard.PreviewLostKeyboardFocus> event is handled (<xref:System.Windows.RoutedEventArgs.Handled%2A> is set to `true` in the event data), keyboard focus will not change.  
   
@@ -98,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.KeyboardFocusChangedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.KeyboardFocusChangedEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>

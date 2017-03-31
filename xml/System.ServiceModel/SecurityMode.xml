@@ -16,16 +16,16 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Any `ProtectionLevel` settings of a transport are ignored if the <xref:System.ServiceModel.SecurityMode> is set to None. [!INCLUDE[crabout](~/includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](../Topic/Understanding%20Protection%20Level.md).  
+ Any `ProtectionLevel` settings of a transport are ignored if the <xref:System.ServiceModel.SecurityMode> is set to None. [!INCLUDE[crabout](~/includes/crabout-md.md)] the `ProtectionLevel` property, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security and how this property affects general security features, see [Securing Services](../Topic/Securing%20Services.md) and [Programming WCF Security](../Topic/Programming%20WCF%20Security.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] the transport mode, see [Transport Security](../Topic/Transport%20Security.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] [!INCLUDE[indigo1](~/includes/indigo1-md.md)] security and how this property affects general security features, see [Securing Services](~/docs/framework/wcf/securing-services.md) and [Programming WCF Security](~/docs/framework/wcf/feature-details/programming-wcf-security.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] the transport mode, see [Transport Security](~/docs/framework/wcf/feature-details/transport-security.md).  
   
  Note that if you choose TransportWithMessageCredential, then the value set in <xref:System.ServiceModel.HttpClientCredentialType> or <xref:System.ServiceModel.TcpClientCredentialType> is ignored.  
   
    
   
 ## Examples  
- The following example sets the `Mode` property of the <xref:System.ServiceModel.WSHttpBinding>. For more examples, see [How to: Set the Security Mode](../Topic/How%20to:%20Set%20the%20Security%20Mode.md).  
+ The following example sets the `Mode` property of the <xref:System.ServiceModel.WSHttpBinding>. For more examples, see [How to: Set the Security Mode](~/docs/framework/wcf/how-to-set-the-security-mode.md).  
   
  [!code-csharp[c_SettingSecurityMode#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_settingsecuritymode/cs/source.cs#1)]
  [!code-vb[c_SettingSecurityMode#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_settingsecuritymode/vb/source.vb#1)]  

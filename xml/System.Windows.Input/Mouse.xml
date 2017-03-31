@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Input.Mouse> class provides mouse related events, methods and, properties which provide information regarding the state of the mouse.  
   
- Each event that <xref:System.Windows.Input.Mouse> defines as an attached event is also re-exposed by the base element classes <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> as a new routed event. Generally, it is more convenient to handle mouse events for an application on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>, rather than using the <xref:System.Windows.Input.Mouse> events. For details, see [Input Overview](../Topic/Input%20Overview.md).  
+ Each event that <xref:System.Windows.Input.Mouse> defines as an attached event is also re-exposed by the base element classes <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> as a new routed event. Generally, it is more convenient to handle mouse events for an application on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>, rather than using the <xref:System.Windows.Input.Mouse> events. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  The static members of the <xref:System.Windows.Input.Mouse> class delegate to the primary <xref:System.Windows.Input.MouseDevice> of the calling thread's input manager.  
   
@@ -1502,7 +1502,7 @@
   
  To force the mouse pointer to a specific <xref:System.Windows.Input.Cursor> and to force this <xref:System.Windows.Input.Cursor> on all elements, set the <xref:System.Windows.Input.Mouse.OverrideCursor%2A> property.  
   
- To set the cursor on a specific element, use the <xref:System.Windows.FrameworkElement.Cursor%2A> property on either <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  For more information on the base elements, see the [Base Elements Overview](../Topic/Base%20Elements%20Overview.md).  
+ To set the cursor on a specific element, use the <xref:System.Windows.FrameworkElement.Cursor%2A> property on either <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>.  For more information on the base elements, see the [Base Elements Overview](~/docs/framework/wpf/advanced/base-elements-overview.md).  
   
  ]]></format>
         </remarks>

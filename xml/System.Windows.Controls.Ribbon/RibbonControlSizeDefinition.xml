@@ -70,7 +70,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates how to show the image on a control.</summary>
-        <value>One of the enumeration values that specify how to show the image on a control. The registered default is <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>One of the enumeration values that specify how to show the image on a control. The registered default is <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -157,7 +157,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the control’s label is visible.</summary>
         <value>
-          <see langword="true" /> if the control’s label is visible; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the control’s label is visible; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -207,7 +207,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum width constraint of a container control in a Ribbon.</summary>
-        <value>The maximum width of the control. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The maximum width of the control. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -257,7 +257,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the minimum width constraint of a container control in a Ribbon.</summary>
-        <value>The minimum width of the control. The registered default is 0. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The minimum width of the control. The registered default is 0. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -307,7 +307,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the width of a container control in a Ribbon.</summary>
-        <value>The width of the control. The registered default is <see cref="P:System.Windows.GridLength.Auto" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The width of the control. The registered default is <see cref="P:System.Windows.GridLength.Auto" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

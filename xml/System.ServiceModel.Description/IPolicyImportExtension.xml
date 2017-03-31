@@ -38,7 +38,7 @@
  If you want to export and import custom WSDL elements that are not policy assertions, see <xref:System.ServiceModel.Description.IWsdlExportExtension?displayProperty=fullName> and <xref:System.ServiceModel.Description.IWsdlImportExtension?displayProperty=fullName>.  
   
 > [!NOTE]
->  You can use custom policy importers and exporters with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) by using the same configuration elements in a configuration file and the `/svcutilConfig:<configFile>` option.  
+>  You can use custom policy importers and exporters with the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) by using the same configuration elements in a configuration file and the `/svcutilConfig:<configFile>` option.  
   
    
   

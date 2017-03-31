@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you implement a class according to the [Event-based Asynchronous Pattern Overview](../Topic/Event-based%20Asynchronous%20Pattern%20Overview.md), you may need to track the lifetime of each asynchronous operation invoked on an instance of your class. The <xref:System.ComponentModel.AsyncOperation> class provides ways to track and report the progress of an asynchronous task.  
+ When you implement a class according to the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), you may need to track the lifetime of each asynchronous operation invoked on an instance of your class. The <xref:System.ComponentModel.AsyncOperation> class provides ways to track and report the progress of an asynchronous task.  
   
  The following list identifies ways to use an <xref:System.ComponentModel.AsyncOperation> object:  
   
@@ -40,7 +40,7 @@
 ## Examples  
  The following code example demonstrates using an <xref:System.ComponentModel.AsyncOperation> object to track the lifetime of asynchronous operations. This code example is part of a larger example provided for the <xref:System.ComponentModel.AsyncOperationManager?displayProperty=fullName> class.  
   
- For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../Topic/How%20to:%20Implement%20a%20Component%20That%20Supports%20the%20Event-based%20Asynchronous%20Pattern.md). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](../Topic/How%20to:%20Implement%20a%20Client%20of%20the%20Event-based%20Asynchronous%20Pattern.md).  
+ For a full code listing, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](../Topic/How%20to:%20Implement%20a%20Component%20That%20Supports%20the%20Event-based%20Asynchronous%20Pattern.md). For a full code listing of a client form, see [How to: Implement a Client of the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/how-to-implement-a-client-of-the-event-based-asynchronous-pattern.md).  
   
  [!code-csharp[System.ComponentModel.AsyncOperationManager#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/CS/primenumbercalculatormain.cs#3)]
  [!code-vb[System.ComponentModel.AsyncOperationManager#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AsyncOperationManager/VB/primenumbercalculatormain.vb#3)]  
@@ -50,7 +50,7 @@
     <block subset="none" type="overrides">
       <para>Implementers must ensure the <see cref="M:System.ComponentModel.AsyncOperation.PostOperationCompleted(System.Threading.SendOrPostCallback,System.Object)" /> and <see cref="M:System.ComponentModel.AsyncOperation.Post(System.Threading.SendOrPostCallback,System.Object)" /> invocations are asynchronous, so that class library providers do not need to concern themselves with potential stack overflows if they assume asynchronous behavior in a particular application model that happens to be synchronous.  
   
- For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](../Topic/Implementing%20the%20Event-based%20Asynchronous%20Pattern.md).</para>
+ For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
     </block>
   </Docs>
   <Members>
@@ -178,7 +178,7 @@
 </para>  
 </block>  
   
- For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](../Topic/Implementing%20the%20Event-based%20Asynchronous%20Pattern.md).</para>
+ For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
       </Docs>
     </Member>
@@ -239,7 +239,7 @@
         <block subset="none" type="overrides">
           <para>Inheritors must make the <see cref="M:System.ComponentModel.AsyncOperation.PostOperationCompleted(System.Threading.SendOrPostCallback,System.Object)" /> invocation asynchronous, so that class library providers do not need to concern themselves with potential stack overflows if they assume asynchrony but a particular application model happens to be synchronous. The method should be interpreted as an "ending the lifetime" call, meaning the implementation needs to do what is appropriate for the application model. For instance, ASP.NET will decrement its count of outstanding asynchronous operations. This also should put the operation into a state such that any subsequent calls into it will fail, since it has now completed.  
   
- For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](../Topic/Implementing%20the%20Event-based%20Asynchronous%20Pattern.md).</para>
+ For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
       </Docs>
     </Member>

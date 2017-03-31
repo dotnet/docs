@@ -29,11 +29,11 @@
   
  To play a sound using the <xref:System.Media.SoundPlayer> class, configure a <xref:System.Media.SoundPlayer> with a path to the .wav file and call one of the play methods. You can identify the .wav file to play by using one of the constructors or by setting either the <xref:System.Media.SoundPlayer.SoundLocation%2A> or <xref:System.Media.SoundPlayer.Stream%2A> property. The file can be loaded prior to playing by using one of the load methods, or loading can be deferred until one of the play methods is called. A <xref:System.Media.SoundPlayer> configured to load a .wav file from a <xref:System.IO.Stream> or URL must load the .wav file into memory before playback begins.  
   
- You can load or play a .wav file synchronously or asynchronously. If you call a synchronous load or play method, the calling thread will wait until the method returns, which may cause painting and other events to be interrupted. Calling an asynchronous load or play method will allow the calling thread to continue without interruption. For more information on asynchronous method calls, see [How to: Run an Operation in the Background](../Topic/How%20to:%20Run%20an%20Operation%20in%20the%20Background.md).  
+ You can load or play a .wav file synchronously or asynchronously. If you call a synchronous load or play method, the calling thread will wait until the method returns, which may cause painting and other events to be interrupted. Calling an asynchronous load or play method will allow the calling thread to continue without interruption. For more information on asynchronous method calls, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
   
  When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
- For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](../Topic/SoundPlayer%20Class%20Overview.md).  
+ For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](~/docs/framework/winforms/controls/soundplayer-class-overview.md).  
   
 > [!NOTE]
 >  The <xref:System.Media.SoundPlayer> class cannot play other file types, such as .wma or .mp3. If you want to play other file types, you can use the Windows Media Player control. For more information, see [Using the Windows Media Player Control in a .NET Framework Solution](http://go.microsoft.com/fwlink/?LinkId=131267) and [Windows Media Player Object Model Reference for Visual Basic .NET and C#](http://go.microsoft.com/fwlink/?LinkId=131269) in the Windows Media Player SDK.  
@@ -231,7 +231,7 @@
   
  If a <xref:System.Media.SoundPlayer> is configured to load a .wav file from a local file path, this method does nothing, because loading is deferred until playing begins.  
   
- For more information about asynchronous loading, see [How to: Load a Sound Asynchronously within a Windows Form](../Topic/How%20to:%20Load%20a%20Sound%20Asynchronously%20within%20a%20Windows%20Form.md).  
+ For more information about asynchronous loading, see [How to: Load a Sound Asynchronously within a Windows Form](~/docs/framework/winforms/controls/how-to-load-a-sound-asynchronously-within-a-windows-form.md).  
   
    
   
@@ -477,7 +477,7 @@
   
  If the .wav file has not been specified or it fails to load, the <xref:System.Media.SoundPlayer.PlayLooping%2A> method will play the default beep sound.  
   
- For more information about <xref:System.Media.SoundPlayer.PlayLooping%2A>, see [How to: Loop a Sound Playing on a Windows Form](../Topic/How%20to:%20Loop%20a%20Sound%20Playing%20on%20a%20Windows%20Form.md).  
+ For more information about <xref:System.Media.SoundPlayer.PlayLooping%2A>, see [How to: Loop a Sound Playing on a Windows Form](~/docs/framework/winforms/controls/how-to-loop-a-sound-playing-on-a-windows-form.md).  
   
    
   

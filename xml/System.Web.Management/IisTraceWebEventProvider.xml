@@ -20,7 +20,7 @@
   
  The <xref:System.Web.Management.IisTraceWebEventProvider> class is a customized health-event provider that processes ASP.NET tracing events by routing them through the [!INCLUDE[iisver](~/includes/iisver-md.md)] tracing infrastructure. This routing occurs only when tracing is enabled in ASP.NET.  
   
- <xref:System.Web.Management.IisTraceWebEventProvider> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Management.IisTraceWebEventProvider> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 > [!NOTE]
 >  This class does not route [!INCLUDE[iisver](~/includes/iisver-md.md)] trace events into ASP.NET page events.  
@@ -47,7 +47,7 @@
 ## Remarks  
  The <xref:System.Web.Management.IisTraceWebEventProvider.%23ctor%2A> constructor is not intended to be used directly from your code. It is called by ASP.NET.  
   
- <xref:System.Web.Management.IisTraceWebEventProvider.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Management.IisTraceWebEventProvider.%23ctor%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -74,7 +74,7 @@
 ## Remarks  
  When this method is called, all the events in the buffer are immediately moved from the buffer to the event log. This occurs regardless of how much time has elapsed since the last event was written or how many events are in the buffer. The time of the last written event is reset to the time of the flushing action.  
   
- <xref:System.Web.Management.IisTraceWebEventProvider.Flush%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Management.IisTraceWebEventProvider.Flush%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -104,7 +104,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Management.IisTraceWebEventProvider.Initialize%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Management.IisTraceWebEventProvider.Initialize%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.Management.IisTraceWebEventProvider.ProcessEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Management.IisTraceWebEventProvider.ProcessEvent%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -159,7 +159,7 @@
 ## Remarks  
  The method performs tasks that enable the application to end normally. An example of such a task is closing resources.  
   
- <xref:System.Web.Management.IisTraceWebEventProvider.Shutdown%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.Management.IisTraceWebEventProvider.Shutdown%2A> is introduced in the [!INCLUDE[net_v35_long](~/includes/net-v35-long-md.md)]. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

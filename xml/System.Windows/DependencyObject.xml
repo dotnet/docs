@@ -32,7 +32,7 @@
   
 -   Dependency property hosting support. You register a dependency property by calling the <xref:System.Windows.DependencyProperty.Register%2A> method, and storing the method's return value as a public static field in your class.  
   
--   Attached property hosting support. You register an attached property by calling the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method, and storing the method's return value as a public static read-only field in your class. (There are also additional member requirements; note that this represents a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] specific implementation for attached properties. For details, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).) Your attached property can then be set on any class that derives from <xref:System.Windows.DependencyObject>.  
+-   Attached property hosting support. You register an attached property by calling the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method, and storing the method's return value as a public static read-only field in your class. (There are also additional member requirements; note that this represents a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] specific implementation for attached properties. For details, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).) Your attached property can then be set on any class that derives from <xref:System.Windows.DependencyObject>.  
   
 -   Get, set, and clear utility methods for values of any dependency properties that exist on the <xref:System.Windows.DependencyObject>.  
   
@@ -89,7 +89,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Clearing the property value by calling <xref:System.Windows.DependencyObject.ClearValue%2A> does not necessarily give a dependency property the default value that is specified in the dependency property metadata. Clearing the property only specifically clears whatever local value may have been applied. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ Clearing the property value by calling <xref:System.Windows.DependencyObject.ClearValue%2A> does not necessarily give a dependency property the default value that is specified in the dependency property metadata. Clearing the property only specifically clears whatever local value may have been applied. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
    
   
@@ -128,7 +128,7 @@
 ## Remarks  
  A <xref:System.Windows.DependencyPropertyKey> identifies a read-only dependency property for property system operations. Classes that define read-only dependency properties should not expose this key with public access. A publicly exposed key would provide a public code pathway that negated the read-only character of the property, if methods such as <xref:System.Windows.DependencyObject.ClearValue%2A> or <xref:System.Windows.DependencyObject.SetValue%2A> could be called outside the class or assembly, referencing the key.  
   
- Clearing the property value by calling <xref:System.Windows.DependencyObject.ClearValue%2A> does not necessarily give a dependency property the default value that is specified in the dependency property metadata. Clearing the value only specifically clears whatever local value may have been applied. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ Clearing the property value by calling <xref:System.Windows.DependencyObject.ClearValue%2A> does not necessarily give a dependency property the default value that is specified in the dependency property metadata. Clearing the value only specifically clears whatever local value may have been applied. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  ]]></format>
         </remarks>
@@ -161,7 +161,7 @@
   
  When you invoke the <xref:System.Windows.DependencyObject.CoerceValue%2A> method, you are ultimately invoking the coerce value callback for the property that you specify. Typically you will invoke <xref:System.Windows.DependencyObject.CoerceValue%2A> only if you know that a coerce value callback exists, and if you know the callback's criteria for coercion.  
   
- The most common scenario for calling <xref:System.Windows.DependencyObject.CoerceValue%2A> is within class handling or property change callbacks of related properties that influence each other's values in a dependent way. For more information, see [Dependency Property Callbacks and Validation](../Topic/Dependency%20Property%20Callbacks%20and%20Validation.md).  
+ The most common scenario for calling <xref:System.Windows.DependencyObject.CoerceValue%2A> is within class handling or property change callbacks of related properties that influence each other's values in a dependent way. For more information, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
   
    
   
@@ -335,7 +335,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The *effective value* is the value of the property that is returned by the property system to any caller that is requesting the value. The effective value is the result of the property system having evaluated all the possible inputs that participate in the property system value precedence. This includes coercion and animation. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ The *effective value* is the value of the property that is returned by the property system to any caller that is requesting the value. The effective value is the result of the property system having evaluated all the possible inputs that participate in the property system value precedence. This includes coercion and animation. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  This method will never return <xref:System.Windows.DependencyProperty>. The <xref:System.Windows.DependencyProperty> is a sentinel value for the property system that is used in various capacities internally and occasionally also exposed through coercion callbacks.  
   
@@ -370,7 +370,7 @@
 ## Remarks  
  When you call <xref:System.Windows.DependencyObject.InvalidateProperty%2A>, any associated and applicable <xref:System.Windows.CoerceValueCallback> or <xref:System.Windows.PropertyChangedCallback> functions registered for that dependency property might be invoked.  
   
- Calling <xref:System.Windows.DependencyObject.InvalidateProperty%2A> on a property that has its local value set will have no effect, because the local value takes precedence over other property system inputs, except for animations. However, you could call <xref:System.Windows.DependencyObject.ClearValue%2A>, then call <xref:System.Windows.DependencyObject.InvalidateProperty%2A>. For more information, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ Calling <xref:System.Windows.DependencyObject.InvalidateProperty%2A> on a property that has its local value set will have no effect, because the local value takes precedence over other property system inputs, except for animations. However, you could call <xref:System.Windows.DependencyObject.ClearValue%2A>, then call <xref:System.Windows.DependencyObject.InvalidateProperty%2A>. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  Calling <xref:System.Windows.DependencyObject.InvalidateProperty%2A> is not necessarily applicable for many dependency property scenarios. If a dependency property becomes invalidated because of value changes in any of the constituents, the property system invalidates and re-evaluates the dependency property automatically. However, there are still some appropriate scenarios where <xref:System.Windows.DependencyObject.InvalidateProperty%2A> is useful. In particular, you can use <xref:System.Windows.DependencyObject.InvalidateProperty%2A> inside the coerce value or property changed callback for a different dependency property. You can also use <xref:System.Windows.DependencyObject.InvalidateProperty%2A> to force re-evaluation of a binding against a data source that is not able to implement the recommended <xref:System.ComponentModel.INotifyPropertyChanged> notification mechanism (perhaps if consuming data classes that cannot be derived from, or where the data is a static member).  
   
@@ -572,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This signature is generally used when you set values for read-only dependency properties that are defined by your custom classes. Generally, <xref:System.Windows.DependencyObject.SetValue%2A> is called only from the type that registered that dependency property, which implements the internal logic that provides the determined value for the dependency property. For more information, see [Read-Only Dependency Properties](../Topic/Read-Only%20Dependency%20Properties.md).  
+ This signature is generally used when you set values for read-only dependency properties that are defined by your custom classes. Generally, <xref:System.Windows.DependencyObject.SetValue%2A> is called only from the type that registered that dependency property, which implements the internal logic that provides the determined value for the dependency property. For more information, see [Read-Only Dependency Properties](~/docs/framework/wpf/advanced/read-only-dependency-properties.md).  
   
  If the provided type does not match the type that is declared for the dependency property as it was originally registered, an exception is thrown. The `value` parameter should always be provided as the appropriate type. The exception conditions are potentially influenced by the <xref:System.Windows.DependencyProperty.ValidateValueCallback%2A> callback that exists on the dependency property identifier of the dependency property being set.  
   

@@ -467,7 +467,7 @@ End Sub
   
  The <xref:System.Web.HttpContext.CurrentNotification%2A> property is not intended to be set. Instead, it is set by [!INCLUDE[iisver](~/includes/iisver-md.md)] during the processing of the request in the ASP.NET pipeline. Setting the <xref:System.Web.HttpContext.CurrentNotification%2A> property will result in a compilation error.  
   
- <xref:System.Web.HttpContext.CurrentNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpContext.CurrentNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -663,7 +663,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Globalization.CultureInfo> object represents the culture for which the resource was localized. If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).  
+ The <xref:System.Globalization.CultureInfo> object represents the culture for which the resource was localized. If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
 > [!NOTE]
 >  In some editing environments, such as Visual Web Developer, the editor might throw a design-time <xref:System.Resources.MissingManifestResourceException> exception if you use a period (.) in the global resource-key name. However, this does not affect your ability to edit or save the file, and you can ignore the error.  
@@ -738,7 +738,7 @@ End Sub
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).  
+ If the resource is not localized for this culture, the lookup will follow a fallback process to locate an appropriate resource. For more information, see [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
  ]]></format>
         </remarks>
@@ -860,7 +860,7 @@ End Sub
   
  In scenarios where multiple events of the <xref:System.Web.HttpApplication> object are handled by one event handler, you can use the <xref:System.Web.HttpContext.IsPostNotification%2A> property in combination with the <xref:System.Web.RequestNotification> enumeration to precisely determine where in the application lifecycle the current request is.  
   
- <xref:System.Web.HttpContext.IsPostNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpContext.IsPostNotification%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   

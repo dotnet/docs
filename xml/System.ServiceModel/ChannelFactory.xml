@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `configurationName` is `null`, only the behaviors specified in the service endpoint are loaded. If the wildcard, "*", is used, any endpoint configuration in the client configuration file is used, but only if there is precisely one. Otherwise an exception is thrown. Any other value for the `configurationName`, including the empty string "", matches the endpoint configuration with the same name. See the [WCF Client Configuration](../Topic/Client%20Configuration.md) topic for a discussion of the client configuration.  
+ If `configurationName` is `null`, only the behaviors specified in the service endpoint are loaded. If the wildcard, "*", is used, any endpoint configuration in the client configuration file is used, but only if there is precisely one. Otherwise an exception is thrown. Any other value for the `configurationName`, including the empty string "", matches the endpoint configuration with the same name. See the [WCF Client Configuration](~/docs/framework/wcf/feature-details/client-configuration.md) topic for a discussion of the client configuration.  
   
  ]]></format>
         </remarks>

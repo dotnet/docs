@@ -18,7 +18,7 @@
 ## Remarks  
  This class implements attached property support for <xref:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A>, <xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A>, and <xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A> and <xref:System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A>.  
   
- These properties are generally only used by the WPF XAML parser implementation for [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)]. Actual user code attached property calls from XAML markup is not the primary scenario. The properties are implemented as attached properties primarily so that the properties can better support the property inheritance concept for dependency properties through all possible object graphs. As such, this is really an infrastructure support class. For more information, see [Property Value Inheritance](../Topic/Property%20Value%20Inheritance.md).  
+ These properties are generally only used by the WPF XAML parser implementation for [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)]. Actual user code attached property calls from XAML markup is not the primary scenario. The properties are implemented as attached properties primarily so that the properties can better support the property inheritance concept for dependency properties through all possible object graphs. As such, this is really an infrastructure support class. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
   
  ]]></format>
     </remarks>

@@ -25,7 +25,7 @@
   
 4.  The <xref:System.Windows.Forms.DataGridView> control calls the editing control <xref:System.Windows.Forms.IDataGridViewEditingControl.PrepareEditingControlForEdit%2A> method. You can implement this method to make final adjustments to the editing control, such as selecting the control value.  
   
- For more information about implementing <xref:System.Windows.Forms.IDataGridViewEditingControl>, see [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ For more information about implementing <xref:System.Windows.Forms.IDataGridViewEditingControl>, see [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  Cell types such as <xref:System.Windows.Forms.DataGridViewCheckBoxCell> that provide a user interface (UI) for specifying values without hosting an editing control implement the <xref:System.Windows.Forms.IDataGridViewEditingCell> interface. The UI in this case is displayed regardless of whether the cell is in edit mode.  
   
@@ -34,7 +34,7 @@
    
   
 ## Examples  
- The following code example provides an implementation of this interface that derives from <xref:System.Windows.Forms.DateTimePicker>. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example provides an implementation of this interface that derives from <xref:System.Windows.Forms.DateTimePicker>. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#300](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#300)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#300](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#300)]  
@@ -70,7 +70,7 @@
    
   
 ## Examples  
- The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#303](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#303)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#303](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#303)]  
@@ -121,7 +121,7 @@
    
   
 ## Examples  
- The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#301](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#301)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#301](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#301)]  
@@ -218,7 +218,7 @@
    
   
 ## Examples  
- The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#305](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#305)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#305](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#305)]  
@@ -251,7 +251,7 @@
    
   
 ## Examples  
- The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example provides an implementation of this member. This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#311](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#311)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#311](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#311)]  

@@ -34,7 +34,7 @@
   
  The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> is also intended to be used with dictionary types to handle keyed collections. Dictionary types are classes that implement either the <xref:System.Collections.IDictionary> or the <xref:System.Collections.Generic.IDictionary%602> interface, for example, the <xref:System.Collections.Generic.Dictionary%602>. Use the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.KeyName%2A> and <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ValueName%2A> properties to set custom names when using the <xref:System.Collections.Generic.Dictionary%602> class.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Using Data Contracts](../Topic/Using%20Data%20Contracts.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using the <xref:System.Runtime.Serialization.DataContractSerializer>, see [Using Data Contracts](~/docs/framework/wcf/feature-details/using-data-contracts.md).  
   
    
   
@@ -44,7 +44,7 @@
  [!code-csharp[CollectionDataContractAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/collectiondatacontractattribute/cs/source.cs#1)]
  [!code-vb[CollectionDataContractAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/collectiondatacontractattribute/vb/source.vb#1)]  
   
- When the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) is used to generate code for the client, the code resembles the following example. Notice that the name of the class is changed, as well as the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A>. When using generics, the type parameter name is used to create the resulting type name.  
+ When the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) is used to generate code for the client, the code resembles the following example. Notice that the name of the class is changed, as well as the <xref:System.Runtime.Serialization.CollectionDataContractAttribute.ItemName%2A>. When using generics, the type parameter name is used to create the resulting type name.  
   
  [!code-csharp[CollectionDataContractAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/collectiondatacontractattribute/cs/source.cs#2)]
  [!code-vb[CollectionDataContractAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/collectiondatacontractattribute/vb/source.vb#2)]  

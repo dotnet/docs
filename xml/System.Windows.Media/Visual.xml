@@ -49,7 +49,7 @@ Visual class hierarchy
   
  In some cases, members that are defined as protected in <xref:System.Windows.Media.Visual> are exposed as more readily accessible members with similar names in the derived <xref:System.Windows.UIElement> class.  
   
- For more information, see [WPF Graphics Rendering Overview](../Topic/WPF%20Graphics%20Rendering%20Overview.md).  
+ For more information, see [WPF Graphics Rendering Overview](~/docs/framework/wpf/graphics-multimedia/wpf-graphics-rendering-overview.md).  
   
  A <xref:System.Windows.Media.Visual> has a limited number of levels. In previous versions of the .NET Framework, this maximum depth was 255. This limit is inadequate for some layouts that have many levels in the visual tree.  
   

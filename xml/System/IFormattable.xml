@@ -34,13 +34,13 @@
   
  A format string typically defines the general appearance of an object. For example, the .NET Framework supports the following:  
   
--   Standard format strings for formatting enumeration values (see [Enumeration Format Strings](../Topic/Enumeration%20Format%20Strings.md)).  
+-   Standard format strings for formatting enumeration values (see [Enumeration Format Strings](~/docs/standard/base-types/enumeration-format-strings.md)).  
   
--   Standard and custom format strings for formatting numeric values (see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md)).  
+-   Standard and custom format strings for formatting numeric values (see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md)).  
   
--   Standard and custom format strings for formatting date and time values (see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md)).  
+-   Standard and custom format strings for formatting date and time values (see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md)).  
   
--   Standard and custom format strings for formatting time intervals (see [Standard TimeSpan Format Strings](../Topic/Standard%20TimeSpan%20Format%20Strings.md) and [Custom TimeSpan Format Strings](../Topic/Custom%20TimeSpan%20Format%20Strings.md)).  
+-   Standard and custom format strings for formatting time intervals (see [Standard TimeSpan Format Strings](~/docs/standard/base-types/standard-timespan-format-strings.md) and [Custom TimeSpan Format Strings](~/docs/standard/base-types/custom-timespan-format-strings.md)).  
   
  You can also define your own format strings to support formatting of your application-defined types.  
   
@@ -54,7 +54,7 @@
   
  In addition, you can define your own custom format providers to supply culture-specific, profession-specific, or industry-specific information used in formatting. For more information about implementing custom formatting by using a custom format provider, see <xref:System.ICustomFormatter>.  
   
- The <xref:System.IFormattable> interface defines a single method, <xref:System.IFormattable.ToString%2A>, that supplies formatting services for the implementing type. The <xref:System.IFormattable.ToString%2A> method can be called directly. In addition, it is called automatically by the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods, and by methods that use the [composite formatting feature](../Topic/Composite%20Formatting.md) in the .NET Framework. Such methods include <xref:System.Console.WriteLine%28System.String%2CSystem.Object%29?displayProperty=fullName>, <xref:System.String.Format%2A?displayProperty=fullName>, and <xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%29?displayProperty=fullName>, among others. The <xref:System.IFormattable.ToString%2A> method is called for each format item in the method's format string.  
+ The <xref:System.IFormattable> interface defines a single method, <xref:System.IFormattable.ToString%2A>, that supplies formatting services for the implementing type. The <xref:System.IFormattable.ToString%2A> method can be called directly. In addition, it is called automatically by the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods, and by methods that use the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) in the .NET Framework. Such methods include <xref:System.Console.WriteLine%28System.String%2CSystem.Object%29?displayProperty=fullName>, <xref:System.String.Format%2A?displayProperty=fullName>, and <xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%29?displayProperty=fullName>, among others. The <xref:System.IFormattable.ToString%2A> method is called for each format item in the method's format string.  
   
  The <xref:System.IFormattable> interface is implemented by the base data types.  
   
@@ -76,7 +76,7 @@
     <block subset="none" type="overrides">
       <para>Classes that require more control over the formatting of strings than <see cref="M:System.Object.ToString" /> provides should implement <see cref="T:System.IFormattable" />.  
   
- A class that implements <see cref="T:System.IFormattable" /> must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md)</para>
+ A class that implements <see cref="T:System.IFormattable" /> must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](~/docs/standard/base-types/formatting-types.md)</para>
     </block>
   </Docs>
   <Members>
@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IFormattable.ToString%2A> method converts a value to a string representation that can be expressed in multiple ways. Its precise format depends on specific symbols or a specified order defined by specific cultures, professions, or industries. You can call the method directly. It is also called automatically by the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods, and by methods that use the composite formatting feature in the .NET Framework, such as [String.Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, and [StringBuilder.AppendFormat(String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. (For more information, see [Composite Formatting](../Topic/Composite%20Formatting.md).)  
+ The <xref:System.IFormattable.ToString%2A> method converts a value to a string representation that can be expressed in multiple ways. Its precise format depends on specific symbols or a specified order defined by specific cultures, professions, or industries. You can call the method directly. It is also called automatically by the <xref:System.Convert.ToString%28System.Object%29?displayProperty=fullName> and <xref:System.Convert.ToString%28System.Object%2CSystem.IFormatProvider%29?displayProperty=fullName> methods, and by methods that use the composite formatting feature in the .NET Framework, such as [String.Format(String, Object\<xref:System.String.Format%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>, and [StringBuilder.AppendFormat(String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. (For more information, see [Composite Formatting](~/docs/standard/base-types/composite-formatting.md).)  
   
  Composite formatting methods call the <xref:System.IFormattable.ToString%2A> method once for each format item in a format string. The parameters passed to the method depend on the specific formatting method that is called and on the content of the format item, as follows:  
   
@@ -161,7 +161,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>The <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" /> method must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).</para>
+          <para>The <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" /> method must support the "G" (general) format specifier. Besides the "G" specifier, the class can define the list of format specifiers that it supports. In addition, the class must be prepared to handle a format specifier that is <see langword="null" />. For more information about formatting and formatting codes, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).</para>
         </block>
       </Docs>
     </Member>

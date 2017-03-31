@@ -18,12 +18,12 @@
 ## Remarks  
  The <xref:System.Windows.Input.ManipulationDelta> class contains information about the changes in the position of a manipulation.  [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] interprets the changes as a <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Expansion%2A>, or <xref:System.Windows.Input.ManipulationDelta.Rotation%2A>. When the <xref:System.Windows.UIElement.ManipulationDelta> event occurs on a <xref:System.Windows.UIElement>, use the properties on a <xref:System.Windows.Input.ManipulationDelta> object to transform the object that should be manipulated.  The <xref:System.Windows.Input.ManipulationDeltaEventArgs> class provides two properties of type <xref:System.Windows.Input.ManipulationDelta>: <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> and <xref:System.Windows.Input.ManipulationDeltaEventArgs.CumulativeManipulation%2A>.  
   
- For more information about manipulations, see the [Input Overview](../Topic/Input%20Overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -105,7 +105,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -138,7 +138,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -171,7 +171,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event.  The example applies the <xref:System.Windows.Input.ManipulationDelta.Translation%2A>, <xref:System.Windows.Input.ManipulationDelta.Scale%2A>, and <xref:System.Windows.Input.ManipulationDelta.Rotation%2A> properties to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  

@@ -33,7 +33,7 @@
 > [!NOTE]
 >  When you use the <xref:System.Web.UI.WebControls.RegularExpressionValidator> control inside an <xref:System.Web.UI.UpdatePanel> control, make sure that the validator control and the control it is associated with are in the same panel. For more information about using the <xref:System.Web.UI.UpdatePanel> control for partial-page updates, see [Partial-Page Rendering Overview](../Topic/Partial-Page%20Rendering%20Overview.md).  
   
- For additional information about validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>. For more information on regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md).  
+ For additional information about validation controls, see <xref:System.Web.UI.WebControls.BaseValidator>. For more information on regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 ## Accessibility  
  For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](../Topic/Accessibility%20in%20Visual%20Studio%20and%20ASP.NET.md) and [ASP.NET Controls and Accessibility](../Topic/ASP.NET%20Controls%20and%20Accessibility.md).  
@@ -197,7 +197,7 @@
   
  The <xref:System.Web.UI.WebControls.RegularExpressionValidator> does not perform validation on an empty string. If the string you are testing might be empty, use the <xref:System.Web.UI.WebControls.RequiredFieldValidator> as well as the <xref:System.Web.UI.WebControls.RegularExpressionValidator>.  
   
- For more information on regular expressions, see [.NET Framework Regular Expressions](../Topic/.NET%20Framework%20Regular%20Expressions.md).  
+ For more information on regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md).  
   
 > [!NOTE]
 >  If you experience problems with pattern matching constructs, try wrapping the expression with "^(" and ")$". For example, "a&#124;ab" becomes "^(a&#124;ab)$".  

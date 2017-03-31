@@ -55,7 +55,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To create your own control class, inherit from the <xref:System.Windows.Forms.UserControl>, <xref:System.Windows.Forms.Control> classes, or from the other Windows Forms provided controls. For more information about authoring custom controls, see [Developing Custom Windows Forms Controls with the .NET Framework](../Topic/Developing%20Custom%20Windows%20Forms%20Controls%20with%20the%20.NET%20Framework.md).  
+ To create your own control class, inherit from the <xref:System.Windows.Forms.UserControl>, <xref:System.Windows.Forms.Control> classes, or from the other Windows Forms provided controls. For more information about authoring custom controls, see [Developing Custom Windows Forms Controls with the .NET Framework](~/docs/framework/winforms/controls/developing-custom-windows-forms-controls.md).  
   
  The <xref:System.Windows.Forms.Control> class implements very basic functionality required by classes that display information to the user. It handles user input through the keyboard and pointing devices. It handles message routing and security. It defines the bounds of a control (its position and size), although it does not implement painting. It provides a window handle (`hWnd`).  
   
@@ -76,7 +76,7 @@
   
  To identify Windows Forms controls from a separate process, use a standard `SendMessage` call to pass the WM_GETCONTROLNAME message. WM_GETCONTROLNAME is independent of the language and Windows hierarchy. For more information, see the "Recommended Solution for Windows Forms" topic in[Automating Windows Forms](http://msdn.microsoft.com/library/ms996405.aspx).  
   
- Use the <xref:System.Windows.Forms.Control.InvokeRequired%2A> property to synchronize access to the control from multiple threads. For more information about multithreaded Windows Forms controls, see [How to: Make Thread-Safe Calls to Windows Forms Controls](../Topic/How%20to:%20Make%20Thread-Safe%20Calls%20to%20Windows%20Forms%20Controls.md)  
+ Use the <xref:System.Windows.Forms.Control.InvokeRequired%2A> property to synchronize access to the control from multiple threads. For more information about multithreaded Windows Forms controls, see [How to: Make Thread-Safe Calls to Windows Forms Controls](~/docs/framework/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md)  
   
  ]]></format>
     </remarks>
@@ -2060,7 +2060,7 @@
   
  Because client coordinates are relative to the upper-left corner of the client area of the control, the coordinates of the upper-left corner of the rectangle returned by this property are (0,0). You can use this property to obtain the size and coordinates of the client area of the control for tasks such as drawing on the surface of the control.  
   
- For more information about drawing on controls, see [Rendering a Windows Forms Control](../Topic/Rendering%20a%20Windows%20Forms%20Control.md).  
+ For more information about drawing on controls, see [Rendering a Windows Forms Control](~/docs/framework/winforms/controls/rendering-a-windows-forms-control.md).  
   
    
   
@@ -2109,10 +2109,10 @@
   
  The <xref:System.Drawing.Size.Width%2A?displayProperty=fullName> and <xref:System.Drawing.Size.Height%2A?displayProperty=fullName> properties represent the width and height of the client area of the control. You can use this property to obtain the size of the client area of the control for tasks such as drawing on the surface of the control.  
   
- For more information about drawing on controls, see [Rendering a Windows Forms Control](../Topic/Rendering%20a%20Windows%20Forms%20Control.md).  
+ For more information about drawing on controls, see [Rendering a Windows Forms Control](~/docs/framework/winforms/controls/rendering-a-windows-forms-control.md).  
   
 > [!NOTE]
->  You cannot bind application settings to this property. For more information on application settings, see [Application Settings Overview](../Topic/Application%20Settings%20Overview.md).  
+>  You cannot bind application settings to this property. For more information on application settings, see [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md).  
   
    
   
@@ -3404,9 +3404,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -6348,7 +6348,7 @@ MyControl.Font = New Font(MyControl.Font, _
 > [!NOTE]
 >  An exception might be thrown if the thread that should process the message is no longer active.  
   
- For more information about multithreaded Windows Forms controls, see [How to: Use a Background Thread to Search for Files](../Topic/How%20to:%20Use%20a%20Background%20Thread%20to%20Search%20for%20Files.md) and [How to: Make Thread-Safe Calls to Windows Forms Controls](../Topic/How%20to:%20Make%20Thread-Safe%20Calls%20to%20Windows%20Forms%20Controls.md).  
+ For more information about multithreaded Windows Forms controls, see [How to: Use a Background Thread to Search for Files](~/docs/framework/winforms/controls/how-to-use-a-background-thread-to-search-for-files.md) and [How to: Make Thread-Safe Calls to Windows Forms Controls](~/docs/framework/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md).  
   
  ]]></format>
         </remarks>
@@ -11545,7 +11545,7 @@ MyControl.Font = New Font(MyControl.Font, _
 ## Remarks  
  The <xref:System.Windows.Forms.Control.Paint> event is raised when the control is redrawn. It passes an instance of <xref:System.Windows.Forms.PaintEventArgs> to the method(s) that handles the <xref:System.Windows.Forms.Control.Paint> event.  
   
- When creating a new custom control or an inherited control with a different visual appearance, you must provide code to render the control by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. For more information, see [Overriding the OnPaint Method](../Topic/Overriding%20the%20OnPaint%20Method.md) and [Custom Control Painting and Rendering](../Topic/Custom%20Control%20Painting%20and%20Rendering.md).  
+ When creating a new custom control or an inherited control with a different visual appearance, you must provide code to render the control by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. For more information, see [Overriding the OnPaint Method](~/docs/framework/winforms/controls/overriding-the-onpaint-method.md) and [Custom Control Painting and Rendering](~/docs/framework/winforms/controls/custom-control-painting-and-rendering.md).  
   
  For more information about handling events, see [Handling and Raising Events](../Topic/Handling%20and%20Raising%20Events.md).  
   
@@ -14212,7 +14212,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Control.SetClientSizeCore(System.Int32,System.Int32)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Control.SetClientSizeCore(System.Int32,System.Int32)" /> method so that the <see cref="P:System.Windows.Forms.Control.ClientSize" /> property is adjusted.  
   
- For more information about drawing on controls, see [Rendering a Windows Forms Control](../Topic/Rendering%20a%20Windows%20Forms%20Control.md).</para>
+ For more information about drawing on controls, see [Rendering a Windows Forms Control](~/docs/framework/winforms/controls/rendering-a-windows-forms-control.md).</para>
         </block>
       </Docs>
     </Member>

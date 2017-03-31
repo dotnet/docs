@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.Slider> overrides the metadata of this property and sets its default to 10. <xref:System.Windows.Controls.ProgressBar> overrides the metadata of this property and sets its default to 100. For more information, see [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md).  
+ <xref:System.Windows.Controls.Slider> overrides the metadata of this property and sets its default to 10. <xref:System.Windows.Controls.ProgressBar> overrides the metadata of this property and sets its default to 100. For more information, see [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md).  
   
 <a name="dependencyPropertyInfo_Maximum"></a>   
 ## Dependency Property Information  
@@ -268,7 +268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](../Topic/Dependency%20Property%20Callbacks%20and%20Validation.md).  
+ Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
   
  ]]></format>
         </remarks>
@@ -298,7 +298,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](../Topic/Dependency%20Property%20Callbacks%20and%20Validation.md).  
+ Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
   
  ]]></format>
         </remarks>
@@ -328,7 +328,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](../Topic/Dependency%20Property%20Callbacks%20and%20Validation.md).  
+ Subclasses of the <xref:System.Windows.Controls.Primitives.RangeBase> can use this method to respond when the value property changes instead of overriding the <xref:System.Windows.FrameworkPropertyMetadata> to provide a new <xref:System.Windows.PropertyChangedCallback> function. For more information, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
   
  The <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> method raises the <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged> event. When overriding <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> in a derived class, be sure to call the base class’s <xref:System.Windows.Controls.Primitives.RangeBase.OnValueChanged%2A> method so that registered delegates receive the event.  
   

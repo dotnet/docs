@@ -510,7 +510,7 @@
   
  This method does not block until the operation is complete. To block until the operation is complete, use the <xref:System.Net.Sockets.UdpClient.Receive%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
    
   
@@ -562,7 +562,7 @@
   
  This method does not block until the operation completes. To block until the operation is complete, use one of the <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
    
   
@@ -619,7 +619,7 @@
   
  This method does not block until the operation is complete. To block until the operation is complete, use one of the <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
    
   
@@ -678,7 +678,7 @@
   
  This method does not block until the operation is complete. To block until the operation is complete, use one of the <xref:System.Net.Sockets.UdpClient.Send%2A> method overloads.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
    
   
@@ -1022,9 +1022,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>

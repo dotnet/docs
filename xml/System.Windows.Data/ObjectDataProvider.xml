@@ -23,7 +23,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  <xref:System.Windows.Data.ObjectDataProvider> fails when it does not have permissions to perform reflection on the given type or member. For more information, see Permissions Requirements in [Binding Sources Overview](../Topic/Binding%20Sources%20Overview.md).  
+>  <xref:System.Windows.Data.ObjectDataProvider> fails when it does not have permissions to perform reflection on the given type or member. For more information, see Permissions Requirements in [Binding Sources Overview](~/docs/framework/wpf/data/binding-sources-overview.md).  
   
  There are many ways to create an object to use as a binding source. For example, you can create your object in the resources section of your [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] page, or you can create your object in code and set it as the `DataContext` of your window.  
   
@@ -39,7 +39,7 @@
   
  <xref:System.Windows.Data.ObjectDataProvider> provides a convenient way to create and use objects as binding source objects in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], but it does not replace existing data models.  
   
- If you are implementing your own objects for data binding, see [Binding Sources Overview](../Topic/Binding%20Sources%20Overview.md) for information and recommendations.  
+ If you are implementing your own objects for data binding, see [Binding Sources Overview](~/docs/framework/wpf/data/binding-sources-overview.md) for information and recommendations.  
   
  ]]></format>
     </remarks>
@@ -287,7 +287,7 @@
 <a name="xamlValues_ObjectType"></a>   
 ## XAML Values  
  *myDataType*  
- The data type to create an instance of. Use the [x:Type Markup Extension](../Topic/x:Type%20Markup%20Extension.md) to set a type.  
+ The data type to create an instance of. Use the [x:Type Markup Extension](~/docs/framework/xaml-services/x-type-markup-extension.md) to set a type.  
   
  ]]></format>
         </remarks>

@@ -100,7 +100,7 @@
  If there is no operation in progress, this method does nothing. If a file transfer is in progress, this method terminates the transfer.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -148,10 +148,10 @@
   
  This method does not block while waiting for the stream. To block, call <xref:System.Net.FtpWebRequest.GetRequestStream%2A> in place of this method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -207,9 +207,9 @@
   
  <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> does not block while waiting for the response from the server. To block, call the <xref:System.Net.FtpWebRequest.GetResponse%2A> method in place of <xref:System.Net.FtpWebRequest.BeginGetResponse%2A>.  
   
- For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ For more information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  If a <xref:System.Net.WebException> is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
@@ -596,7 +596,7 @@
  In addition to the exceptions noted in "Exceptions," <xref:System.Net.FtpWebRequest.EndGetRequestStream%2A> rethrows exceptions that were thrown while opening the stream for writing.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -648,7 +648,7 @@
  In addition to the exceptions noted in "Exceptions," <xref:System.Net.FtpWebRequest.EndGetResponse%2A> rethrows exceptions that were thrown while communicating with the server.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -703,7 +703,7 @@
  <xref:System.Net.FtpWebRequest.GetRequestStream%2A> blocks while waiting for the stream. To prevent this, call the <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A> method in place of <xref:System.Net.FtpWebRequest.GetRequestStream%2A>.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -761,7 +761,7 @@
   
  If a <xref:System.Net.WebException> is thrown, use the <xref:System.Net.WebException.Response%2A> and <xref:System.Net.WebException.Status%2A> properties of the exception to determine the response from the server.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
 > [!NOTE]
 >  Multiple calls to <xref:System.Net.FtpWebRequest.GetResponse%2A> return the same response object; the request is not reissued.  
@@ -984,7 +984,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.FtpWebRequest.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with the FTP server. The proxy is set by the system by using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set <xref:System.Net.FtpWebRequest.Proxy%2A> to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=fullName> method. For more information about automatic proxy detection, see [Automatic Proxy Detection](../Topic/Automatic%20Proxy%20Detection.md).  
+ The <xref:System.Net.FtpWebRequest.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with the FTP server. The proxy is set by the system by using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set <xref:System.Net.FtpWebRequest.Proxy%2A> to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A?displayProperty=fullName> method. For more information about automatic proxy detection, see [Automatic Proxy Detection](~/docs/framework/network-programming/automatic-proxy-detection.md).  
   
  You must set <xref:System.Net.FtpWebRequest.Proxy%2A> before writing data to the request's stream or getting the response. Changing <xref:System.Net.FtpWebRequest.Proxy%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
   

@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password. For an example demonstrating how to use security demands, see [Code Access Security and ADO.NET](../Topic/Code%20Access%20Security%20and%20ADO.NET.md).  
+ The <xref:System.Security.Permissions.PermissionState> enumeration takes precedence over the <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.Common.DBDataPermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Security.Permissions.PermissionState> to `None` to prevent a user from making a connection using a blank password. For an example demonstrating how to use security demands, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
   
  ]]></format>
         </remarks>

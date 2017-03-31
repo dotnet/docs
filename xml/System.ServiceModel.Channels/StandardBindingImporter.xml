@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Override this class to extend the standard mapping between WSDL and a standard binding. Then attach your custom object to a <xref:System.ServiceModel.Description.WsdlImporter> either programmatically or by using an application configuration file. You can also attach your custom object to the internal <xref:System.ServiceModel.Description.WsdlImporter> used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) using an application configuration file.  
+ Override this class to extend the standard mapping between WSDL and a standard binding. Then attach your custom object to a <xref:System.ServiceModel.Description.WsdlImporter> either programmatically or by using an application configuration file. You can also attach your custom object to the internal <xref:System.ServiceModel.Description.WsdlImporter> used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) using an application configuration file.  
   
  Use the <xref:System.ServiceModel.Channels.StandardBindingImporter.System%23ServiceModel%23Description%23IWsdlImportExtension%23BeforeImport%2A> method to directly modify the metadata that is then imported into standard binding objects.  
   

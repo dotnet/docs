@@ -48,7 +48,7 @@
 ## Examples  
  The following code example shows the syntax for creating and using a <xref:System.Threading.ThreadStart> delegate with an instance method and with a static method.  
   
- For another simple example that demonstrates how to create a <xref:System.Threading.ThreadStart> delegate, see the <xref:System.Threading.Thread.Start?displayProperty=fullName> method overload. For more information about thread creation, see [Creating Threads and Passing Data at Start Time](../Topic/Creating%20Threads%20and%20Passing%20Data%20at%20Start%20Time.md).  
+ For another simple example that demonstrates how to create a <xref:System.Threading.ThreadStart> delegate, see the <xref:System.Threading.Thread.Start?displayProperty=fullName> method overload. For more information about thread creation, see [Creating Threads and Passing Data at Start Time](~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md).  
   
  [!code-cpp[System.Threading.ThreadStart2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ThreadStart2/CPP/source.cpp#1)]
  [!code-csharp[System.Threading.ThreadStart2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ThreadStart2/CS/source.cs#1)]

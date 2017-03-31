@@ -17,7 +17,7 @@
 ## Remarks  
  If a user switches focus off of a Windows Forms control, the control will use <xref:System.Windows.Forms.AutoValidate> to determine how to validate its data. This type of validation is called implicit validation, because it occurs without the application developer having to make an explicit call to <xref:System.Windows.Forms.ContainerControl.Validate%2A> or <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A>.  
   
- The property corresponding to this value will have different defaults based on the type of control. For more information, see [User Input Validation in Windows Forms](../Topic/User%20Input%20Validation%20in%20Windows%20Forms.md).  
+ The property corresponding to this value will have different defaults based on the type of control. For more information, see [User Input Validation in Windows Forms](~/docs/framework/winforms/user-input-validation-in-windows-forms.md).  
   
    
   

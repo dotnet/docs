@@ -28,12 +28,12 @@
   
 <a name="xamlTextUsage_TemplateBindingExtension"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
    
   
 ## Examples  
- The following example shows a <xref:System.Windows.Controls.ControlTemplate> that defines a <xref:System.Windows.Controls.ListBox> that is horizontal and has rounded corners. The `TemplateBinding` indicates that the <xref:System.Windows.Controls.Border.Background%2A> of the <xref:System.Windows.Controls.Border> should be synchronized with the <xref:System.Windows.Controls.Border.Background%2A> value that is set on the <xref:System.Windows.Controls.ListBox>. You use `TemplateBinding` in your <xref:System.Windows.Controls.ControlTemplate> when you want to give the user of your control the control over the values of certain properties. For a discussion of this example, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ The following example shows a <xref:System.Windows.Controls.ControlTemplate> that defines a <xref:System.Windows.Controls.ListBox> that is horizontal and has rounded corners. The `TemplateBinding` indicates that the <xref:System.Windows.Controls.Border.Background%2A> of the <xref:System.Windows.Controls.Border> should be synchronized with the <xref:System.Windows.Controls.Border.Background%2A> value that is set on the <xref:System.Windows.Controls.ListBox>. You use `TemplateBinding` in your <xref:System.Windows.Controls.ControlTemplate> when you want to give the user of your control the control over the values of certain properties. For a discussion of this example, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
  [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]
  [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  
@@ -107,7 +107,7 @@
   
 <a name="xamlTextUsage_Converter"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
  ]]></format>
         </remarks>
@@ -140,7 +140,7 @@
   
 <a name="xamlTextUsage_ConverterParameter"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
  ]]></format>
         </remarks>
@@ -173,7 +173,7 @@
   
 <a name="xamlTextUsage_Property"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
  ]]></format>
         </remarks>

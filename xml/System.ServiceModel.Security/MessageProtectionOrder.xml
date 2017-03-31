@@ -25,7 +25,7 @@
  However, using the default has performance implications. In effect, there is a tradeoff of performance for increased security. Encrypting the signature can decrease performance between 10 percent and 40 percent. If the data content of the message is of low value, and performance throughput is more significant, use SignBeforeEncrypt. With this setting, the signature digest is sent in clear text, and thus the message is more vulnerable to guess-and-verify attacks on low entropy.  
   
 ## Custom Bindings Only  
- To change the `MessageProtectionOrder` property requires the creation of a custom security binding. For more information about creating custom bindings, see [Creating User-Defined Bindings](../Topic/Creating%20User-Defined%20Bindings.md). For more information about creating a custom binding for a specific authentication mode, see [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../Topic/How%20to:%20Create%20a%20SecurityBindingElement%20for%20a%20Specified%20Authentication%20Mode.md).  
+ To change the `MessageProtectionOrder` property requires the creation of a custom security binding. For more information about creating custom bindings, see [Creating User-Defined Bindings](~/docs/framework/wcf/extending/creating-user-defined-bindings.md). For more information about creating a custom binding for a specific authentication mode, see [How to: Create a SecurityBindingElement for a Specified Authentication Mode](~/docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md).  
   
    
   

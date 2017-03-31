@@ -1416,7 +1416,7 @@
 ## Remarks  
  This value is always set during construction. The constructors that are implemented by <xref:System.Xaml.XamlMember> typically throw an exception if an initial name is not specified; therefore, do not expect this property to be `null` or an empty string, if you are using default .NET Framework XAML Services implementations.  
   
- [XamlName Grammar](../Topic/XamlName%20Grammar.md) and naming rules for CLR type and members are not an exact intersect. It is possible to declare a member name that is legal under CLR but not valid under XAML naming. You should avoid this situation if possible.  
+ [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md) and naming rules for CLR type and members are not an exact intersect. It is possible to declare a member name that is legal under CLR but not valid under XAML naming. You should avoid this situation if possible.  
   
  ]]></format>
         </remarks>

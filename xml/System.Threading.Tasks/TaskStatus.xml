@@ -62,7 +62,7 @@
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The task acknowledged cancellation by throwing an OperationCanceledException with its own CancellationToken while the token was in signaled state, or the task's CancellationToken was already signaled before the task started executing. For more information, see [Task Cancellation](../Topic/Task%20Cancellation.md).</summary>
+        <summary>The task acknowledged cancellation by throwing an OperationCanceledException with its own CancellationToken while the token was in signaled state, or the task's CancellationToken was already signaled before the task started executing. For more information, see [Task Cancellation](~/docs/standard/parallel-programming/task-cancellation.md).</summary>
       </Docs>
     </Member>
     <Member MemberName="Created">

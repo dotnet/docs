@@ -46,15 +46,15 @@ Example of a TextBox
   
  Scrollbars are not visible on a <xref:System.Windows.Controls.TextBox> by default. To make scrollbars visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> and <xref:System.Windows.Controls.Primitives.TextBoxBase.HorizontalScrollBarVisibility%2A> properties to <xref:System.Windows.Controls.ScrollBarVisibility> or <xref:System.Windows.Controls.ScrollBarVisibility>.  
   
- Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [How to: Detect When Text in a TextBox Has Changed](../Topic/How%20to:%20Detect%20When%20Text%20in%20a%20TextBox%20Has%20Changed.md) for an example.  
+ Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [How to: Detect When Text in a TextBox Has Changed](~/docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md) for an example.  
   
 ## Customizing the TextBox Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.TextBox> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TextBox>, see [TextBox Styles and Templates](../Topic/TextBox%20Styles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.TextBox> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.TextBox>, see [TextBox Styles and Templates](~/docs/framework/wpf/controls/textbox-styles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.TextBox> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.TextBox> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
    
   
@@ -1244,7 +1244,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline. For more information about text decorations, see [How to: Create a Text Decoration](../Topic/How%20to:%20Create%20a%20Text%20Decoration.md).  
+ A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline. For more information about text decorations, see [How to: Create a Text Decoration](~/docs/framework/wpf/advanced/how-to-create-a-text-decoration.md).  
   
 <a name="dependencyPropertyInfo_TextDecorations"></a>   
 ## Dependency Property Information  
@@ -1407,7 +1407,7 @@ tbSettingText.Text = "Initial text contents of the TextBox."
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Documents.FlowDocument.Typography%2A> property is applicable only to [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts. A typography variant has no effect on fonts that do not support the variant. For more information about this topic, see [Typography in WPF](../Topic/Typography%20in%20WPF.md).  
+ The <xref:System.Windows.Documents.FlowDocument.Typography%2A> property is applicable only to [!INCLUDE[TLA#tla_opentype](~/includes/tlasharptla-opentype-md.md)] fonts. A typography variant has no effect on fonts that do not support the variant. For more information about this topic, see [Typography in WPF](~/docs/framework/wpf/advanced/typography-in-wpf.md).  
   
    
   

@@ -345,7 +345,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.CheckBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -522,7 +522,7 @@
 > [!NOTE]
 >  A <xref:System.Web.UI.WebControls.CheckBox> control must persist some values between posts to the server for this event to work correctly. Be sure that view state is enabled for this control.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md)  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md)  
   
  The <xref:System.Web.UI.WebControls.CheckBox.OnCheckedChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -758,7 +758,7 @@
  Use this property to specify the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control. This property can also be used to programmatically get the text label associated with the <xref:System.Web.UI.WebControls.CheckBox> control.  
   
 > [!CAUTION]
->  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](../Topic/ASP.NET%20Globalization%20and%20Localization.md).  
   

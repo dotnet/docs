@@ -51,7 +51,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` exposes an <xref:System.Collections.IList> for data binding by implementing the <xref:System.ComponentModel.IListSource.GetList%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](../Topic/How%20to:%20Implement%20the%20IListSource%20Interface.md).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` exposes an <xref:System.Collections.IList> for data binding by implementing the <xref:System.ComponentModel.IListSource.GetList%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](~/docs/framework/winforms/how-to-implement-the-ilistsource-interface.md).  
   
  [!code-csharp[System.ComponentModel.IListSource#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.IListSource/CS/EmployeeListSource.cs#1)]
  [!code-vb[System.ComponentModel.IListSource#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IListSource/VB/EmployeeListSource.vb#1)]  
@@ -94,7 +94,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` indicates that it does not contain an <xref:System.Collections.IList> for data binding by returning `false` from the <xref:System.ComponentModel.IListSource.ContainsListCollection%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](../Topic/How%20to:%20Implement%20the%20IListSource%20Interface.md).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` indicates that it does not contain an <xref:System.Collections.IList> for data binding by returning `false` from the <xref:System.ComponentModel.IListSource.ContainsListCollection%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](~/docs/framework/winforms/how-to-implement-the-ilistsource-interface.md).  
   
  [!code-csharp[System.ComponentModel.IListSource#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.IListSource/CS/EmployeeListSource.cs#3)]
  [!code-vb[System.ComponentModel.IListSource#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IListSource/VB/EmployeeListSource.vb#3)]  
@@ -132,7 +132,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` exposes an <xref:System.Collections.IList> for data binding by implementing the <xref:System.ComponentModel.IListSource.GetList%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](../Topic/How%20to:%20Implement%20the%20IListSource%20Interface.md).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IListSource> interface. A component named `EmployeeListSource` exposes an <xref:System.Collections.IList> for data binding by implementing the <xref:System.ComponentModel.IListSource.GetList%2A> method. For a full code listing, see [How to: Implement the IListSource Interface](~/docs/framework/winforms/how-to-implement-the-ilistsource-interface.md).  
   
  [!code-csharp[System.ComponentModel.IListSource#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.IListSource/CS/EmployeeListSource.cs#4)]
  [!code-vb[System.ComponentModel.IListSource#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IListSource/VB/EmployeeListSource.vb#4)]  

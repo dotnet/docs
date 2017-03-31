@@ -25,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you are using a class that implements the [Event-based Asynchronous Pattern Overview](../Topic/Event-based%20Asynchronous%20Pattern%20Overview.md), the class will provide a *MethodName*`Completed` event. If you add an instance of the <xref:System.ComponentModel.AsyncCompletedEventHandler?displayProperty=fullName> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter of the corresponding event-handler method.  
+ If you are using a class that implements the [Event-based Asynchronous Pattern Overview](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md), the class will provide a *MethodName*`Completed` event. If you add an instance of the <xref:System.ComponentModel.AsyncCompletedEventHandler?displayProperty=fullName> delegate to the event, you will receive information about the outcome of asynchronous operations in the <xref:System.ComponentModel.AsyncCompletedEventArgs> parameter of the corresponding event-handler method.  
   
  The client application's event-handler delegate can check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Cancelled%2A> property to determine if the asynchronous task was cancelled.  
   

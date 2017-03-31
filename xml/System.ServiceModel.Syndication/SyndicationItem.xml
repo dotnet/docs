@@ -290,7 +290,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationItem> instance. When serialized for Atom 1.0, the custom attribute is written to an `<entry>` element. When serialized for RSS 2.0, the custom attribute is written to an `<item>` element. For a complete example that shows how to add an attribute extension, see the [Loosely-Typed Extensions](../Topic/Loosely-Typed%20Extensions%20Sample.md) sample.  
+ The Syndication object model allows you to add custom attributes to a <xref:System.ServiceModel.Syndication.SyndicationItem> instance. When serialized for Atom 1.0, the custom attribute is written to an `<entry>` element. When serialized for RSS 2.0, the custom attribute is written to an `<item>` element. For a complete example that shows how to add an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
   
    
   
@@ -777,7 +777,7 @@
 <mg:MyElement xmlns:mg="http://myserver/elements" />  
 ```  
   
- For a complete example that shows how to add element extensions, see the [Loosely-Typed Extensions](../Topic/Loosely-Typed%20Extensions%20Sample.md) sample.  
+ For a complete example that shows how to add element extensions, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
   
    
   

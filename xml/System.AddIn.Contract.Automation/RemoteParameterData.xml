@@ -102,7 +102,7 @@
   
  The value of this field is always `false` if this <xref:System.AddIn.Contract.Automation.RemoteParameterData> describes a parameter of a method provided by a COM object.  
   
- Parameters that can have a variable number of arguments are specified by the `params` (for Visual C#) and `ParamArray` (for Visual Basic) keywords. For more information, see [params](../Topic/params%20\(C%23%20Reference\).md) and [ParamArray](../Topic/ParamArray%20\(Visual%20Basic\).md).  
+ Parameters that can have a variable number of arguments are specified by the `params` (for Visual C#) and `ParamArray` (for Visual Basic) keywords. For more information, see [params](~/docs/csharp/language-reference/keywords/params.md) and [ParamArray](~/docs/visual-basic/language-reference/modifiers/paramarray.md).  
   
  ]]></format>
         </remarks>

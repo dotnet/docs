@@ -86,7 +86,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the requested maximum width.</summary>
-        <value>The requested maximum width. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The requested maximum width. The registered default is <see cref="F:System.Double.PositiveInfinity" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -135,7 +135,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the requested minimum width.</summary>
-        <value>The requested minimum width. The registered default is 0.0. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The requested minimum width. The registered default is 0.0. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -184,7 +184,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the requested weight.</summary>
-        <value>The requested weight. The registered default is 0.0. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The requested weight. The registered default is 0.0. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

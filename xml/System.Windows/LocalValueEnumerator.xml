@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A *local value* is a value for a dependency property that was set directly on a dependency property, by calling <xref:System.Windows.DependencyObject.SetValue%2A>, or more typically by using the set accessor of a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrapper that calls <xref:System.Windows.DependencyObject.SetValue%2A> internally. Examples of other property system determinants that are not local values are values set through styles, or dependency property default values. For details, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).  
+ A *local value* is a value for a dependency property that was set directly on a dependency property, by calling <xref:System.Windows.DependencyObject.SetValue%2A>, or more typically by using the set accessor of a [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] property wrapper that calls <xref:System.Windows.DependencyObject.SetValue%2A> internally. Examples of other property system determinants that are not local values are values set through styles, or dependency property default values. For details, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
   
  A <xref:System.Windows.LocalValueEnumerator> is returned by the <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> method and implements the <xref:System.Collections.IEnumerator> interface. A public <xref:System.Windows.LocalValueEnumerator> constructor does not exist; therefore, you must call <xref:System.Windows.DependencyObject.GetLocalValueEnumerator%2A> to obtain an instance of this class.  
   

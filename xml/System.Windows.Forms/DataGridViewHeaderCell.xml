@@ -354,7 +354,7 @@
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseDown%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -388,7 +388,7 @@
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseEnterUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseEnter%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -425,7 +425,7 @@
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseLeave%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -459,7 +459,7 @@
   
  <xref:System.Windows.Forms.DataGridViewHeaderCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewHeaderCell.OnMouseUp%2A> has the effect of unsharing the row `rowIndex`. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>

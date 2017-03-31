@@ -52,7 +52,7 @@
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -109,7 +109,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -161,7 +161,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -222,7 +222,7 @@
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=fullName> is called.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -280,7 +280,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -333,7 +333,7 @@
   
  The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=fullName> method for more information.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -391,7 +391,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -457,7 +457,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -515,7 +515,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -586,7 +586,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -654,7 +654,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -767,7 +767,7 @@
 ## Remarks  
  You use this property to access the underlying stream. The <xref:System.IO.StreamReader> class buffers input from the underlying stream when you call one of the <xref:System.IO.StreamReader.Read%2A> methods. If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary. The <xref:System.IO.StreamReader> constructors that have the `detectEncodingFromByteOrderMarks` parameter can change the encoding the first time you read from the <xref:System.IO.StreamReader> object.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -839,7 +839,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -886,7 +886,7 @@
 ## Remarks  
  Use the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method to reset the internal buffer for the <xref:System.IO.StreamReader> object. You need to call this method only when the position of the internal buffer and the <xref:System.IO.StreamReader.BaseStream%2A> do not match. These positions can become mismatched when you read data into the buffer and then seek a new position in the underlying stream. This method slows performance and should be used only when absolutely necessary, such as when you want to read a portion of the contents of a <xref:System.IO.StreamReader> object more than once.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -943,9 +943,9 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>Dispose can be called multiple times by other objects. When overriding <see cref="M:System.IO.StreamReader.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to Dispose[cref,...]. For more information about how to implement <see cref="M:System.IO.StreamReader.Dispose(System.Boolean)" /> see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+          <para>Dispose can be called multiple times by other objects. When overriding <see cref="M:System.IO.StreamReader.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to Dispose[cref,...]. For more information about how to implement <see cref="M:System.IO.StreamReader.Dispose(System.Boolean)" /> see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>
@@ -1011,7 +1011,7 @@
 ## Remarks  
  When read methods are invoked on <xref:System.IO.StreamReader.Null>, zero is always returned. When <xref:System.IO.StreamReader.ReadLine%2A> is invoked on <xref:System.IO.StreamReader.Null>, `null` is returned.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1103,7 +1103,7 @@
   
  This method returns an integer so that it can return -1 if the end of the stream has been reached. If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1171,7 +1171,7 @@
   
  This method returns after either the number of characters specified by the `count` parameter are read, or the end of the file is reached. <xref:System.IO.TextReader.ReadBlock%2A> is a blocking version of <xref:System.IO.StreamReader.Read%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1402,7 +1402,7 @@
   
  If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying <xref:System.IO.Stream> object is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StreamReader.ReadLine%2A> buffer are discarded. If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1508,7 +1508,7 @@
   
  If the current method throws an <xref:System.OutOfMemoryException>, the reader's position in the underlying <xref:System.IO.Stream> object is advanced by the number of characters the method was able to read, but the characters already read into the internal <xref:System.IO.StreamReader.ReadLine%2A> buffer are discarded. If you manipulate the position of the underlying stream after reading data into the buffer, the position of the underlying stream might not match the position of the internal buffer. To reset the internal buffer, call the <xref:System.IO.StreamReader.DiscardBufferedData%2A> method; however, this method slows performance and should be called only when absolutely necessary.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   

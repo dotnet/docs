@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides common language runtime (CLR) methods that expose conceptual model canonical functions in LINQ to Entities queries. For information about canonical functions, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+    <summary>Provides common language runtime (CLR) methods that expose conceptual model canonical functions in LINQ to Entities queries. For information about canonical functions, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,7 +39,7 @@
       <Docs>
         <param name="dateValue">A valid date.</param>
         <param name="addValue">The number of days to add to <c>dateValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -77,7 +77,7 @@
       <Docs>
         <param name="dateValue">A valid date time offset.</param>
         <param name="addValue">The number of days to add to <c>dateValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddDays" /> function. For information about the canonical <see langword="AddDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -115,7 +115,7 @@
       <Docs>
         <param name="timeValue">A valid date.</param>
         <param name="addValue">The number of hours to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -153,7 +153,7 @@
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
         <param name="addValue">The number of hours to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -191,7 +191,7 @@
       <Docs>
         <param name="timeValue">A valid time span.</param>
         <param name="addValue">The number of hours to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -229,7 +229,7 @@
       <Docs>
         <param name="timeValue">A valid date.</param>
         <param name="addValue">The number of microseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -267,7 +267,7 @@
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
         <param name="addValue">The number of microseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -305,7 +305,7 @@
       <Docs>
         <param name="timeValue">A valid time span.</param>
         <param name="addValue">The number of microseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -343,7 +343,7 @@
       <Docs>
         <param name="timeValue">A valid date.</param>
         <param name="addValue">The number of milliseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -381,7 +381,7 @@
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
         <param name="addValue">The number of milliseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -419,7 +419,7 @@
       <Docs>
         <param name="timeValue">A valid time span.</param>
         <param name="addValue">The number of milliseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -457,7 +457,7 @@
       <Docs>
         <param name="timeValue">A valid date.</param>
         <param name="addValue">The number of minutes to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -495,7 +495,7 @@
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
         <param name="addValue">The number of minutes to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -533,7 +533,7 @@
       <Docs>
         <param name="timeValue">A valid time span.</param>
         <param name="addValue">The number of minutes to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -571,7 +571,7 @@
       <Docs>
         <param name="dateValue">A valid date.</param>
         <param name="addValue">The number of months to add to <c>dateValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -609,7 +609,7 @@
       <Docs>
         <param name="dateValue">A valid date time offset.</param>
         <param name="addValue">The number of months to add to <c>dateValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -647,7 +647,7 @@
       <Docs>
         <param name="timeValue">A valid date.</param>
         <param name="addValue">The number of nanoseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -685,7 +685,7 @@
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
         <param name="addValue">The number of nanoseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -723,7 +723,7 @@
       <Docs>
         <param name="timeValue">A valid time span.</param>
         <param name="addValue">The number of nanoseconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -761,7 +761,7 @@
       <Docs>
         <param name="timeValue">A valid date.</param>
         <param name="addValue">The number of seconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -799,7 +799,7 @@
       <Docs>
         <param name="timeValue">A valid date time offset.</param>
         <param name="addValue">The number of seconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -837,7 +837,7 @@
       <Docs>
         <param name="timeValue">A valid time span.</param>
         <param name="addValue">The number of seconds to add to <c>timeValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="timeValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -875,7 +875,7 @@
       <Docs>
         <param name="dateValue">A valid date.</param>
         <param name="addValue">The number of years to add to <c>dateValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -913,7 +913,7 @@
       <Docs>
         <param name="dateValue">A valid date time offset.</param>
         <param name="addValue">The number of years to add to <c>dateValue</c>.</param>
-        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The <paramref name="dateValue" /> incremented by <paramref name="addValue" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1003,7 +1003,7 @@
         <param name="hour">The hour part of the new date.</param>
         <param name="minute">The minutes part of the new date.</param>
         <param name="second">The seconds part of the new date. Note that you can specify fractions of a second with this parameter.</param>
-        <summary>Invokes the canonical <see langword="CreateDateTime" /> function. For information about the canonical <see langword="CreateDateTime" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="CreateDateTime" /> function. For information about the canonical <see langword="CreateDateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The new date.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1051,7 +1051,7 @@
         <param name="minute">The minute part of the new date.</param>
         <param name="second">The seconds part of the new date. Note that you can specify fractions of a second with this parameter.</param>
         <param name="timeZoneOffset">The time zone offset part of the new date.</param>
-        <summary>Invokes the canonical <see langword="CreateDateTimeOffset" /> function. For information about the canonical <see langword="CreateDateTimeOffset" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="CreateDateTimeOffset" /> function. For information about the canonical <see langword="CreateDateTimeOffset" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The new date.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1091,7 +1091,7 @@
         <param name="hour">The hours part of the new time span.</param>
         <param name="minute">The minutes part of the new time span.</param>
         <param name="second">The seconds part of the new time span. Note that you can specify fractions of a second with this parameter.</param>
-        <summary>Invokes the canonical <see langword="CreateTime" /> function. For information about the canonical <see langword="CreateTime" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="CreateTime" /> function. For information about the canonical <see langword="CreateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The new time span.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1129,7 +1129,7 @@
       <Docs>
         <param name="dateValue1">A valid date.</param>
         <param name="dateValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of days between <paramref name="dateValue1" /> and <paramref name="dateValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1167,7 +1167,7 @@
       <Docs>
         <param name="dateValue1">A valid date time offset.</param>
         <param name="dateValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of days between <paramref name="dateValue1" /> and <paramref name="dateValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1205,7 +1205,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of hours between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1243,7 +1243,7 @@
       <Docs>
         <param name="timeValue1">A valid date time offset.</param>
         <param name="timeValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of hours between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1281,7 +1281,7 @@
       <Docs>
         <param name="timeValue1">A valid time span.</param>
         <param name="timeValue2">A valid time span.</param>
-        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of hours between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1319,7 +1319,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of microseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1357,7 +1357,7 @@
       <Docs>
         <param name="timeValue1">A valid date time offset.</param>
         <param name="timeValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of microseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1395,7 +1395,7 @@
       <Docs>
         <param name="timeValue1">A valid time span.</param>
         <param name="timeValue2">A valid time span.</param>
-        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of microseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1433,7 +1433,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of milliseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1471,7 +1471,7 @@
       <Docs>
         <param name="timeValue1">A valid date time offset.</param>
         <param name="timeValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of milliseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1509,7 +1509,7 @@
       <Docs>
         <param name="timeValue1">A valid time span.</param>
         <param name="timeValue2">A valid time span.</param>
-        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of milliseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1547,7 +1547,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of minutes between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1585,7 +1585,7 @@
       <Docs>
         <param name="timeValue1">A valid date time offset.</param>
         <param name="timeValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of minutes between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1623,7 +1623,7 @@
       <Docs>
         <param name="timeValue1">A valid time span.</param>
         <param name="timeValue2">A valid time span.</param>
-        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of minutes between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1661,7 +1661,7 @@
       <Docs>
         <param name="dateValue1">A valid date.</param>
         <param name="dateValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of months between <paramref name="dateValue1" /> and <paramref name="dateValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1699,7 +1699,7 @@
       <Docs>
         <param name="dateValue1">A valid date time offset.</param>
         <param name="dateValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of months between <paramref name="dateValue1" /> and <paramref name="dateValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1737,7 +1737,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of nanoseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1775,7 +1775,7 @@
       <Docs>
         <param name="timeValue1">A valid date time offset.</param>
         <param name="timeValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of nanoseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1813,7 +1813,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of nanoseconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1851,7 +1851,7 @@
       <Docs>
         <param name="timeValue1">A valid date.</param>
         <param name="timeValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of seconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1889,7 +1889,7 @@
       <Docs>
         <param name="timeValue1">A valid date time offset.</param>
         <param name="timeValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of seconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1927,7 +1927,7 @@
       <Docs>
         <param name="timeValue1">A valid time span.</param>
         <param name="timeValue2">A valid time span.</param>
-        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of seconds between <paramref name="timeValue1" /> and <paramref name="timeValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1965,7 +1965,7 @@
       <Docs>
         <param name="dateValue1">A valid date.</param>
         <param name="dateValue2">A valid date.</param>
-        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of years between <paramref name="dateValue1" /> and <paramref name="dateValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2003,7 +2003,7 @@
       <Docs>
         <param name="dateValue1">A valid date time offset.</param>
         <param name="dateValue2">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of years between <paramref name="dateValue1" /> and <paramref name="dateValue2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2039,7 +2039,7 @@
       </Parameters>
       <Docs>
         <param name="dateTimeOffsetArgument">A valid date time offset.</param>
-        <summary>Invokes the canonical <see langword="GetTotalOffsetMinutes" /> function. For information about the canonical <see langword="GetTotalOffsetMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="GetTotalOffsetMinutes" /> function. For information about the canonical <see langword="GetTotalOffsetMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The number of minutes that the <paramref name="dateTimeOffsetArgument" /> is offset from GMT. This is generally between +780 and -780 (+ or - 13 hrs).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2077,7 +2077,7 @@
       <Docs>
         <param name="stringArgument">A valid string expression.</param>
         <param name="length">The number of characters to return.</param>
-        <summary>Invokes the canonical <see langword="Left" /> function. For information about the canonical <see langword="Left" /> function, see [String Canonical Functions](../Topic/String%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Left" /> function. For information about the canonical <see langword="Left" /> function, see [String Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/string-canonical-functions.md).</summary>
         <returns>The leftmost <paramref name="length" /> number of characters of <paramref name="stringArgument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2113,7 +2113,7 @@
       </Parameters>
       <Docs>
         <param name="stringArgument">A valid string.</param>
-        <summary>Invokes the canonical <see langword="Reverse" /> function. For information about the canonical <see langword="Reverse" /> function, see [String Canonical Functions](../Topic/String%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Reverse" /> function. For information about the canonical <see langword="Reverse" /> function, see [String Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/string-canonical-functions.md).</summary>
         <returns>The input string with the order of the characters reversed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2151,7 +2151,7 @@
       <Docs>
         <param name="stringArgument">A valid string expression.</param>
         <param name="length">The number of characters to return.</param>
-        <summary>Invokes the canonical <see langword="Right" /> function. For information about the canonical <see langword="Right" /> function, see [String Canonical Functions](../Topic/String%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Right" /> function. For information about the canonical <see langword="Right" /> function, see [String Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/string-canonical-functions.md).</summary>
         <returns>The rightmost <paramref name="length" /> number of characters of <paramref name="stringArgument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2187,7 +2187,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2221,7 +2221,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2255,7 +2255,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2289,7 +2289,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2323,7 +2323,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2357,7 +2357,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2391,7 +2391,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2425,7 +2425,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2459,7 +2459,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2493,7 +2493,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2527,7 +2527,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2561,7 +2561,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2595,7 +2595,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2629,7 +2629,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2663,7 +2663,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2697,7 +2697,7 @@
       </Parameters>
       <Docs>
         <param name="collection">A set of numeric values.</param>
-        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical standard deviation of the population in the input collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2733,7 +2733,7 @@
       <Docs>
         <param name="value">The number to truncate.</param>
         <param name="digits">The length or precision to truncate to.</param>
-        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see[Math Canonical Functions](../Topic/Math%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see[Math Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/math-canonical-functions.md).</summary>
         <returns>
           <paramref name="value" /> truncated to the length or precision specified by <paramref name="digits" />.</returns>
         <remarks>
@@ -2772,7 +2772,7 @@
       <Docs>
         <param name="value">The number to truncate.</param>
         <param name="digits">The length or precision to truncate to.</param>
-        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see[Math Canonical Functions](../Topic/Math%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see[Math Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/math-canonical-functions.md).</summary>
         <returns>
           <paramref name="value" /> truncated to the length or precision specified by <paramref name="digits" />.</returns>
         <remarks>
@@ -2809,7 +2809,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">The date to truncate.</param>
-        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The input date with the time portion cleared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2845,7 +2845,7 @@
       </Parameters>
       <Docs>
         <param name="dateValue">The date time offset to truncate.</param>
-        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <returns>The input date with the time portion cleared.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2881,7 +2881,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2915,7 +2915,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2949,7 +2949,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2983,7 +2983,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3017,7 +3017,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3051,7 +3051,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3085,7 +3085,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3119,7 +3119,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of all values in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3153,7 +3153,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3187,7 +3187,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3221,7 +3221,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3255,7 +3255,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specifed collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3289,7 +3289,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3323,7 +3323,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3357,7 +3357,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3391,7 +3391,7 @@
       </Parameters>
       <Docs>
         <param name="collection">The set of values for which the variance will be calculated.</param>
-        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <returns>The statistical variance of the population in the specified collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3409,7 +3409,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffNanoseconds" /> function. For information about the canonical <see langword="DiffNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3428,7 +3428,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="TruncateTime" /> function. For information about the canonical <see langword="TruncateTime" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3447,7 +3447,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Var" /> function. For information about the canonical <see langword="Var" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3464,7 +3464,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffHours" /> function. For information about the canonical <see langword="DiffHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3483,7 +3483,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see [Math Canonical Functions](../Topic/Math%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="Truncate" /> function. For information about the canonical <see langword="Truncate" /> function, see [Math Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/math-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3502,7 +3502,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffSeconds" /> function. For information about the canonical <see langword="DiffSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3521,7 +3521,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMicroseconds" /> function. For information about the canonical <see langword="AddMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3540,7 +3540,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddYears" /> function. For information about the canonical <see langword="AddYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3559,7 +3559,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMinutes" /> function. For information about the canonical <see langword="AddMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3578,7 +3578,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMicroseconds" /> function. For information about the canonical <see langword="DiffMicroseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3597,7 +3597,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddHours" /> function. For information about the canonical <see langword="AddHours" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3616,7 +3616,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffYears" /> function. For information about the canonical <see langword="DiffYears" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3635,7 +3635,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMilliseconds" /> function. For information about the canonical <see langword="DiffMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3654,7 +3654,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="StDevP" /> function, which returns the statistical standard deviation for a population. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDevP" /> function, which returns the statistical standard deviation for a population. For information about the canonical <see langword="StDevP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3671,7 +3671,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMonths" /> function. For information about the canonical <see langword="DiffMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3690,7 +3690,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMilliseconds" /> function. For information about the canonical <see langword="AddMilliseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3709,7 +3709,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddSeconds" /> function. For information about the canonical <see langword="AddSeconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3728,7 +3728,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffMinutes" /> function. For information about the canonical <see langword="DiffMinutes" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3747,7 +3747,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="VarP" /> function, which returns the statistical variance over a population. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="VarP" /> function, which returns the statistical variance over a population. For information about the canonical <see langword="VarP" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3764,7 +3764,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddMonths" /> function. For information about the canonical <see langword="AddMonths" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3783,7 +3783,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="DiffDays" /> function. For information about the canonical <see langword="DiffDays" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3802,7 +3802,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](../Topic/Date%20and%20Time%20Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="AddNanoseconds" /> function. For information about the canonical <see langword="AddNanoseconds" /> function, see [Date and Time Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/date-and-time-canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3821,7 +3821,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](../Topic/Canonical%20Functions.md).</summary>
+        <summary>Invokes the canonical <see langword="StDev" /> function. For information about the canonical <see langword="StDev" /> function, see [Canonical Functions](~/docs/framework/data/adonet/ef/language-reference/canonical-functions.md).</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

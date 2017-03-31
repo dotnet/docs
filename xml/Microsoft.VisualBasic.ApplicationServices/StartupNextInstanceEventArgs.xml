@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs> contains the command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.  
   
@@ -50,7 +50,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs> contains the command-line arguments of the subsequent application instance and indicates whether the first application instance should be brought to the foreground upon exiting the exception handler.  
   
@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Visual Basic Application Model checks the value of this property after running the handlers of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event. If the <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground%2A> property is `True`, the first application instance is brought to the foreground. Otherwise, the first application instance remains where it was. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ The Visual Basic Application Model checks the value of this property after running the handlers of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event. If the <xref:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground%2A> property is `True`, the first application instance is brought to the foreground. Otherwise, the first application instance remains where it was. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  ]]></format>
         </remarks>
@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event occurs when a subsequent instance of a single-instance application starts, using the Visual Basic Application Model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  ]]></format>
         </remarks>

@@ -27,7 +27,7 @@
  The lifetime service associates a lease with each remotely activated object. When the lease expires, the object is removed.  
   
 > [!NOTE]
->  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](../Topic/Link%20Demands.md) for more information.  
+>  This class makes a link demand. A SecurityException is thrown if the immediate caller does not have infrastructure permission. See [Link Demands](~/docs/framework/misc/link-demands.md) for more information.  
   
    
   

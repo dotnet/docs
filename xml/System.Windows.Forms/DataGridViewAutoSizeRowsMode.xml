@@ -21,12 +21,12 @@
   
  This enumeration is used by the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> property and <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> method.  
   
- For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about sizing modes, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example sets rows to automatically resize their height whenever cell contents change. The new row height is determined from the contents of all rows and columns. This code example is part of a larger example provided in [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](../Topic/How%20to:%20Automatically%20Resize%20Cells%20When%20Content%20Changes%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example sets rows to automatically resize their height whenever cell contents change. The new row height is determined from the contents of all rows and columns. This code example is part of a larger example provided in [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/automatically-resize-cells-when-content-changes-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#9)]
  [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#9)]

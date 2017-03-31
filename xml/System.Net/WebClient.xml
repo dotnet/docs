@@ -368,7 +368,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -424,7 +424,7 @@
   
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
- **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -469,7 +469,7 @@
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -521,7 +521,7 @@
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -619,7 +619,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  The following code example requests data from a server and displays the data returned. It assumes that `remoteUri` contains a valid URI for the requested data.  
   
@@ -676,7 +676,7 @@
   
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
- **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -724,7 +724,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When using this method in a middle tier application, such as an ASP.NET page, you will receive an error if the account under which the application executes does not have permission to access the file.  
   
@@ -791,7 +791,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When using this method in a middle tier application, such as an ASP.NET page, you will receive an error if the account under which the application executes does not have permission to access the file.  
   
@@ -859,7 +859,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When using this method in an ASP.NET page, you will receive an error if the account that the page executes under does not have permission to access the local file.  
   
@@ -920,7 +920,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When using this method in an ASP.NET page, you will receive an error if the account that the page executes under does not have permission to access the local file.  
   
@@ -1029,7 +1029,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When using this method in an ASP.NET page, you will receive an error if the account that the page executes under does not have permission to access the local file.  
   
@@ -1096,7 +1096,7 @@
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  When using this method in an ASP.NET page, you will receive an error if the account that the page executes under does not have permission to access the local file.  
   
@@ -1217,7 +1217,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -1274,7 +1274,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1325,7 +1325,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1377,7 +1377,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1476,7 +1476,7 @@ internal class MyWebClient:WebClient{
   
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -1533,7 +1533,7 @@ internal class MyWebClient:WebClient{
   
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2407,7 +2407,7 @@ internal class MyWebClient:WebClient{
 >  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2465,7 +2465,7 @@ internal class MyWebClient:WebClient{
 > [!NOTE]
 >  You must call <xref:System.IO.Stream.Close%2A?displayProperty=fullName> when finished with the <xref:System.IO.Stream> to avoid running out of system resources.  
   
- **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ **Note** This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2518,7 +2518,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2577,7 +2577,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2684,7 +2684,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2749,7 +2749,7 @@ internal class MyWebClient:WebClient{
  This method uses the RETR command to download an FTP resource. For an HTTP resource, the GET method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2800,7 +2800,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2856,7 +2856,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -2905,7 +2905,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not specify an absolute address, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -2961,7 +2961,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3009,7 +3009,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3052,7 +3052,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3101,7 +3101,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3203,7 +3203,7 @@ internal class MyWebClient:WebClient{
   
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3263,7 +3263,7 @@ internal class MyWebClient:WebClient{
   
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3327,7 +3327,7 @@ internal class MyWebClient:WebClient{
   
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3391,7 +3391,7 @@ internal class MyWebClient:WebClient{
   
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
- This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+ This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3429,7 +3429,7 @@ internal class MyWebClient:WebClient{
 ## Remarks  
  The <xref:System.Net.WebClient.Proxy%2A> property identifies the <xref:System.Net.IWebProxy> instance that communicates with remote servers on behalf of this <xref:System.Net.WebClient> object. The proxy is set by the system using configuration files and the Internet Explorer Local Area Network settings. To specify that no proxy should be used, set the <xref:System.Net.WebClient.Proxy%2A> property to the proxy instance returned by the <xref:System.Net.GlobalProxySelection.GetEmptyWebProxy%2A> method.  
   
- For information on automatic proxy detection, see [Automatic Proxy Detection](../Topic/Automatic%20Proxy%20Detection.md).  
+ For information on automatic proxy detection, see [Automatic Proxy Detection](~/docs/framework/network-programming/automatic-proxy-detection.md).  
   
  ]]></format>
         </remarks>
@@ -3555,7 +3555,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3623,7 +3623,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3684,7 +3684,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -3754,7 +3754,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3814,7 +3814,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3870,7 +3870,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string (""), and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -3928,7 +3928,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string (""), and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4034,7 +4034,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4098,7 +4098,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4162,7 +4162,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string (""), and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4226,7 +4226,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string (""), and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4281,7 +4281,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4363,7 +4363,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4431,7 +4431,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -4513,7 +4513,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4582,7 +4582,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4653,7 +4653,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4726,7 +4726,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4843,7 +4843,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4917,7 +4917,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -4993,7 +4993,7 @@ internal class MyWebClient:WebClient{
  BY default, this method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5069,7 +5069,7 @@ internal class MyWebClient:WebClient{
  BY default, this method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5188,7 +5188,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5250,7 +5250,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5303,7 +5303,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5369,7 +5369,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5429,7 +5429,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5485,7 +5485,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5547,7 +5547,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5655,7 +5655,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5717,7 +5717,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5781,7 +5781,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5849,7 +5849,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -5910,7 +5910,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -5988,7 +5988,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6057,7 +6057,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
    
   
@@ -6135,7 +6135,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not an empty string, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6203,7 +6203,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6263,7 +6263,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not empty, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6329,7 +6329,7 @@ internal class MyWebClient:WebClient{
  If the <xref:System.Net.WebClient.BaseAddress%2A> property is not an empty string ("") and `address` does not contain an absolute URI, `address` must be a relative URI that is combined with <xref:System.Net.WebClient.BaseAddress%2A> to form the absolute URI of the requested data. If the <xref:System.Net.WebClient.QueryString%2A> property is not empty, it is appended to `address`.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6432,7 +6432,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6506,7 +6506,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6582,7 +6582,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>
@@ -6662,7 +6662,7 @@ internal class MyWebClient:WebClient{
  This method uses the STOR command to upload an FTP resource. For an HTTP resource, the POST method is used.  
   
 > [!NOTE]
->  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).  
+>  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
   
  ]]></format>
         </remarks>

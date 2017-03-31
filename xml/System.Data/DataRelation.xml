@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.DataRelation> is used to relate two <xref:System.Data.DataTable> objects to each other through <xref:System.Data.DataColumn> objects. For example, in a Customer/Orders relationship, the Customers table is the parent and the Orders table is the child of the relationship. This is similar to a primary key/foreign key relationship. For more information, see [Navigating DataRelations](../Topic/Navigating%20DataRelations.md).  
+ A <xref:System.Data.DataRelation> is used to relate two <xref:System.Data.DataTable> objects to each other through <xref:System.Data.DataColumn> objects. For example, in a Customer/Orders relationship, the Customers table is the parent and the Orders table is the child of the relationship. This is similar to a primary key/foreign key relationship. For more information, see [Navigating DataRelations](~/docs/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations.md).  
   
  Relationships are created between matching columns in the parent and child tables. That is, the <xref:System.Data.DataColumn.DataType%2A> value for both columns must be identical.  
   
@@ -574,7 +574,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use <xref:System.Data.DataRelation> objects to define hierarchical relationships, such as those specified in XML. For more information, see [Nesting DataRelations](../Topic/Nesting%20DataRelations.md).  
+ You can use <xref:System.Data.DataRelation> objects to define hierarchical relationships, such as those specified in XML. For more information, see [Nesting DataRelations](~/docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md).  
   
 > [!NOTE]
 >  If the <xref:System.Data.DataTable.TableName%2A> of the child table in the relation matches the <xref:System.Data.DataColumn.ColumnName%2A> of a column in the parent table in the relation, the <xref:System.Data.DataRelation.Nested%2A> property must be false. This was not required with the .NET Framework version 1.0.  

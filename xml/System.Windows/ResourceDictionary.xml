@@ -44,7 +44,7 @@
   
  The <xref:System.Windows.ResourceDictionary> class is not derived from <xref:System.Collections.DictionaryBase>. Instead, the <xref:System.Windows.ResourceDictionary> class implements <xref:System.Collections.IDictionary> but relies on a <xref:System.Collections.Hashtable> internally.  
   
- In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], the <xref:System.Windows.ResourceDictionary> class is typically an implicit collection element that is the object element value of several `Resources` properties, when given in property element syntax. For details on implicit collections in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](../Topic/XAML%20Syntax%20In%20Detail.md). An exception is when you want to specify a merged dictionary; for details, see [Merged Resource Dictionaries](../Topic/Merged%20Resource%20Dictionaries.md).  
+ In [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)], the <xref:System.Windows.ResourceDictionary> class is typically an implicit collection element that is the object element value of several `Resources` properties, when given in property element syntax. For details on implicit collections in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md). An exception is when you want to specify a merged dictionary; for details, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
   
  Another possible [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] usage is to declare a resource dictionary as a discrete [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, and either load it at run time with <xref:System.Windows.Markup.XamlReader.Load%2A> or include it in a (full-trust) project as a resource or loose file. In this case, <xref:System.Windows.ResourceDictionary> can be declared as an object element, serving as the root element of the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)]. You must map the appropriate XML namespace values (default for the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] namespace and typically `x:` for the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] namespace) onto the <xref:System.Windows.ResourceDictionary> element if you plan to use it as the root element. Then you can add child elements that define the resources, each with an  value.  
   
@@ -65,7 +65,7 @@
  A property specifying a property element, where the value type of that property is <xref:System.Windows.ResourceDictionary>. Typically, this is the `Resources` property of <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or of <xref:System.Windows.Application> in an application resources case.  
   
  *oneOrMoreResources*  
- One or more resources specified as object elements. Each resource that you specify must have an [x:Key Directive](../Topic/x:Key%20Directive.md) assigned.  
+ One or more resources specified as object elements. Each resource that you specify must have an [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) assigned.  
   
  ]]></format>
     </remarks>
@@ -495,7 +495,7 @@
   
  Specifying resource elements within a <xref:System.Windows.ResourceDictionary> that has <xref:System.Windows.ResourceDictionary.Source%2A> specified is not supported.  
   
- Lookup behavior within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection will search the last-added <xref:System.Windows.ResourceDictionary> first, and the search stops as soon as a requested key is found. Duplicate keys across the collection of merged dictionaries are not illegal. For more information on merged dictionary behavior, see [Merged Resource Dictionaries](../Topic/Merged%20Resource%20Dictionaries.md).  
+ Lookup behavior within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection will search the last-added <xref:System.Windows.ResourceDictionary> first, and the search stops as soon as a requested key is found. Duplicate keys across the collection of merged dictionaries are not illegal. For more information on merged dictionary behavior, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
   
 <a name="xamlPropertyElementUsage_MergedDictionaries"></a>   
 ## XAML Property Element Usage  
@@ -640,7 +640,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, <xref:System.Windows.ResourceDictionary.Source%2A> is specified as a Pack URI, which references the location of a resource dictionary that is included as a noncompiled Resource or Content build action by your application building project. For details on the Pack URI format, see [Pack URIs in WPF](../Topic/Pack%20URIs%20in%20WPF.md).  
+ Typically, <xref:System.Windows.ResourceDictionary.Source%2A> is specified as a Pack URI, which references the location of a resource dictionary that is included as a noncompiled Resource or Content build action by your application building project. For details on the Pack URI format, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
  Generally, the <xref:System.Windows.ResourceDictionary.Source%2A> property is set only for a <xref:System.Windows.ResourceDictionary> that is specified for the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> property (either as a property element in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], or as a <xref:System.Windows.ResourceDictionary> item of the collection in code). In this context, setting the value for <xref:System.Windows.ResourceDictionary.Source%2A> will merge the dictionary contents found at the supplied [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] into the current <xref:System.Windows.ResourceDictionary>. Any load failures will cause an exception to be thrown.  
   

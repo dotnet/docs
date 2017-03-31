@@ -72,7 +72,7 @@
   
  The <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property returns `null` if the frame is navigated to from a cross-domain location.  
   
- This feature can be turned off for Internet Explorer by setting the **ScriptInteropDisallow** registry value. For more information, see [Security (WPF)](../Topic/Security%20\(WPF\).md).  
+ This feature can be turned off for Internet Explorer by setting the **ScriptInteropDisallow** registry value. For more information, see [Security (WPF)](~/docs/framework/wpf/security-wpf.md).  
   
    
   

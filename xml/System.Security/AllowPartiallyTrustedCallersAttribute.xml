@@ -38,9 +38,9 @@
 ## Remarks  
   
 > [!NOTE]
->  The [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] introduces new security rules that affect the behavior of the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (see [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md)). In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], all code defaults to security-transparent, that is, partially trusted. However, you can annotate individual types and members to assign them other transparency attributes. For this and other security changes, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+>  The [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] introduces new security rules that affect the behavior of the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute (see [Security-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md)). In the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], all code defaults to security-transparent, that is, partially trusted. However, you can annotate individual types and members to assign them other transparency attributes. For this and other security changes, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
- .NET Framework version 2.0 () assemblies must be strong-named to effectively use the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute. [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] () assemblies do not have to be strong-named for the APTCA attribute to be effective, and they can contain transparent, security-critical and security-safe-critical code. For more information about applying attributes at the assembly level, see [Applying Attributes](../Topic/Applying%20Attributes.md).  
+ .NET Framework version 2.0 () assemblies must be strong-named to effectively use the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute. [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] () assemblies do not have to be strong-named for the APTCA attribute to be effective, and they can contain transparent, security-critical and security-safe-critical code. For more information about applying attributes at the assembly level, see [Applying Attributes](~/docs/standard/attributes/applying-attributes.md).  
   
  By default, if a strong-named,  assembly does not explicitly apply this attribute at the assembly level, it can be called only by other assemblies that are granted full trust. This restriction is enforced by placing a <xref:System.Security.Permissions.SecurityAction> for `FullTrust` on every public or protected method on every publicly accessible class in the assembly. Assemblies that are intended to be called by partially trusted code can declare their intent through the use of <xref:System.Security.AllowPartiallyTrustedCallersAttribute>. An example of the declaration in C# is `[assembly:AllowPartiallyTrustedCallers]`; an example in Visual Basic is `<assembly:AllowPartiallyTrustedCallers>`.  
   
@@ -51,7 +51,7 @@
   
  This is not a declarative security attribute, but a regular attribute (it derives from <xref:System.Attribute?displayProperty=fullName>, not from <xref:System.Security.Permissions.SecurityAttribute?displayProperty=fullName>).  
   
- For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+ For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
    
   

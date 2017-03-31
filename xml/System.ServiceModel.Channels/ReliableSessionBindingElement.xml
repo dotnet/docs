@@ -473,7 +473,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> property can be set on both the sender and the receiver. This value is included in the binding policy of the WSDL, so if you use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../Topic/ServiceModel%20Metadata%20Utility%20Tool%20\(Svcutil.exe\).md) to construct your client, it has the same value. Otherwise this value is whatever you set it to be on the client.  
+ The value of the <xref:System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize%2A> property can be set on both the sender and the receiver. This value is included in the binding policy of the WSDL, so if you use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to construct your client, it has the same value. Otherwise this value is whatever you set it to be on the client.  
   
  When this limit is reached on the sender, additional calls to send are blocked. When this limit is reached on the receiver, new messages that arrive on the underlying channel are not accepted.  
   

@@ -107,7 +107,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> that this tab is in.</summary>
-        <value>The contextual tab group that this tab is in; or <see langword="null" /> if this tab is not in a contextual tab group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The contextual tab group that this tab is in; or <see langword="null" /> if this tab is not in a contextual tab group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -157,7 +157,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the header content of the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroup" /> that this tab is in.</summary>
-        <value>The header of the contextual tab group that this tab is in; or <see langword="null" /> if this tab is not in a contextual tab group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The header of the contextual tab group that this tab is in; or <see langword="null" /> if this tab is not in a contextual tab group. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -247,7 +247,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> names that specify the order in which group size definitions are applied as the ribbon is reduced in size.</summary>
-        <value>A collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> names that specify the order in which group size definitions are applied as the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is reduced in size. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>A collection of <see cref="T:System.Windows.Controls.Ribbon.RibbonGroup" /> names that specify the order in which group size definitions are applied as the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> is reduced in size. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -349,7 +349,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the style that is applied to the header of the ribbon tab.</summary>
-        <value>The style that is applied to the header of the ribbon tab. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The style that is applied to the header of the ribbon tab. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -422,7 +422,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the ribbon tab is selected.</summary>
         <value>
-          <see langword="true" /> if this tab is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if this tab is selected; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -471,7 +471,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the keyboard shortcut for the control.</summary>
-        <value>The keyboard shortcut for the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The keyboard shortcut for the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -705,7 +705,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
-        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -755,7 +755,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates the position of the left edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.</summary>
-        <value>A value that indicates the position of the left edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>A value that indicates the position of the left edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -804,7 +804,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates the position of the right edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.</summary>
-        <value>A value that indicates the position of the right edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>A value that indicates the position of the right edge of the corresponding <see cref="T:System.Windows.Controls.Ribbon.RibbonTabHeader" /> in the coordinate space of this <see cref="T:System.Windows.Controls.Ribbon.RibbonTab" />.The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

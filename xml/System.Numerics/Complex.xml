@@ -111,7 +111,7 @@
  Note that this applies to any intermediate calculations performed by a method. For example, the multiplication of `new Complex(9e308, 9e308) and new Complex(2.5, 3.5)` uses the formula (ac - bd) + (ad + bc)i. The calculation of the real component that results from the multiplication evaluates the expression 9e308 * 2.5 - 9e308 * 3.5. Each intermediate multiplication in this expression returns <xref:System.Double.PositiveInfinity?displayProperty=fullName>, and the attempt to subtract <xref:System.Double.PositiveInfinity?displayProperty=fullName> from <xref:System.Double.PositiveInfinity?displayProperty=fullName> returns <xref:System.Double.NaN?displayProperty=fullName>.  
   
 ## Formatting a Complex Number  
- By default, the string representation of a complex number takes the form `(`*real*`,` *imaginary*`)`, where *real* and *imaginary* are the string representations of the <xref:System.Double> values that form the complex number's real and imaginary components. Some overloads of the <xref:System.Numerics.Complex.ToString%2A> method allow customization of the string representations of these <xref:System.Double> values to reflect the formatting conventions of a particular culture or to appear in a particular format defined by a standard or custom numeric format string. (For more information, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).)  
+ By default, the string representation of a complex number takes the form `(`*real*`,` *imaginary*`)`, where *real* and *imaginary* are the string representations of the <xref:System.Double> values that form the complex number's real and imaginary components. Some overloads of the <xref:System.Numerics.Complex.ToString%2A> method allow customization of the string representations of these <xref:System.Double> values to reflect the formatting conventions of a particular culture or to appear in a particular format defined by a standard or custom numeric format string. (For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
   
  One of the more common ways of expressing the string representation of a complex number takes the form a + bi, where a is the complex number's real component, and b is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as a + bj. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method.  
   
@@ -2638,9 +2638,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
--   For more information about numeric format strings, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format strings, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The format of the returned string is determined by the <xref:System.Globalization.NumberFormatInfo> object for the current culture. Depending on the `format` parameter, this object controls symbols such as the negative sign, the group separator, and the decimal point symbol in the output string. To provide formatting information for cultures other than the current culture, call the <xref:System.Numerics.Complex.ToString%28System.String%2CSystem.IFormatProvider%29> overload.  
   
@@ -2696,9 +2696,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following topics:  
   
--   For more information about numeric format strings, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format strings, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The `provider` parameter is an <xref:System.IFormatProvider> implementation. Its <xref:System.IFormatProvider.GetFormat%2A> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific information about the format of the real and imaginary numbers in the returned string. Depending on the `format` parameter, this object controls symbols such as the negative sign, the group separator, and the decimal point symbol in the output string. If `provider` is `null`, the returned string is formatted using the <xref:System.Globalization.NumberFormatInfo> object of the current culture.  
   

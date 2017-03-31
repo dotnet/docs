@@ -23,7 +23,7 @@
 ## Remarks  
  A single-instance application differs from a normal application in that only one instance of the application can be running at a time. When a subsequent application instance starts, it attempts to contact the first instance application to pass its command-line arguments. If the first instance cannot be contacted, the <xref:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException> is raised in the subsequent application instance. The Visual Basic Application Model does not provide any context information in the exception.  
   
- For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  ]]></format>
     </remarks>
@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A single-instance application differs from a normal application in that only one instance of the application can be running at a time. When a subsequent application instance starts, it attempts to contact the first instance application to pass its command-line arguments. If the first instance cannot be contacted, the <xref:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException> is raised in the subsequent application instance. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ A single-instance application differs from a normal application in that only one instance of the application can be running at a time. When a subsequent application instance starts, it attempts to contact the first instance application to pass its command-line arguments. If the first instance cannot be contacted, the <xref:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException> is raised in the subsequent application instance. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  The following table shows the initial property values for an instance of <xref:Microsoft.VisualBasic.ApplicationServices.CantStartSingleInstanceException>.  
   

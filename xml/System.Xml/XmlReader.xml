@@ -239,7 +239,7 @@
 |<xref:System.Xml.XmlReader.ReadContentAsInt%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsInt%2A>|<xref:System.Int32>|  
 |<xref:System.Xml.XmlReader.ReadContentAsString%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsString%2A>|<xref:System.String>|  
 |<xref:System.Xml.XmlReader.ReadContentAs%2A> and <xref:System.Xml.XmlReader.ReadElementContentAs%2A>|The type you specify with the `returnType` parameter|  
-|<xref:System.Xml.XmlReader.ReadContentAsObject%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsObject%2A>|The most appropriate type, as specified by the <xref:System.Xml.XmlReader.ValueType%2A?displayProperty=fullName> property. See [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md) for mapping information.|  
+|<xref:System.Xml.XmlReader.ReadContentAsObject%2A> and <xref:System.Xml.XmlReader.ReadElementContentAsObject%2A>|The most appropriate type, as specified by the <xref:System.Xml.XmlReader.ValueType%2A?displayProperty=fullName> property. See [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) for mapping information.|  
   
  If an element can't easily be converted to a CLR type because of its format, you can use a schema mapping to ensure a successful conversion. The following example uses an .xsd file to convert the `hire-date` element to the `xs:date` type, and then uses the <xref:System.Xml.XmlReader.ReadElementContentAsDateTime%2A> method to return the element as a <xref:System.DateTime> object.  
   
@@ -805,7 +805,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
 </para>  
 </block>  
@@ -996,7 +996,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
         <exception cref="T:System.UriFormatException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.FormatException" />, instead.  
   
 </para>  
 </block>  
@@ -7281,7 +7281,7 @@ reader.ReadToFollowing("item", "urn:1");
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- See [Type Support in the System.Xml Classes](../Topic/Type%20Support%20in%20the%20System.Xml%20Classes.md) for a list of the default mappings.  
+ See [Type Support in the System.Xml Classes](~/docs/standard/data/xml/type-support-in-the-system-xml-classes.md) for a list of the default mappings.  
   
  An element of type `xs:int` has a `ValueType` of `System.Int32` by default. However, the `ValueType` could be one of the valid types that can be mapped to `xs:int`, such as `System.Int16` or `System.Double`.  
   

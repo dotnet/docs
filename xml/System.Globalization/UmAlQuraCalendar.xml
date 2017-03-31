@@ -28,7 +28,7 @@
  The <xref:System.Globalization.UmAlQuraCalendar> class is nearly identical to the <xref:System.Globalization.HijriCalendar> class, except the Um Al Qura calendar uses a table-based algorithm licensed from the Saudi government to calculate dates, can express dates to the year 1500 A.H., and does not support the <xref:System.Globalization.HijriCalendar.HijriAdjustment%2A> property.  
   
 > [!NOTE]
->  For information about using the <xref:System.Globalization.UmAlQuraCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](../Topic/Working%20with%20Calendars.md).  
+>  For information about using the <xref:System.Globalization.UmAlQuraCalendar> class and the other calendar classes in the .NET Framework, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
  For the <xref:System.Globalization.UmAlQuraCalendar> class, each month has either 29 or 30 days, but usually in no discernible order. Whereas the documentation for the Hijri Calendar gives a table that shows the corresponding days in each month, no such general table can be produced for the Um Al Qura calendar.  
   

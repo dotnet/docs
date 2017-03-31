@@ -43,7 +43,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](../Topic/Known%20Folder%20GUIDs%20for%20File%20Dialog%20Custom%20Places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].  
+ For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](~/docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].  
   
    
   
@@ -89,7 +89,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder GUID for the custom place.</summary>
-        <value>A <see cref="T:System.Guid" /> that indicates the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder for the custom place. If the custom place was specified with a folder path, then an empty GUID is returned. For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](../Topic/Known%20Folder%20GUIDs%20for%20File%20Dialog%20Custom%20Places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].</value>
+        <value>A <see cref="T:System.Guid" /> that indicates the [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folder for the custom place. If the custom place was specified with a folder path, then an empty GUID is returned. For a list of the available [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)] Known Folders, see [Known Folder GUIDs for File Dialog Custom Places](~/docs/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places.md) or the KnownFolders.h file in the [!INCLUDE[winSDK](~/includes/winsdk-md.md)].</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -29,7 +29,7 @@
  When you call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `true`, the rendering system retains its reference to the back buffer when the front buffer becomes unavailable, so there is no need to call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> when the front buffer is available again.  There may be situations where the user’s device becomes unavailable.  When that occurs, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> to release WPF’s reference to the back buffer.  If you need to reset your device, call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> with the `backBuffer` parameter set to `null`, and then call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> again with `backBuffer` set to a valid Direct3D surface.  
   
 > [!NOTE]
->  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](../Topic/Performance%20Considerations%20for%20Direct3D9%20and%20WPF%20Interoperability.md).  
+>  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](~/docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Interop.D3DImage> class does not display Direct3D content when WPF renders in software, such as over a Remote Desktop connection, unless you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> and specify `true` for the `enableSoftwareFallback` parameter.  
@@ -37,7 +37,7 @@
    
   
 ## Examples  
- The following code example shows how to declare a <xref:System.Windows.Interop.D3DImage> in XAML. You must map the <xref:System.Windows.Interop> namespace, because it is not included in the default XAML namespaces. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to declare a <xref:System.Windows.Interop.D3DImage> in XAML. You must map the <xref:System.Windows.Interop> namespace, because it is not included in the default XAML namespaces. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-xml[System.Windows.Interop.D3DImage#10](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml#10)]  
   
@@ -143,7 +143,7 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.AddDirtyRect%2A> method to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
   
@@ -356,7 +356,7 @@
 ## Remarks  
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -493,7 +493,7 @@
    
   
 ## Examples  
- The following code example shows how to check the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailable%2A> property when rendering the composition target. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to check the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailable%2A> property when rendering the composition target. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#2](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#2)]  
   
@@ -569,7 +569,7 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to enable updates to the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Lock%2A> method to enable updates to the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
   
@@ -621,7 +621,7 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelHeight%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelHeight%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
   
@@ -653,7 +653,7 @@
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelWidth%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to use the <xref:System.Windows.Interop.D3DImage.PixelWidth%2A> property to specify the changed region in the back buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
   
@@ -688,7 +688,7 @@
  Call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface to the back buffer.  
   
 > [!NOTE]
->  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](../Topic/Performance%20Considerations%20for%20Direct3D9%20and%20WPF%20Interoperability.md).  
+>  Performance depends greatly on the settings of the Direct3D surface. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](~/docs/framework/wpf/advanced/performance-considerations-for-direct3d9-and-wpf-interoperability.md).  
   
  Calling the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> overload is identical to calling the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> overload with the `enableSoftwareFallback` parameter set to `false`. When you call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%29> or call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%28System.Windows.Interop.D3DResourceType%2CSystem.IntPtr%2CSystem.Boolean%29> with the `enableSoftwareFallback` parameter set to `false`, the rendering system releases its reference to the back buffer when front buffer becomes unavailable and nothing is displayed. When the front buffer is available again, the rendering system raises the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to notify your WPF application.  You can create an event handler for the <xref:System.Windows.Interop.D3DImage.IsFrontBufferAvailableChanged> event to restart rendering again with a valid Direct3D surface. To restart rendering, you must call <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A>.  
   
@@ -705,7 +705,7 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.SetBackBuffer%2A> method to assign a Direct3D surface. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
   
@@ -823,7 +823,7 @@
    
   
 ## Examples  
- The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to copy the updated back buffer to the front buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](../Topic/Walkthrough:%20Hosting%20Direct3D9%20Content%20in%20WPF.md).  
+ The following code example shows how to call the <xref:System.Windows.Interop.D3DImage.Unlock%2A> method to copy the updated back buffer to the front buffer. For more information, see [Walkthrough: Hosting Direct3D9 Content in WPF](~/docs/framework/wpf/advanced/walkthrough-hosting-direct3d9-content-in-wpf.md).  
   
  [!code-csharp[System.Windows.Interop.D3DImage#3](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.Interop.D3DImage/CS/window1.xaml.cs#3)]  
   

@@ -42,7 +42,7 @@
    
   
 ## Examples  
- The following example shows how to use this class to create a custom binding that includes this class as a security binding element. [!INCLUDE[crabout](~/includes/crabout-md.md)] the code in this example, see [How to: Consistently Reference X.509 Certificates](../Topic/How%20to:%20Consistently%20Reference%20X.509%20Certificates.md).  
+ The following example shows how to use this class to create a custom binding that includes this class as a security binding element. [!INCLUDE[crabout](~/includes/crabout-md.md)] the code in this example, see [How to: Consistently Reference X.509 Certificates](~/docs/framework/wcf/feature-details/how-to-consistently-reference-x-509-certificates.md).  
   
  [!code-csharp[S_UEAssymetricSecurityBindingElement#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/cs/source.cs#1)]
  [!code-vb[S_UEAssymetricSecurityBindingElement#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueassymetricsecuritybindingelement/vb/source.vb#1)]  

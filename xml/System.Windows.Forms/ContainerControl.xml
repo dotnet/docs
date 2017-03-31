@@ -174,7 +174,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> property represents the DPI or font setting of the screen that the control was scaled to or designed for. Specifically, at design time this property will be set by the Windows Forms designer to the value your monitor is currently using. Then, when the form loads at run time, if the <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> property is different from the <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>, the <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A> method will be called to perform scaling of the control and all of its children. Afterwards, <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> will be updated to reflect the new scaling size.  
   
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+ For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  ]]></format>
         </remarks>
@@ -202,7 +202,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ContainerControl.AutoScaleFactor%2A> property represents the scaling factor between the <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> and <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> properties. This value is calculated when it is required. For example, if <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> is (192, 144) and <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A> is (96, 96) then the <xref:System.Windows.Forms.ContainerControl.AutoScaleFactor%2A> is (2.0, 1.5).  
   
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+ For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  ]]></format>
         </remarks>
@@ -240,7 +240,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property specifies the current automatic scaling mode of this control. Scaling by <xref:System.Windows.Forms.AutoScaleMode> is useful if you want to have a control or form stretch or shrink according to the size of the fonts in the operating system, and should be used when the absolute size of the control or form does not matter. Scaling by <xref:System.Windows.Forms.AutoScaleMode> is useful when you want to size a control or form relative to the screen. For example, you may want to use dots per inch (DPI) scaling on a control displaying a chart or other graphic so that it always occupies a certain percentage of the screen.  
   
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+ For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  ]]></format>
         </remarks>
@@ -277,7 +277,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> will differ for each control. For more details on implicit validation, see [User Input Validation in Windows Forms](../Topic/User%20Input%20Validation%20in%20Windows%20Forms.md).  
+ The default value for <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> will differ for each control. For more details on implicit validation, see [User Input Validation in Windows Forms](~/docs/framework/winforms/user-input-validation-in-windows-forms.md).  
   
  Setting this property to a new value will raise the <xref:System.Windows.Forms.ContainerControl.AutoValidateChanged> event.  
   
@@ -439,7 +439,7 @@
   
  If the <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A> property is set to <xref:System.Windows.Forms.AutoScaleMode>, <xref:System.Windows.Forms.ContainerControl.CurrentAutoScaleDimensions%2A> is set equal to <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>.  
   
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+ For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  ]]></format>
         </remarks>
@@ -666,7 +666,7 @@
   
  <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A> is recursive; each child control, if it is a container, will have its version of this method called when the container's version executes.  
   
- For more information about automatic scaling, see [Automatic Scaling in Windows Forms](../Topic/Automatic%20Scaling%20in%20Windows%20Forms.md).  
+ For more information about automatic scaling, see [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md).  
   
  ]]></format>
         </remarks>

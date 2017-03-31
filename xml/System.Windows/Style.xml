@@ -37,7 +37,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set a <xref:System.Windows.Style> on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. A style is most commonly declared as a resource inside the <xref:System.Windows.Application.Resources%2A> section. Because styles are resources, they obey the same scoping rules that apply to all resources, so where you declare a style affects where it can be applied. If, for instance, you declare the style in the root element of your application definition [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, the style can be used anywhere in your application. If you are creating a navigation application and declare the style in one of the application's [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files, the style can be used only in that [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file. For more information on scoping rules for resources, see [XAML Resources](../Topic/XAML%20Resources.md).  
+ You can set a <xref:System.Windows.Style> on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. A style is most commonly declared as a resource inside the <xref:System.Windows.Application.Resources%2A> section. Because styles are resources, they obey the same scoping rules that apply to all resources, so where you declare a style affects where it can be applied. If, for instance, you declare the style in the root element of your application definition [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file, the style can be used anywhere in your application. If you are creating a navigation application and declare the style in one of the application's [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files, the style can be used only in that [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] file. For more information on scoping rules for resources, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  The style declaration consists of a <xref:System.Windows.Style> object that contains a collection of one or more <xref:System.Windows.Setter> objects. Each <xref:System.Windows.Setter> consists of a <xref:System.Windows.Setter.Property%2A> and a <xref:System.Windows.Setter.Value%2A>. The property is the name of the property of the element the style is to apply to. After the style is declared as a resource, it can then be referenced just like any other resource.  
   
@@ -54,7 +54,7 @@
   
 -   <xref:System.Windows.DataTemplate>  
   
- For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
    
   
@@ -182,7 +182,7 @@
 <a name="xamlValues_BasedOn"></a>   
 ## XAML Values  
  *myStyle*  
- An existing style. Typically, you use the [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md) to refer to an existing style.  
+ An existing style. Typically, you use the [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md) to refer to an existing style.  
   
    
   
@@ -322,10 +322,10 @@
 <a name="xamlValues_Resources"></a>   
 ## XAML Values  
  *oneOrMoreResourceElements*  
- One or more resource elements. To be referenced later in either [StaticResource Markup Extension](../Topic/StaticResource%20Markup%20Extension.md) or [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) syntax in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], a resource element must have an `x:Key` attribute.  
+ One or more resource elements. To be referenced later in either [StaticResource Markup Extension](~/docs/framework/wpf/advanced/staticresource-markup-extension.md) or [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) syntax in [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], a resource element must have an `x:Key` attribute.  
   
  \<ResourceDictionary Source=" *externalDictionarySource*"/>  
- An external dictionary source. For details, see [Merged Resource Dictionaries](../Topic/Merged%20Resource%20Dictionaries.md).  
+ An external dictionary source. For details, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
   
  ]]></format>
         </remarks>
@@ -566,7 +566,7 @@
 <a name="xamlValues_TargetType"></a>   
 ## XAML Values  
  `{x:Type ...}`  
- An [x:Type Markup Extension](../Topic/x:Type%20Markup%20Extension.md) markup extension usage.  
+ An [x:Type Markup Extension](~/docs/framework/xaml-services/x-type-markup-extension.md) markup extension usage.  
   
  *typeName*  
  The type name of the class.  

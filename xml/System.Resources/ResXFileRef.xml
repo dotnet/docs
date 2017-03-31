@@ -39,7 +39,7 @@
   
  To add a <xref:System.Resources.ResXFileRef> object to a .resx file programmatically, you call the <xref:System.Resources.ResXDataNode.%23ctor%28System.String%2CSystem.Resources.ResXFileRef%29?displayProperty=fullName> constructor to instantiate a <xref:System.Resources.ResXDataNode> object. You then pass this <xref:System.Resources.ResXDataNode> object to the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=fullName> method.  
   
- When you compile a .resx file with [Resgen.exe (Resource File Generator)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md), the resources specified in the .resx file are embedded in the resulting document resource file.  
+ When you compile a .resx file with [Resgen.exe (Resource File Generator)](~/docs/framework/tools/resgen-exe-resource-file-generator.md), the resources specified in the .resx file are embedded in the resulting document resource file.  
   
  ]]></format>
     </remarks>

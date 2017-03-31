@@ -269,7 +269,7 @@
 ## Remarks  
  You can set this property to the name of any element within the scope of where the trigger collection (the collection that this <xref:System.Windows.EventTrigger> is part of) is applied. This is typically a named element that is within the template that contains this <xref:System.Windows.EventTrigger>. If you are setting the <xref:System.Windows.FrameworkElement.Triggers%2A> property on an element directly, then it is a named element within the scope of that parent element.  
   
- You can name an object using the [x:Name Directive](../Topic/x:Name%20Directive.md) syntax.  
+ You can name an object using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) syntax.  
   
  ]]></format>
         </remarks>

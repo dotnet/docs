@@ -73,7 +73,7 @@
   
  The <xref:System.Web.UI.Control> class can directly or indirectly be used as part of the user interface for your Web application, and as such should be scrutinized to make sure best practices for writing secure code and securing applications are followed.  
   
- For general information on these topics, see [Overview of Web Application Security Threats](../Topic/Overview%20of%20Web%20Application%20Security%20Threats.md), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](../Topic/Key%20Security%20Concepts.md). For more specific information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Display Safe Error Messages](../Topic/How%20to:%20Display%20Safe%20Error%20Messages.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
+ For general information on these topics, see [Overview of Web Application Security Threats](../Topic/Overview%20of%20Web%20Application%20Security%20Threats.md), [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05), and [Key Security Concepts](~/docs/standard/security/key-security-concepts.md). For more specific information, see [Securing Standard Controls](../Topic/Securing%20Standard%20Controls.md), [How to: Display Safe Error Messages](../Topic/How%20to:%20Display%20Safe%20Error%20Messages.md), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](../Topic/How%20to:%20Protect%20Against%20Script%20Exploits%20in%20a%20Web%20Application%20by%20Applying%20HTML%20Encoding%20to%20Strings.md), and [Introduction to the Validation Controls](http://msdn.microsoft.com/en-us/3c0e7514-cff2-4bed-936d-ee3f7b740190).  
   
    
   
@@ -371,7 +371,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property gathers the information necessary about a page's UI hierarchy and passes it to the page's [\&lt;trace\&gt;](../Topic/%3Ctrace%3E%20Element.md) property. When you enable tracing, either for a page or for your application, this information is displayed in the `Control Tree` section of the trace output. Trace output for a page is appended to the end of the page; while trace output for an application can be viewed from the trace viewer (trace.axd file) which is stored in the application's root directory. For more information about tracing, see [ASP.NET Tracing Overview](../Topic/ASP.NET%20Tracing%20Overview.md).  
+ This property gathers the information necessary about a page's UI hierarchy and passes it to the page's [\&lt;trace\&gt;](~/docs/framework/configuring-apps/file-schema/trace-debug/trace-element.md) property. When you enable tracing, either for a page or for your application, this information is displayed in the `Control Tree` section of the trace output. Trace output for a page is appended to the end of the page; while trace output for an application can be viewed from the trace viewer (trace.axd file) which is stored in the application's root directory. For more information about tracing, see [ASP.NET Tracing Overview](../Topic/ASP.NET%20Tracing%20Overview.md).  
   
  ]]></format>
         </remarks>

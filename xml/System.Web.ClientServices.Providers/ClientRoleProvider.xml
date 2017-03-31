@@ -18,7 +18,7 @@
 ## Remarks  
  You can use client application services to retrieve role information from an existing roles service by configuring your application to use the <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class. After configuration, you can determine whether an authenticated user is in a particular role by calling the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Security.Principal.IPrincipal> returned by the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For applications configured to use client application services, this property returns a <xref:System.Web.ClientServices.ClientRolePrincipal>. Because this class implements the <xref:System.Security.Principal.IPrincipal> interface, you do not need to reference it explicitly. The <xref:System.Web.ClientServices.ClientRolePrincipal.IsInRole%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A?displayProperty=fullName> method.  
   
- The <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class is a read-only role membership provider that retrieves role information for authenticated users from the roles service indicated by the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ The <xref:System.Web.ClientServices.Providers.ClientRoleProvider> class is a read-only role membership provider that retrieves role information for authenticated users from the roles service indicated by the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  You can retrieve the current <xref:System.Web.ClientServices.Providers.ClientRoleProvider> instance through the `static` <xref:System.Web.Security.Roles.Provider%2A?displayProperty=fullName> property.  
   
@@ -302,7 +302,7 @@
   
 -   `honorCookieExpiry`  
   
- For more information about these attributes, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ For more information about these attributes, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  ]]></format>
         </remarks>
@@ -423,7 +423,7 @@
 ## Remarks  
  The <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache%2A> method removes all role information from the local cache and causes the cache to expire. After you call this method, your next call to the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser%2A> or <xref:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole%2A> method will retrieve role information from the configured role service instead of the local cache.  
   
- You can use this method to enable users to refresh the roles cache when their role has changed but the cache has not yet expired. For information about how to set the roles cache time-out interval, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ You can use this method to enable users to refresh the roles cache when their role has changed but the cache has not yet expired. For information about how to set the roles cache time-out interval, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
    
   
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property in your application code, but you will typically set the value in your application configuration file. This enables you to change the service location without recompiling your code. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ You can set the <xref:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri%2A> property in your application code, but you will typically set the value in your application configuration file. This enables you to change the service location without recompiling your code. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  When you set the service location programmatically, you must specify the complete service URI, which will always end with "Role_JSON_AppService.axd".  
   

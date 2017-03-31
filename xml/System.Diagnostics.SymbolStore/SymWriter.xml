@@ -727,12 +727,12 @@
       </Parameters>
       <Docs>
         <param name="underlyingWriter">An <see cref="T:System.IntPtr" /> type pointer to code that is the underlying writer.</param>
-        <summary>Sets the underlying [ISymUnmanagedWriter Interface](../Topic/ISymUnmanagedWriter%20Interface.md) (the corresponding unmanaged API) that a managed <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> uses to emit symbols.</summary>
+        <summary>Sets the underlying [ISymUnmanagedWriter Interface](~/docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) (the corresponding unmanaged API) that a managed <see cref="T:System.Diagnostics.SymbolStore.SymWriter" /> uses to emit symbols.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The underlying [ISymUnmanagedWriter Interface](../Topic/ISymUnmanagedWriter%20Interface.md) (the corresponding unmanaged API) interface represents a symbol writer for managed code. The interface provides methods to define documents, sequence points, lexical scopes, and variables.  
+ The underlying [ISymUnmanagedWriter Interface](~/docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md) (the corresponding unmanaged API) interface represents a symbol writer for managed code. The interface provides methods to define documents, sequence points, lexical scopes, and variables.  
   
  ]]></format>
         </remarks>

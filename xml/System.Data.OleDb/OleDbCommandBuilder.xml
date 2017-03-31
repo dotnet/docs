@@ -167,7 +167,7 @@
   
  You can only use <xref:System.Data.OleDb.OleDbCommandBuilder.DeriveParameters%2A> with stored procedures. You cannot use <xref:System.Data.OleDb.OleDbCommandBuilder.DeriveParameters%2A> to populate the <xref:System.Data.OleDb.OleDbParameterCollection> with arbitrary Transact-SQL statements, such as a parameterized SELECT statement.  
   
- For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ For more information, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
  ]]></format>
         </remarks>

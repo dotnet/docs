@@ -65,7 +65,7 @@
   
  The `knownNamespace` dictionary defines application namespaces that are used when you store custom content as part of an annotation.  The dictionary key is the primary namespace known to the application program.  The namespace key is associated with a value list of older namespaces that are compatible with the "key" namespace.  When annotations are loaded all namespaces from this list will be replaced by the "key" namespace.  
   
- `stream` must be in valid XML format and comply with the [Annotations Schema](../Topic/Annotations%20Schema.md).  
+ `stream` must be in valid XML format and comply with the [Annotations Schema](~/docs/framework/wpf/advanced/annotations-schema.md).  
   
  ]]></format>
         </remarks>

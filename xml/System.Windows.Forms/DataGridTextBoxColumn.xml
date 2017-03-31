@@ -152,7 +152,7 @@
   
  The <xref:System.Windows.Forms.DataGridColumnStyle> uses a <xref:System.ComponentModel.PropertyDescriptor> to determine the type of data displayed in the column. To return a <xref:System.ComponentModel.PropertyDescriptorCollection>, use the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method of the <xref:System.Windows.Forms.BindingManagerBase> class.  
   
- For more information about formatting characters, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+ For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
    
   
@@ -423,7 +423,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property specifies how values are displayed in the column. For example, set the property to "c" to specify that the values will be formatted as the local currency. The <xref:System.Globalization.CultureInfo> for the computer is used to determine the actual currency format. The values are automatically unformatted to the native type when data is changed.  
   
- For more information about formatting characters, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+ For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
  The format you apply should be appropriate to the data type. For example, if the data is numeric in nature use one of the numeric format strings.  
   
@@ -473,7 +473,7 @@
 ## Remarks  
  When setting the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property to one of the formatting characters, the <xref:System.Windows.Forms.DataGridTextBoxColumn> uses the information provided by the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to further specify what cultural-specific formatting to use. For example, when the <xref:System.Windows.Forms.DataGridTextBoxColumn.Format%2A> property is set to the format character "c" (for currency), you can further specify that the symbol for the lira be used. To do this, create a new <xref:System.Globalization.CultureInfo> object with the locale ID for Italy, and set the <xref:System.Windows.Forms.DataGridTextBoxColumn.FormatInfo%2A> property to the new <xref:System.Globalization.CultureInfo> object.  
   
- For more information about formatting characters, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+ For more information about formatting characters, see [Formatting Types](~/docs/standard/base-types/formatting-types.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
    
   

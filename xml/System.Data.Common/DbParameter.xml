@@ -25,7 +25,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents a parameter to a <see cref="T:System.Data.Common.DbCommand" /> and optionally, its mapping to a <see cref="T:System.Data.DataSet" /> column. For more information on parameters, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).</summary>
+    <summary>Represents a parameter to a <see cref="T:System.Data.Common.DbCommand" /> and optionally, its mapping to a <see cref="T:System.Data.DataSet" /> column. For more information on parameters, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -386,7 +386,7 @@
 ## Remarks  
  When <xref:System.Data.Common.DbParameter.SourceColumn%2A> is set to anything other than an empty string, the value of the parameter is retrieved from the column with the <xref:System.Data.Common.DbParameter.SourceColumn%2A> name. If <xref:System.Data.Common.DbParameter.Direction%2A> is set to `Input`, the value is taken from the <xref:System.Data.DataSet>. If <xref:System.Data.Common.DbParameter.Direction%2A> is set to `Output`, the value is taken from the data source. A <xref:System.Data.Common.DbParameter.Direction%2A> of `InputOutput` is a combination of both.  
   
- For more information about how to use the <xref:System.Data.Common.DbParameter.SourceColumn%2A> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md) and [Updating Data Sources with DataAdapters](../Topic/Updating%20Data%20Sources%20with%20DataAdapters.md).  
+ For more information about how to use the <xref:System.Data.Common.DbParameter.SourceColumn%2A> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md) and [Updating Data Sources with DataAdapters](~/docs/framework/data/adonet/updating-data-sources-with-dataadapters.md).  
   
  ]]></format>
         </remarks>

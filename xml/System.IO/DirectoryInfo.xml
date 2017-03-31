@@ -55,7 +55,7 @@
   
  By default, full read/write access to new directories is granted to all users.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -110,7 +110,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -162,7 +162,7 @@
 ## Remarks  
  If the directory already exists, this method does nothing.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -206,7 +206,7 @@
   
  If the directory already exists, this method does nothing.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -259,7 +259,7 @@
 > [!NOTE]
 >  Path names are limited to 248 characters.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -324,7 +324,7 @@
 > [!NOTE]
 >  Path names are limited to 248 characters.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -377,7 +377,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -400,7 +400,7 @@
   
  -or-  
   
- There is an open handle on the directory, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories. For more information, see [How to: Enumerate Directories and Files](../Topic/How%20to:%20Enumerate%20Directories%20and%20Files.md).</exception>
+ There is an open handle on the directory, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories. For more information, see [How to: Enumerate Directories and Files](~/docs/standard/io/how-to-enumerate-directories-and-files.md).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for writing directories. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
       </Docs>
@@ -439,7 +439,7 @@
 ## Remarks  
  If the `DirectoryInfo` has no files or subdirectories, this method deletes the `DirectoryInfo` even if `recursive` is `false`. Attempting to delete a `DirectoryInfo` that is not empty when `recursive` is `false` throws an <xref:System.IO.IOException>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -466,7 +466,7 @@
   
  -or-  
   
- There is an open handle on the directory or on one of its files, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see [How to: Enumerate Directories and Files](../Topic/How%20to:%20Enumerate%20Directories%20and%20Files.md).</exception>
+ There is an open handle on the directory or on one of its files, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see [How to: Enumerate Directories and Files](~/docs/standard/io/how-to-enumerate-directories-and-files.md).</exception>
         <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermissionAccess">Write flag required for write permission to the <see langword="DirectoryInfo" /> and subdirectories to be deleted.</permission>
       </Docs>
@@ -1263,7 +1263,7 @@
   
  Use the <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for the current file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
    
   
@@ -1378,7 +1378,7 @@
 ## Remarks  
  Use the <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for the current file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  ]]></format>
         </remarks>
@@ -2151,7 +2151,7 @@
   
  This method permits moving a directory to a read-only directory. The read/write attribute of neither directory is affected.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2218,7 +2218,7 @@
   
  The <xref:System.IO.DirectoryInfo.Name%2A> property of a <xref:System.IO.DirectoryInfo> requires no permission (beyond the read permission to the directory necessary to construct the <xref:System.IO.DirectoryInfo.Exists%2A>) but can give out the directory name. If it is necessary to hand out a <xref:System.IO.DirectoryInfo> to a protected directory with a cryptographically secure name, create a dummy directory for the untrusted code’s use.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2261,7 +2261,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2340,7 +2340,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An access control list (ACL) describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An access control list (ACL) describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  The <xref:System.IO.DirectoryInfo.SetAccessControl%2A> method applies ACL entries to a file that represents the noninherited ACL list.  
   
@@ -2421,7 +2421,7 @@
 ## Remarks  
  Use <xref:System.IO.DirectoryInfo.GetAccessControl%2A> methods to retrieve the access control list (ACL) entries for the current file.  
   
- For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  ]]></format>
         </remarks>

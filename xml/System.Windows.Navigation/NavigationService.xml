@@ -534,7 +534,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of `source` can be a Web [!INCLUDE[TLA#tla_url](~/includes/tlasharptla-url-md.md)] or a valid pack [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] (see [Pack URIs in WPF](../Topic/Pack%20URIs%20in%20WPF.md)).  
+ The value of `source` can be a Web [!INCLUDE[TLA#tla_url](~/includes/tlasharptla-url-md.md)] or a valid pack [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] (see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md)).  
   
  <xref:System.Windows.Navigation.NavigationService.Navigate%2A> will navigate to the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] specified by `source` if the following conditions are true:  
   
@@ -677,7 +677,7 @@
 ## Remarks  
  This method is only for standalone applications and [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] content.  
   
- This method exhibits the same behavior as <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, and extends it by ensuring that the content that is being downloaded is placed into a partial trust security sandbox (with the default Internet zone set of permissions - see [WPF Partial Trust Security](../Topic/WPF%20Partial%20Trust%20Security.md)).  
+ This method exhibits the same behavior as <xref:System.Windows.Navigation.NavigationService.Navigate%2A?displayProperty=fullName>, and extends it by ensuring that the content that is being downloaded is placed into a partial trust security sandbox (with the default Internet zone set of permissions - see [WPF Partial Trust Security](~/docs/framework/wpf/wpf-partial-trust-security.md)).  
   
  ]]></format>
         </remarks>

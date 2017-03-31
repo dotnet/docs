@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.SessionMode> enumeration with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property to require, allow, or prohibit bindings to use sessions between endpoints that connect to or support the service contract. A session is a way of correlating a set of messages exchanged between two or more endpoints. For more information about sessions, see [Using Sessions](../Topic/Using%20Sessions.md).  
+ Use the <xref:System.ServiceModel.SessionMode> enumeration with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property to require, allow, or prohibit bindings to use sessions between endpoints that connect to or support the service contract. A session is a way of correlating a set of messages exchanged between two or more endpoints. For more information about sessions, see [Using Sessions](~/docs/framework/wcf/using-sessions.md).  
   
  If your service supports sessions, you can then use the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property to specify the relationship between instances of your service contract implementation and the channel session.  
   

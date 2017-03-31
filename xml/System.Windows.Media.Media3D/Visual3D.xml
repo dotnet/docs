@@ -52,7 +52,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.AddVisual3DChild%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.AddVisual3DChild%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -241,7 +241,7 @@
 ## Remarks  
  By default, a <xref:System.Windows.Media.Visual> has no children.  
   
- The <xref:System.Windows.Media.Media3D.Visual3D.GetVisual3DChild%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.GetVisual3DChild%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -361,7 +361,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.OnVisualParentChanged%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.OnVisualParentChanged%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -389,7 +389,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.RemoveVisual3DChild%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.RemoveVisual3DChild%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -417,7 +417,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.Transform%2A> property is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.Transform%2A> property is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 <a name="dependencyPropertyInfo_Transform"></a>   
 ## Dependency Property Information  
@@ -449,7 +449,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Visual3D.TransformProperty> is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.Visual3D.TransformProperty> is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -478,7 +478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -513,7 +513,7 @@
 ## Remarks  
  This transform projects a 3-D point to a 2-D space. The resulting point is the transformed 3-D point in the coordinate space of the specified ancestor.  
   
- The <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -545,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.TransformToDescendant%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.TransformToDescendant%2A> method is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -576,7 +576,7 @@
 ## Remarks  
  By default, a <xref:System.Windows.Media.Media3D.Visual3D> has no child elements. Therefore, the default implementation always returns 0.  
   
- The <xref:System.Windows.Media.Media3D.Visual3D.Visual3DChildrenCount%2A> property is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.Visual3DChildrenCount%2A> property is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -604,7 +604,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Media.Media3D.Visual3D.Visual3DModel%2A> property is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ The <xref:System.Windows.Media.Media3D.Visual3D.Visual3DModel%2A> property is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -621,7 +621,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> is introduced in .NET Framework version 3.5. For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

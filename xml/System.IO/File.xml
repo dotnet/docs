@@ -67,7 +67,7 @@
   
 -   "\\\\\\\MyServer\\\MyShare" in C#, or "\\\MyServer\MyShare" in Visual Basic.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -412,7 +412,7 @@
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -554,7 +554,7 @@
   
  The attributes of the original file are retained in the copied file.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -640,7 +640,7 @@
   
  By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -712,7 +712,7 @@
   
  By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -784,7 +784,7 @@
   
  By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -841,7 +841,7 @@
   
  By default, full read/write access to new files is granted to all users. The file is opened with read/write access and must be closed before it can be opened by another application.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -898,7 +898,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1032,7 +1032,7 @@
   
  If the file to be deleted does not exist, no exception is thrown.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1053,7 +1053,7 @@
   
  -or-  
   
- There is an open handle on the file, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see [How to: Enumerate Directories and Files](../Topic/How%20to:%20Enumerate%20Directories%20and%20Files.md).</exception>
+ There is an open handle on the file, and the operating system is Windows XP or earlier. This open handle can result from enumerating directories and files. For more information, see [How to: Enumerate Directories and Files](~/docs/standard/io/how-to-enumerate-directories-and-files.md).</exception>
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> is in an invalid format.</exception>
         <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
@@ -1233,7 +1233,7 @@
 ## Remarks  
  Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
   
@@ -1295,7 +1295,7 @@
 ## Remarks  
  Use the <xref:System.IO.File.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
   
@@ -1354,7 +1354,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1423,7 +1423,7 @@
   
  NTFS-formatted drives may cache information about a file, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1485,7 +1485,7 @@
   
  NTFS-formatted drives may cache information about a file, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1547,7 +1547,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1611,7 +1611,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1666,7 +1666,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1730,7 +1730,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1784,7 +1784,7 @@
   
  If you try to move a file across disk volumes and that file is in use, the file is copied to the destination, but it is not deleted from the source.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1850,7 +1850,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2018,7 +2018,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2100,7 +2100,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2168,7 +2168,7 @@
   
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2232,7 +2232,7 @@
   
  The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2988,7 +2988,7 @@
 > [!CAUTION]
 >  The ACL specified for the `fileSecurity` parameter replaces the existing ACL for the file. To add permissions for a new user, use the <xref:System.IO.File.GetAccessControl%2A> method to obtain the existing ACL, modify it, and then use <xref:System.IO.File.SetAccessControl%2A> to apply it back to the file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  The <xref:System.IO.File.SetAccessControl%2A> method persists only <xref:System.Security.AccessControl.FileSecurity> objects that have been modified after object creation.  If a <xref:System.Security.AccessControl.FileSecurity> object has not been modified, it will not be persisted to a file.  Therefore, it is not possible to retrieve a <xref:System.Security.AccessControl.FileSecurity> object from one file and reapply the same object to another file.  
   
@@ -3076,7 +3076,7 @@
   
  It is not possible to change the compression status of a <xref:System.IO.File> object using the <xref:System.IO.File.SetAttributes%2A> method.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -3150,7 +3150,7 @@
   
  NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -3206,7 +3206,7 @@
   
  NTFS-formatted drives may cache file meta-info, such as file creation time, for a short period of time. As a result, it may be necessary to explicitly set the creation time of a file if you are overwriting or replacing an existing file.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -3260,7 +3260,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -3322,7 +3322,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -3375,7 +3375,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -3437,7 +3437,7 @@
 ## Remarks  
  The `path` parameter is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see <xref:System.IO.Directory.GetCurrentDirectory%2A>.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>

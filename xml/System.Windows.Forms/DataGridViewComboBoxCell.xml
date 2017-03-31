@@ -649,7 +649,7 @@
   
  The formatted value of the cell must always be one of the values in the <xref:System.Windows.Forms.DataGridViewComboBoxCell.Items%2A> collection or an error will occur and the cell value will revert to the first item in the collection. You can customize this behavior by handling the <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=fullName> events.  
   
- Setting this property to a value other than the value of the parent column's <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> property will force the row to become unshared, allocating extra memory. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Setting this property to a value other than the value of the parent column's <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> property will force the row to become unshared, allocating extra memory. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -690,7 +690,7 @@
 ## Remarks  
  When the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control is set to <xref:System.Windows.Forms.DataGridViewEditMode> or <xref:System.Windows.Forms.DataGridViewEditMode>, the control uses this method to determine whether a key other than F2 that is pressed by the user while this cell has focus will cause the cell to enter edit mode.  
   
- This method returns `true` if the e parameter indicates one of the following keys or key combinations: F4, ALT+UP ARROW, ALT+DOWN ARROW, or an ordinary data-entry key (such as a letter, number, punctuation mark, or the SPACE key) unmodified by ALT or CTRL, excluding SHIFT+SPACE, which is used by the control for selection purposes. For more information, see [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](../Topic/Default%20Keyboard%20and%20Mouse%20Handling%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This method returns `true` if the e parameter indicates one of the following keys or key combinations: F4, ALT+UP ARROW, ALT+DOWN ARROW, or an ordinary data-entry key (such as a letter, number, punctuation mark, or the SPACE key) unmodified by ALT or CTRL, excluding SHIFT+SPACE, which is used by the control for selection purposes. For more information, see [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>

@@ -134,7 +134,7 @@
   
  You should not attach an event to the document or one of its objects until the document has completed loading. The earliest you should call this method is in the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event of the <xref:System.Windows.Forms.WebBrowser> control.  
   
- For more information about the available unmanaged events, see [Accessing Unexposed Members on the Managed HTML Document Object Model](../Topic/Accessing%20Unexposed%20Members%20on%20the%20Managed%20HTML%20Document%20Object%20Model.md) and the IHTMLElement interfaces: [IHTMLElement](http://go.microsoft.com/fwlink/?LinkId=104876), [IHTMLElement2](http://go.microsoft.com/fwlink/?LinkId=104877), [IHTMLElement3](http://go.microsoft.com/fwlink/?LinkId=104878), [IHTMLElement4](http://go.microsoft.com/fwlink/?LinkId=104879).  
+ For more information about the available unmanaged events, see [Accessing Unexposed Members on the Managed HTML Document Object Model](~/docs/framework/winforms/controls/accessing-unexposed-members-on-the-managed-html-document-object-model.md) and the IHTMLElement interfaces: [IHTMLElement](http://go.microsoft.com/fwlink/?LinkId=104876), [IHTMLElement2](http://go.microsoft.com/fwlink/?LinkId=104877), [IHTMLElement3](http://go.microsoft.com/fwlink/?LinkId=104878), [IHTMLElement4](http://go.microsoft.com/fwlink/?LinkId=104879).  
   
  ]]></format>
         </remarks>
@@ -1855,7 +1855,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to access HTML Document Object Model (DOM) events. It directly calls the [IHTMLElement3::fireEvent](http://go.microsoft.com/fwlink/?LinkId=103189) method. For more information about how to use the DOM through the <xref:System.Windows.Forms.HtmlElement> class, see [Accessing Unexposed Members on the Managed HTML Document Object Model](../Topic/Accessing%20Unexposed%20Members%20on%20the%20Managed%20HTML%20Document%20Object%20Model.md).  
+ This method is used to access HTML Document Object Model (DOM) events. It directly calls the [IHTMLElement3::fireEvent](http://go.microsoft.com/fwlink/?LinkId=103189) method. For more information about how to use the DOM through the <xref:System.Windows.Forms.HtmlElement> class, see [Accessing Unexposed Members on the Managed HTML Document Object Model](~/docs/framework/winforms/controls/accessing-unexposed-members-on-the-managed-html-document-object-model.md).  
   
  ]]></format>
         </remarks>

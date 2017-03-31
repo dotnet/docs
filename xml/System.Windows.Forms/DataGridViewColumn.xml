@@ -39,7 +39,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewColumn> class represents a logical column in a <xref:System.Windows.Forms.DataGridView> control. You can retrieve columns through the <xref:System.Windows.Forms.DataGridView.Columns%2A> collection of the control.  
   
- Unlike a <xref:System.Windows.Forms.DataGridViewRow>, which contains the actual collection of cells in a <xref:System.Windows.Forms.DataGridView>, <xref:System.Windows.Forms.DataGridViewColumn> is used mainly to adjust the appearance and behavior of the column user interface (UI), such as column width and cell style. For more information about cell styles, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Unlike a <xref:System.Windows.Forms.DataGridViewRow>, which contains the actual collection of cells in a <xref:System.Windows.Forms.DataGridView>, <xref:System.Windows.Forms.DataGridViewColumn> is used mainly to adjust the appearance and behavior of the column user interface (UI), such as column width and cell style. For more information about cell styles, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  Types that derive from <xref:System.Windows.Forms.DataGridViewColumn> typically initialize the <xref:System.Windows.Forms.DataGridViewColumn.CellTemplate%2A> property to a new instance of a related type derived from the <xref:System.Windows.Forms.DataGridViewCell> class. Any column properties that relate to the appearance or behavior of individual cells are wrappers for the corresponding properties of the template cell. Changing one of these properties on the column automatically changes the value on the cell template and on all cells in the column. To override the specified value for individual cells, set the cell values after you set the column value.  
   
@@ -128,7 +128,7 @@
 ## Remarks  
  The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName> property instead.  
   
- When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. The width available for fill mode is determined by subtracting the widths of all other columns from the width of the client area of the control. If this width is smaller than the combined <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values of all fill-mode columns, the horizontal scroll bar is displayed, all fill-mode columns are shown with their minimum widths, and user column-resizing is disabled. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](../Topic/Column%20Fill%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. The width available for fill mode is determined by subtracting the widths of all other columns from the width of the client area of the control. If this width is smaller than the combined <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values of all fill-mode columns, the horizontal scroll bar is displayed, all fill-mode columns are shown with their minimum widths, and user column-resizing is disabled. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
  When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property is set to any other value except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column will manage its width so that its cell values are fully displayed without clipping. In content-based sizing modes, size adjustments occur whenever cell contents change or, if <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is enabled, whenever row heights change. Some content-based sizing modes let you limit the size adjustment to the currently displayed rows in order to increase performance.  
   
@@ -136,7 +136,7 @@
   
  To adjust column widths programmatically, use the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> methods or set the column <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> property.  
   
- For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -372,7 +372,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in this column, the styles specified through the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName> property, but are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName> properties.  
   
- For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -569,14 +569,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](../Topic/Column%20Fill%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
  The maximum sum of <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> values for all columns in a <xref:System.Windows.Forms.DataGridView> control is 65535.  
   
    
   
 ## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](../Topic/How%20to:%20Set%20the%20Sizing%20Modes%20of%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Set the Sizing Modes of the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#30)]  
@@ -659,7 +659,7 @@
   
  A `fixedHeight` parameter value of `false` calculates the column width based on calculated row heights that will achieve ideal cell height-to-width ratios. For cell contents to wrap onto multiple lines, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -785,7 +785,7 @@
 ## Remarks  
  The automatic sizing behavior of the column is determined by the value of the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property, which is the same as the value of the <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property for all values except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, which indicates that the value is inherited from the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A?displayProperty=fullName> property instead.  
   
- When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](../Topic/Column%20Fill%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column is resized along with other columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. All fill-mode columns in the control divide the available space in proportions determined by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
  When the <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property is set to any other value except <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, the column will manage its width so that its cell values are fully displayed without clipping. In content-based sizing modes, size adjustments occur whenever cell contents change or, if <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is enabled, whenever row heights change. Some content-based sizing modes let you limit the size adjustment to the currently displayed rows in order to increase performance.  
   
@@ -793,7 +793,7 @@
   
  To adjust column widths programmatically, use the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> methods or set the column <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> property.  
   
- For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -825,7 +825,7 @@
 ## Remarks  
  This property is useful to determine which cell styles are applied to all cells in a column regardless of any row styles that are also applied to the cells. The column <xref:System.Windows.Forms.DataGridViewColumn.InheritedStyle%2A> property inherits its values from the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> and the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=fullName> property.  
   
- For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>

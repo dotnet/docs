@@ -29,7 +29,7 @@
   
  ![ListView with GridView output](~/add/media/listviewgridview.JPG "ListView with GridView output")  
   
- You can also define custom views by creating a class that derives from <xref:System.Windows.Controls.ViewBase>. For more information, see [How to: Create a Custom View Mode for a ListView](../Topic/How%20to:%20Create%20a%20Custom%20View%20Mode%20for%20a%20ListView.md).  
+ You can also define custom views by creating a class that derives from <xref:System.Windows.Controls.ViewBase>. For more information, see [How to: Create a Custom View Mode for a ListView](~/docs/framework/wpf/controls/how-to-create-a-custom-view-mode-for-a-listview.md).  
   
  If you define a custom <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> for a <xref:System.Windows.Controls.ListView> control and also define an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, you must include a <xref:System.Windows.Controls.ContentPresenter> in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. The <xref:System.Windows.Controls.ContentPresenter> is required for the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to work correctly.  
   
@@ -39,15 +39,15 @@
   
  Do not use the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties for <xref:System.Windows.Controls.ListView> content that is displayed by using a <xref:System.Windows.Controls.GridView>. To specify the alignment of content in a column of a <xref:System.Windows.Controls.GridView>, define a <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>.  
   
- Displaying a large number of items may cause performance issues.  See [Optimizing Performance: Controls](../Topic/Optimizing%20Performance:%20Controls.md) for more information.  
+ Displaying a large number of items may cause performance issues.  See [Optimizing Performance: Controls](~/docs/framework/wpf/advanced/optimizing-performance-controls.md) for more information.  
   
 ## Customizing the ListView Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.ListView> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ListView>, see [ListView Styles and Templates](../Topic/ListView%20Styles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.ListView> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.ListView>, see [ListView Styles and Templates](~/docs/framework/wpf/controls/listview-styles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ListView> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.ListView> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
    
   
@@ -236,7 +236,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] environment includes the configurable view mode named <xref:System.Windows.Controls.GridView>. You can also create a custom view that inherits from <xref:System.Windows.Controls.ViewBase>. For more information, see [How to: Create a Custom View Mode for a ListView](../Topic/How%20to:%20Create%20a%20Custom%20View%20Mode%20for%20a%20ListView.md).  
+ The [!INCLUDE[TLA#tla_titlewinfx](~/includes/tlasharptla-titlewinfx-md.md)] environment includes the configurable view mode named <xref:System.Windows.Controls.GridView>. You can also create a custom view that inherits from <xref:System.Windows.Controls.ViewBase>. For more information, see [How to: Create a Custom View Mode for a ListView](~/docs/framework/wpf/controls/how-to-create-a-custom-view-mode-for-a-listview.md).  
   
 <a name="dependencyPropertyInfo_View"></a>   
 ## Dependency Property Information  

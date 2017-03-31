@@ -47,7 +47,7 @@
 > [!NOTE]
 >  To view the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/threading/Tasks/Task.cs#045a746eb48cbaa9). You can browse through the source code online, download the reference for offline viewing, and step through the sources (including patches and updates) during debugging; see [instructions](http://referencesource.microsoft.com/).  
   
- The <xref:System.Threading.Tasks.Task> class represents a single operation that does not return a value and that usually executes asynchronously. <xref:System.Threading.Tasks.Task> objects are one of the central components of the  [task-based asynchronous pattern](../Topic/Task-based%20Asynchronous%20Pattern%20\(TAP\).md) first introduced in the .NET Framework 4. Because the work performed by a <xref:System.Threading.Tasks.Task> object typically executes asynchronously on a thread pool thread rather than synchronously on the main application thread, you can use the <xref:System.Threading.Tasks.Task.Status%2A> property, as well as the <xref:System.Threading.Tasks.Task.IsCanceled%2A>, <xref:System.Threading.Tasks.Task.IsCompleted%2A>, and <xref:System.Threading.Tasks.Task.IsFaulted%2A> properties, to determine the   state of a task. Most commonly, a lambda expression is used to specify the work that the task is to perform.  
+ The <xref:System.Threading.Tasks.Task> class represents a single operation that does not return a value and that usually executes asynchronously. <xref:System.Threading.Tasks.Task> objects are one of the central components of the  [task-based asynchronous pattern](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) first introduced in the .NET Framework 4. Because the work performed by a <xref:System.Threading.Tasks.Task> object typically executes asynchronously on a thread pool thread rather than synchronously on the main application thread, you can use the <xref:System.Threading.Tasks.Task.Status%2A> property, as well as the <xref:System.Threading.Tasks.Task.IsCanceled%2A>, <xref:System.Threading.Tasks.Task.IsCompleted%2A>, and <xref:System.Threading.Tasks.Task.IsFaulted%2A> properties, to determine the   state of a task. Most commonly, a lambda expression is used to specify the work that the task is to perform.  
   
  For operations that return values, you use the <xref:System.Threading.Tasks.Task%601> class.  
   
@@ -71,7 +71,7 @@
  [!code-csharp[System.Threading.Tasks.Task#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/startnew1.cs#7)]
  [!code-vb[System.Threading.Tasks.Task#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/startnew1.vb#7)]  
   
- For more complete examples, see [Task-based Asynchronous Programming](../Topic/Task-based%20Asynchronous%20Programming.md).  
+ For more complete examples, see [Task-based Asynchronous Programming](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md).  
   
 <a name="Separating"></a>   
 ## Separating task creation and execution  
@@ -110,7 +110,7 @@
  [!code-csharp[System.Threading.Tasks.Task#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task/cs/WaitAll2.cs#12)]
  [!code-vb[System.Threading.Tasks.Task#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task/vb/WaitAll2.vb#12)]  
   
- For more information on exception handling in task-based asynchronous operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For more information on exception handling in task-based asynchronous operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
 <a name="Culture"></a>   
 ## Tasks and culture  
@@ -228,7 +228,7 @@
 ## Remarks  
  Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task> object and launch a task is by calling the static <xref:System.Threading.Tasks.Task.Run%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> and <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%29?displayProperty=fullName> methods. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
   
- For more information, see [Task Parallelism (Task Parallel Library)](../Topic/Task-based%20Asynchronous%20Programming.md) and [Cancellation in Managed Threads](../Topic/Cancellation%20in%20Managed%20Threads.md).  
+ For more information, see [Task Parallelism (Task Parallel Library)](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md) and [Cancellation in Managed Threads](~/docs/standard/threading/cancellation-in-managed-threads.md).  
   
    
   
@@ -364,7 +364,7 @@
 ## Remarks  
  Rather than calling this constructor, the most common way to instantiate a <xref:System.Threading.Tasks.Task> object and launch a task is by calling the static <xref:System.Threading.Tasks.TaskFactory.StartNew%28System.Action%2CSystem.Threading.CancellationToken%2CSystem.Threading.Tasks.TaskCreationOptions%2CSystem.Threading.Tasks.TaskScheduler%29?displayProperty=fullName> method. The only advantage offered by this constructor is that it allows object instantiation to be separated from task invocation.  
   
- For more information, see [Task Parallelism (Task Parallel Library)](../Topic/Task-based%20Asynchronous%20Programming.md) and [Task Cancellation](../Topic/Task%20Cancellation.md).  
+ For more information, see [Task Parallelism (Task Parallel Library)](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md) and [Task Cancellation](~/docs/standard/parallel-programming/task-cancellation.md).  
   
  ]]></format>
         </remarks>
@@ -648,7 +648,7 @@
   
  Because a console application may terminate before the continuation task executes, the <xref:System.Threading.Tasks.Task.Wait> method is called to ensure that the continuation finishes executing before the example ends.  
   
- For an additional example, see [Chaining Tasks by Using Continuation Tasks](../Topic/Chaining%20Tasks%20by%20Using%20Continuation%20Tasks.md).  
+ For an additional example, see [Chaining Tasks by Using Continuation Tasks](~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2072,7 +2072,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Tasks that throw unhandled exceptions store the resulting exception and propagate it wrapped in a <xref:System.AggregateException> in calls to <xref:System.Threading.Tasks.Task.Wait%2A> or in accesses to the <xref:System.Threading.Tasks.Task.Exception%2A> property. Any exceptions not observed by the time the task instance is garbage collected will be propagated on the finalizer thread. For more information and an example, see [Exception Handling (Task Parallel Library)](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ Tasks that throw unhandled exceptions store the resulting exception and propagate it wrapped in a <xref:System.AggregateException> in calls to <xref:System.Threading.Tasks.Task.Wait%2A> or in accesses to the <xref:System.Threading.Tasks.Task.Exception%2A> property. Any exceptions not observed by the time the task instance is garbage collected will be propagated on the finalizer thread. For more information and an example, see [Exception Handling (Task Parallel Library)](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -2576,7 +2576,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   It uses the default task scheduler.  
   
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
    
   
@@ -2638,7 +2638,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -2688,7 +2688,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   It uses the default task scheduler.  
   
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
    
   
@@ -2740,7 +2740,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -2786,7 +2786,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -2838,7 +2838,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   It uses the default task scheduler.  
   
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
    
   
@@ -2894,7 +2894,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -2950,7 +2950,7 @@ Task t Status: RanToCompletion, Result: 42
   
 -   It uses the default task scheduler.  
   
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
    
   
@@ -3005,7 +3005,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Ordinarily, tasks are executed asynchronously on a thread pool thread and do not block the calling thread. Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method are associated with the current <xref:System.Threading.Tasks.TaskScheduler> and are run on the calling thread. If the target scheduler does not support running this task on the calling thread, the task will be scheduled for execution on the scheduler, and the calling thread will block until the task has completed execution. Even though the task runs synchronously, the calling thread should still call <xref:System.Threading.Tasks.Task.Wait%2A> to handle any exceptions that the task might throw.  For more information on exception handling, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ Ordinarily, tasks are executed asynchronously on a thread pool thread and do not block the calling thread. Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously> method are associated with the current <xref:System.Threading.Tasks.TaskScheduler> and are run on the calling thread. If the target scheduler does not support running this task on the calling thread, the task will be scheduled for execution on the scheduler, and the calling thread will block until the task has completed execution. Even though the task runs synchronously, the calling thread should still call <xref:System.Threading.Tasks.Task.Wait%2A> to handle any exceptions that the task might throw.  For more information on exception handling, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously%2A> method are instantiated by calling a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> class constructor. The task to be run synchronously must be in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state. A task may be started and run only once. Any attempts to schedule a task a second time results in an exception.  
   
@@ -3057,7 +3057,7 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  Tasks executed by calling the <xref:System.Threading.Tasks.Task.RunSynchronously%2A> method are instantiated by calling a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> class constructor. The task to be run synchronously must be in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state. A task may be started and run only once. Any attempts to schedule a task a second time results in an exception.  
   
- If the target scheduler does not support running this task on the current thread, the task will be scheduled for execution on the scheduler, and the current thread will block until the task has completed execution. Because of this, the calling thread does not need to call a method such as <xref:System.Threading.Tasks.Task.Wait%2A> to ensure that the task has completed execution. For more information on exception handling for task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ If the target scheduler does not support running this task on the current thread, the task will be scheduled for execution on the scheduler, and the current thread will block until the task has completed execution. Because of this, the calling thread does not need to call a method such as <xref:System.Threading.Tasks.Task.Wait%2A> to ensure that the task has completed execution. For more information on exception handling for task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -3099,7 +3099,7 @@ Task t Status: RanToCompletion, Result: 42
   
  The <xref:System.Threading.Tasks.Task.Start%2A> is used to execute a task that has been created by calling one of the <xref:System.Threading.Tasks.Task> constructors. Typically, you do this when you need to separate the task's creation from its execution, such as when you conditionally execute tasks that you've created. For the more common case in which you don't need to separate  task instantiation from execution, we recommend that you call an overload of the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> or <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method.  
   
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
    
   
@@ -3149,7 +3149,7 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  A task may only be started and run only once. Any attempts to schedule a task a second time will result in an exception.  
   
- For information on handling exceptions thrown by task operations, see [Exception Handling](../Topic/Exception%20Handling%20\(Task%20Parallel%20Library\).md).  
+ For information on handling exceptions thrown by task operations, see [Exception Handling](~/docs/standard/parallel-programming/exception-handling-task-parallel-library.md).  
   
  ]]></format>
         </remarks>
@@ -3190,7 +3190,7 @@ Task t Status: RanToCompletion, Result: 42
 ## Remarks  
  Retrieving the value of the <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> property does not block the calling thread until the task has completed.  
   
- For more information and an example, see [Chaining Tasks by Using Continuation Tasks](../Topic/Chaining%20Tasks%20by%20Using%20Continuation%20Tasks.md) and [How to: Cancel a Task and Its Children](../Topic/How%20to:%20Cancel%20a%20Task%20and%20Its%20Children.md).  
+ For more information and an example, see [Chaining Tasks by Using Continuation Tasks](~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md) and [How to: Cancel a Task and Its Children](~/docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md).  
   
    
   
@@ -3233,7 +3233,7 @@ Task t Status: RanToCompletion, Result: 42
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Using the wait functionality provided by <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> is preferable to using <xref:System.IAsyncResult.AsyncWaitHandle%2A> for similar functionality. For more information, see the "Waiting on Tasks" section in [Task-based Asynchronous Programming](../Topic/Task-based%20Asynchronous%20Programming.md) and [Using TPL with Other Asynchronous Patterns](../Topic/Using%20TPL%20with%20Other%20Asynchronous%20Patterns.md).  
+ Using the wait functionality provided by <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=fullName> is preferable to using <xref:System.IAsyncResult.AsyncWaitHandle%2A> for similar functionality. For more information, see the "Waiting on Tasks" section in [Task-based Asynchronous Programming](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md) and [Using TPL with Other Asynchronous Patterns](~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md).  
   
  ]]></format>
         </remarks>

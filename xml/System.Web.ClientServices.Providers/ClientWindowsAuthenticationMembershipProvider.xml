@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use client application services to validate users by using Windows authentication. To enable Windows authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ You can use client application services to validate users by using Windows authentication. To enable Windows authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  After configuration, you can validate users by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. The <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method internally calls the <xref:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser%2A> method.  
   

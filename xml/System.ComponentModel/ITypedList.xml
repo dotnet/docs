@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList> interface. A generic type named `SortableBindingList` derives from the <xref:System.ComponentModel.BindingList%601> class and implements the <xref:System.ComponentModel.ITypedList> interface. For a full code listing, see [How to: Implement the ITypedList Interface](../Topic/How%20to:%20Implement%20the%20ITypedList%20Interface.md).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList> interface. A generic type named `SortableBindingList` derives from the <xref:System.ComponentModel.BindingList%601> class and implements the <xref:System.ComponentModel.ITypedList> interface. For a full code listing, see [How to: Implement the ITypedList Interface](~/docs/framework/winforms/how-to-implement-the-itypedlist-interface.md).  
   
  [!code-csharp[System.ComponentModel.ITypedList#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#1)]
  [!code-vb[System.ComponentModel.ITypedList#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/SortableBindingList.vb#1)]  
@@ -87,7 +87,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A> method. For a full code listing, see [How to: Implement the ITypedList Interface](../Topic/How%20to:%20Implement%20the%20ITypedList%20Interface.md).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A> method. For a full code listing, see [How to: Implement the ITypedList Interface](~/docs/framework/winforms/how-to-implement-the-itypedlist-interface.md).  
   
  [!code-csharp[System.ComponentModel.ITypedList#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#3)]
  [!code-vb[System.ComponentModel.ITypedList#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/SortableBindingList.vb#3)]  
@@ -133,7 +133,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList.GetListName%2A> method. For a full code listing, see [How to: Implement the ITypedList Interface](../Topic/How%20to:%20Implement%20the%20ITypedList%20Interface.md).  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList.GetListName%2A> method. For a full code listing, see [How to: Implement the ITypedList Interface](~/docs/framework/winforms/how-to-implement-the-itypedlist-interface.md).  
   
  [!code-csharp[System.ComponentModel.ITypedList#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#4)]
  [!code-vb[System.ComponentModel.ITypedList#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/SortableBindingList.vb#4)]  

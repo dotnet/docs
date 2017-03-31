@@ -35,7 +35,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this type. For more information about this example, see [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](../Topic/How%20to:%20Add%20ToolTips%20to%20Individual%20Cells%20in%20a%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this type. For more information about this example, see [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/cpp/datagridviewcell.tooltiptext.cpp#1)]
  [!code-csharp[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/CS/datagridviewcell.tooltiptext.cs#1)]
@@ -195,7 +195,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.BorderWidths%2A> method of the <xref:System.Windows.Forms.DataGridViewCell> class to determine the available drawing area in a cell. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](../Topic/How%20to:%20Disable%20Buttons%20in%20a%20Button%20Column%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCell.BorderWidths%2A> method of the <xref:System.Windows.Forms.DataGridViewCell> class to determine the available drawing area in a cell. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/disable-buttons-in-a-button-column-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridView.DisabledButtons#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/VB/form1.vb#20)]  
@@ -230,7 +230,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.ClickUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnClick%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnClick%2A> has the effect of unsharing the cell's row. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -364,7 +364,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.ContentClickUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnContentClick%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnContentClick%2A> has the effect of unsharing the cell's row. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -396,7 +396,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.ContentDoubleClickUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnContentDoubleClick%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnContentDoubleClick%2A> has the effect of unsharing the cell's row. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -430,7 +430,7 @@
   
  When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property returns the previously specified value or its default value of `null`.  
   
- Handling the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handling the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Changing this property raises the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripChanged> event on the owning <xref:System.Windows.Forms.DataGridView>, if one exists.  
   
@@ -500,7 +500,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewCell.DefaultNewRowValue%2A> property in a `CalendarCell` class that derives from <xref:System.Windows.Forms.DataGridViewTextBoxCell>. This example is part of a larger code example provided in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewCell.DefaultNewRowValue%2A> property in a `CalendarCell` class that derives from <xref:System.Windows.Forms.DataGridViewTextBoxCell>. This example is part of a larger code example provided in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#200](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#200)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#200](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#200)]  
@@ -596,7 +596,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.DataGridViewCell>. The <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> method leaves the <xref:System.Windows.Forms.DataGridViewCell> in an unusable state. After calling <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.DataGridViewCell> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.DataGridViewCell> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ Call <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.DataGridViewCell>. The <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> method leaves the <xref:System.Windows.Forms.DataGridViewCell> in an unusable state. After calling <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.DataGridViewCell> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.DataGridViewCell> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.Windows.Forms.DataGridViewCell.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.DataGridViewCell>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Windows.Forms.DataGridViewCell> object's `Finalize` method.  
@@ -636,9 +636,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
       </Docs>
     </Member>
@@ -668,7 +668,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.DoubleClickUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnDoubleClick%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnDoubleClick%2A> has the effect of unsharing the cell's row. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -757,7 +757,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewCell.EditType%2A> property in a `CalendarCell` class that derives from <xref:System.Windows.Forms.DataGridViewTextBoxCell>. This example is part of a larger code example provided in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewCell.EditType%2A> property in a `CalendarCell` class that derives from <xref:System.Windows.Forms.DataGridViewTextBoxCell>. This example is part of a larger code example provided in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#200](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#200)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#200](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#200)]  
@@ -795,7 +795,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.EnterUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnEnter%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnEnter%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -922,7 +922,7 @@
   
  This method overrides <xref:System.Object.Finalize%2A>. Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A> method.  
   
- For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
+ For more information, see [Finalize Methods and Destructors](http://msdn.microsoft.com/en-us/fd376774-1643-499b-869e-9546a3aeea70), [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).  
   
  ]]></format>
         </remarks>
@@ -1428,7 +1428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a <xref:System.Windows.Forms.DataGridViewCellStyle> that inherits its settings from the <xref:System.Windows.Forms.DataGridViewCellStyle> objects of the cell's parent row, column, and <xref:System.Windows.Forms.DataGridView>. For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This method returns a <xref:System.Windows.Forms.DataGridViewCellStyle> that inherits its settings from the <xref:System.Windows.Forms.DataGridViewCellStyle> objects of the cell's parent row, column, and <xref:System.Windows.Forms.DataGridView>. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1565,7 +1565,7 @@
 ## Remarks  
  Getting the value of the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property automatically instantiates a new <xref:System.Windows.Forms.DataGridViewCellStyle> if the property has not previously been accessed. Therefore, you must use the <xref:System.Windows.Forms.DataGridViewCell.HasStyle%2A> property to determine whether the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property is currently set to a <xref:System.Windows.Forms.DataGridViewCellStyle> instance. This is useful to determine which properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property represent styles set specifically for the cell.  
   
- For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1622,7 +1622,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. The styles specified through the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property override the styles specified through all other cell-style properties, but do not necessarily indicate all the styles that contribute to the cell's appearance.  
   
- For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1676,7 +1676,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method in a simple class that derives from the <xref:System.Windows.Forms.DataGridViewTextBoxCell> class. This example is part of a larger code example provided in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method in a simple class that derives from the <xref:System.Windows.Forms.DataGridViewTextBoxCell> class. This example is part of a larger code example provided in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#200](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#200)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#200](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#200)]  
@@ -1746,7 +1746,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.KeyDownUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnKeyDown%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnKeyDown%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1810,7 +1810,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.KeyPressUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnKeyPress%2A> method. In derived classes, it must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnKeyPress%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1844,7 +1844,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.KeyUpUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnKeyUp%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnKeyUp%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1879,7 +1879,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.LeaveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnLeave%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnLeave%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2162,7 +2162,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseClickUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseClick%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseClick%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2194,7 +2194,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseDoubleClickUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseDoubleClick%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2226,7 +2226,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseDownUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseDown%2A> method. In derived classes, it must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2258,7 +2258,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseEnterUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> method. In derived classes, it must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2290,7 +2290,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseLeaveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseLeave%2A> method. In derived classes, it must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2322,7 +2322,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseMoveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseMove%2A> method. In derived classes, it must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseMove%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2354,7 +2354,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewCell.MouseUpUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewCell.OnMouseUp%2A> method. In derived classes, it must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. Otherwise, it should return `false`.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -2761,7 +2761,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../Topic/How%20to:%20Customize%20Cells%20and%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control%20by%20Extending%20Their%20Behavior%20and%20Appearance.md).  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](~/docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/CS/rollovercell.cs#220)]
  [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#220)]  
@@ -2797,7 +2797,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../Topic/How%20to:%20Customize%20Cells%20and%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control%20by%20Extending%20Their%20Behavior%20and%20Appearance.md).  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](~/docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/CS/rollovercell.cs#220)]
  [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#220)]  
@@ -2956,7 +2956,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewCell.Paint%2A> method of a <xref:System.Windows.Forms.DataGridViewButtonCell>. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](../Topic/How%20to:%20Disable%20Buttons%20in%20a%20Button%20Column%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridViewCell.Paint%2A> method of a <xref:System.Windows.Forms.DataGridViewButtonCell>. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/disable-buttons-in-a-button-column-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridView.DisabledButtons#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/VB/form1.vb#20)]  
@@ -2995,7 +2995,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](../Topic/How%20to:%20Disable%20Buttons%20in%20a%20Button%20Column%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/disable-buttons-in-a-button-column-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridView.DisabledButtons#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/VB/form1.vb#20)]  
@@ -3339,7 +3339,7 @@
 ## Remarks  
  When the <xref:System.Windows.Forms.DataGridViewCell.RowIndex%2A> property returns -1, the cell is either a column header, or the cell's row is shared.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -3475,7 +3475,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. The styles specified through the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property override the styles specified through all other cell-style properties, but do not necessarily indicate all the styles that contribute to the cell's appearance.  
   
- For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -3560,14 +3560,14 @@
   
  When the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event of the control and returns the value of the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=fullName> property as specified in the event handler. If there are no handlers for the event, getting the value of the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property returns the previously specified value or its default value of <xref:System.String.Empty>.  
   
- Handling the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handling the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event is primarily useful when working with large amounts of data to avoid performance penalties when setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Changing this property raises the <xref:System.Windows.Forms.DataGridView.CellToolTipTextChanged> event on the owning <xref:System.Windows.Forms.DataGridView>, if one exists.  
   
    
   
 ## Examples  
- The following code example shows how to set the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property within an event handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting> event. This example is part of a larger code example provided in [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](../Topic/How%20to:%20Add%20ToolTips%20to%20Individual%20Cells%20in%20a%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example shows how to set the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property within an event handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting> event. This example is part of a larger code example provided in [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](~/docs/framework/winforms/controls/add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/cpp/datagridviewcell.tooltiptext.cpp#1)]
  [!code-csharp[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/CS/datagridviewcell.tooltiptext.cs#1)]
@@ -3638,7 +3638,7 @@
    
   
 ## Examples  
- The following code example shows how to update a cell's contents with the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property. This example is part of a larger code example provided in [How to: Manipulate Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example shows how to update a cell's contents with the <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property. This example is part of a larger code example provided in [How to: Manipulate Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#211](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewRowDemo.cpp#211)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#211](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewRowDemo.cs#211)]

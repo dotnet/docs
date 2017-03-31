@@ -269,7 +269,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](../Topic/How%20to:%20Load%20Assemblies%20into%20the%20Reflection-Only%20Context.md).</exception>
+        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md).</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
       </Docs>
     </Member>
@@ -303,7 +303,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="attributeType" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](../Topic/How%20to:%20Load%20Assemblies%20into%20the%20Reflection-Only%20Context.md)</exception>
+        <exception cref="T:System.InvalidOperationException">This member belongs to a type that is loaded into the reflection-only context. See [How to: Load Assemblies into the Reflection-Only Context](~/docs/framework/reflection-and-codedom/how-to-load-assemblies-into-the-reflection-only-context.md)</exception>
         <exception cref="T:System.TypeLoadException">A custom attribute type cannot be loaded.</exception>
       </Docs>
     </Member>
@@ -522,7 +522,7 @@
         <exception cref="T:System.Reflection.TargetException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch <see cref="T:System.Exception" /> instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch <see cref="T:System.Exception" /> instead.  
   
 </para>  
 </block>  
@@ -535,7 +535,7 @@
         <exception cref="T:System.MethodAccessException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.MemberAccessException" />, instead.  
   
 </para>  
 </block>  

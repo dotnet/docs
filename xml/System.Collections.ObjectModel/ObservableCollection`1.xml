@@ -56,7 +56,7 @@
 > [!NOTE]
 >  To fully support transferring data values from binding source objects to binding targets, each object in your collection that supports bindable properties must implement an appropriate property changed notification mechanism such as the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information, see "Binding to Collections" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For more information, see "Binding to Collections" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
 ## Notes on XAML Usage  
  <xref:System.Collections.ObjectModel.ObservableCollection%601> can be used as a XAML object element in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], in versions 3.0 and 3.5. However, the usage has substantial limitations.  

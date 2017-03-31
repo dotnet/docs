@@ -235,7 +235,7 @@
   
  You can only use `DeriveParameters` with stored procedures. You cannot use `DeriveParameters` with extended stored procedures. You cannot use `DeriveParameters` to populate the <xref:System.Data.SqlClient.SqlParameterCollection> with arbitrary Transact-SQL statements, such as a parameterized SELECT statement.  
   
- For more information, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ For more information, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
  ]]></format>
         </remarks>
@@ -269,7 +269,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -313,7 +313,7 @@
   
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> returned from the **GetSchema** method call and found in the <xref:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation> collection is specified.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -346,7 +346,7 @@
   
  After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -390,7 +390,7 @@
   
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> returned from the **GetSchema** method call and found in the <xref:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation> collection is specified.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -515,7 +515,7 @@
   
  After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -559,7 +559,7 @@
   
 -   A <xref:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat> returned from the **GetSchema** method call and found in the <xref:System.Data.Common.DbMetaDataCollectionNames.DataSourceInformation> collection is specified.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -791,7 +791,7 @@
   
  After the SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A> will still be using information from the previous statement, which might not be correct. The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -815,7 +815,7 @@
   
  After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>
@@ -839,7 +839,7 @@
   
  After the Transact-SQL statement is first generated, the application must explicitly call <xref:System.Data.Common.DbCommandBuilder.RefreshSchema%2A> if it changes the statement in any way. Otherwise, the <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A> will still be using information from the previous statement, which might not be correct. The Transact-SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand%2A>.  
   
- For more information, see [Generating Commands with CommandBuilders](../Topic/Generating%20Commands%20with%20CommandBuilders.md).  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
   
  ]]></format>
         </remarks>

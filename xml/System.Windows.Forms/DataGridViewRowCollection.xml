@@ -32,7 +32,7 @@
   
  To improve performance, a <xref:System.Windows.Forms.DataGridViewRowCollection> includes shared and unshared rows. Shared rows share memory to reduce the cost of a large record set. If your record set is very large, you should be careful to keep the rows shared as much as possible.  
   
- For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
     </remarks>
@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.Add> overload adds rows that are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. The new row is shared, if possible. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.Add> overload adds rows that are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. The new row is shared, if possible. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -155,7 +155,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Int32%29> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>. The new rows are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Int32%29> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>. The new rows are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -240,7 +240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Object%5B%5D%29> method adds an unshared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Object%5B%5D%29> method adds an unshared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -318,7 +318,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Windows.Forms.DataGridViewRow%29> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.Add%28System.Windows.Forms.DataGridViewRow%29> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -400,7 +400,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopies%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopies%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -470,7 +470,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new row has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the row positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopy%2A> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new row has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the row positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopy%2A> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -546,7 +546,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.AddRange%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.AddRange%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -1146,7 +1146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.Insert%28System.Int32%2CSystem.Int32%29> method adds rows that are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. The new row is shared, if possible. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.Insert%28System.Int32%2CSystem.Int32%29> method adds rows that are based on the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> of the <xref:System.Windows.Forms.DataGridView>. The new row is shared, if possible. Be sure that the row specified in the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property can be shared for best scalability. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -1321,7 +1321,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.Insert%28System.Int32%2CSystem.Windows.Forms.DataGridViewRow%29> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.Insert%28System.Int32%2CSystem.Windows.Forms.DataGridViewRow%29> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -1410,7 +1410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> objects has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.InsertCopies%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> objects has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.InsertCopies%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -1485,7 +1485,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method assigns the new row the index specified in the `indexDestination` parameter and increments the indexes for all subsequent rows. The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.InsertCopy%2A> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This method assigns the new row the index specified in the `indexDestination` parameter and increments the indexes for all subsequent rows. The <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property of the new <xref:System.Windows.Forms.DataGridViewRow> has the same values as the <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> of the <xref:System.Windows.Forms.DataGridViewRow> positioned at `indexSource`. The <xref:System.Windows.Forms.DataGridViewRowCollection.InsertCopy%2A> method adds a shared row to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new row is unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -1562,7 +1562,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridViewRowCollection.InsertRange%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridViewRowCollection.InsertRange%2A> method adds shared rows to the <xref:System.Windows.Forms.DataGridViewRowCollection>, if possible. Otherwise, the new rows are unshared. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  Rows in the control are not automatically sorted when new rows are added. To sort new rows into their correct position, call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.RowsAdded?displayProperty=fullName> event handler. You might also want to call the <xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=fullName> method in a <xref:System.Windows.Forms.DataGridView.CellValueChanged> event handler to sort the rows when the user modifies a cell.  
   
@@ -1670,7 +1670,7 @@
       <Docs>
         <param name="index">The zero-based index of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> to get.</param>
         <summary>Gets the <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index.</summary>
-        <value>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index. Accessing a <see cref="T:System.Windows.Forms.DataGridViewRow" /> with this indexer causes the row to become unshared. To keep the row shared, use the <see cref="M:System.Windows.Forms.DataGridViewRowCollection.SharedRow(System.Int32)" /> method. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).</value>
+        <value>The <see cref="T:System.Windows.Forms.DataGridViewRow" /> at the specified index. Accessing a <see cref="T:System.Windows.Forms.DataGridViewRow" /> with this indexer causes the row to become unshared. To keep the row shared, use the <see cref="M:System.Windows.Forms.DataGridViewRowCollection.SharedRow(System.Int32)" /> method. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0.  

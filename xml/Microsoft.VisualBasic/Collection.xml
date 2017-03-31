@@ -60,13 +60,13 @@ Dim coll As New Microsoft.VisualBasic.Collection()
   
 -   Return a specific element from the collection with the <xref:Microsoft.VisualBasic.Collection.Item%2A> property.  
   
--   Iterate through the entire collection with the [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md).  
+-   Iterate through the entire collection with the [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md).  
   
     > [!NOTE]
     >  Although the Visual Basic `Collection` object has functionality identical to the `Collection` object in Visual Basic 6.0, the two cannot interoperate in a COM environment.  
   
     > [!CAUTION]
-    >  Iterating through a Visual Basic `Collection` is not a thread-safe procedure. Even if the collection is synchronized, other threads can still modify the collection, causing the enumerator to throw an exception. To guarantee thread safety during enumeration, either lock the collection or catch the exceptions resulting from changes made by other threads. For more information on locking a programming element, see [SyncLock Statement](../Topic/SyncLock%20Statement.md).  
+    >  Iterating through a Visual Basic `Collection` is not a thread-safe procedure. Even if the collection is synchronized, other threads can still modify the collection, causing the enumerator to throw an exception. To guarantee thread safety during enumeration, either lock the collection or catch the exceptions resulting from changes made by other threads. For more information on locking a programming element, see [SyncLock Statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md).  
   
    
   
@@ -284,7 +284,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md) calls `GetEnumerator` to obtain an enumerator object to support iteration over a collection's elements. Normally, you use a `For Each`...`Next` loop to traverse a collection or array, and you do not need to call `GetEnumerator` explicitly.  
+ The [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md) calls `GetEnumerator` to obtain an enumerator object to support iteration over a collection's elements. Normally, you use a `For Each`...`Next` loop to traverse a collection or array, and you do not need to call `GetEnumerator` explicitly.  
   
  If you need closer control over the iteration than the `For Each`...`Next` statements provide, you can use the `GetEnumerator` method to perform a customized traversal. The following are some cases in which you might need to do this.  
   
@@ -301,7 +301,7 @@ Dim coll As New Microsoft.VisualBasic.Collection()
   
  [!code-vb[VbVbalrCollectionObject#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCollectionObject/VB/Class1.vb#7)]  
   
- `GetEnumerator` constructs and returns an enumerator object, which implements the <xref:System.Collections.IEnumerator> interface of the <xref:System.Collections> namespace. The enumerator object exposes the <xref:System.Collections.IEnumerator.Current%2A> property and the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> methods. For more information, see [For Each...Next Statement](../Topic/For%20Each...Next%20Statement%20\(Visual%20Basic\).md).  
+ `GetEnumerator` constructs and returns an enumerator object, which implements the <xref:System.Collections.IEnumerator> interface of the <xref:System.Collections> namespace. The enumerator object exposes the <xref:System.Collections.IEnumerator.Current%2A> property and the <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Reset%2A> methods. For more information, see [For Each...Next Statement](~/docs/visual-basic/language-reference/statements/for-each-next-statement.md).  
   
  ]]></format>
         </remarks>

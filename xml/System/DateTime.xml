@@ -99,7 +99,7 @@
   
      Note that the <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods indicate whether a particular string contains a valid representation of a <xref:System.DateTime> value in addition to performing the conversion.  
   
--   By calling the <xref:System.DateTime> structure's implicit default constructor. (For details on the implicit default constructor of a value type, see [Value Types](../Topic/Value%20Types%20\(C%23%20Reference\).md).) An approximate equivalent, for compilers that support it, is declaring a <xref:System.DateTime> value without explicitly assigning a date and time to it. The following example illustrates a call to the <xref:System.DateTime> implicit default constructor in C# and Visual Basic, as well as a <xref:System.DateTime> variable declaration with no assignment in Visual Basic.  
+-   By calling the <xref:System.DateTime> structure's implicit default constructor. (For details on the implicit default constructor of a value type, see [Value Types](~/docs/csharp/language-reference/keywords/value-types.md).) An approximate equivalent, for compilers that support it, is declaring a <xref:System.DateTime> value without explicitly assigning a date and time to it. The following example illustrates a call to the <xref:System.DateTime> implicit default constructor in C# and Visual Basic, as well as a <xref:System.DateTime> variable declaration with no assignment in Visual Basic.  
   
      [!code-csharp[System.DateTime.Instantiation#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Instantiation/cs/Instantiation1.cs#5)]
      [!code-vb[System.DateTime.Instantiation#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Instantiation/vb/Instantiation1.vb#5)]  
@@ -128,7 +128,7 @@
  [!code-csharp[System.DateTime.Formatting#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Formatting/cs/Formatting1.cs#4)]
  [!code-vb[System.DateTime.Formatting#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Formatting/vb/Formatting1.vb#4)]  
   
- For more information about formatting <xref:System.DateTime> values, see  [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) and [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+ For more information about formatting <xref:System.DateTime> values, see  [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
 <a name="parsing"></a>   
 ## Converting strings to DateTime values  
@@ -150,7 +150,7 @@
   
  The <xref:System.DateTime.Parse%2A> and <xref:System.DateTime.ParseExact%2A> methods throw an exception if the string to be converted to a <xref:System.DateTime> value cannot be parsed. The <xref:System.DateTime.TryParse%2A> and <xref:System.DateTime.TryParseExact%2A> methods return a <xref:System.Boolean> value that indicates whether the conversion succeeded or failed. Because the parsing operation for date and time strings, particularly if strings are input by users, tends to have a high failure rate, and because exception handling is expensive, you should use the <xref:System.DateTime.TryParse%2A> or <xref:System.DateTime.TryParseExact%2A> methods in scenarios where performance is important or conversions are subject to a high rate of failure.  
   
- For more information about parsing date and time values, see [Parsing Date and Time Strings](../Topic/Parsing%20Date%20and%20Time%20Strings%20in%20the%20.NET%20Framework.md).  
+ For more information about parsing date and time values, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md).  
   
 <a name="datetime_versions"></a>   
 ## Version considerations  
@@ -179,7 +179,7 @@
   
  The <xref:System.DateTime> structure itself offers limited support for converting from one time zone to another. You can use the <xref:System.DateTime.ToLocalTime%2A> method to convert UTC to local time, or you can use the <xref:System.DateTime.ToUniversalTime%2A> method to convert from local time to UTC. However, a full set of time zone conversion methods is available in the <xref:System.TimeZoneInfo> class. Using these methods, you can convert the time in any one of the world's time zones to the time in any other time zone.  
   
- Calculations and comparisons of <xref:System.DateTime> objects are meaningful only if the objects represent times in the same time zone. You can use a <xref:System.TimeZoneInfo> object to represent a <xref:System.DateTime> value's time zone, although the two are loosely coupled. (That is, a <xref:System.DateTime> object does not have a property that returns an object that represents that date and time value's time zone other than the <xref:System.DateTime.Kind%2A> property.) For this reason, in a time zone-aware application, you must rely on some external mechanism to determine the time zone in which a <xref:System.DateTime> object was created. For example, you could use a structure that wraps both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents the <xref:System.DateTime> value's time zone. For details on using UTC in calculations and comparisons with <xref:System.DateTime> values, see [Performing Arithmetic Operations with Dates and Times](../Topic/Performing%20Arithmetic%20Operations%20with%20Dates%20and%20Times.md).  
+ Calculations and comparisons of <xref:System.DateTime> objects are meaningful only if the objects represent times in the same time zone. You can use a <xref:System.TimeZoneInfo> object to represent a <xref:System.DateTime> value's time zone, although the two are loosely coupled. (That is, a <xref:System.DateTime> object does not have a property that returns an object that represents that date and time value's time zone other than the <xref:System.DateTime.Kind%2A> property.) For this reason, in a time zone-aware application, you must rely on some external mechanism to determine the time zone in which a <xref:System.DateTime> object was created. For example, you could use a structure that wraps both the <xref:System.DateTime> value and the <xref:System.TimeZoneInfo> object that represents the <xref:System.DateTime> value's time zone. For details on using UTC in calculations and comparisons with <xref:System.DateTime> values, see [Performing Arithmetic Operations with Dates and Times](~/docs/standard/datetime/performing-arithmetic-operations.md).  
   
  Each <xref:System.DateTime> member implicitly uses the Gregorian calendar to perform its operation, with the exception of constructors that specify a calendar, and methods with a parameter derived from <xref:System.IFormatProvider>, such as <xref:System.Globalization.DateTimeFormatInfo?displayProperty=fullName>, that implicitly specifies a calendar.  
   
@@ -270,7 +270,7 @@
  [!code-csharp[System.DateTime.Calendar#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.DateTime.Calendar/cs/Weeks1.cs#5)]
  [!code-vb[System.DateTime.Calendar#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.DateTime.Calendar/vb/Weeks1.vb#5)]  
   
- For more information on dates and calendars, see [Working with Calendars](../Topic/Working%20with%20Calendars.md).  
+ For more information on dates and calendars, see [Working with Calendars](~/docs/standard/datetime/working-with-calendars.md).  
   
 <a name="Persisting"></a>   
 ## Persisting DateTime values  
@@ -2079,7 +2079,7 @@
 ## Remarks  
  The value of the constants in the <xref:System.DayOfWeek> enumeration ranges from <xref:System.DayOfWeek?displayProperty=fullName> to <xref:System.DayOfWeek?displayProperty=fullName>. If cast to an integer, its value ranges from zero (which indicates <xref:System.DayOfWeek?displayProperty=fullName>) to six (which indicates <xref:System.DayOfWeek?displayProperty=fullName>).  
   
- The <xref:System.DateTime.DayOfWeek%2A> property returns an enumerated constant; it does not reflect a system's regional and language settings. To retrieve a string representing a localized weekday name for a particular date, call one of the overloads of the <xref:System.DateTime.ToString%2A> method that includes a `format` parameter and pass it either the `ddd` or `dddd` custom format strings. For details, see [How to: Extract the Day of the Week from a Specific Date](../Topic/How%20to:%20Extract%20the%20Day%20of%20the%20Week%20from%20a%20Specific%20Date.md).  
+ The <xref:System.DateTime.DayOfWeek%2A> property returns an enumerated constant; it does not reflect a system's regional and language settings. To retrieve a string representing a localized weekday name for a particular date, call one of the overloads of the <xref:System.DateTime.ToString%2A> method that includes a `format` parameter and pass it either the `ddd` or `dddd` custom format strings. For details, see [How to: Extract the Day of the Week from a Specific Date](~/docs/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md).  
   
    
   
@@ -2610,7 +2610,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string array returned by the <xref:System.DateTime.GetDateTimeFormats?displayProperty=fullName> method is equivalent to combining the string arrays returned by separate calls to the <xref:System.DateTime.GetDateTimeFormats%28System.Char%29?displayProperty=fullName> method with the "d", "D", "f", "F", "g", "G", "m", "o", "r", "s", "t", "T", "u", "U", and "y" standard format strings. For more information about standard format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md).  
+ The string array returned by the <xref:System.DateTime.GetDateTimeFormats?displayProperty=fullName> method is equivalent to combining the string arrays returned by separate calls to the <xref:System.DateTime.GetDateTimeFormats%28System.Char%29?displayProperty=fullName> method with the "d", "D", "f", "F", "g", "G", "m", "o", "r", "s", "t", "T", "u", "U", and "y" standard format strings. For more information about standard format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
   
  Each element of the return value is formatted using information from the current culture. For more information about culture-specific formatting information for the current culture, see <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
   
@@ -2803,7 +2803,7 @@ July, 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can be any of the standard date and time format specifiers. These include d, D, f, F, g, G, M (or m), O (or o), R (or r), s, t, T, u, U, and Y (or y). For more information, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md).  
+ The `format` parameter can be any of the standard date and time format specifiers. These include d, D, f, F, g, G, M (or m), O (or o), R (or r), s, t, T, u, U, and Y (or y). For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
   
  Each element of the return value is formatted using information from the current culture. For more information about culture-specific formatting information for the current culture, see <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
   
@@ -2859,7 +2859,7 @@ July, 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The string array returned by the <xref:System.DateTime.GetDateTimeFormats%28System.IFormatProvider%29?displayProperty=fullName> method is equivalent to combining the string arrays returned by separate calls to the <xref:System.DateTime.GetDateTimeFormats%28System.Char%2CSystem.IFormatProvider%29?displayProperty=fullName> method with the "d", "D", "f", "F", "g", "G", "m", "o", "r", "s", "t", "T", "u", "U", and "y" standard format strings. For more information about standard format specifiers, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md).  
+ The string array returned by the <xref:System.DateTime.GetDateTimeFormats%28System.IFormatProvider%29?displayProperty=fullName> method is equivalent to combining the string arrays returned by separate calls to the <xref:System.DateTime.GetDateTimeFormats%28System.Char%2CSystem.IFormatProvider%29?displayProperty=fullName> method with the "d", "D", "f", "F", "g", "G", "m", "o", "r", "s", "t", "T", "u", "U", and "y" standard format strings. For more information about standard format specifiers, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
   
  Each element of the return value is formatted using culture-specific information supplied by `provider`.  
   
@@ -3023,7 +3023,7 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The format parameter can be any of the standard date and time format specifiers. These include d, D, f, F, g, G, M (or m), O (or o), R (or r), s, t, T, u, U, and Y (or y). For more information, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md).  
+ The format parameter can be any of the standard date and time format specifiers. These include d, D, f, F, g, G, M (or m), O (or o), R (or r), s, t, T, u, U, and Y (or y). For more information, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md).  
   
  Each element of the return value is formatted using culture-specific information supplied by `provider`.  
   
@@ -4210,7 +4210,7 @@ juillet 2009
   
  If `s` does not represent a time in a particular time zone and the parse operation succeeds, the<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind?displayProperty=fullName>. If `s` does represent the time in a particular time zone and `format` allows time zone information to be present (for example, if `format` is equal to the "o", "r", or "u" standard format specifiers, or if it contains the "z", "zz", or "zzz" custom format specifiers), the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind?displayProperty=fullName>.  
   
- The `format` parameter is a string that contains either a single standard format specifier, or one or more custom format specifiers that define the required format of `s`. For details about valid formatting codes, see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) or [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md).  
+ The `format` parameter is a string that contains either a single standard format specifier, or one or more custom format specifiers that define the required format of `s`. For details about valid formatting codes, see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
 > [!NOTE]
 >  If `format` is a custom format pattern that does not include date or time separators (such as "yyyyMMddHHmm"), use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the format pattern, specify the wider form, "HH", instead of the narrower form, "H".  
@@ -4299,7 +4299,7 @@ juillet 2009
   
  If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> and <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>. If `s` contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag to not convert Coordinated Universal Time (UTC) to a local time and to set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.  
   
- The `format` parameter defines the required pattern of the `s` parameter. It can consist of either one or more custom format specifiers from the [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) table.  
+ The `format` parameter defines the required pattern of the `s` parameter. It can consist of either one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
  If you do not use date or time separators in a custom format pattern, use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the pattern, specify the wider form, "HH", instead of the narrower form, "H".  
   
@@ -4407,7 +4407,7 @@ juillet 2009
   
  If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> and <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>. If `s` contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.  
   
- The `formats` parameter contains an array of patterns, one of which `s` must match exactly if the parse operation is to succeed. The patterns in the `formats` parameter consists of one or more custom format specifiers from the [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) table.  
+ The `formats` parameter contains an array of patterns, one of which `s` must match exactly if the parse operation is to succeed. The patterns in the `formats` parameter consists of one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
  If you do not use date or time separators in a custom format pattern, use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the pattern, specify the wider form, "HH", instead of the narrower form, "H".  
   
@@ -4550,7 +4550,7 @@ juillet 2009
  A <xref:System.DateTime> object consists of a Kind field that indicates whether the time value is based on local time, Coordinated Universal Time (UTC), or neither, and a Ticks field that contains a time value measured in 100-nanosecond ticks. The <xref:System.DateTime.SpecifyKind%2A> method creates a new <xref:System.DateTime> object using the specified `kind` parameter and the original time value.  
   
 > [!IMPORTANT]
->  The returned <xref:System.DateTime> value does not represent the same instant in time as the `value` parameter, and <xref:System.DateTime.SpecifyKind%2A> is not a time zone conversion method. Instead, it leaves the time specified by the `value` parameter unchanged, and sets the <xref:System.DateTime.Kind%2A> property to `kind`. For information about time zone conversions, see [Converting Times Between Time Zones](../Topic/Converting%20Times%20Between%20Time%20Zones.md).  
+>  The returned <xref:System.DateTime> value does not represent the same instant in time as the `value` parameter, and <xref:System.DateTime.SpecifyKind%2A> is not a time zone conversion method. Instead, it leaves the time specified by the `value` parameter unchanged, and sets the <xref:System.DateTime.Kind%2A> property to `kind`. For information about time zone conversions, see [Converting Times Between Time Zones](~/docs/standard/datetime/converting-between-time-zones.md).  
   
  The <xref:System.DateTime.SpecifyKind%2A> method is useful in interoperability scenarios where you receive a <xref:System.DateTime> object with an unspecified Kind field, but you can determine by independent means that the Ticks field represents local time or UTC.  
   
@@ -5363,7 +5363,7 @@ juillet 2009
 ## Remarks  
  Unlike the <xref:System.DateTime.Date%2A> property. which returns a <xref:System.DateTime> value that represents a date without its time component, the <xref:System.DateTime.TimeOfDay%2A> property returns a <xref:System.TimeSpan> value that represents a  <xref:System.DateTime> value's time component.  
   
- If you want to display the time of day or retrieve the string representation of the time of day of a <xref:System.DateTime> value, you can instead call an overload of the <xref:System.DateTime.ToString%2A> method that has a `format` parameter or use the [composite formatting](../Topic/Composite%20Formatting.md) feature with the "t" or "T" standard format string.  
+ If you want to display the time of day or retrieve the string representation of the time of day of a <xref:System.DateTime> value, you can instead call an overload of the <xref:System.DateTime.ToString%2A> method that has a `format` parameter or use the [composite formatting](~/docs/standard/base-types/composite-formatting.md) feature with the "t" or "T" standard format string.  
   
    
   
@@ -5691,12 +5691,12 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property associated with the current thread culture. The return value is identical to the value returned by specifying the "D" [standard DateTime format string](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
+ The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A> property associated with the current thread culture. The return value is identical to the value returned by specifying the "D" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
 > [!IMPORTANT]
 >  The string returned by the <xref:System.DateTime.ToLongDateString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard long date pattern is "dddd, MMMMdd, yyyy"; for the de-DE culture, it is "dddd, d. MMMMyyyy"; for the ja-JP culture, it is "yyyy'?'M'?'d'?'". The specific format string on a particular computer can also be customized so that it differs from the standard long date format string.  
   
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
+ For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
   
    
   
@@ -5735,12 +5735,12 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=fullName> property associated with the current thread culture. The return value is identical to the value returned by specifying the "T" [standard date and time format string](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
+ The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A?displayProperty=fullName> property associated with the current thread culture. The return value is identical to the value returned by specifying the "T" [standard date and time format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
 > [!IMPORTANT]
 >  The string returned by the <xref:System.DateTime.ToLongTimeString%2A> method is culture-sensitive. It reflects the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.LongTimePattern%2A> property of the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard long time pattern is "h:mm:ss tt"; for the de-DE culture, it is "HH:mm:ss"; for the ja-JP culture, it is "H:mm:ss". The specific format string on a particular computer can also be customized so that it differs from the standard long time format string.  
   
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
+ For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
   
    
   
@@ -5817,12 +5817,12 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A?displayProperty=fullName> property associated with the current thread culture. The return value is identical to the value returned by specifying the "d" [standard DateTime format string](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
+ The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortDatePattern%2A?displayProperty=fullName> property associated with the current thread culture. The return value is identical to the value returned by specifying the "d" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
 > [!IMPORTANT]
 >  The string returned by the <xref:System.DateTime.ToShortDateString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard short date pattern is "M/d/yyyy"; for the de-DE culture, it is "dd.MM.yyyy"; for the ja-JP culture, it is "yyyy/M/d". The specific format string on a particular computer can also be customized so that it differs from the standard short date format string.  
   
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
+ For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=fullName> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
   
    
   
@@ -5861,12 +5861,12 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=fullName> property associated with the current thread culture. The return value is identical to the value returned by specifying the "t" [standard DateTime format string](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
+ The value of the current <xref:System.DateTime> object is formatted using the pattern defined by the <xref:System.Globalization.DateTimeFormatInfo.ShortTimePattern%2A?displayProperty=fullName> property associated with the current thread culture. The return value is identical to the value returned by specifying the "t" [standard DateTime format string](~/docs/standard/base-types/standard-date-and-time-format-strings.md) with the <xref:System.DateTime.ToString%28System.String%29> method.  
   
 > [!IMPORTANT]
 >  The string returned by the <xref:System.DateTime.ToShortTimeString%2A> method is culture-sensitive. It reflects the pattern defined by the current culture's <xref:System.Globalization.DateTimeFormatInfo> object. For example, for the en-US culture, the standard short time pattern is "h:mm tt"; for the de-DE culture, it is "HH:mm"; for the ja-JP culture, it is "H:mm". The specific format string on a particular computer can also be customized so that it differs from the standard short time format string.  
   
- For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
+ For more information about the current thread culture, see the <xref:System.Threading.Thread.CurrentCulture%2A> property. For more information about format characters, format patterns, and the output they produce, see the [Formatting Types](~/docs/standard/base-types/formatting-types.md) topic. For more information about changing the format pattern associated with a format character, see the <xref:System.Globalization.DateTimeFormatInfo> class.  
   
    
   
@@ -6038,7 +6038,7 @@ juillet 2009
 ## Remarks  
  The <xref:System.DateTime.ToString%28System.String%29> method returns the string representation of a date and time value in a specific format that uses the formatting conventions of the current culture; for more information, see <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>.  
   
- The `format` parameter should contain either a single format specifier character (see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md)) or a custom format pattern (see [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md)) that defines the format of the returned string. If `format` is `null` or an empty string, the general format specifier, 'G', is used.  
+ The `format` parameter should contain either a single format specifier character (see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md)) or a custom format pattern (see [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md)) that defines the format of the returned string. If `format` is `null` or an empty string, the general format specifier, 'G', is used.  
   
  Some uses of this method include:  
   
@@ -6116,7 +6116,7 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `format` parameter can contain either a single format specifier character (see [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md)) or a custom format pattern (see [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md)). If `format`is `null` or an empty string (""), the standard format specifier, "G", is used.  
+ The `format` parameter can contain either a single format specifier character (see [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md)) or a custom format pattern (see [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md)). If `format`is `null` or an empty string (""), the standard format specifier, "G", is used.  
   
  The `provider` parameter defines the pattern that corresponds to the standard format specifiers, as well as the symbols and names of date and time components. The `provider` parameter can be any of the following:  
   
@@ -6460,7 +6460,7 @@ juillet 2009
   
  If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> and <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>. If s contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.  
   
- The `format` parameter contains a pattern that corresponds to the expected format of the `s` parameter. The pattern in the `format` parameter consists of one or more custom format specifiers from the [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) table.  
+ The `format` parameter contains a pattern that corresponds to the expected format of the `s` parameter. The pattern in the `format` parameter consists of one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
  If you do not use date or time separators in a custom format pattern, use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the pattern, specify the wider form, "HH", instead of the narrower form, "H".  
   
@@ -6563,7 +6563,7 @@ juillet 2009
   
  If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, or by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> and <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flags, which returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>. If s contains time zone information, the time is converted to local time, if necessary, and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. This behavior can be changed by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag to not convert Coordinated Universal Time (UTC) to a local time and set the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.  
   
- The `formats` parameter contains an array of patterns, one of which `s` must match exactly if the parse operation is to succeed. The patterns in the `formats` parameter consist of one or more custom format specifiers from the [Custom Date and Time Format Strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) table.  
+ The `formats` parameter contains an array of patterns, one of which `s` must match exactly if the parse operation is to succeed. The patterns in the `formats` parameter consist of one or more custom format specifiers from the [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) table, or a single standard format specifier, which identifies a predefined pattern, from the [Standard Date and Time Format Strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) table.  
   
  If you do not use date or time separators in a custom format pattern, use the invariant culture for the `provider` parameter and the widest form of each custom format specifier. For example, if you want to specify hours in the pattern, specify the wider form, "HH", instead of the narrower form, "H".  
   

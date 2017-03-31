@@ -33,7 +33,7 @@
   
 -   Supports passing node fragments (through the <xref:System.Xml.XPath.XPathNavigator>) to the style sheet.  
   
- For more information about using the <xref:System.Xml.Xsl.XsltArgumentList>, see [XSLT Extension Objects](../Topic/XSLT%20Extension%20Objects.md) and [XSLT Parameters](../Topic/XSLT%20Parameters.md).  
+ For more information about using the <xref:System.Xml.Xsl.XsltArgumentList>, see [XSLT Extension Objects](~/docs/standard/data/xml/xslt-extension-objects.md) and [XSLT Parameters](~/docs/standard/data/xml/xslt-parameters.md).  
   
  ]]></format>
     </remarks>
@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `params` keyword, which allows an unspecified number of parameters to be passed, is currently not supported. XSLT style sheets that utilize methods defined with the `params` keyword does not work correctly. For more information, see [params](../Topic/params%20\(C%23%20Reference\).md).  
+ The `params` keyword, which allows an unspecified number of parameters to be passed, is currently not supported. XSLT style sheets that utilize methods defined with the `params` keyword does not work correctly. For more information, see [params](~/docs/csharp/language-reference/keywords/params.md).  
   
    
   

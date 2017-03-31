@@ -407,7 +407,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the inside of the shape that is displayed with the label.</summary>
-        <value>The brush that is used to draw the inside of the shape that is displayed with the label. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the inside of the shape that is displayed with the label. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -456,7 +456,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the outline of the shape that is displayed with the label.</summary>
-        <value>The brush that is used to draw the outline of the shape that is displayed with the label. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the outline of the shape that is displayed with the label. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -553,7 +553,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the text content in this element.</summary>
-        <value>The text content in this element. The registered default is an <see cref="F:System.String.Empty" /> string. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The text content in this element. The registered default is an <see cref="F:System.String.Empty" /> string. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

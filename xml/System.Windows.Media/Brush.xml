@@ -60,10 +60,10 @@
 |<xref:System.Windows.Media.RadialGradientBrush>|No|Yes|  
 |<xref:System.Windows.Media.VisualBrush>|No|Yes|  
   
- For an example showing how to quickly paint an area with a solid color, see [How to: Paint an Area with a Solid Color](../Topic/How%20to:%20Paint%20an%20Area%20with%20a%20Solid%20Color.md).  
+ For an example showing how to quickly paint an area with a solid color, see [How to: Paint an Area with a Solid Color](~/docs/framework/wpf/graphics-multimedia/how-to-paint-an-area-with-a-solid-color.md).  
   
 ## Freezable Features  
- A brush is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A brush is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
 <a name="xamlTextUsage_Brush"></a>   
 ## XAML Text Usage  
@@ -72,7 +72,7 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>When you inherit from the <see cref="T:System.Windows.Media.Brush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. Depending on whether your class must perform additional initialization work or contains non-dependency property data members, you might need to override additional <see cref="T:System.Windows.Freezable" /> methods. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).</para>
+      <para>When you inherit from the <see cref="T:System.Windows.Media.Brush" /> class, you must override the <see cref="M:System.Windows.Freezable.CreateInstanceCore" /> method. Depending on whether your class must perform additional initialization work or contains non-dependency property data members, you might need to override additional <see cref="T:System.Windows.Freezable" /> methods. For more information about inheriting from <see cref="T:System.Windows.Freezable" /> types, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).</para>
     </block>
   </Docs>
   <Members>
@@ -218,7 +218,7 @@
 ## Remarks  
  This property is especially useful when you want to rotate, scale, skew, or otherwise transform a brush about its center, but you don't know the size of the area painted with the brush, or you are using the same brush to paint different areas with different sizes.  
   
- For detailed information about this property, see the [Brush Transformation Overview](../Topic/Brush%20Transformation%20Overview.md).  
+ For detailed information about this property, see the [Brush Transformation Overview](~/docs/framework/wpf/graphics-multimedia/brush-transformation-overview.md).  
   
 <a name="dependencyPropertyInfo_RelativeTransform"></a>   
 ## Dependency Property Information  
@@ -341,7 +341,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to rotate, scale, skew, or translate a brush's content. For detailed information about this property, see the [Brush Transformation Overview](../Topic/Brush%20Transformation%20Overview.md).  
+ Use this property to rotate, scale, skew, or translate a brush's content. For detailed information about this property, see the [Brush Transformation Overview](~/docs/framework/wpf/graphics-multimedia/brush-transformation-overview.md).  
   
  ]]></format>
         </remarks>

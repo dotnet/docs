@@ -40,7 +40,7 @@
   
 -   <xref:System.Windows.ContentElement.PreviewMouseWheel?displayProperty=fullName>  
   
- The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](../Topic/Input%20Overview.md).  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  The <xref:System.Windows.Input.MouseWheelEventArgs.Delta%2A> property is positive if the mouse wheel is moved forward (away from the user) or negative if the mouse wheel is moved downward (toward the user).  
   

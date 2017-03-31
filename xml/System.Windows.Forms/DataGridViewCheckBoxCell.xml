@@ -149,7 +149,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ContentClickUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentClick%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -181,7 +181,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ContentDoubleClickUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnContentDoubleClick%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -639,7 +639,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.KeyDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyDown%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -673,7 +673,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.KeyUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnKeyUp%2A> with the same <xref:System.Windows.Forms.KeyEventArgs> argument has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -706,7 +706,7 @@
   
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -738,7 +738,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCell.OnMouseEnter%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -770,7 +770,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -803,7 +803,7 @@
   
  <xref:System.Windows.Forms.DataGridViewCheckBoxCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewCheckBoxCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>

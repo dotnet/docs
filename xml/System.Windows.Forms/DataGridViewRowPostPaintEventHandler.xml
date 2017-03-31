@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following code example presents a <xref:System.Windows.Forms.DataGridViewRowPostPaintEventHandler> delegate that paints textual content that spans the entire row below the normal cell values. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example presents a <xref:System.Windows.Forms.DataGridViewRowPostPaintEventHandler> delegate that paints textual content that spans the entire row below the normal cell values. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#30)]  

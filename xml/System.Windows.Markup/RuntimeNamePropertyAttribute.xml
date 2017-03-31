@@ -19,7 +19,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a type-level attribute that reports which property of the type maps to the XAML [x:Name attribute](../Topic/x:Name%20Directive.md).</summary>
+    <summary>Represents a type-level attribute that reports which property of the type maps to the XAML [x:Name attribute](~/docs/framework/xaml-services/x-name-directive.md).</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -28,9 +28,9 @@
   
  Frameworks might attribute a certain property of one its architectural base elements to be the XAML name equivalent. This is done so that the concept of a XAML name in a XAML namescope set at XAML load time is available to a framework's programming model at run time.  
   
- A XAML name value must use the [XamlName Grammar](../Topic/XamlName%20Grammar.md).  
+ A XAML name value must use the [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 ## WPF Usage Notes  
  An example of an existing class in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] where the <xref:System.Windows.Markup.RuntimeNamePropertyAttribute> is applied is <xref:System.Windows.FrameworkElement>.  The <xref:System.Windows.FrameworkElement.Name%2A> property on <xref:System.Windows.FrameworkElement> is attributed with <xref:System.Windows.Markup.RuntimeNamePropertyAttribute>, which results in any <xref:System.Windows.FrameworkElement> derived class also using <xref:System.Windows.FrameworkElement.Name%2A> as its run-time name property.  

@@ -269,7 +269,7 @@
   
  Common cases where the source may be adjusted include content elements inside a content model for a control (the contents of a list item, for instance, will report the list item element as the <xref:System.Windows.RoutedEventArgs.Source%2A> and the actual element within the list item will be the <xref:System.Windows.RoutedEventArgs.OriginalSource%2A>.  
   
- Source adjustment by various elements and content models varies from class to class. Each class that adjusts event sources attempts to anticipate which source is the most useful to report for most input scenarios and the scenarios for which the class is intended, and then sets that source as the <xref:System.Windows.RoutedEventArgs.Source%2A>. If this source is not the one that has relevance to your handling of the event, try checking <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> instead to see if it reports a different source that is more suitable. For more details on input events, see [Input Overview](../Topic/Input%20Overview.md).  
+ Source adjustment by various elements and content models varies from class to class. Each class that adjusts event sources attempts to anticipate which source is the most useful to report for most input scenarios and the scenarios for which the class is intended, and then sets that source as the <xref:System.Windows.RoutedEventArgs.Source%2A>. If this source is not the one that has relevance to your handling of the event, try checking <xref:System.Windows.RoutedEventArgs.OriginalSource%2A> instead to see if it reports a different source that is more suitable. For more details on input events, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
  ]]></format>
         </remarks>

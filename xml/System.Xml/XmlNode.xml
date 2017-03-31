@@ -40,7 +40,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class implements the W3C Document Object Model (DOM) Level 1 Core and the Core DOM Level 2. The DOM is an in-memory (cache) tree representation of an XML document. `XmlNode` is the base class in the .NET implementation of the DOM. It supports XPath selections and provides editing capabilities. The <xref:System.Xml.XmlDocument> class extends `XmlNode` and represents an XML document. You can use `XmlDocument` to load and save XML data. It also includes methods for node creation. See [XML Document Object Model (DOM)](../Topic/XML%20Document%20Object%20Model%20\(DOM\).md) for more information.  
+ This class implements the W3C Document Object Model (DOM) Level 1 Core and the Core DOM Level 2. The DOM is an in-memory (cache) tree representation of an XML document. `XmlNode` is the base class in the .NET implementation of the DOM. It supports XPath selections and provides editing capabilities. The <xref:System.Xml.XmlDocument> class extends `XmlNode` and represents an XML document. You can use `XmlDocument` to load and save XML data. It also includes methods for node creation. See [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md) for more information.  
   
 > [!IMPORTANT]
 >  Exceptions raised as a result of using the <xref:System.Xml.XmlNode> class, such as the <xref:System.Xml.XmlException> class may contain sensitive information that should not be exposed in untrusted scenarios. Exceptions should be properly handled so that this sensitive information is not exposed in untrusted scenarios.  
@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](../Topic/Inserting%20Nodes%20into%20an%20XML%20Document.md).  
+ If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
  If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
   
@@ -851,7 +851,7 @@ d.</elem>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](../Topic/Inserting%20Nodes%20into%20an%20XML%20Document.md).  
+ If `refChild` is `null`, insert `newChild` at the beginning of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, after `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
  If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
   
@@ -915,7 +915,7 @@ d.</elem>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](../Topic/Inserting%20Nodes%20into%20an%20XML%20Document.md).  
+ If `refChild` is `null`, insert `newChild` at the end of the list of child nodes. All the contents of the `newChild` are inserted, in the same order, before `refChild`. If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
  If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
   
@@ -1851,7 +1851,7 @@ d.</elem>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](../Topic/Inserting%20Nodes%20into%20an%20XML%20Document.md).  
+ If the `newChild` is already in the tree, it is removed from its original position and added to its target position. For more information about inserting nodes, see [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md).  
   
  If the node being inserted was created from another document, you can use <xref:System.Xml.XmlDocument.ImportNode%2A?displayProperty=fullName> to import the node to the current document. The imported node can then be inserted into the current document.  
   
@@ -2168,7 +2168,7 @@ d.</elem>
  If the XPath expression requires namespace resolution, you must use the `SelectNodes` overload which takes an <xref:System.Xml.XmlNamespaceManager> as its argument. The `XmlNamespaceManager` is used to resolve namespaces.  
   
 > [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still use the `XmlNamespaceManager` and add a prefix and namespace URI to it; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md).  
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still use the `XmlNamespaceManager` and add a prefix and namespace URI to it; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
   
 > [!NOTE]
 >  A common issue when formulating XPath expressions is how to include a single quote (') or double quote (") in the expression. If you have to search for a value that includes a single quote, you must enclose the string in double quotes. If you need to search for a value that includes a double quote, you must enclose the string in single quotes.  
@@ -2244,7 +2244,7 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
  XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
   
 > [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md).  
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
   
  For example, if you had the following XML:  
   
@@ -2338,7 +2338,7 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
  If the XPath expression requires namespace resolution, you must use the `SelectSingleNode` overload which takes an <xref:System.Xml.XmlNamespaceManager> as its argument. The `XmlNamespaceManager` is used to resolve namespaces.  
   
 > [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still use the `XmlNamespaceManager` and add a prefix and namespace URI to it; otherwise, you will not get a selected node. For more information, see [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md).  
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still use the `XmlNamespaceManager` and add a prefix and namespace URI to it; otherwise, you will not get a selected node. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
   
 > [!NOTE]
 >  A common issue when formulating XPath expressions is how to include a single quote (') or double quote (") in the expression. If you have to search for a value that includes a single quote, you must enclose the string in double quotes. If you need to search for a value that includes a double quote, you must enclose the string in single quotes.  
@@ -2412,7 +2412,7 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
  XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
   
 > [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get a node selected. For more information, see [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md).  
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get a node selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
   
  For example, if you had the following XML:  
   
@@ -2878,7 +2878,7 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
  XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
   
 > [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md).  
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
   
    
   
@@ -2914,7 +2914,7 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
 > [!NOTE]
 >  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected.  
   
- For more information, see [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md). For code examples, choose an overload from the overload list in the previous section.  
+ For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md). For code examples, choose an overload from the overload list in the previous section.  
   
  ]]></format>
         </remarks>

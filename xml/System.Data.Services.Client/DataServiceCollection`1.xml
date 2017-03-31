@@ -26,7 +26,7 @@
 ## Remarks  
  [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)] provides the <xref:System.Data.Services.Client.DataServiceCollection%601> class to support binding data to controls in client applications. This class inherits from the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which implements the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface and is the primary data binding mechanism for Windows Presentation Foundation (WPF) and Silverlight-based applications.  
   
- You can load an <xref:System.Collections.ObjectModel.ObservableCollection%601> binding collection by using any collection that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. Items loaded into the binding collection must implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Binding Data to Controls](../Topic/Binding%20Data%20to%20Controls%20\(WCF%20Data%20Services\).md).  
+ You can load an <xref:System.Collections.ObjectModel.ObservableCollection%601> binding collection by using any collection that implements the <xref:System.Collections.Generic.IEnumerable%601> interface. Items loaded into the binding collection must implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Binding Data to Controls](~/docs/framework/data/wcf/binding-data-to-controls-wcf-data-services.md).  
   
    
   
@@ -314,14 +314,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Services.Client.DataServiceCollection%601.Continuation%2A> property returns a link that is used to access the next set of paged results when paging is enabled in the data service. For more information, see [Configuring the Data Service](../Topic/Configuring%20the%20Data%20Service%20\(WCF%20Data%20Services\).md).  
+ The <xref:System.Data.Services.Client.DataServiceCollection%601.Continuation%2A> property returns a link that is used to access the next set of paged results when paging is enabled in the data service. For more information, see [Configuring the Data Service](~/docs/framework/data/wcf/configuring-the-data-service-wcf-data-services.md).  
   
  When loading a paged result into a <xref:System.Data.Services.Client.DataServiceCollection%601>, you must explicitly load pages by calling the <xref:System.Data.Services.Client.DataServiceCollection%601.Load%28System.Collections.Generic.IEnumerable%7B%600%7D%29> method on the <xref:System.Data.Services.Client.DataServiceCollection%601> by passing the result of the execution of the URI that was obtained from the <xref:System.Data.Services.Client.DataServiceCollection%601.Continuation%2A> property.  
   
    
   
 ## Examples  
- The following example is from the code-behind page for an Extensible Application Markup Language (XAML) page that defines the `SalesOrders` window in WPF. When the window is loaded, a <xref:System.Data.Services.Client.DataServiceCollection%601> is created based on the result of a query that returns customers, filtered by country. All of the pages of this paged result are loaded, along with the related orders, and are bound to the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the <xref:System.Windows.Controls.StackPanel> that is the root layout control for the WPF window. For more information, see [How to: Bind Data to Windows Presentation Foundation Elements](../Topic/How%20to:%20Bind%20Data%20to%20Windows%20Presentation%20Foundation%20Elements%20\(WCF%20Data%20Services\).md).  
+ The following example is from the code-behind page for an Extensible Application Markup Language (XAML) page that defines the `SalesOrders` window in WPF. When the window is loaded, a <xref:System.Data.Services.Client.DataServiceCollection%601> is created based on the result of a query that returns customers, filtered by country. All of the pages of this paged result are loaded, along with the related orders, and are bound to the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the <xref:System.Windows.Controls.StackPanel> that is the root layout control for the WPF window. For more information, see [How to: Bind Data to Windows Presentation Foundation Elements](~/docs/framework/data/wcf/bind-data-to-wpf-elements-wcf-data-services.md).  
   
  [!code-csharp[Astoria Northwind Client#BindPagedData](~/samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/customerorderswpf3.xaml.cs#bindpageddata)]
  [!code-vb[Astoria Northwind Client#BindPagedData](~/samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/customerorderswpf3.xaml.vb#bindpageddata)]  

@@ -66,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation casts the generic handler as a <xref:System.Windows.Input.KeyboardEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ This implementation casts the generic handler as a <xref:System.Windows.Input.KeyboardEventHandler> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>

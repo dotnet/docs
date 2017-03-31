@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDataReader> and <xref:System.Data.IDataRecord> interfaces enable an inheriting class to implement a `DataReader` class. This provides a way of reading one or more forward-only streams of result sets. For more information about `DataReader` classes, see [Retrieving Data Using a DataReader](../Topic/Retrieving%20Data%20Using%20a%20DataReader.md).  
+ The <xref:System.Data.IDataReader> and <xref:System.Data.IDataRecord> interfaces enable an inheriting class to implement a `DataReader` class. This provides a way of reading one or more forward-only streams of result sets. For more information about `DataReader` classes, see [Retrieving Data Using a DataReader](~/docs/framework/data/adonet/retrieving-data-using-a-datareader.md).  
   
  An application does not create an instance of the <xref:System.Data.IDataRecord> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDataRecord>. Typically, you do this by obtaining a `DataReader` through the `ExecuteReader` method of the `Command` object.  
   

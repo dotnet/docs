@@ -43,15 +43,15 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView> control provides a customizable table for displaying data. The <xref:System.Windows.Forms.DataGridView> class allows customization of cells, rows, columns, and borders through the use of properties such as <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, and <xref:System.Windows.Forms.DataGridView.GridColor%2A>. For more information, see [Basic Formatting and Styling in the Windows Forms DataGridView Control](../Topic/Basic%20Formatting%20and%20Styling%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridView> control provides a customizable table for displaying data. The <xref:System.Windows.Forms.DataGridView> class allows customization of cells, rows, columns, and borders through the use of properties such as <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.CellBorderStyle%2A>, and <xref:System.Windows.Forms.DataGridView.GridColor%2A>. For more information, see [Basic Formatting and Styling in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md).  
   
  You can use a <xref:System.Windows.Forms.DataGridView> control to display data with or without an underlying data source. Without specifying a data source, you can create columns and rows that contain data and add them directly to the <xref:System.Windows.Forms.DataGridView> using the <xref:System.Windows.Forms.DataGridView.Rows%2A> and <xref:System.Windows.Forms.DataGridView.Columns%2A> properties. You can also use the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection to access <xref:System.Windows.Forms.DataGridViewRow> objects and the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A?displayProperty=fullName> property to read or write cell values directly. The <xref:System.Windows.Forms.DataGridView.Item%2A> indexer also provides direct access to cells.  
   
- As an alternative to populating the control manually, you can set the <xref:System.Windows.Forms.DataGridView.DataSource%2A> and <xref:System.Windows.Forms.DataGridView.DataMember%2A> properties to bind the <xref:System.Windows.Forms.DataGridView> to a data source and automatically populate it with data. For more information, see [Displaying Data in the Windows Forms DataGridView Control](../Topic/Displaying%20Data%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ As an alternative to populating the control manually, you can set the <xref:System.Windows.Forms.DataGridView.DataSource%2A> and <xref:System.Windows.Forms.DataGridView.DataMember%2A> properties to bind the <xref:System.Windows.Forms.DataGridView> to a data source and automatically populate it with data. For more information, see [Displaying Data in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md).  
   
- When working with very large amounts of data, you can set the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` to display a subset of the available data. Virtual mode requires the implementation of a data cache from which the <xref:System.Windows.Forms.DataGridView> control is populated. For more information, see [Data Display Modes in the Windows Forms DataGridView Control](../Topic/Data%20Display%20Modes%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When working with very large amounts of data, you can set the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` to display a subset of the available data. Virtual mode requires the implementation of a data cache from which the <xref:System.Windows.Forms.DataGridView> control is populated. For more information, see [Data Display Modes in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/data-display-modes-in-the-windows-forms-datagridview-control.md).  
   
- For additional information about the features available in the <xref:System.Windows.Forms.DataGridView> control, see [DataGridView Control](../Topic/DataGridView%20Control%20\(Windows%20Forms\).md). The following table provides direct links to common tasks.  
+ For additional information about the features available in the <xref:System.Windows.Forms.DataGridView> control, see [DataGridView Control](~/docs/framework/winforms/controls/datagridview-control-windows-forms.md). The following table provides direct links to common tasks.  
   
 -   [How to: Bind Data to the Windows Forms DataGridView Control](http://msdn.microsoft.com/library/fbk67b6z\(v=vs.110\).aspx)  
   
@@ -73,7 +73,7 @@
   
 -   [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](http://msdn.microsoft.com/library/y8c0cxey\(v=vs.110\).aspx)  
   
- Although the <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control of previous versions, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](../Topic/Differences%20Between%20the%20Windows%20Forms%20DataGridView%20and%20DataGrid%20Controls.md).  
+ Although the <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control of previous versions, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](~/docs/framework/winforms/controls/differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control inherits both the <xref:System.Windows.Forms.Control.ContextMenu%2A> and <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> properties from <xref:System.Windows.Forms.Control>, but supports only the <xref:System.Windows.Forms.Control.ContextMenuStrip%2A> property. Using the <xref:System.Windows.Forms.Control.ContextMenu%2A> property with the <xref:System.Windows.Forms.DataGridView> control has no effect.  
@@ -616,7 +616,7 @@
 ## Remarks  
  Use this property to prevent users from manually changing column widths. This is useful, for example, with display-only columns where data is loaded once and columns are resized at that time.  
   
- For more information about user resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about user resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control does not support double buffering. If <xref:System.Windows.Forms.Control.DoubleBuffered%2A> is set to `true` in a derived <xref:System.Windows.Forms.DataGridView> control, users will not receive visual feedback when resizing rows, columns, or headers or when reordering columns.  
@@ -696,7 +696,7 @@
   
  For cell contents to wrap onto multiple lines when a row is resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about user resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about user resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control does not support double buffering. If <xref:System.Windows.Forms.Control.DoubleBuffered%2A> is set to `true` in a derived <xref:System.Windows.Forms.DataGridView> control, users will not receive visual feedback when resizing rows, columns, or headers or when reordering columns.  
@@ -768,9 +768,9 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in rows with odd index numbers, the styles specified through the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A>, and are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName> properties.  
   
- For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
- When getting this property, a <xref:System.Windows.Forms.DataGridViewCellStyle> with default values will be created if the property has not already been accessed. This can cause a performance impact when getting this property for many rows. Whenever possible, use a single <xref:System.Windows.Forms.DataGridViewCellStyle> to set this property for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When getting this property, a <xref:System.Windows.Forms.DataGridViewCellStyle> with default values will be created if the property has not already been accessed. This can cause a performance impact when getting this property for many rows. Whenever possible, use a single <xref:System.Windows.Forms.DataGridViewCellStyle> to set this property for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -845,7 +845,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> collection does not perform efficiently with large selections. To determine whether all the cells in the <xref:System.Windows.Forms.DataGridView> have been selected before you access the contents of the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> collection, check the return value of the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A> method. However, this method can cause rows to become unshared. For more information about <xref:System.Windows.Forms.DataGridView> performance, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> collection does not perform efficiently with large selections. To determine whether all the cells in the <xref:System.Windows.Forms.DataGridView> have been selected before you access the contents of the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> collection, check the return value of the <xref:System.Windows.Forms.DataGridView.AreAllCellsSelected%2A> method. However, this method can cause rows to become unshared. For more information about <xref:System.Windows.Forms.DataGridView> performance, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -902,7 +902,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to add columns manually and bind them to a data source when you set <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A> to `false`. In this example, a <xref:System.Windows.Forms.DataGridView> control is bound to a list of `Task` business objects. Then, columns are added and are bound to `Task` properties through the <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A?displayProperty=fullName> property. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](../Topic/How%20to:%20Access%20Objects%20in%20a%20Windows%20Forms%20DataGridViewComboBoxCell%20Drop-Down%20List.md).  
+ The following code example demonstrates how to add columns manually and bind them to a data source when you set <xref:System.Windows.Forms.DataGridView.AutoGenerateColumns%2A> to `false`. In this example, a <xref:System.Windows.Forms.DataGridView> control is bound to a list of `Task` business objects. Then, columns are added and are bound to `Task` properties through the <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A?displayProperty=fullName> property. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/CS/form1.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#100)]  
@@ -977,12 +977,12 @@
 ## Remarks  
  This method is useful if you want to control when a column resizes. The column width is adjusted only once per method call; if the contents of the column later change, the column will not automatically adjust. To resize all columns, use the <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method. To set the column to automatically resize whenever its contents change, use the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A> property or the column <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example uses this method to make the column width large enough to accommodate a new cell value. This example is part of a larger example available in [How to: Manipulate Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example uses this method to make the column width large enough to accommodate a new cell value. This example is part of a larger example available in [How to: Manipulate Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#211](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewRowDemo.cpp#211)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#211](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewRowDemo.cs#211)]
@@ -1022,12 +1022,12 @@
   
  This overload lets you specify a sizing mode that calculates the new width based on values in a limited set of cells, such as those in displayed rows only. This improves performance when the control contains a large number of rows.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example uses this method to make the column width large enough to accommodate a new cell value. This example is part of a larger example available in [How to: Manipulate Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example uses this method to make the column width large enough to accommodate a new cell value. This example is part of a larger example available in [How to: Manipulate Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#211](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewRowDemo.cpp#211)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#211](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewRowDemo.cs#211)]
@@ -1078,7 +1078,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If `fixedHeight` is `false`, the column width will be calculated with the expectation that you will call the <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> method next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1115,7 +1115,7 @@
   
  For cell contents to wrap onto multiple lines when the column headers are resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -1156,7 +1156,7 @@
   
  For cell contents to wrap onto multiple lines when the column headers are resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1196,7 +1196,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If the `fixedColumnsWidth` or `fixedRowHeadersWidth` parameters are `false`, the height of the column headers will be calculated with the expectation that you will call the methods such as <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> and <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A> next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1236,7 +1236,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If the `fixedColumnWidth` or `fixedRowHeadersWidth` parameters are `false`, the height of the column headers will be calculated with the expectation that you will call the methods such as <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> and <xref:System.Windows.Forms.DataGridView.AutoResizeRowHeadersWidth%2A> next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1265,12 +1265,12 @@
 ## Remarks  
  This method is useful if you want to control when columns resize. The column widths are adjusted only once per method call; if the contents of the columns later change, the columns will not automatically adjust. To resize a specific column, use the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> method. To set the columns to automatically resize whenever their contents change, use the <xref:System.Windows.Forms.DataGridView.AutoSizeColumnsMode%2A> property or the column <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example resizes all columns to fit the contents of the columns and the column headers. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example resizes all columns to fit the contents of the columns and the column headers. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#3)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#3)]
@@ -1306,12 +1306,12 @@
   
  This overload lets you specify a sizing mode that calculates the new widths based on values in a limited set of cells, such as those in displayed rows only. This improves performance when the control contains a large number of rows.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example resizes all columns to fit the contents of the columns and the column headers. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example resizes all columns to fit the contents of the columns and the column headers. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#3)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#3)]
@@ -1358,7 +1358,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If `fixedHeight` is `false`, the column widths will be calculated with the expectation that you will call the <xref:System.Windows.Forms.DataGridView.AutoResizeRow%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> method next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1396,12 +1396,12 @@
   
  For cell contents to wrap onto multiple lines when a row is resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example resizes the third row in a <xref:System.Windows.Forms.DataGridView> to fit the column contents. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example resizes the third row in a <xref:System.Windows.Forms.DataGridView> to fit the column contents. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#4)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#4)]
@@ -1443,12 +1443,12 @@
   
  This overload lets you specify a sizing mode that calculates the new height based on values in a limited set of cells, such as those in displayed rows only. This improves performance when the control contains a large number of rows.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example resizes the third row in a <xref:System.Windows.Forms.DataGridView> to fit the column contents. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example resizes the third row in a <xref:System.Windows.Forms.DataGridView> to fit the column contents. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#4)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#4)]
@@ -1499,7 +1499,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If `fixedWidth` is `false`, the row height will be calculated with the expectation that you will call the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1537,7 +1537,7 @@
   
  This method lets you specify a sizing mode that calculates the new width based on values in a limited set of headers, such as those in displayed rows only. This improves performance when the control contains a large number of rows.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1575,12 +1575,12 @@
   
  This method lets you specify a sizing mode that calculates the new width based on values in a limited set of headers, such as those in displayed rows only. This improves performance when the control contains a large number of rows.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example illustrates how to resize the row header widths based on changes to the contents of the first row header. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates how to resize the row header widths based on changes to the contents of the first row header. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#5)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#5)]
@@ -1630,7 +1630,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If the `fixedColumnHeadersHeight` or `fixedRowsHeight` parameters are `false`, the width of the row headers will be calculated with the expectation that you will call methods such as <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> and <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A> next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1676,7 +1676,7 @@
   
  This overload is protected, and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If the `fixedColumnHeadersHeight` or `fixedRowHeight` parameters are `false`, the width of the row headers will be calculated with the expectation that you will call methods such as <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> and <xref:System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight%2A> next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1711,12 +1711,12 @@
   
  For cell contents to wrap onto multiple lines when a row is resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to resize all rows based on non-header cell content. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to resize all rows based on non-header cell content. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#7)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#7)]
@@ -1754,12 +1754,12 @@
   
  This overload lets you specify a sizing mode that calculates the new heights based on values in a limited set of cells, such as those in displayed rows only. This improves performance when the control contains a large number of rows.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to resize all rows based on non-header cell content. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](../Topic/How%20to:%20Programmatically%20Resize%20Cells%20to%20Fit%20Content%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to resize all rows based on non-header cell content. This code example is part of a larger example provided in [How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/programmatically-resize-cells-to-fit-content-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ProgrammaticResizing#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CPP/programmaticsizing.cpp#7)]
  [!code-csharp[System.Windows.Forms.DataGridView.ProgrammaticResizing#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ProgrammaticResizing/CS/programmaticsizing.cs#7)]
@@ -1808,7 +1808,7 @@
   
  This overload is protected, and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If the `fixedWidth` parameter is `false`, the row heights will be calculated with the expectation that you will call the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1857,7 +1857,7 @@
   
  This overload is protected and is designed to enable you to achieve ideal cell height-to-width ratios in a derived <xref:System.Windows.Forms.DataGridView> class. If the `fixedWidth` parameter is `false`, the row heights will be calculated with the expectation that you will call the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method next.  
   
- For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about programmatic resizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -1917,7 +1917,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Manipulate%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Manipulate Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ButtonDemos#180](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CPP/DataGridViewColumnDemo.cpp#180)]
  [!code-csharp[System.Windows.Forms.DataGridView.ButtonDemos#180](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ButtonDemos/CS/DataGridViewColumnDemo.cs#180)]
@@ -1955,18 +1955,18 @@
   
  To change the sizing mode for an individual column, set its <xref:System.Windows.Forms.DataGridViewColumn.AutoSizeMode%2A> property. The default value of this property is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode>, indicating that the column inherits its behavior and its <xref:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode%2A> property value from the control.  
   
- Columns in fill mode divide the available control width in proportions indicated by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. The width available for fill mode is determined by subtracting the widths of all other columns from the width of the client area of the control. If this width is smaller than the combined <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values of all fill-mode columns, the horizontal scroll bar is displayed, all fill-mode columns are shown with their minimum widths, and user column-resizing is disabled. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](../Topic/Column%20Fill%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Columns in fill mode divide the available control width in proportions indicated by their <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. The width available for fill mode is determined by subtracting the widths of all other columns from the width of the client area of the control. If this width is smaller than the combined <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> values of all fill-mode columns, the horizontal scroll bar is displayed, all fill-mode columns are shown with their minimum widths, and user column-resizing is disabled. For more information about column fill mode, see [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
  Only columns with a <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value of `true` are resized automatically, and changing the visibility of a column does not cause resizing to occur. Additionally, when columns are set to automatically resize, the user cannot adjust the column widths with the mouse.  
   
  To adjust column widths programmatically, use the <xref:System.Windows.Forms.DataGridView.AutoResizeColumn%2A> or <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> methods or set the column <xref:System.Windows.Forms.DataGridViewColumn.Width%2A> property.  
   
- For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example illustrates how to use this property in a master/detail scenario where two <xref:System.Windows.Forms.DataGridView> controls display data from two tables in a parent/child relationship. In this example, the column sizing mode for the master control is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode>, and the column widths are programmatically initialized to fit the loaded values. The details control is set to an automatic column sizing mode so that columns will adjust automatically whenever the values change (for example, when the user changes the current row in the parent table). This example is part of a larger example available in [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../Topic/How%20to:%20Create%20a%20Master-Detail%20Form%20Using%20Two%20Windows%20Forms%20DataGridView%20Controls.md).  
+ The following code example illustrates how to use this property in a master/detail scenario where two <xref:System.Windows.Forms.DataGridView> controls display data from two tables in a parent/child relationship. In this example, the column sizing mode for the master control is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode>, and the column widths are programmatically initialized to fit the loaded values. The details control is set to an automatic column sizing mode so that columns will adjust automatically whenever the values change (for example, when the user changes the current row in the parent table). This example is part of a larger example available in [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewMasterDetails#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/CS/masterdetails.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewMasterDetails#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/VB/masterdetails.vb#10)]  
@@ -2049,12 +2049,12 @@
   
  For cell contents to wrap onto multiple lines when a row is resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about content-based automatic sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to set the row to automatically resize based on the contents of the row headers and all of the columns. This code example is part of a larger example provided in [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](../Topic/How%20to:%20Automatically%20Resize%20Cells%20When%20Content%20Changes%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to set the row to automatically resize based on the contents of the row headers and all of the columns. This code example is part of a larger example provided in [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/automatically-resize-cells-when-content-changes-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#9)]
  [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#9)]
@@ -2089,7 +2089,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](../Topic/How%20to:%20Automatically%20Resize%20Cells%20When%20Content%20Changes%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/automatically-resize-cells-when-content-changes-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#10)]
@@ -2524,7 +2524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [Column Fill Mode in the Windows Forms DataGridView Control](../Topic/Column%20Fill%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [Column Fill Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/column-fill-mode-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/CS/fillcolumns.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewFillColumnsDemo#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewFillColumnsDemo/vb/fillcolumns.vb#20)]  
@@ -2558,7 +2558,7 @@
    
   
 ## Examples  
- The following code example illustrates how to handle this event for a <xref:System.Windows.Forms.DataGridView> control in virtual mode. When the control is in edit mode, the `rowInEdit` variable holds the index of the row being edited, and the `customerInEdit` variable holds a reference to a Customer object corresponding to that row. When the user cancels out of edit mode, this object can be discarded. If the row the user was editing is the row for new records, however, the old Customer object is discarded and replaced with a new one so that the user can begin making edits again. This example is part of a larger example available in [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../Topic/Walkthrough:%20Implementing%20Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates how to handle this event for a <xref:System.Windows.Forms.DataGridView> control in virtual mode. When the control is in edit mode, the `rowInEdit` variable holds the index of the row being edited, and the `customerInEdit` variable holds a reference to a Customer object corresponding to that row. When the user cancels out of edit mode, this object can be discarded. If the row the user was editing is the row for new records, however, the old Customer object is discarded and replaced with a new one so that the user can begin making edits again. This example is part of a larger example available in [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.VirtualMode#170](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/CPP/virtualmode.cpp#170)]
  [!code-csharp[System.Windows.Forms.DataGridView.VirtualMode#170](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/CS/virtualmode.cs#170)]
@@ -2732,7 +2732,7 @@
 ## Examples  
  The following code example shows a <xref:System.Windows.Forms.DataGridView.CellClick> event handler in a Tic-Tac-Toe game implementation that uses image columns in a <xref:System.Windows.Forms.DataGridView> control. Unless the game is over or the cell has already been clicked, the event handler sets the cell value to one of two <xref:System.Drawing.Bitmap> objects represented by the variables `x` and `o`.  
   
- This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#10)]
@@ -2885,7 +2885,7 @@
   
  You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=fullName>and <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A> properties to determine the state or value of a cell, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewCellContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property, which the event value overrides.  
   
- Handle the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  You can also specify shortcut menus for individual rows rather than individual cells by setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property or handling the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event. The cell <xref:System.Windows.Forms.DataGridViewCell.ContextMenuStrip%2A> property setting overrides the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting, and the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event overrides both the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event and the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property setting. However, you can specify `null` for a cell shortcut menu to prevent a row shortcut menu from being overridden.  
   
@@ -2961,7 +2961,7 @@
    
   
 ## Examples  
- The following code example illustrates how to handle this event to clear the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property in case it was previously set by a <xref:System.Windows.Forms.DataGridView.CellValidating> event handler. The <xref:System.Windows.Forms.DataGridView.CellValidating> event handler can clear the error text when the new cell value meets the validation criteria, but when the user reverts to the old cell value by pressing ESC, the <xref:System.Windows.Forms.DataGridView.CellValidating> event does not occur. This example is part of a larger example available in [Walkthrough: Validating Data in the Windows Forms DataGridView Control](../Topic/Walkthrough:%20Validating%20Data%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates how to handle this event to clear the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property in case it was previously set by a <xref:System.Windows.Forms.DataGridView.CellValidating> event handler. The <xref:System.Windows.Forms.DataGridView.CellValidating> event handler can clear the error text when the new cell value meets the validation criteria, but when the user reverts to the old cell value by pressing ESC, the <xref:System.Windows.Forms.DataGridView.CellValidating> event does not occur. This example is part of a larger example available in [Walkthrough: Validating Data in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/walkthrough-validating-data-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewDataValidation#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewDataValidation/CS/datavalidation.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewDataValidation#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewDataValidation/VB/datavalidation.vb#20)]  
@@ -3069,7 +3069,7 @@
   
  You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A> property to determine the state or value of a cell, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewCellErrorTextNeededEventArgs.ErrorText%2A?displayProperty=fullName> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> property, which the event value overrides.  
   
- Handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ErrorText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -3116,7 +3116,7 @@
   
  Regardless of the value of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property, the display properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property are used to render the cell.  
   
- For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Data%20Formatting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
   
  To avoid performance penalties when handling this event, access the cell through the parameters of the event handler rather than accessing the cell directly.  
   
@@ -3308,7 +3308,7 @@
 ## Examples  
  The following code example shows a <xref:System.Windows.Forms.DataGridView.CellMouseEnter> event handler in a Tic-Tac-Toe game implementation that uses image columns in a <xref:System.Windows.Forms.DataGridView> control. The event handler uses the cell value to determine the cursor and ToolTip to display.  
   
- This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#15)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#15)]
@@ -3343,7 +3343,7 @@
 ## Examples  
  The following code example shows a <xref:System.Windows.Forms.DataGridView.CellMouseLeave> event handler in a Tic-Tac-Toe game implementation that uses image columns in a <xref:System.Windows.Forms.DataGridView> control. The event handler resets the cursor and ToolTip, which are set in a <xref:System.Windows.Forms.DataGridView.CellMouseEnter> event handler.  
   
- This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](../Topic/How%20to:%20Work%20with%20Image%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example shown in [How to: Work with Image Columns in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CPP/tictactoe.cpp#15)]
  [!code-csharp[System.Windows.Forms.DataGridView.ImageColumn_TicTacToe#15](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.ImageColumn_TicTacToe/CS/tictactoe.cs#15)]
@@ -3441,7 +3441,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can handle this event to customize the appearance of cells in the control. You can paint entire cells yourself, or paint specific parts of cells and use the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintBackground%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintContent%2A?displayProperty=fullName> methods to paint other parts. You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
+ You can handle this event to customize the appearance of cells in the control. You can paint entire cells yourself, or paint specific parts of cells and use the <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintBackground%2A?displayProperty=fullName> or <xref:System.Windows.Forms.DataGridViewCellPaintingEventArgs.PaintContent%2A?displayProperty=fullName> methods to paint other parts. You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
   
  When handling this event, you should access the cell through the parameters of the event handler, rather than access the cell directly.  
   
@@ -3452,7 +3452,7 @@
 ## Examples  
  The following code example illustrates how to use this event to customize the appearance of all cells in a particular column.  
   
- This code is part of a larger example available in [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Cells%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example available in [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-cells-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCellPainting#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCellPainting/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewCellPainting#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCellPainting/VB/form1.vb#10)]  
@@ -3697,7 +3697,7 @@
   
  You can use the <xref:System.Windows.Forms.DataGridViewCellEventArgs.ColumnIndex%2A?displayProperty=fullName> and <xref:System.Windows.Forms.DataGridViewCellEventArgs.RowIndex%2A> properties to determine the state or value of a cell, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewCellToolTipTextNeededEventArgs.ToolTipText%2A?displayProperty=fullName> property. This property is initialized with the value of the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> property, which the event value overrides.  
   
- Handle the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellToolTipTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the cell <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A> value for multiple cells. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -3845,7 +3845,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this event in virtual mode to populate cells with data from a custom data store without causing rows to become unshared. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md). For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](../Topic/Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Use this event in virtual mode to populate cells with data from a custom data store without causing rows to become unshared. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md). For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md).  
   
  To add user-specified values to your custom data store, handle the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event.  
   
@@ -3889,7 +3889,7 @@
 ## Remarks  
  Use this event in virtual mode to update a custom data store with user-specified data. Handle the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> event to retrieve values from the data store for display in the control.  
   
- For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](../Topic/Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about virtual mode, see [Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/virtual-mode-in-the-windows-forms-datagridview-control.md).  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -4034,7 +4034,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to enable copying in the <xref:System.Windows.Forms.DataGridView> control. This example is part of a larger example available in [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](../Topic/How%20to:%20Enable%20Users%20to%20Copy%20Multiple%20Cells%20to%20the%20Clipboard%20from%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to enable copying in the <xref:System.Windows.Forms.DataGridView> control. This example is part of a larger example available in [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/enable-users-to-copy-multiple-cells-to-the-clipboard-datagridview.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewClipboardDemo#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/CS/datagridviewclipboarddemo.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewClipboardDemo#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/VB/datagridviewclipboarddemo.vb#10)]  
@@ -4560,7 +4560,7 @@
   
  These values automatically override the values set through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property. To force column headers to inherit the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> values, you must set the values in the <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A> object to the default values indicated for the <xref:System.Windows.Forms.DataGridViewCellStyle> class.  
   
- For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  If visual styles are enabled and <xref:System.Windows.Forms.DataGridView.EnableHeadersVisualStyles%2A> is set to `true`, all header cells except the <xref:System.Windows.Forms.DataGridView.TopLeftHeaderCell%2A> are painted using the current theme and the <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A> values are ignored.  
   
@@ -4704,7 +4704,7 @@
   
  For cell contents to wrap onto multiple lines when the column headers are resized, the cell style in effect for the cell must have a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> property value of <xref:System.Windows.Forms.DataGridViewTriState>.  
   
- For more information about header sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about header sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control does not support double buffering. If <xref:System.Windows.Forms.Control.DoubleBuffered%2A> is set to `true` in a derived <xref:System.Windows.Forms.DataGridView> control, users will not receive visual feedback when resizing rows, columns, or headers or when reordering columns.  
@@ -5083,7 +5083,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#18](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#18)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#18](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#18)]  
@@ -5121,7 +5121,7 @@
    
   
 ## Examples  
- The following code example calls the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A> method within a <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event handler to raise the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](../Topic/How%20to:%20Disable%20Buttons%20in%20a%20Button%20Column%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example calls the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A> method within a <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event handler to raise the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/disable-buttons-in-a-button-column-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#5)]
  [!code-vb[System.Windows.Forms.DataGridView.DisabledButtons#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/VB/form1.vb#5)]  
@@ -5305,14 +5305,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to determine the row and column of the current cell without accessing the cell directly. This is useful to avoid unsharing shared rows. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Use this property to determine the row and column of the current cell without accessing the cell directly. This is useful to avoid unsharing shared rows. For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
  The following code example illustrates how to use the <xref:System.Windows.Forms.DataGridView.CurrentCellAddress%2A> property in a row-painting scenario. In the example, this property is used to store the row index of the current cell. When the user changes the current cell to a different row, the row is forced to repaint itself.  
   
- This code is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#19](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#19)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#19](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#19)]  
@@ -5344,7 +5344,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#19](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#19)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#19](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#19)]  
@@ -5385,7 +5385,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event. In this example, the event handler calls the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A> method to raise the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event and determine the current value of a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](../Topic/How%20to:%20Disable%20Buttons%20in%20a%20Button%20Column%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event. In this example, the event handler calls the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A> method to raise the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event and determine the current value of a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/disable-buttons-in-a-button-column-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#5)]
  [!code-vb[System.Windows.Forms.DataGridView.DisabledButtons#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/VB/form1.vb#5)]  
@@ -5444,7 +5444,7 @@
 ## Remarks  
  This event is raised when the contents of the data source change or when the value of the <xref:System.Windows.Forms.DataGridView.DataSource%2A>, <xref:System.Windows.Forms.DataGridView.DataMember%2A>, or <xref:System.Windows.Forms.Control.BindingContext%2A> property changes.  
   
- Handling this event is useful, for example, to programmatically resize rows and columns based on content updates. For more information, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handling this event is useful, for example, to programmatically resize rows and columns based on content updates. For more information, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -5622,9 +5622,9 @@
   
  When binding to an object collection rather than to database data, you will typically set the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property to `null` rather than using the default value of <xref:System.DBNull.Value?displayProperty=fullName>, which is appropriate for database data.  
   
- For more information, see [Displaying Data in the Windows Forms DataGridView Control](../Topic/Displaying%20Data%20in%20the%20Windows%20Forms%20DataGridView%20Control.md). The following table provides direct links to common tasks related to the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property.  
+ For more information, see [Displaying Data in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md). The following table provides direct links to common tasks related to the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property.  
   
- See [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](../Topic/Walkthrough:%20Creating%20a%20Master-Detail%20Form%20Using%20Two%20Windows%20Forms%20DataGridView%20Controls.md)and [How to: Bind Objects to Windows Forms DataGridView Controls](../Topic/How%20to:%20Bind%20Objects%20to%20Windows%20Forms%20DataGridView%20Controls.md).  
+ See [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/c5fa29e8-47f7-4691-829b-0e697a691f36.md)and [How to: Bind Objects to Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/how-to-bind-objects-to-windows-forms-datagridview-controls.md).  
   
    
   
@@ -5710,9 +5710,9 @@
   
 -   <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName>  
   
- For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
- When getting this property, a <xref:System.Windows.Forms.DataGridViewCellStyle> with default values will be created if the property has not already been accessed. This can cause a performance impact when getting this property for many rows. Whenever possible, use a single <xref:System.Windows.Forms.DataGridViewCellStyle> to set this property for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When getting this property, a <xref:System.Windows.Forms.DataGridViewCellStyle> with default values will be created if the property has not already been accessed. This can cause a performance impact when getting this property for many rows. Whenever possible, use a single <xref:System.Windows.Forms.DataGridViewCellStyle> to set this property for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -5955,7 +5955,7 @@
 ## Examples  
  The following code example illustrates how to use this property in an overridden method of a custom cell type. In the example, a reference to the editing control is retrieved, cast to a custom editing control type, and then populated with the current value of the cell.  
   
- This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ This example is part of a larger example available in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#210](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#210)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#210](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#210)]  
@@ -6401,12 +6401,12 @@
   
  Because the <xref:System.Drawing.Font> is immutable (meaning that you cannot adjust any of its properties), you can only assign the <xref:System.Windows.Forms.Control.Font%2A> property a new <xref:System.Drawing.Font> object. However, you can base the new font on the existing font.  
   
- The <xref:System.Windows.Forms.DataGridView> control uses the value of the <xref:System.Windows.Forms.DataGridView.Font%2A> property as the default value of the <xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A> properties of <xref:System.Windows.Forms.DataGridViewCellStyle> objects returned by the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, and <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> properties. Changing the <xref:System.Windows.Forms.DataGridView.Font%2A> value automatically updates the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, and <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> properties, changing the font for any cell that inherits the value. Header cells override the value by default, and you can override the value for specific rows, columns, and cells. For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridView> control uses the value of the <xref:System.Windows.Forms.DataGridView.Font%2A> property as the default value of the <xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A> properties of <xref:System.Windows.Forms.DataGridViewCellStyle> objects returned by the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, and <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> properties. Changing the <xref:System.Windows.Forms.DataGridView.Font%2A> value automatically updates the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridView.ColumnHeadersDefaultCellStyle%2A>, and <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> properties, changing the font for any cell that inherits the value. Header cells override the value by default, and you can override the value for specific rows, columns, and cells. For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
    
   
 ## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Create an Unbound Windows Forms DataGridView Control](../Topic/How%20to:%20Create%20an%20Unbound%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Create an Unbound Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-create-an-unbound-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewSimpleUnbound#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSimpleUnbound/CS/simpleunbound.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewSimpleUnbound#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSimpleUnbound/VB/simpleunbound.vb#30)]  
@@ -6491,7 +6491,7 @@
   
  Because the <xref:System.Drawing.Font> is immutable (meaning that you cannot adjust any of its properties), you can only assign the <xref:System.Windows.Forms.Control.Font%2A> property a new <xref:System.Drawing.Font> object. However, you can base the new font on the existing font.  
   
- The <xref:System.Windows.Forms.DataGridView> control uses the value of the <xref:System.Windows.Forms.DataGridView.ForeColor%2A> property as the default value of the <xref:System.Windows.Forms.DataGridViewCellStyle.ForeColor%2A> property of <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property. Changing the <xref:System.Windows.Forms.DataGridView.ForeColor%2A> value automatically updates the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property, changing the foreground text color for any cell that inherits the value. Header cells override the value by default, and you can override the value for specific rows, columns, and cells. For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The <xref:System.Windows.Forms.DataGridView> control uses the value of the <xref:System.Windows.Forms.DataGridView.ForeColor%2A> property as the default value of the <xref:System.Windows.Forms.DataGridViewCellStyle.ForeColor%2A> property of <xref:System.Windows.Forms.DataGridViewCellStyle> returned by the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property. Changing the <xref:System.Windows.Forms.DataGridView.ForeColor%2A> value automatically updates the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property, changing the foreground text color for any cell that inherits the value. Header cells override the value by default, and you can override the value for specific rows, columns, and cells. For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -6591,7 +6591,7 @@
 ## Examples  
  The following code example illustrates how to use this method to determine whether there are any cells selected in a <xref:System.Windows.Forms.DataGridView> control. In this example, if any cells are selected, their values are retrieved through the <xref:System.Windows.Forms.DataGridView.GetClipboardContent%2A> method and displayed in a <xref:System.Windows.Forms.TextBox> control.  
   
- This code is part of a larger example illustrating the use of the Clipboard features of the <xref:System.Windows.Forms.DataGridView> control. This example is part of a larger example available in [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](../Topic/How%20to:%20Enable%20Users%20to%20Copy%20Multiple%20Cells%20to%20the%20Clipboard%20from%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example illustrating the use of the Clipboard features of the <xref:System.Windows.Forms.DataGridView> control. This example is part of a larger example available in [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/enable-users-to-copy-multiple-cells-to-the-clipboard-datagridview.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewClipboardDemo#16](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/CS/datagridviewclipboarddemo.cs#16)]
  [!code-vb[System.Windows.Forms.DataGridViewClipboardDemo#16](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/VB/datagridviewclipboarddemo.vb#16)]  
@@ -6669,7 +6669,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to programmatically add selected <xref:System.Windows.Forms.DataGridView> content to the Clipboard. This example is part of a larger example available in [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](../Topic/How%20to:%20Enable%20Users%20to%20Copy%20Multiple%20Cells%20to%20the%20Clipboard%20from%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to programmatically add selected <xref:System.Windows.Forms.DataGridView> content to the Clipboard. This example is part of a larger example available in [How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/enable-users-to-copy-multiple-cells-to-the-clipboard-datagridview.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewClipboardDemo#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/CS/datagridviewclipboarddemo.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewClipboardDemo#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewClipboardDemo/VB/datagridviewclipboarddemo.vb#10)]  
@@ -6894,7 +6894,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
@@ -6935,7 +6935,7 @@
 ## Examples  
  The following code example illustrates how to use this method in a customized <xref:System.Windows.Forms.DataGridViewCell> that is painted with a custom border when the mouse pointer rests on it. In the example, the cell is invalidated when the mouse pointer enters or leaves it.  
   
- This code is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../Topic/How%20to:%20Customize%20Cells%20and%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control%20by%20Extending%20Their%20Behavior%20and%20Appearance.md).  
+ This code is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](~/docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/CS/rollovercell.cs#220)]
  [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#220)]  
@@ -6979,7 +6979,7 @@
    
   
 ## Examples  
- The following code example illustrates how to use this method in a custom cell type that changes a cell's appearance when the user rests the mouse pointer over it. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../Topic/How%20to:%20Customize%20Cells%20and%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control%20by%20Extending%20Their%20Behavior%20and%20Appearance.md).  
+ The following code example illustrates how to use this method in a custom cell type that changes a cell's appearance when the user rests the mouse pointer over it. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](~/docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/CS/rollovercell.cs#220)]
  [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#220)]  
@@ -7055,7 +7055,7 @@
 ## Examples  
  The following code example illustrates how to use the <xref:System.Windows.Forms.DataGridView.InvalidateRow%2A> method in a row-painting scenario. In the example, the row is invalidated when the current cell changes, forcing the row to repaint itself.  
   
- This code is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#19](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#19)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#19](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#19)]  
@@ -7100,7 +7100,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property to determine whether to commit a cell value and raise the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event from a handler for the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](../Topic/How%20to:%20Disable%20Buttons%20in%20a%20Button%20Column%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example uses the <xref:System.Windows.Forms.DataGridView.IsCurrentCellDirty%2A> property to determine whether to commit a cell value and raise the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event from a handler for the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged> event. This code example is part of a larger example provided in [How to: Disable Buttons in a Button Column in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/disable-buttons-in-a-button-column-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.DisabledButtons#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/CS/form1.cs#5)]
  [!code-vb[System.Windows.Forms.DataGridView.DisabledButtons#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.DisabledButtons/VB/form1.vb#5)]  
@@ -7364,7 +7364,7 @@
   
  You can use the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property to allow a user to select multiple elements in the <xref:System.Windows.Forms.DataGridView> control and perform an operation on all the selected elements. For example, the user could select multiple cells and then right-click a selected cell to display a shortcut menu that displays a set of tasks to perform on the selected cells.  
   
- To determine which cells, rows, or columns are selected in the <xref:System.Windows.Forms.DataGridView> control, you can access the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A>, <xref:System.Windows.Forms.DataGridView.SelectedRows%2A>, or <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> property. To determine the number of selected cells, call the <xref:System.Windows.Forms.DataGridView.GetCellCount%2A> method with an argument value of <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=fullName>. Use the <xref:System.Windows.Forms.DataGridViewRowCollection.GetRowCount%2A> method to retrieve the number of selected rows and the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A> method to retrieve the number of columns. These methods are more efficient than accessing the collections directly when working with large amounts of data. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ To determine which cells, rows, or columns are selected in the <xref:System.Windows.Forms.DataGridView> control, you can access the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A>, <xref:System.Windows.Forms.DataGridView.SelectedRows%2A>, or <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> property. To determine the number of selected cells, call the <xref:System.Windows.Forms.DataGridView.GetCellCount%2A> method with an argument value of <xref:System.Windows.Forms.DataGridViewElementStates?displayProperty=fullName>. Use the <xref:System.Windows.Forms.DataGridViewRowCollection.GetRowCount%2A> method to retrieve the number of selected rows and the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnCount%2A> method to retrieve the number of columns. These methods are more efficient than accessing the collections directly when working with large amounts of data. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -7511,7 +7511,7 @@
 ## Examples  
  The following code example illustrates the use of this method in a custom cell scenario. In the example, an <xref:System.Windows.Forms.IDataGridViewEditingControl> implementation derived from the <xref:System.Windows.Forms.DateTimePicker> class overrides the <xref:System.Windows.Forms.DateTimePicker.OnValueChanged%2A> method and uses the <xref:System.Windows.Forms.DataGridView.NotifyCurrentCellDirty%2A> method to indicate a change to the <xref:System.Windows.Forms.DataGridView> control.  
   
- This example is part of a larger example shown in [How to: Host Controls in Windows Forms DataGridView Cells](../Topic/How%20to:%20Host%20Controls%20in%20Windows%20Forms%20DataGridView%20Cells.md).  
+ This example is part of a larger example shown in [How to: Host Controls in Windows Forms DataGridView Cells](~/docs/framework/winforms/controls/how-to-host-controls-in-windows-forms-datagridview-cells.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewCalendarColumn#310](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/CS/datagridviewcalendarcolumn.cs#310)]
  [!code-vb[System.Windows.Forms.DataGridViewCalendarColumn#310](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCalendarColumn/VB/datagridviewcalendarcolumn.vb#310)]  
@@ -10916,7 +10916,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](../Topic/How%20to:%20Customize%20Cells%20and%20Columns%20in%20the%20Windows%20Forms%20DataGridView%20Control%20by%20Extending%20Their%20Behavior%20and%20Appearance.md).  
+ The following code example illustrates the use of this method. This example is part of a larger example available in [How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance](~/docs/framework/winforms/controls/customize-cells-and-columns-in-the-datagrid-by-extending-behavior.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/CS/rollovercell.cs#220)]
  [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#220](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#220)]  
@@ -13412,7 +13412,7 @@
   
  You can use the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.RowIndex%2A?displayProperty=fullName> property to determine the state of a row or the values it contains, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip%2A?displayProperty=fullName> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property, which the event value overrides.  
   
- Handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -13554,7 +13554,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to handle this event to provide cell-level commit scope, meaning that the user can revert changes to the current cell only. In cell-level commit scope, the row is treated as having uncommitted changes only when the current cell has uncommitted changes, rather than when any cell in the row has uncommitted changes. This example is part of a larger example available in [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](../Topic/Walkthrough:%20Implementing%20Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to handle this event to provide cell-level commit scope, meaning that the user can revert changes to the current cell only. In cell-level commit scope, the row is treated as having uncommitted changes only when the current cell has uncommitted changes, rather than when any cell in the row has uncommitted changes. This example is part of a larger example available in [Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/implementing-virtual-mode-wf-datagridview-control.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.VirtualMode#160](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/CPP/virtualmode.cpp#160)]
  [!code-csharp[System.Windows.Forms.DataGridView.VirtualMode#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/CS/virtualmode.cs#160)]
@@ -13739,7 +13739,7 @@
   
  You can use the <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.RowIndex%2A?displayProperty=fullName> property to determine the state of a row or the values it contains, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowErrorTextNeededEventArgs.ErrorText%2A?displayProperty=fullName> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> property, which the event value overrides.  
   
- Handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Handle the <xref:System.Windows.Forms.DataGridView.RowErrorTextNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -13977,7 +13977,7 @@
   
  These values automatically override the values set through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property. To force row headers to inherit the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> values, you must set the values in the <xref:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle%2A> object to the default values indicated for the <xref:System.Windows.Forms.DataGridViewCellStyle> class.  
   
- For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about cell style inheritance, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -14101,7 +14101,7 @@
 ## Examples  
  The following code example illustrates how to use the <xref:System.Windows.Forms.DataGridView.RowHeadersWidth%2A> property in a row-painting scenario. In the example, the value of this property is used to calculate the bounds within which a custom background is drawn.  
   
- This code is part of a larger example available in[How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ This code is part of a larger example available in[How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
@@ -14178,7 +14178,7 @@
   
  To set the sizing mode for the column headers, use the <xref:System.Windows.Forms.DataGridView.ColumnHeadersHeightSizeMode%2A> property.  
   
- For more information about header sizing, see [Sizing Options in the Windows Forms DataGridView Control](../Topic/Sizing%20Options%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about header sizing, see [Sizing Options in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/sizing-options-in-the-windows-forms-datagridview-control.md).  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DataGridView> control does not support double buffering. If <xref:System.Windows.Forms.Control.DoubleBuffered%2A> is set to `true` in a derived <xref:System.Windows.Forms.DataGridView> control, users will not receive visual feedback when resizing rows, columns, or headers or when reordering columns.  
@@ -14253,7 +14253,7 @@
    
   
 ## Examples  
- The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example illustrates the use of this event. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#40)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#40)]  
@@ -14440,14 +14440,14 @@
   
 -   <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.PaintHeader%2A>  
   
- You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
+ You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
- The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.DataGridView.RowPostPaint> event to paint textual content that spans the entire row below the normal cell values. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.DataGridView.RowPostPaint> event to paint textual content that spans the entire row below the normal cell values. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#30)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#30)]  
@@ -14486,14 +14486,14 @@
   
 -   <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintHeader%2A>  
   
- You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](../Topic/Rendering%20Controls%20with%20Visual%20Styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
+ You can also use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class to paint standard controls using the current theme. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md). If you are using [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], you also have access to a large library of standard images that you can use with the <xref:System.Windows.Forms.DataGridView> control.  
   
  For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
    
   
 ## Examples  
- The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.DataGridView.RowPrePaint> event to paint a gradient row background if the row is selected. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20the%20Appearance%20of%20Rows%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use a handler for the <xref:System.Windows.Forms.DataGridView.RowPrePaint> event to paint a gradient row background if the row is selected. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
  [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
@@ -14545,7 +14545,7 @@ this.dataGridView1.Rows.Add("five", "six", "seven", "eight");this.dataGridView1.
   
  Rows include style information in addition to cell values. For this reason, you might want to add or insert rows based on existing rows that you have already styled. You can do this using the <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopy%2A>, <xref:System.Windows.Forms.DataGridViewRowCollection.AddCopies%2A>, <xref:System.Windows.Forms.DataGridViewRowCollection.InsertCopy%2A>, and <xref:System.Windows.Forms.DataGridViewRowCollection.InsertCopies%2A> methods.  
   
- You can also use the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection to modify the values in the control or to remove rows. You can modify values or remove rows regardless of whether the control is bound to an external data source. If there is a data source, the changes are made directly to the data source. You may still need to push the data source updates to a remote database, however. For more information, see [How to: Bind Data to the Windows Forms DataGridView Control](../Topic/How%20to:%20Bind%20Data%20to%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ You can also use the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection to modify the values in the control or to remove rows. You can modify values or remove rows regardless of whether the control is bound to an external data source. If there is a data source, the changes are made directly to the data source. You may still need to push the data source updates to a remote database, however. For more information, see [How to: Bind Data to the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-bind-data-to-the-windows-forms-datagridview-control.md).  
   
  The following example shows you how to modify cell values programmatically.  
   
@@ -14596,7 +14596,7 @@ if (rowToDelete > -1)
   
  To improve performance, the <xref:System.Windows.Forms.DataGridViewRowCollection> returned by the <xref:System.Windows.Forms.DataGridView.Rows%2A> property can include shared and unshared rows. Shared rows share memory to reduce the cost of a large record set. If your record set is very large, you should be careful to keep the rows shared as much as possible when accessing the <xref:System.Windows.Forms.DataGridView.Rows%2A> property.  
   
- For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -14671,9 +14671,9 @@ if (rowToDelete > -1)
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control displays its cells using the styles indicated by the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property, which inherits styles from other properties of type <xref:System.Windows.Forms.DataGridViewCellStyle>. For cells in all rows, excluding header cells, the styles specified through the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> property override the styles specified through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> and <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A?displayProperty=fullName> properties, and are overridden by the styles specified through the <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A>, <xref:System.Windows.Forms.DataGridViewRow.DefaultCellStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.DataGridViewCell.Style%2A?displayProperty=fullName> properties.  
   
- For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
- When getting this property, a <xref:System.Windows.Forms.DataGridViewCellStyle> with default values will be created if the property has not already been accessed. This can cause a performance impact when getting this property for many rows. Whenever possible, use a single <xref:System.Windows.Forms.DataGridViewCellStyle> to set this property for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ When getting this property, a <xref:System.Windows.Forms.DataGridViewCellStyle> with default values will be created if the property has not already been accessed. This can cause a performance impact when getting this property for many rows. Whenever possible, use a single <xref:System.Windows.Forms.DataGridViewCellStyle> to set this property for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
    
   
@@ -15666,7 +15666,7 @@ if (rowToDelete > -1)
   
  When the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property has been set, this method works for data-bound columns only. Data-bound columns have had their <xref:System.Windows.Forms.DataGridViewColumn.DataPropertyName%2A?displayProperty=fullName> property set. This causes the <xref:System.Windows.Forms.DataGridViewColumn.IsDataBound%2A?displayProperty=fullName> property to return `true`.  
   
- If your <xref:System.Windows.Forms.DataGridView> control contains both bound and unbound columns, you must implement virtual mode to maintain the values of the unbound columns when the control is sorted by a bound column. You can do this by setting the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handling the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> event. If the column is editable, you should also handle the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event. For more information about virtual mode, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](../Topic/How%20to:%20Implement%20Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md). Sorting by unbound columns when the control is data-bound is not supported.  
+ If your <xref:System.Windows.Forms.DataGridView> control contains both bound and unbound columns, you must implement virtual mode to maintain the values of the unbound columns when the control is sorted by a bound column. You can do this by setting the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handling the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> event. If the column is editable, you should also handle the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event. For more information about virtual mode, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-implement-virtual-mode-in-the-windows-forms-datagridview-control.md). Sorting by unbound columns when the control is data-bound is not supported.  
   
    
   
@@ -15730,7 +15730,7 @@ if (rowToDelete > -1)
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridView.SortCompare> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](../Topic/How%20to:%20Customize%20Sorting%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridView.SortCompare> in a multiple column sort. This example is part of a larger example provided in [How to: Customize Sorting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-sorting-in-the-windows-forms-datagridview-control.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/CS/form1.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridView.SortCompare#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.SortCompare/VB/form1.vb#10)]  
@@ -16490,7 +16490,7 @@ if (rowToDelete > -1)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Virtual mode is designed for use with very large stores of data. When the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, you create a <xref:System.Windows.Forms.DataGridView> with a set number of rows and columns and then handle the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> event to populate the cells. Virtual mode requires implementation of an underlying data cache to handle the population, editing, and deletion of <xref:System.Windows.Forms.DataGridView> cells based on actions of the user. For more information about implementing virtual mode, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](../Topic/How%20to:%20Implement%20Virtual%20Mode%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ Virtual mode is designed for use with very large stores of data. When the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, you create a <xref:System.Windows.Forms.DataGridView> with a set number of rows and columns and then handle the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> event to populate the cells. Virtual mode requires implementation of an underlying data cache to handle the population, editing, and deletion of <xref:System.Windows.Forms.DataGridView> cells based on actions of the user. For more information about implementing virtual mode, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-implement-virtual-mode-in-the-windows-forms-datagridview-control.md).  
   
  You must use virtual mode to maintain the values of unbound columns when the <xref:System.Windows.Forms.DataGridView> control is in bound mode. Sorting by unbound columns in bound mode is not supported.  
   

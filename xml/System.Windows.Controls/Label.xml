@@ -21,7 +21,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class provides both functional and visual support for access keys (also known as mnemonics). It is frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A> property to the control that should get focus when the user presses the access key. Setting the target also causes [!INCLUDE[TLA#tla_uiautomation](~/includes/tlasharptla-uiautomation-md.md)] to use the text of the label as the name of the targeted control. For more information, see [Accessibility](../Topic/Accessibility.md).  
+ This class provides both functional and visual support for access keys (also known as mnemonics). It is frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A> property to the control that should get focus when the user presses the access key. Setting the target also causes [!INCLUDE[TLA#tla_uiautomation](~/includes/tlasharptla-uiautomation-md.md)] to use the text of the label as the name of the targeted control. For more information, see [Accessibility](~/docs/framework/ui-automation/accessibility.md).  
   
  To set the access key, add an underscore before the character that should be the access key. If your content has multiple underscore characters, only the first one is converted into an access key; the other underscores appear as normal text. If the underscore that you want converted to the access key is not the first underscore, use two consecutive underscores for any underscores that precede the one that you want to convert. For example, the following code contains an access key and displays as _Hello**W**orld:  
   
@@ -31,17 +31,17 @@
   
  Because the underscore that precedes H is a double, the W key registers as the access key.  
   
- A label is not focusable, and it is not a tab stop. For details, see [Focus Overview](../Topic/Focus%20Overview.md).  
+ A label is not focusable, and it is not a tab stop. For details, see [Focus Overview](~/docs/framework/wpf/advanced/focus-overview.md).  
   
  A <xref:System.Windows.Controls.Label> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
   
 ## Customizing the Label Control  
- To apply the same property settings to multiple <xref:System.Windows.Controls.Label> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Label>, see [Label Styles and Templates](../Topic/Label%20Styles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Controls.Label> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Controls.Label>, see [Label Styles and Templates](~/docs/framework/wpf/controls/label-styles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Label> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Controls.Label> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
    
   

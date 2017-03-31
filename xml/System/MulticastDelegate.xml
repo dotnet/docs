@@ -35,7 +35,7 @@
 ## Remarks  
  <xref:System.MulticastDelegate> is a special class. Compilers and other tools can derive from this class, but you cannot derive from it explicitly. The same is true of the <xref:System.Delegate> class.  
   
- In addition to the methods that delegate types inherit from <xref:System.MulticastDelegate>, the common language runtime provides two special methods: `BeginInvoke` and `EndInvoke`. For more information about these methods, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md).  
+ In addition to the methods that delegate types inherit from <xref:System.MulticastDelegate>, the common language runtime provides two special methods: `BeginInvoke` and `EndInvoke`. For more information about these methods, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md).  
   
  A <xref:System.MulticastDelegate> has a linked list of delegates, called an invocation list, consisting of one or more elements. When a multicast delegate is invoked, the delegates in the invocation list are called synchronously in the order in which they appear. If an error occurs during execution of the list then an exception is thrown.  
   

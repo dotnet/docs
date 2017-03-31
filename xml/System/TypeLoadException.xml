@@ -164,12 +164,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
   
    
   
 ## Examples  
- The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[TypeLoadException_GetObjectData#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CPP/typeloadexception_getobjectdata.cpp#1)]
  [!code-csharp[TypeLoadException_GetObjectData#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CS/typeloadexception_getobjectdata.cs#1)]
@@ -271,14 +271,14 @@
 ## Remarks  
  <xref:System.TypeLoadException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization, the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
   
- For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+ For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
   
    
   
 ## Examples  
  [Visual Basic, C#]  
   
- The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ The following example generates an exception, and serializes the exception data to a file, and then reconstitutes the exception. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[TypeLoadException_GetObjectData#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CPP/typeloadexception_getobjectdata.cpp#1)]
  [!code-csharp[TypeLoadException_GetObjectData#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_GetObjectData/CS/typeloadexception_getobjectdata.cs#1)]
@@ -333,7 +333,7 @@
    
   
 ## Examples  
- The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[TypeLoadException_TypeName#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_TypeName/CPP/typeloadexception_typename.cpp#1)]
  [!code-csharp[TypeLoadException_TypeName#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_TypeName/CS/typeloadexception_typename.cs#1)]
@@ -374,7 +374,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ The following example attempts to load a non-existent type from the mscorlib assembly. The resulting exception is caught, and the <xref:System.TypeLoadException.TypeName%2A> and <xref:System.TypeLoadException.Message%2A> values are displayed. For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[TypeLoadException_TypeName#1](~/samples/snippets/cpp/VS_Snippets_CLR/TypeLoadException_TypeName/CPP/typeloadexception_typename.cpp#1)]
  [!code-csharp[TypeLoadException_TypeName#1](~/samples/snippets/csharp/VS_Snippets_CLR/TypeLoadException_TypeName/CS/typeloadexception_typename.cs#1)]

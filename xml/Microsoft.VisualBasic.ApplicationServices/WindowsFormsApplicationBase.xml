@@ -168,7 +168,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Allow a form to respond to UI input while busy|[Walkthrough: Handling Events](../Topic/Walkthrough:%20Handling%20Events%20\(Visual%20Basic\).md)|  
+|Allow a form to respond to UI input while busy|[Walkthrough: Handling Events](~/docs/visual-basic/programming-guide/language-features/events/walkthrough-handling-events.md)|  
   
 ## Availability by Project Type  
   
@@ -309,7 +309,7 @@
 ## Remarks  
  Use the `MainForm` property to get or set the <xref:System.Windows.Forms.Form> object that the Visual Basic Application Startup/Shutdown model uses as the application's main form.  
   
- This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application Startup/Shutdown model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application Startup/Shutdown model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  The changes to this property are not persisted when the application closes. To change the main form permanently, you must change the setting in the **Project Designer**.  
   
@@ -341,7 +341,7 @@
   
  When you add a splash screen to your application using the Project Designer, it sets the `My.Application.MinimumSplashScreenDisplayTime` property to 2000, giving a minimum display time of two seconds.  
   
- This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ This property supports the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  You should set the `My.Application.MinimumSplashScreenDisplayTime` property in a method that overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnInitialize%2A> or <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method. Code that overrides methods of the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class should be entered in the ApplicationEvents.vb file, which is hidden by default.  
   
@@ -811,7 +811,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `My.Application.Run` method provides support for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. This method should be called only from the application's `Sub Main`. By default, the `Sub Main` of a Windows Forms application calls this method. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ The `My.Application.Run` method provides support for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. This method should be called only from the application's `Sub Main`. By default, the `Sub Main` of a Windows Forms application calls this method. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
 ## Availability by Project Type  
   
@@ -948,7 +948,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application raises the `Shutdown` event before it exits. This allows you to control how the application closes its resources. This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ An application raises the `Shutdown` event before it exits. This allows you to control how the application closes its resources. This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  The code for the `Shutdown` event handler is stored in the ApplicationEvents.vb file, which is hidden by default.  
   
@@ -977,7 +977,7 @@
   
  [!code-vb[VbVbalrMyApplication#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/FakeMyEvents.vb#13)]  
   
- You must enter the code in the Code Editor window for application events. To access this window, follow the instructions from this topic's Remarks section. For more information, see [How to: Log Messages When the Application Starts or Shuts Down](../Topic/How%20to:%20Log%20Messages%20When%20the%20Application%20Starts%20or%20Shuts%20Down%20\(Visual%20Basic\).md).  
+ You must enter the code in the Code Editor window for application events. To access this window, follow the instructions from this topic's Remarks section. For more information, see [How to: Log Messages When the Application Starts or Shuts Down](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-messages-when-the-application-starts-or-shuts-down.md).  
   
  ]]></format>
         </remarks>
@@ -1029,7 +1029,7 @@
 ## Remarks  
  The `My.Application.SplashScreen` property allows you to get or set the <xref:System.Windows.Forms.Form> object that the application uses as the splash screen, the first graphic form that is displayed while an application is being started.  
   
- This property supports the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ This property supports the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  The changes to this property are not persisted when the application closes. To change the splash screen permanently, you must change the setting in the **Project Designer**.  
   
@@ -1082,7 +1082,7 @@
 ## Remarks  
  A normal (non-single-instance) application raises the `Startup` event every time it starts. A single-instance application raises the `Startup` event when it starts only if the application is not already active; otherwise, it raises the `StartupNextInstance` event. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance>.  
   
- This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  You can use the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the `e` parameter to control the loading of an application's startup form. When the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property is set to `True`, the startup form does not start. In that case, your code should call an alternate startup code path.  
   
@@ -1144,7 +1144,7 @@
 ## Remarks  
  A single-instance application raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event when you attempt to restart the application when it is already active. When a single-instance application starts for the first time, it raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup> event. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup>.  
   
- This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ This event is part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  This event is raised on the application's main thread with the other user-interface events. This allows the event handler to access directly the application's user interface. However, if the application is busy handling another user-interface event when this event is raised, this event cannot be processed until the other event handler finishes or calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents%2A> method.  
   
@@ -1216,7 +1216,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An application raises the `UnhandledException` event when it encounters an unhandled exception. This event is part of the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](../Topic/Overview%20of%20the%20Visual%20Basic%20Application%20Model.md).  
+ An application raises the `UnhandledException` event when it encounters an unhandled exception. This event is part of the Visual Basic Application model. For more information, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
   
  You can use the <xref:System.Threading.ThreadExceptionEventArgs.Exception%2A> property of the `e` parameter to access the unhandled exception that caused this event.  
   
@@ -1232,7 +1232,7 @@
  For more information, see [Application Page, Project Designer (Visual Basic)](../Topic/Application%20Page,%20Project%20Designer%20\(Visual%20Basic\).md).  
   
 > [!NOTE]
->  The Visual Basic compiler prevents applications that are built for debugging from raising this event, to enable a debugger to handle the unhandled exceptions. This means that if you are testing your application by running it under the Visual Studio Integrated Development Environment debugger, your `UnhandledException` event handler will not be called. For more information about building applications for debugging, see [/debug (Visual Basic)](../Topic/-debug%20\(Visual%20Basic\).md).  
+>  The Visual Basic compiler prevents applications that are built for debugging from raising this event, to enable a debugger to handle the unhandled exceptions. This means that if you are testing your application by running it under the Visual Studio Integrated Development Environment debugger, your `UnhandledException` event handler will not be called. For more information about building applications for debugging, see [/debug (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/debug.md).  
   
 ## Tasks  
  The following table lists examples of tasks that involve the `My.Application.UnhandledException` event.  
@@ -1240,7 +1240,7 @@
 |||  
 |-|-|  
 |To|See|  
-|Log unhandled exceptions|[How to: Log Exceptions](../Topic/How%20to:%20Log%20Exceptions%20in%20Visual%20Basic.md)|  
+|Log unhandled exceptions|[How to: Log Exceptions](~/docs/visual-basic/developing-apps/programming/log-info/how-to-log-exceptions.md)|  
   
 ## Availability by Project Type  
   

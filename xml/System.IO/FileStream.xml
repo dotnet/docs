@@ -52,7 +52,7 @@
   
  For directory operations and other file operations, see the <xref:System.IO.File>, <xref:System.IO.Directory>, and <xref:System.IO.Path> classes. The <xref:System.IO.File> class is a utility class that has static methods primarily for the creation of <xref:System.IO.FileStream> objects based on file paths. The <xref:System.IO.MemoryStream> class creates a stream from a byte array and is similar to the <xref:System.IO.FileStream> class.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
 ## Detection of Stream Position Changes  
  When a <xref:System.IO.FileStream> object does not have an exclusive hold on its handle, another thread could access the file handle concurrently and change the position of the operating system's file pointer that is associated with the file handle. In this case, the cached position in the <xref:System.IO.FileStream> object and the cached data in the buffer could be compromised. The <xref:System.IO.FileStream> object routinely performs checks on methods that access the cached buffer to ensure that the operating system's handle position is the same as the cached position used by the <xref:System.IO.FileStream> object.  
@@ -120,7 +120,7 @@
   
  `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -176,7 +176,7 @@
   
  `FileShare.Read` is the default for those <xref:System.IO.FileStream> constructors without a `FileShare` parameter.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -244,7 +244,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -320,7 +320,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -384,7 +384,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -448,7 +448,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -521,7 +521,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -587,7 +587,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -651,7 +651,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -741,7 +741,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -806,7 +806,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -893,7 +893,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -991,7 +991,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1083,7 +1083,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1169,7 +1169,7 @@
 > [!CAUTION]
 >  When you compile a set of characters with a particular cultural setting and retrieve those same characters with a different cultural setting, the characters might not be interpretable, and could cause an exception to be thrown.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1267,7 +1267,7 @@
   
  Multiple simultaneous asynchronous requests render the request completion order uncertain.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1336,7 +1336,7 @@
   
  Multiple simultaneous asynchronous requests render the request completion order uncertain.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1544,9 +1544,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.FileStream.Dispose(System.Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.FileStream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see cref="M:System.ComponentModel.Component.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.IO.FileStream.Dispose(System.Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.ComponentModel.Component.Dispose" />. For more information about how to implement <see cref="M:System.IO.FileStream.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.ComponentModel.Component.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>
@@ -1854,7 +1854,7 @@
   
  Use the <xref:System.IO.FileStream.GetAccessControl%2A> method to retrieve the ACL entries for a file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  ]]></format>
         </remarks>
@@ -1985,7 +1985,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2034,7 +2034,7 @@
 ## Remarks  
  Locking a range of a file stream gives the threads of the locking process exclusive access to that range of the file stream.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2081,7 +2081,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2127,7 +2127,7 @@
 ## Remarks  
  Seeking to any location beyond the length of the stream is supported.  When you seek beyond the length of the file, the file size grows.  In Microsoft Windows NT and newer, any data added to the end of the file is set to zero.  In Microsoft Windows 98 or earlier, any data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream. Setting the position of the stream to a large value beyond the end of the stream in Windows 98 or earlier may result in an exception being raised.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2196,7 +2196,7 @@
   
  Do not interrupt a thread that is performing a read operation. Although the application may appear to run successfully after the thread is unblocked, the interruption can decrease your application's performance and reliability.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2333,7 +2333,7 @@
         <block subset="none" type="overrides">
           <para>The default implementation on <see langword="Stream" /> creates a new single-byte array and then calls <see cref="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />. While this is formally correct, it is inefficient. Any stream with an internal buffer should override this method and provide a much more efficient version that reads the buffer directly, avoiding the extra array allocation on every call.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).</para>
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).</para>
         </block>
       </Docs>
     </Member>
@@ -2418,7 +2418,7 @@
   
  You can seek to any location beyond the length of the stream. When you seek beyond the length of the file, the file size grows. In Windows NT and later versions, data added to the end of the file is set to zero. In Windows 98 or earlier versions, data added to the end of the file is not set to zero, which means that previously deleted data is visible to the stream.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2472,7 +2472,7 @@
 > [!CAUTION]
 >  The ACL specified for the `fileSecurity` parameter replaces the existing ACL for the file. To add permissions for a new user, use the <xref:System.IO.FileStream.GetAccessControl%2A> method to obtain the existing ACL, modify it, and then use <xref:System.IO.FileStream.SetAccessControl%2A> to apply it back to the file.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  ]]></format>
         </remarks>
@@ -2522,7 +2522,7 @@
 > [!NOTE]
 >  Use the <xref:System.IO.FileStream.CanWrite%2A> property to determine whether the current instance supports writing, and the <xref:System.IO.FileStream.CanSeek%2A> property to determine whether seeking is supported. For additional information, see <xref:System.IO.Stream.CanWrite%2A> and <xref:System.IO.Stream.CanSeek%2A>.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2560,7 +2560,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2621,7 +2621,7 @@
   
  Do not interrupt a thread that is performing a write operation. Although the application may appear to run successfully after the thread is unblocked, the interruption can decrease your application's performance and reliability.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2767,7 +2767,7 @@
         <block subset="none" type="overrides">
           <para>The default implementation on <see langword="Stream" /> creates a new single-byte array and then calls <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />. While this is formally correct, it is inefficient. Any stream with an internal buffer should override this method and provide a much more efficient version that reads the buffer directly, avoiding the extra array allocation on every call.  
   
- For a list of common file and directory operations, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).</para>
+ For a list of common file and directory operations, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).</para>
         </block>
       </Docs>
     </Member>

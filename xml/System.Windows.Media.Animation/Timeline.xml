@@ -28,15 +28,15 @@
   
  Classes that inherit from the timeline class provide additional functionality, such as animation and media playback. The following are examples of some of the different types of specialized timelines available.  
   
--   **Animations**: An <xref:System.Windows.Media.Animation.AnimationTimeline> is a type of timeline that produces output values. When you associate an animation with a property, the animation updates the property's value as it plays, thereby "animating" it. For an introduction to animations, see [Animation Overview](../Topic/Animation%20Overview.md). For information about the different ways to apply animations, see the [Property Animation Techniques Overview](../Topic/Property%20Animation%20Techniques%20Overview.md).  
+-   **Animations**: An <xref:System.Windows.Media.Animation.AnimationTimeline> is a type of timeline that produces output values. When you associate an animation with a property, the animation updates the property's value as it plays, thereby "animating" it. For an introduction to animations, see [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md). For information about the different ways to apply animations, see the [Property Animation Techniques Overview](~/docs/framework/wpf/graphics-multimedia/property-animation-techniques-overview.md).  
   
 -   **MediaTimelines**: A <xref:System.Windows.Media.MediaTimeline> is a type of timeline that controls the playback of a media file.  
   
 -   **ParallelTimelines**: A <xref:System.Windows.Media.Animation.ParallelTimeline> is a type of timeline that groups other timelines.  
   
--   **Storyboards**: A <xref:System.Windows.Media.Animation.Storyboard> is a special type of <xref:System.Windows.Media.Animation.ParallelTimeline> that provides object and property targeting information for the timelines it contains. For more information about <xref:System.Windows.Media.Animation.Storyboard> objects, see the [Storyboards Overview](../Topic/Storyboards%20Overview.md).  
+-   **Storyboards**: A <xref:System.Windows.Media.Animation.Storyboard> is a special type of <xref:System.Windows.Media.Animation.ParallelTimeline> that provides object and property targeting information for the timelines it contains. For more information about <xref:System.Windows.Media.Animation.Storyboard> objects, see the [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
- For more information about using timelines, see the [Animation Overview](../Topic/Animation%20Overview.md). For an introduction to the timing features of timelines, see the [Timing Behaviors Overview](../Topic/Timing%20Behaviors%20Overview.md).  
+ For more information about using timelines, see the [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md). For an introduction to the timing features of timelines, see the [Timing Behaviors Overview](~/docs/framework/wpf/graphics-multimedia/timing-behaviors-overview.md).  
   
 ## Data Binding and Animating Timelines  
  Most timeline properties can be data bound or animated; however, because of the way the timing system works, data bound or animated timelines do not behave like other data bound or animated objects. To understand their behavior, it helps to understand what it means to activate a timeline.  
@@ -345,7 +345,7 @@
   
  \- or -  
   
- \<*object* <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>="{[x:Null Markup Extension](../Topic/x:Null%20Markup%20Extension.md)}"/>  
+ \<*object* <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A>="{[x:Null Markup Extension](~/docs/framework/xaml-services/x-null-markup-extension.md)}"/>  
   
 <a name="xamlValues_BeginTime"></a>   
 ## XAML Values  
@@ -492,7 +492,7 @@
   
  The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the timeline's <xref:System.Windows.Media.Animation.Clock>.  
   
- Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](../Topic/Timing%20Events%20Overview.md).  
+ Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](~/docs/framework/wpf/graphics-multimedia/timing-events-overview.md).  
   
    
   
@@ -597,7 +597,7 @@
   
  The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the timeline's <xref:System.Windows.Media.Animation.Clock>.  
   
- Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](../Topic/Timing%20Events%20Overview.md).  
+ Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](~/docs/framework/wpf/graphics-multimedia/timing-events-overview.md).  
   
    
   
@@ -637,7 +637,7 @@
   
  The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the  <xref:System.Windows.Media.Animation.Clock> that was created for this timeline.  
   
- Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](../Topic/Timing%20Events%20Overview.md).  
+ Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](~/docs/framework/wpf/graphics-multimedia/timing-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -665,7 +665,7 @@
   
  The <xref:System.Object> parameter of the <xref:System.EventHandler> event handler is the timeline's <xref:System.Windows.Media.Animation.Clock>.  
   
- Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](../Topic/Timing%20Events%20Overview.md).  
+ Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](~/docs/framework/wpf/graphics-multimedia/timing-events-overview.md).  
   
    
   
@@ -884,7 +884,7 @@
   
  <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior>.  
   
- Because an animation in its fill period continues to override its target property's value, attempting to set the target property's value through other means might appear to have no effect. For an example showing how to set a property value after it has been animated, see [How to: Set a Property After Animating It with a Storyboard](../Topic/How%20to:%20Set%20a%20Property%20After%20Animating%20It%20with%20a%20Storyboard.md).  
+ Because an animation in its fill period continues to override its target property's value, attempting to set the target property's value through other means might appear to have no effect. For an example showing how to set a property value after it has been animated, see [How to: Set a Property After Animating It with a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
   
  A child timeline stops playing and filling when its parent timeline stops; if you want a child timeline to fill, make sure its parent timeline has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior>.  
   
@@ -1174,7 +1174,7 @@
 ## Remarks  
  This event is raised by applying a <xref:System.Windows.Media.Animation.RemoveStoryboard> action to a storyboard, using a Storyboard's <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> method, or (when working directly with clocks) calling the <xref:System.Windows.Media.Animation.ClockController.Remove%2A?displayProperty=fullName> method.  
   
- Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](../Topic/Timing%20Events%20Overview.md).  
+ Although this event handler appears to be associated with a timeline, it actually registers with the <xref:System.Windows.Media.Animation.Clock> created for this timeline.  For more information, see the [Timing Events Overview](~/docs/framework/wpf/graphics-multimedia/timing-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1203,7 +1203,7 @@
   
  Instead of specifying the number of times a timeline plays, you can also specify the total length of time you want the timeline to play. For a timeline to repeat, this <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> value should be greater than the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. For example, a timeline with a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of 2 seconds and a <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> of 4 seconds will play twice. If the <xref:System.Windows.Media.Animation.RepeatBehavior.Duration%2A?displayProperty=fullName> is less than the timeline's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>, the timeline's active period is cut short.  
   
- For more information about repeating timelines, see [Animation Overview](../Topic/Animation%20Overview.md).  
+ For more information about repeating timelines, see [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md).  
   
 <a name="dependencyPropertyInfo_RepeatBehavior"></a>   
 ## Dependency Property Information  

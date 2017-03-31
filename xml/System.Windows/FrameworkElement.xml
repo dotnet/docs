@@ -40,17 +40,17 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.FrameworkElement> is the connecting point between WPF framework-level element classes and the WPF core-level set of <xref:System.Windows.UIElement> presentation services. For more information about these concepts, see [WPF Architecture](../Topic/WPF%20Architecture.md).  
+ <xref:System.Windows.FrameworkElement> is the connecting point between WPF framework-level element classes and the WPF core-level set of <xref:System.Windows.UIElement> presentation services. For more information about these concepts, see [WPF Architecture](~/docs/framework/wpf/advanced/wpf-architecture.md).  
   
  <xref:System.Windows.FrameworkElement> extends <xref:System.Windows.UIElement> and adds the following capabilities:  
   
--   **Layout system definition**: <xref:System.Windows.FrameworkElement> provides specific WPF framework-level implementations for certain methods that were defined as virtual members in  <xref:System.Windows.UIElement>. Most notably, <xref:System.Windows.FrameworkElement> seals certain WPF core-level layout overrides, and instead provides a WPF framework-level equivalent that derived classes should override instead. For example, <xref:System.Windows.FrameworkElement> seals <xref:System.Windows.UIElement.ArrangeCore%2A> but provides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>. These changes reflect the fact that at the WPF framework-level there is a full layout system in place that can render any <xref:System.Windows.FrameworkElement> derived class. At the WPF core level, certain members that will structure a general [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] based layout solution are in place, but the actual engine of the layout system is not defined. For more information, see [Layout](../Topic/Layout.md).  
+-   **Layout system definition**: <xref:System.Windows.FrameworkElement> provides specific WPF framework-level implementations for certain methods that were defined as virtual members in  <xref:System.Windows.UIElement>. Most notably, <xref:System.Windows.FrameworkElement> seals certain WPF core-level layout overrides, and instead provides a WPF framework-level equivalent that derived classes should override instead. For example, <xref:System.Windows.FrameworkElement> seals <xref:System.Windows.UIElement.ArrangeCore%2A> but provides <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>. These changes reflect the fact that at the WPF framework-level there is a full layout system in place that can render any <xref:System.Windows.FrameworkElement> derived class. At the WPF core level, certain members that will structure a general [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] based layout solution are in place, but the actual engine of the layout system is not defined. For more information, see [Layout](~/docs/framework/wpf/advanced/layout.md).  
   
--   **The logical tree:** The general [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming model is often expressed in terms of being a tree of elements. Support for expressing the tree of elements as a logical tree, and accompanying support for defining that tree in markup is implemented at the <xref:System.Windows.FrameworkElement> level. Note however that <xref:System.Windows.FrameworkElement> deliberately does not define a content model, and leaves that responsibility to derived classes. For more information, see [Trees in WPF](../Topic/Trees%20in%20WPF.md).  
+-   **The logical tree:** The general [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] programming model is often expressed in terms of being a tree of elements. Support for expressing the tree of elements as a logical tree, and accompanying support for defining that tree in markup is implemented at the <xref:System.Windows.FrameworkElement> level. Note however that <xref:System.Windows.FrameworkElement> deliberately does not define a content model, and leaves that responsibility to derived classes. For more information, see [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md).  
   
--   **Object lifetime events:** It is often useful to know when an element is initialized (the constructor is called) or when the element is first loaded into a logical tree. <xref:System.Windows.FrameworkElement> defines several events related to object lifetime that provide useful hooks for code-behind operations that involve elements, such as adding more child elements. For more information, see [Object Lifetime Events](../Topic/Object%20Lifetime%20Events.md).  
+-   **Object lifetime events:** It is often useful to know when an element is initialized (the constructor is called) or when the element is first loaded into a logical tree. <xref:System.Windows.FrameworkElement> defines several events related to object lifetime that provide useful hooks for code-behind operations that involve elements, such as adding more child elements. For more information, see [Object Lifetime Events](~/docs/framework/wpf/advanced/object-lifetime-events.md).  
   
--   **Support for data binding and dynamic resource references:** The property-level support for data binding and resources is implemented by the <xref:System.Windows.DependencyProperty> class and embodied in the property system, but the ability to resolve a member value that is stored as an <xref:System.Windows.Expression> (the programming construct that underlies both data binding and dynamic resources) is implemented by <xref:System.Windows.FrameworkElement>. For more information, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md) and [XAML Resources](../Topic/XAML%20Resources.md).  
+-   **Support for data binding and dynamic resource references:** The property-level support for data binding and resources is implemented by the <xref:System.Windows.DependencyProperty> class and embodied in the property system, but the ability to resolve a member value that is stored as an <xref:System.Windows.Expression> (the programming construct that underlies both data binding and dynamic resources) is implemented by <xref:System.Windows.FrameworkElement>. For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md) and [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
 -   **Styles:** <xref:System.Windows.FrameworkElement> defines the <xref:System.Windows.FrameworkElement.Style%2A> property. However, <xref:System.Windows.FrameworkElement> does not yet define support for templates, or support decorators. These features are introduced by control classes such as <xref:System.Windows.Controls.Control> and <xref:System.Windows.Controls.ContentControl>.  
   
@@ -227,7 +227,7 @@
 ## Remarks  
  Use this method for the implementation of collections on objects that represent logical child elements of an element. Collection maintenance for child element collections might be done in property getters or setters, class handling of Changed events, constructors, or within the collection types themselves.  
   
- For control authors, manipulating the logical tree at this level is not the recommended practice, unless none of the content models for available base control classes are appropriate for your control scenario. Consider subclassing at the level of <xref:System.Windows.Controls.ContentControl>, <xref:System.Windows.Controls.ItemsControl>, and <xref:System.Windows.Controls.HeaderedItemsControl>. These classes provide a content model with particular enforcement of logical tree child elements through dedicated [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)], as well as support for other features typically desirable in a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] control such as styling through templates. For more information on how to use <xref:System.Windows.FrameworkElement.LogicalChildren%2A> and <xref:System.Windows.FrameworkElement.AddLogicalChild%2A>, see [Trees in WPF](../Topic/Trees%20in%20WPF.md).  
+ For control authors, manipulating the logical tree at this level is not the recommended practice, unless none of the content models for available base control classes are appropriate for your control scenario. Consider subclassing at the level of <xref:System.Windows.Controls.ContentControl>, <xref:System.Windows.Controls.ItemsControl>, and <xref:System.Windows.Controls.HeaderedItemsControl>. These classes provide a content model with particular enforcement of logical tree child elements through dedicated [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)], as well as support for other features typically desirable in a [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] control such as styling through templates. For more information on how to use <xref:System.Windows.FrameworkElement.LogicalChildren%2A> and <xref:System.Windows.FrameworkElement.AddLogicalChild%2A>, see [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md).  
   
  <xref:System.Windows.FrameworkElement.AddLogicalChild%2A> may throw an exception if called at a time when the logical tree is being iterated by another process.  
   
@@ -385,7 +385,7 @@
 ## Remarks  
  Most typical animation scenarios do not use this method. Typically, you create the <xref:System.Windows.Media.Animation.Storyboard> or <xref:System.Windows.Media.Animation.BeginStoryboard> element in markup, and then you place these as the <xref:System.Windows.EventTrigger> content on an element. When triggered by the event, the animation then runs. Most of the control aspects of a <xref:System.Windows.Media.Animation.Storyboard> can be addressed by properties that are exposed in markup.  
   
- For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks that are associated with the animation are removed as soon as the animation reaches the "Fill" period. Therefore the animation cannot be restarted after running once. Controlling an animation also requires that the storyboard have an [x:Name Directive](../Topic/x:Name%20Directive.md) or be accessible by reference in code.  
+ For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks that are associated with the animation are removed as soon as the animation reaches the "Fill" period. Therefore the animation cannot be restarted after running once. Controlling an animation also requires that the storyboard have an [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) or be accessible by reference in code.  
   
    
   
@@ -425,7 +425,7 @@
 ## Remarks  
  Most typical animation scenarios do not use this method. Typically, you create the <xref:System.Windows.Media.Animation.Storyboard> or <xref:System.Windows.Media.Animation.BeginStoryboard> element in markup, and then you place these as the <xref:System.Windows.EventTrigger> content on an element. When triggered by the event, the animation then runs. Most of the control aspects of a <xref:System.Windows.Media.Animation.Storyboard> can be addressed by properties that are exposed in markup.  
   
- For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks that are associated with the animation are removed as soon as the animation reaches the "Fill" period. Therefore the animation cannot be restarted after running once. Controlling an animation also requires that the storyboard have an [x:Name Directive](../Topic/x:Name%20Directive.md) or be accessible by reference in code.  
+ For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks that are associated with the animation are removed as soon as the animation reaches the "Fill" period. Therefore the animation cannot be restarted after running once. Controlling an animation also requires that the storyboard have an [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) or be accessible by reference in code.  
   
  Handoff behavior can be specified as an attribute of <xref:System.Windows.Media.Animation.BeginStoryboard>.  
   
@@ -440,7 +440,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
    
   
@@ -482,7 +482,7 @@
 ## Remarks  
  Most typical animation scenarios do not use this method. Typically, you create the <xref:System.Windows.Media.Animation.Storyboard> or <xref:System.Windows.Media.Animation.BeginStoryboard> element in markup, and then you place these as the <xref:System.Windows.EventTrigger> content on an element. When triggered by the event, the animation then runs. Most of the control aspects of a <xref:System.Windows.Media.Animation.Storyboard> can be addressed by properties that are exposed in markup.  
   
- For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks that are associated with the animation are removed as soon as the animation reaches the "Fill" period. Therefore the animation cannot be restarted after running once. Controlling an animation also requires that the storyboard have an [x:Name Directive](../Topic/x:Name%20Directive.md) or be accessible by reference in code.  
+ For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks that are associated with the animation are removed as soon as the animation reaches the "Fill" period. Therefore the animation cannot be restarted after running once. Controlling an animation also requires that the storyboard have an [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) or be accessible by reference in code.  
   
  Handoff behavior can be specified as an attribute of <xref:System.Windows.Media.Animation.BeginStoryboard>.  
   
@@ -497,7 +497,7 @@
   
  This is primarily an issue for animations on objects that have a long lifetime.  When an object is garbage collected, its clocks are also disconnected and garbage collected.  
   
- For more information about clock objects, see [Animation and Timing System Overview](../Topic/Animation%20and%20Timing%20System%20Overview.md).  
+ For more information about clock objects, see [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
   
  ]]></format>
         </remarks>
@@ -781,7 +781,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To manually open context menus, handlers of the events should mark the relevant event as handled. Otherwise, the existing value of the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property will be used to automatically open a context menu. Marking the event handled will effectively cancel the default action, and could be an opportunity to reset the value of the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property and then open the new <xref:System.Windows.Controls.ContextMenu>. However, there is a timing issue you should be aware of. In order to completely replace the context menu through a <xref:System.Windows.FrameworkElement.ContextMenuOpening> handler, the initial context menu must not be null / empty. Alternatively, you might need to handle the event and then manually open a new context menu. For details, see [How to: Handle the ContextMenuOpening Event](../Topic/How%20to:%20Handle%20the%20ContextMenuOpening%20Event.md).  
+ To manually open context menus, handlers of the events should mark the relevant event as handled. Otherwise, the existing value of the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property will be used to automatically open a context menu. Marking the event handled will effectively cancel the default action, and could be an opportunity to reset the value of the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property and then open the new <xref:System.Windows.Controls.ContextMenu>. However, there is a timing issue you should be aware of. In order to completely replace the context menu through a <xref:System.Windows.FrameworkElement.ContextMenuOpening> handler, the initial context menu must not be null / empty. Alternatively, you might need to handle the event and then manually open a new context menu. For details, see [How to: Handle the ContextMenuOpening Event](~/docs/framework/wpf/advanced/how-to-handle-the-contextmenuopening-event.md).  
   
  To use this event as an <xref:System.Windows.EventTrigger> in a style, you must reference the underlying attached event:  
   
@@ -884,7 +884,7 @@
   
 -   Use the <xref:System.Windows.Input.CursorConverter> class and its <xref:System.Windows.Input.CursorConverter.ConvertFrom%2A> method to specify a cursor by <xref:System.Windows.Input.CursorType>, or a string that can evaluate to a <xref:System.Windows.Input.CursorType>, and cast the return to <xref:System.Windows.Input.Cursor>.  
   
- Setting the <xref:System.Windows.Input.Cursor> to a custom value is not enabled in partial trust. For more information on custom cursors, see [Input Overview](../Topic/Input%20Overview.md).  
+ Setting the <xref:System.Windows.Input.Cursor> to a custom value is not enabled in partial trust. For more information on custom cursors, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
   
 <a name="dependencyPropertyInfo_Cursor"></a>   
 ## Dependency Property Information  
@@ -956,7 +956,7 @@
   
  This dependency property inherits property values. If there are child elements without other values for <xref:System.Windows.FrameworkElement.DataContext%2A> established through local values or styles, then the property system will set the value to be the <xref:System.Windows.FrameworkElement.DataContext%2A> value of the nearest parent element with this value assigned.  
   
- Alternatively, you can use one of the following properties of the <xref:System.Windows.Data.Binding> class to specify the binding source explicitly: <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, or <xref:System.Windows.Data.Binding.RelativeSource%2A>. For more information, see [How to: Specify the Binding Source](../Topic/How%20to:%20Specify%20the%20Binding%20Source.md).  
+ Alternatively, you can use one of the following properties of the <xref:System.Windows.Data.Binding> class to specify the binding source explicitly: <xref:System.Windows.Data.Binding.ElementName%2A>, <xref:System.Windows.Data.Binding.Source%2A>, or <xref:System.Windows.Data.Binding.RelativeSource%2A>. For more information, see [How to: Specify the Binding Source](~/docs/framework/wpf/data/how-to-specify-the-binding-source.md).  
   
  In [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], <xref:System.Windows.FrameworkElement.DataContext%2A> is most typically set to as a <xref:System.Windows.Data.Binding> declaration. You can use either property element syntax or attribute syntax. Attribute syntax is shown in the example on this page. You can also use code to set <xref:System.Windows.FrameworkElement.DataContext%2A>.  
   
@@ -988,10 +988,10 @@
  A directly embedded object that serves as data context for any bindings within the parent element. Typically, this object is a <xref:System.Windows.Data.Binding> or another <xref:System.Windows.Data.BindingBase> derived class. Alternatively, raw data of any [!INCLUDE[TLA2#tla_clr](~/includes/tla2sharptla-clr-md.md)] object type intended for binding may be placed here, with the actual bindings defined later.  
   
  *bindingUsage*  
- A binding usage that evaluates to an appropriate data context. For details, see [Binding Markup Extension](../Topic/Binding%20Markup%20Extension.md).  
+ A binding usage that evaluates to an appropriate data context. For details, see [Binding Markup Extension](~/docs/framework/wpf/advanced/binding-markup-extension.md).  
   
  *resourceExtension*  
- One of the following:  or . This usage is used when referring to raw data defined as an object in resources. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following:  or . This usage is used when referring to raw data defined as an object in resources. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *contextResourceKey*  
  The key identifier for the object being requested from within a <xref:System.Windows.ResourceDictionary>.  
@@ -1035,7 +1035,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an explanation of data contexts and data binding, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For an explanation of data contexts and data binding, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
 > [!IMPORTANT]
 >  When the <xref:System.Windows.FrameworkElement.DataContext%2A> for an element changes, all data-bound properties on this element are potentially affected. This applies to any elements that are child elements of the current element in the logical tree, which inherit the data context, and also the current element itself. All such existing bindings must re-interpret the new <xref:System.Windows.FrameworkElement.DataContext%2A> and will reevaluate the binding results. The data binding engine is not deterministic about the order of these reevaluations, relative to the raising of the <xref:System.Windows.FrameworkElement.DataContextChanged> event. The reevaluations can occur before the event, after the event, or in any mixture.  
@@ -1182,7 +1182,7 @@
 ## Remarks  
  If the element has child elements, these child elements are all searched recursively for the requested named element.  
   
- <xref:System.Windows.FrameworkElement.FindName%2A> operates within the current element's namescope. For details, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+ <xref:System.Windows.FrameworkElement.FindName%2A> operates within the current element's namescope. For details, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
  ]]></format>
         </remarks>
@@ -1215,11 +1215,11 @@
 > [!IMPORTANT]
 >  If you call this method for a key that cannot be found, an exception is thrown. If you do not want to handle exceptions that result from calling <xref:System.Windows.FrameworkElement.FindResource%2A>, call <xref:System.Windows.FrameworkElement.TryFindResource%2A> instead. <xref:System.Windows.FrameworkElement.TryFindResource%2A> returns `null` when a requested resource cannot be found, and does not throw an exception.  
   
- If the resource is not found on the calling element, the parent element in the logical tree is searched next, then the application, then themes, and finally system resources. This lookup methodology is identical to how the tree is searched if a resource were requested by a dynamic resource reference in markup. For more information about resource lookup, see [XAML Resources](../Topic/XAML%20Resources.md).  
+ If the resource is not found on the calling element, the parent element in the logical tree is searched next, then the application, then themes, and finally system resources. This lookup methodology is identical to how the tree is searched if a resource were requested by a dynamic resource reference in markup. For more information about resource lookup, see [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  Typically, you immediately cast a <xref:System.Windows.FrameworkElement.FindResource%2A> return value to the type of the property that you setting with the returned resource value.  
   
- Resource keys are not necessarily strings. For instance, styles for controls at the theme level are deliberately keyed to the <xref:System.Type> of the control, and application or page styles for controls typically use this same key convention. For details, see [Styling and Templating](../Topic/Styling%20and%20Templating.md) or [XAML Resources](../Topic/XAML%20Resources.md).  
+ Resource keys are not necessarily strings. For instance, styles for controls at the theme level are deliberately keyed to the <xref:System.Type> of the control, and application or page styles for controls typically use this same key convention. For details, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md) or [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
    
   
@@ -1267,7 +1267,7 @@
 ## Remarks  
  The dependency property usage sets the <xref:System.Windows.FrameworkElement.FlowDirection%2A> on this element. Because of property value inheritance, setting <xref:System.Windows.FrameworkElement.FlowDirection%2A> on an element can potentially set <xref:System.Windows.FrameworkElement.FlowDirection%2A> on all child elements that did not set <xref:System.Windows.FrameworkElement.FlowDirection%2A> locally or though other means such as styles.  
   
- This property is not automatically set as part of any application culture information, because an element might contain content that is not necessarily intended to obey the general flow direction implied by the culture information. For more information on globalization considerations, see [Globalization for WPF](../Topic/Globalization%20for%20WPF.md).  
+ This property is not automatically set as part of any application culture information, because an element might contain content that is not necessarily intended to obey the general flow direction implied by the culture information. For more information on globalization considerations, see [Globalization for WPF](~/docs/framework/wpf/advanced/globalization-for-wpf.md).  
   
  This property has a defined [!INCLUDE[TLA#tla_clr](~/includes/tlasharptla-clr-md.md)] property accessor, so it functions as a dependency property. However, it is also registered as attached, so it can also function as an attached property. The attached registration is mainly so that property value inheritance is supported, but the property can also be used as a true attached property. The attached property usage is only relevant if the object you intend to set the flow direction on has a <xref:System.Windows.FrameworkElement> parent element that performs layout upon it, is itself not a <xref:System.Windows.FrameworkElement>, and does not already have a more directly defined `FlowDirection` property. (Some of the flow document classes such as <xref:System.Windows.Documents.Block> and <xref:System.Windows.Documents.Inline> define their own `FlowDirection`, and this property can also set the flow direction. The property value is then read by the eventual content host without requiring attached property usage.)  
   
@@ -1348,13 +1348,13 @@
 <a name="xamlValues_FocusVisualStyle"></a>   
 ## XAML Values  
  *resourceExtension*  
- One of the following: , or . See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: , or . See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *styleResourceKey*  
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_FocusVisualStyle"></a>   
 ## Dependency Property Information  
@@ -1848,7 +1848,7 @@
   
  Whether you choose to handle <xref:System.Windows.FrameworkElement.Loaded> or <xref:System.Windows.FrameworkElement.Initialized> depends on your requirements. If you do not need to read element properties, intend to reset properties, and do not need any layout information, <xref:System.Windows.FrameworkElement.Initialized> might be the better event to act upon. If you need all properties of the element to be available, and you will be setting properties that are likely to reset the layout, <xref:System.Windows.FrameworkElement.Loaded> might be the better event to act upon. Be careful of reentrancy if your handler resets any properties that are interpreted by the layout system to mean that a new layout pass is required. (You might need to check the <xref:System.Windows.FrameworkPropertyMetadata> values on the property if you are unsure of which properties can require a new layout pass if they are changed.)  
   
- For more information about the sequence of object events for a <xref:System.Windows.FrameworkElement>, and also for several related application and element classes, see [Object Lifetime Events](../Topic/Object%20Lifetime%20Events.md).  
+ For more information about the sequence of object events for a <xref:System.Windows.FrameworkElement>, and also for several related application and element classes, see [Object Lifetime Events](~/docs/framework/wpf/advanced/object-lifetime-events.md).  
   
  ]]></format>
         </remarks>
@@ -1997,7 +1997,7 @@
   
  This dependency property inherits property values. If there are child elements without other values for <xref:System.Windows.FrameworkElement.Language%2A> established through local values or styles, the property system will set the value to be the <xref:System.Windows.FrameworkElement.Language%2A> value of the nearest ancestor element with this value assigned.  
   
- [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] defines the general meaning of the `xml:lang` attribute. <xref:System.Windows.FrameworkElement.Language%2A> essentially exposes the meaning of this attribute as a dependency property. <xref:System.Windows.FrameworkElement.Language%2A> can be adjusted programmatically, and can participate in property system value inheritance in a way that parallels how the `xml:lang` attribute can inherit to child element scope in [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)]. If you set <xref:System.Windows.FrameworkElement.Language%2A>, that value becomes the `xml:lang` and overwrites any previous value. For more information, see [xml:lang Handling in XAML](../Topic/xml:lang%20Handling%20in%20XAML.md).  
+ [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)] defines the general meaning of the `xml:lang` attribute. <xref:System.Windows.FrameworkElement.Language%2A> essentially exposes the meaning of this attribute as a dependency property. <xref:System.Windows.FrameworkElement.Language%2A> can be adjusted programmatically, and can participate in property system value inheritance in a way that parallels how the `xml:lang` attribute can inherit to child element scope in [!INCLUDE[TLA2#tla_xml](~/includes/tla2sharptla-xml-md.md)]. If you set <xref:System.Windows.FrameworkElement.Language%2A>, that value becomes the `xml:lang` and overwrites any previous value. For more information, see [xml:lang Handling in XAML](~/docs/framework/xaml-services/xml-lang-handling-in-xaml.md).  
   
 <a name="dependencyPropertyInfo_CultureInfo"></a>   
 ## Dependency Property Information  
@@ -2114,7 +2114,7 @@
 ## Remarks  
  <xref:System.Windows.FrameworkElement.Loaded> is usually the last event raised in an element initialization sequence. It will always be raised after <xref:System.Windows.FrameworkElement.Initialized>. Whether you choose to handle <xref:System.Windows.FrameworkElement.Loaded> or <xref:System.Windows.FrameworkElement.Initialized> depends on your requirements. If you do not need to read element properties, intend to reset properties, and do not need any layout information, <xref:System.Windows.FrameworkElement.Initialized> might be the better event to act upon. If you need all properties of the element to be available, and you will be setting properties that are likely to reset the layout, <xref:System.Windows.FrameworkElement.Loaded> might be the better event to act upon. Be careful of reentrancy if your handler resets any properties that are interpreted by the layout system to mean that a new layout pass is required. (You might need to check the <xref:System.Windows.FrameworkPropertyMetadata> values on the property if you are unsure of which properties can require a new layout pass if they are changed.)  
   
- For more information about the sequence of object events for a <xref:System.Windows.FrameworkElement>, and also for several related application and element classes, see [Object Lifetime Events](../Topic/Object%20Lifetime%20Events.md).  
+ For more information about the sequence of object events for a <xref:System.Windows.FrameworkElement>, and also for several related application and element classes, see [Object Lifetime Events](~/docs/framework/wpf/advanced/object-lifetime-events.md).  
   
  Direct routed events do not follow a route, they are only handled within the same element on which they are raised. Direct routed events do support other routed event behavior: they support an accessible handlers collection, and can be used as an <xref:System.Windows.EventTrigger> in a style.  
   
@@ -2180,7 +2180,7 @@
 ## Remarks  
  <xref:System.Windows.FrameworkElement.LogicalChildren%2A> allows you to iterate over child elements. This is useful for elements that may not have a defined, dedicated collection but still contain more than one child element, particularly <xref:System.Windows.FrameworkContentElement> child elements.  
   
- For more information on how to use <xref:System.Windows.FrameworkElement.LogicalChildren%2A> and <xref:System.Windows.FrameworkElement.AddLogicalChild%2A>, see [Trees in WPF](../Topic/Trees%20in%20WPF.md).  
+ For more information on how to use <xref:System.Windows.FrameworkElement.LogicalChildren%2A> and <xref:System.Windows.FrameworkElement.AddLogicalChild%2A>, see [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md).  
   
  ]]></format>
         </remarks>
@@ -2327,7 +2327,7 @@
   
  String representation of a <xref:System.Double> value equal to or greater than 0.0. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
   
- The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply, except that you must use [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md) if you need to explicitly set the value to be <xref:System.Double.PositiveInfinity>.  
+ The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply, except that you must use [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md) if you need to explicitly set the value to be <xref:System.Double.PositiveInfinity>.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
@@ -2416,7 +2416,7 @@
   
  String representation of a <xref:System.Double> value equal to or greater than 0.0. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
   
- The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply, except that you must use [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md) to set the value to be <xref:System.Double.PositiveInfinity>.  
+ The same <xref:System.Double> range restrictions as mentioned in the Property Value section apply, except that you must use [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md) to set the value to be <xref:System.Double.PositiveInfinity>.  
   
  *qualifiedDouble*  
  A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
@@ -2782,13 +2782,13 @@
 ## Remarks  
  The most common usage of this property is to specify a [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] element name as an attribute in markup.  
   
- This property essentially provides a WPF framework-level convenience property to set the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] [x:Name Directive](../Topic/x:Name%20Directive.md).  
+ This property essentially provides a WPF framework-level convenience property to set the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md).  
   
- Names must be unique within a namescope. For more information, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+ Names must be unique within a namescope. For more information, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
  Getting a <xref:System.Windows.FrameworkElement.Name%2A> if you are creating elements in code is not common. If you have the appropriate reference in code already, you can just call methods and properties on the element reference and will not generally need the <xref:System.Windows.FrameworkElement.Name%2A>. An exception to this is if the <xref:System.Windows.FrameworkElement.Name%2A> string has some overloaded meaning, for instance if it is useful to display that name in [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)]. Setting a <xref:System.Windows.FrameworkElement.Name%2A> from code-behind if the original <xref:System.Windows.FrameworkElement.Name%2A> was set from markup is also not recommended, and changing the property after loading the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] will not change the original object reference. The object references are created only when the underlying namescopes are explicitly created during parsing. You must specifically call <xref:System.Windows.FrameworkElement.RegisterName%2A> to make an effective change to the <xref:System.Windows.FrameworkElement.Name%2A> property of an already loaded element.  
   
- One notable case where setting <xref:System.Windows.FrameworkElement.Name%2A> from code is important is when registering names for elements that storyboards will run against, so that they can be referenced at run time. Before you can register a name, might also need to instantiate and assign a <xref:System.Windows.NameScope> instance. See the Example section, or [Storyboards Overview](../Topic/Storyboards%20Overview.md).  
+ One notable case where setting <xref:System.Windows.FrameworkElement.Name%2A> from code is important is when registering names for elements that storyboards will run against, so that they can be referenced at run time. Before you can register a name, might also need to instantiate and assign a <xref:System.Windows.NameScope> instance. See the Example section, or [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
  Setting <xref:System.Windows.FrameworkElement.Name%2A> from code has limited applications, but getting an element by <xref:System.Windows.FrameworkElement.Name%2A> is more common. One particular scenario is if your application supports a navigation model where pages reload into the application, and the run time code is not necessarily code-behind defined for that page. The utility method <xref:System.Windows.FrameworkElement.FindName%2A>, which is available from any <xref:System.Windows.FrameworkElement>, can find any element by <xref:System.Windows.FrameworkElement.Name%2A> in the logical tree for that element, searching the tree recursively as necessary. Or you can use the <xref:System.Windows.LogicalTreeHelper.FindLogicalNode%2A> static method of <xref:System.Windows.LogicalTreeHelper>, which also takes a <xref:System.Windows.FrameworkElement.Name%2A> string as an argument.  
   
@@ -2796,7 +2796,7 @@
   
  The <xref:System.Windows.FrameworkElement.Name%2A> property also serves as an identifier for other processes. For instance, the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] automation model will use <xref:System.Windows.FrameworkElement.Name%2A> as the AutomationId for clients and providers.  
   
- The string values used for <xref:System.Windows.FrameworkElement.Name%2A> have some restrictions, as imposed by the underlying [x:Name Directive](../Topic/x:Name%20Directive.md) defined by the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] specification. Most notably, a <xref:System.Windows.FrameworkElement.Name%2A> must start with a letter or the underscore character (_), and must contain only letters, digits, or underscores. For more information, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+ The string values used for <xref:System.Windows.FrameworkElement.Name%2A> have some restrictions, as imposed by the underlying [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) defined by the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] specification. Most notably, a <xref:System.Windows.FrameworkElement.Name%2A> must start with a letter or the underscore character (_), and must contain only letters, digits, or underscores. For more information, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
  <xref:System.Windows.FrameworkElement.Name%2A> is one of the very few dependency properties that cannot be animated (<xref:System.Windows.UIPropertyMetadata.IsAnimationProhibited%2A> is `true` in metadata), because the name itself is vital for targeting an animation. Data binding a <xref:System.Windows.FrameworkElement.Name%2A> is technically possible, but is an extremely uncommon scenario because a data-bound <xref:System.Windows.FrameworkElement.Name%2A> cannot serve the main intended purpose of the property: to provide an identifier connection point for code-behind.  
   
@@ -2858,7 +2858,7 @@
 ## Remarks  
  This method has no default implementation.  
   
- Templates are the section of an element's completed visual tree that comes from the Template property of a <xref:System.Windows.Style> that is applied for the element. For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ Templates are the section of an element's completed visual tree that comes from the Template property of a <xref:System.Windows.Style> that is applied for the element. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
  ]]></format>
         </remarks>
@@ -3188,7 +3188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The visual tree is potentially different from the logical tree because it omits elements that do not render visually, such as collections, and expands some elements on the basis of their theme and style compositing. For more information, see [Trees in WPF](../Topic/Trees%20in%20WPF.md).  
+ The visual tree is potentially different from the logical tree because it omits elements that do not render visually, such as collections, and expands some elements on the basis of their theme and style compositing. For more information, see [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md).  
   
  ]]></format>
         </remarks>
@@ -3224,7 +3224,7 @@
  The most common usage of this property is an indirect usage within the setter of a style that is supplying a themed style.  
   
 > [!IMPORTANT]
->  If you set <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> to `true` on a control, you will be suppressing the default control template supplied by the theme styles. That control template typically includes the content presenter and other composited elements that provide basic [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] functionality and visualization for the control. If you want the control to continue to support the same features as the default theme styles, you must supply an alternate style with a control template that replicates the same structure. For more information, see [Control Authoring Overview](../Topic/Control%20Authoring%20Overview.md).  
+>  If you set <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> to `true` on a control, you will be suppressing the default control template supplied by the theme styles. That control template typically includes the content presenter and other composited elements that provide basic [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)] functionality and visualization for the control. If you want the control to continue to support the same features as the default theme styles, you must supply an alternate style with a control template that replicates the same structure. For more information, see [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
   
 <a name="dependencyPropertyInfo_OverridesDefaultStyle"></a>   
 ## Dependency Property Information  
@@ -3278,7 +3278,7 @@
   
  Note that the logical parent of an element can potentially change depending on your application's functionality, and keeping the value of this property will not reflect that change. You typically should get the value immediately before you need it.  
   
- See [Trees in WPF](../Topic/Trees%20in%20WPF.md) for more information about logical tree  traversal, and the scenarios where using  <xref:System.Windows.FrameworkElement.Parent%2A> as a technique of parent element discovery is appropriate.  
+ See [Trees in WPF](~/docs/framework/wpf/advanced/trees-in-wpf.md) for more information about logical tree  traversal, and the scenarios where using  <xref:System.Windows.FrameworkElement.Parent%2A> as a technique of parent element discovery is appropriate.  
   
  The property engine will potentially recalculate all property values of an element when it is reparented, because some properties inherit values through the logical tree. The <xref:System.Windows.FrameworkElement.DataContext%2A> that applies for bindings can also change when elements are reparented.  
   
@@ -3394,9 +3394,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is a convenience method for calling <xref:System.Windows.NameScope.RegisterName%2A>. The implementation will check successive parent elements until it finds the applicable <xref:System.Windows.NameScope> implementation, which is found by finding an element that implements <xref:System.Windows.Markup.INameScope>. For more information about namescopes, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+ This method is a convenience method for calling <xref:System.Windows.NameScope.RegisterName%2A>. The implementation will check successive parent elements until it finds the applicable <xref:System.Windows.NameScope> implementation, which is found by finding an element that implements <xref:System.Windows.Markup.INameScope>. For more information about namescopes, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
- Calling <xref:System.Windows.FrameworkElement.RegisterName%2A> is necessary in order to correctly hook up animation storyboards for applications when created in code. This is because one of the key storyboard properties, <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>, uses a run-time name lookup instead of being able to take a reference to a target element. This is true even if that element is accessible by reference from the code. For more information on why you need to register names for storyboard targets, see [Storyboards Overview](../Topic/Storyboards%20Overview.md).  
+ Calling <xref:System.Windows.FrameworkElement.RegisterName%2A> is necessary in order to correctly hook up animation storyboards for applications when created in code. This is because one of the key storyboard properties, <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A>, uses a run-time name lookup instead of being able to take a reference to a target element. This is true even if that element is accessible by reference from the code. For more information on why you need to register names for storyboard targets, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
    
   
@@ -3528,7 +3528,7 @@
   
  The underlying <xref:System.Windows.ResourceDictionary> supports the methods required to add, remove or query resources from within the collection by using code. The <xref:System.Windows.FrameworkElement.Resources%2A> property is settable to support the scenario of completely replacing the resources collection of an element to be a new or different <xref:System.Windows.ResourceDictionary>.  
   
- Notice that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax shown does not include an element for the <xref:System.Windows.ResourceDictionary>. This is an example of implicit collection syntax; a tag representing the collection element can be omitted. The elements that are added as items to the collection are specified instead. For more information about implicit collections and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](../Topic/XAML%20Syntax%20In%20Detail.md). One case where a <xref:System.Windows.ResourceDictionary> is still specified explicitly as an element is if you are introducing a merged dictionary, in which case there are typically no child elements for that <xref:System.Windows.ResourceDictionary>. For details, see [Merged Resource Dictionaries](../Topic/Merged%20Resource%20Dictionaries.md).  
+ Notice that the [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] syntax shown does not include an element for the <xref:System.Windows.ResourceDictionary>. This is an example of implicit collection syntax; a tag representing the collection element can be omitted. The elements that are added as items to the collection are specified instead. For more information about implicit collections and [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], see [XAML Syntax In Detail](~/docs/framework/wpf/advanced/xaml-syntax-in-detail.md). One case where a <xref:System.Windows.ResourceDictionary> is still specified explicitly as an element is if you are introducing a merged dictionary, in which case there are typically no child elements for that <xref:System.Windows.ResourceDictionary>. For details, see [Merged Resource Dictionaries](~/docs/framework/wpf/advanced/merged-resource-dictionaries.md).  
   
 <a name="xamlPropertyElementUsage_Resources"></a>   
 ## XAML Property Element Usage  
@@ -3544,7 +3544,7 @@
 <a name="xamlValues_Resources"></a>   
 ## XAML Values  
  *oneOrMoreResourceElements*  
- One or more object elements, each of which defines a resource. Each resource property element within each <xref:System.Windows.ResourceDictionary> must have a unique value for the [x:Key Directive](../Topic/x:Key%20Directive.md), which serves as the unique key when values are retrieved from the <xref:System.Windows.ResourceDictionary>.  
+ One or more object elements, each of which defines a resource. Each resource property element within each <xref:System.Windows.ResourceDictionary> must have a unique value for the [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md), which serves as the unique key when values are retrieved from the <xref:System.Windows.ResourceDictionary>.  
   
  ]]></format>
         </remarks>
@@ -3674,7 +3674,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A resource reference is similar to the use of a [DynamicResource Markup Extension](../Topic/DynamicResource%20Markup%20Extension.md) in markup. The resource reference creates an internal expression that supplies the value of the specified property on a run-time deferred basis. The expression will be re-evaluated whenever the resource dictionary indicates a changed value through internal events, or whenever the current element is reparented (a parent change would change the dictionary lookup path).  
+ A resource reference is similar to the use of a [DynamicResource Markup Extension](~/docs/framework/wpf/advanced/dynamicresource-markup-extension.md) in markup. The resource reference creates an internal expression that supplies the value of the specified property on a run-time deferred basis. The expression will be re-evaluated whenever the resource dictionary indicates a changed value through internal events, or whenever the current element is reparented (a parent change would change the dictionary lookup path).  
   
  ]]></format>
         </remarks>
@@ -3891,7 +3891,7 @@
   
  Setting the styles has some restrictions. You can reset the entire <xref:System.Windows.FrameworkElement.Style%2A> property to a new <xref:System.Windows.Style> at any time, which will force a layout recomposition. However, as soon as that style is placed in use by a loaded element, the <xref:System.Windows.Style> should be considered sealed. Attempting to make a change to any individual property of an in-use style (such as anything within the collection of <xref:System.Windows.Style.Setters%2A>) causes an exception to be thrown. A style that is defined in markup is considered to be in use as soon as it is loaded from a resource dictionary (for resources), or the page it is contained within is loaded (for inline styles).  
   
- <xref:System.Windows.FrameworkElement.Style%2A> is a dependency property with special precedence. The locally set style generally operates at the highest precedence in the property system. If the <xref:System.Windows.FrameworkElement.Style%2A> is null at this point, during loading the property system checks for implicit styles in local or application resources that specify that type. If the style is still null after this step, then the acting style for presentation purposes generally comes from the default (theme) style, but the default style is not returned in the <xref:System.Windows.FrameworkElement.Style%2A> property value. See [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md) or [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ <xref:System.Windows.FrameworkElement.Style%2A> is a dependency property with special precedence. The locally set style generally operates at the highest precedence in the property system. If the <xref:System.Windows.FrameworkElement.Style%2A> is null at this point, during loading the property system checks for implicit styles in local or application resources that specify that type. If the style is still null after this step, then the acting style for presentation purposes generally comes from the default (theme) style, but the default style is not returned in the <xref:System.Windows.FrameworkElement.Style%2A> property value. See [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md) or [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
 <a name="xamlAttributeUsage_Style"></a>   
 ## XAML Attribute Usage  
@@ -3906,13 +3906,13 @@
 <a name="xamlValues_Style"></a>   
 ## XAML Values  
  *resourceExtension*  
- One of the following: , or . See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: , or . See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  *styleResourceKey*  
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended for most style scenarios. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended for most style scenarios. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or <xref:System.Windows.Data.Binding> is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_Style"></a>   
 ## Dependency Property Information  
@@ -4009,7 +4009,7 @@
 ## Remarks  
  This property is analogous to Tag properties in other [!INCLUDE[TLA#tla_ms](~/includes/tlasharptla-ms-md.md)] programming models, such as [!INCLUDE[TLA#tla_vba](~/includes/tlasharptla-vba-md.md)] or [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)]. <xref:System.Windows.FrameworkElement.Tag%2A> is intended to provide a pre-existing property location where you can store some basic custom information about any <xref:System.Windows.FrameworkElement> without requiring you to subclass an element.  
   
- Because this property takes an object, you would need to use the property element usage in order to set the <xref:System.Windows.FrameworkElement.Tag%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] to anything other than an object with a known and built-in type converter, such as a string. Objects used in this manner are typically not within the standard [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] namespaces and therefore may require namespace mapping to the external namespace in order to be introduced as [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] elements. For details, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md) and [XAML and Custom Classes for WPF](../Topic/XAML%20and%20Custom%20Classes%20for%20WPF.md).  
+ Because this property takes an object, you would need to use the property element usage in order to set the <xref:System.Windows.FrameworkElement.Tag%2A> property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] to anything other than an object with a known and built-in type converter, such as a string. Objects used in this manner are typically not within the standard [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] namespaces and therefore may require namespace mapping to the external namespace in order to be introduced as [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] elements. For details, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md) and [XAML and Custom Classes for WPF](~/docs/framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).  
   
 <a name="dependencyPropertyInfo_Tag"></a>   
 ## Dependency Property Information  
@@ -4382,7 +4382,7 @@
 <a name="xamlValues_Triggers"></a>   
 ## XAML Values  
  *oneOrMoreTriggers*  
- One or more defined <xref:System.Windows.EventTrigger> elements. Each such trigger is expected to contain valid storyboard actions and references. Note that this collection can only be established on the root element of a page. For more information, see [Storyboards Overview](../Topic/Storyboards%20Overview.md).  
+ One or more defined <xref:System.Windows.EventTrigger> elements. Each such trigger is expected to contain valid storyboard actions and references. Note that this collection can only be established on the root element of a page. For more information, see [Storyboards Overview](~/docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  
   
  ]]></format>
         </remarks>

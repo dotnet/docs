@@ -24,7 +24,7 @@
 ## Remarks  
   
 > [!IMPORTANT]
->  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the common language runtime (CLR) is moving away from providing security policy for computers. We recommend that you use [Windows Software Restriction Policies (SRP)](http://go.microsoft.com/fwlink/?LinkId=178101) or [AppLocker](http://go.microsoft.com/fwlink/?LinkId=178102) as a replacement for CLR security policy. The information in this topic applies to the .NET Framework version 3.5 and earlier; it does not apply to the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and later. For more information about this and other changes, see [Security Changes](../Topic/Security%20Changes%20in%20the%20.NET%20Framework.md).  
+>  Starting with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the common language runtime (CLR) is moving away from providing security policy for computers. We recommend that you use [Windows Software Restriction Policies (SRP)](http://go.microsoft.com/fwlink/?LinkId=178101) or [AppLocker](http://go.microsoft.com/fwlink/?LinkId=178102) as a replacement for CLR security policy. The information in this topic applies to the .NET Framework version 3.5 and earlier; it does not apply to the [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] and later. For more information about this and other changes, see [Security Changes](~/docs/framework/security/security-changes.md).  
   
  The highest level of security policy is enterprise-wide. Successive lower levels of hierarchy represent further policy restrictions, but can never grant more permissions than allowed by higher levels. The following policy levels are implemented:  
   
@@ -357,7 +357,7 @@
 ## Remarks  
  This method does not make modifications to the current <xref:System.Security.Policy.PolicyLevel>. Instead, it updates the <xref:System.Security.Policy.PolicyLevel> object's file and the <xref:System.Security.Policy.PolicyLevel> that the security system uses to evaluate policy.  
   
- This method is used by the caspol -recover option (see [Caspol.exe (Code Access Security Policy Tool)](../Topic/Caspol.exe%20\(Code%20Access%20Security%20Policy%20Tool\).md)).  
+ This method is used by the caspol -recover option (see [Caspol.exe (Code Access Security Policy Tool)](~/docs/framework/tools/caspol-exe-code-access-security-policy-tool.md)).  
   
  ]]></format>
         </remarks>

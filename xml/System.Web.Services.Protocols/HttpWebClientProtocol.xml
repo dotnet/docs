@@ -375,7 +375,7 @@
 ## Remarks  
  Use the <xref:System.Web.Services.Protocols.HttpWebClientProtocol.Proxy%2A> property if a client needs to use different proxy settings than those in the system settings. Use the <xref:System.Net.WebProxy> class to set the proxy settings, because it implements <xref:System.Net.IWebProxy>.  
   
- Default proxy settings can be set in a configuration file. For details, see [Configuring Internet Applications](../Topic/Configuring%20Internet%20Applications.md).  
+ Default proxy settings can be set in a configuration file. For details, see [Configuring Internet Applications](~/docs/framework/network-programming/configuring-internet-applications.md).  
   
    
   

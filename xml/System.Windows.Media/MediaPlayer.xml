@@ -20,14 +20,14 @@
   
  When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
   
- <xref:System.Windows.Media.MediaPlayer> can be used in two different modes, depending on what is driving the player: independent mode or clock mode. In independent mode, the <xref:System.Windows.Media.MediaPlayer> is analogous to an image and the media opened through the <xref:System.Windows.Media.MediaPlayer.Open%2A> method drives playback. In Clock mode, the <xref:System.Windows.Media.MediaPlayer> can be thought of as a target for an animation, and thus it will have corresponding <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> entries in the Timing tree which controls playback. For more information on media modes, see the [Multimedia Overview](../Topic/Multimedia%20Overview.md).  
+ <xref:System.Windows.Media.MediaPlayer> can be used in two different modes, depending on what is driving the player: independent mode or clock mode. In independent mode, the <xref:System.Windows.Media.MediaPlayer> is analogous to an image and the media opened through the <xref:System.Windows.Media.MediaPlayer.Open%2A> method drives playback. In Clock mode, the <xref:System.Windows.Media.MediaPlayer> can be thought of as a target for an animation, and thus it will have corresponding <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> entries in the Timing tree which controls playback. For more information on media modes, see the [Multimedia Overview](~/docs/framework/wpf/graphics-multimedia/multimedia-overview.md).  
   
  <xref:System.Windows.Media.MediaPlayer> is different from a <xref:System.Windows.Controls.MediaElement> in that it is not a control that can be added directly to the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] of an application. To display media loaded using <xref:System.Windows.Media.MediaPlayer>, a <xref:System.Windows.Media.VideoDrawing> or <xref:System.Windows.Media.DrawingContext> must be used.  
   
    
   
 ## Examples  
- [How to: Play Media using a VideoDrawing](../Topic/How%20to:%20Play%20Media%20using%20a%20VideoDrawing.md)  
+ [How to: Play Media using a VideoDrawing](~/docs/framework/wpf/graphics-multimedia/how-to-play-media-using-a-videodrawing.md)  
   
  ]]></format>
     </remarks>

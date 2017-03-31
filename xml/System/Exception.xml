@@ -113,7 +113,7 @@
   
  When a causal relationship exists between two or more exceptions, the <xref:System.Exception.InnerException%2A> property maintains this information. The outer exception is thrown in response to this inner exception. The code that handles the outer exception can use the information from the earlier inner exception to handle the error more appropriately. Supplementary information about the exception can be stored as a collection of key/value pairs in the <xref:System.Exception.Data%2A> property.  
   
- The error message string that is passed to the constructor during the creation of the exception object should be localized and can be supplied from a resource file by using the <xref:System.Resources.ResourceManager> class. For more information about localized resources, see the [Creating Satellite Assemblies](../Topic/Creating%20Satellite%20Assemblies%20for%20Desktop%20Apps.md) and [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md) topics.  
+ The error message string that is passed to the constructor during the creation of the exception object should be localized and can be supplied from a resource file by using the <xref:System.Resources.ResourceManager> class. For more information about localized resources, see the [Creating Satellite Assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) and [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) topics.  
   
  To provide the user with extensive information about why the exception occurred, the <xref:System.Exception.HelpLink%2A> property can hold a URL (or URN) to a help file.  
   
@@ -135,7 +135,7 @@
   
 -   An application or library that encounters a fatal exception. The exception handler can log the exception and then re-throw the exception.  
   
- The recommended way to re-throw an exception is to simply use the [throw](../Topic/throw%20\(C%23%20Reference\).md) statement in C# and the [Throw](../Topic/Throw%20Statement%20\(Visual%20Basic\).md) statement in Visual Basic without including an expression. This ensures that all call stack information is preserved when the exception is propagated to the caller. The following example illustrates this. A string extension method, `FindOccurrences`, wraps one or more calls to <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=fullName> without validating its arguments beforehand.  
+ The recommended way to re-throw an exception is to simply use the [throw](~/docs/csharp/language-reference/keywords/throw.md) statement in C# and the [Throw](~/docs/visual-basic/language-reference/statements/throw-statement.md) statement in Visual Basic without including an expression. This ensures that all call stack information is preserved when the exception is propagated to the caller. The following example illustrates this. A string extension method, `FindOccurrences`, wraps one or more calls to <xref:System.String.IndexOf%28System.String%2CSystem.Int32%29?displayProperty=fullName> without validating its arguments beforehand.  
   
  [!code-csharp[System.Exception.Class#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.exception.class/cs/rethrow1.cs#6)]
  [!code-vb[System.Exception.Class#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.exception.class/vb/rethrow1.vb#6)]  
@@ -408,7 +408,7 @@ Stack Trace:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](../Topic/XML%20and%20SOAP%20Serialization.md).  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
   
    
   
@@ -764,7 +764,7 @@ Stack Trace:
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- HRESULT is a 32-bit value, divided into three different fields: a severity code, a facility code, and an error code. The severity code indicates whether the return value represents information, warning, or error. The facility code identifies the area of the system responsible for the error. The error code is a unique number that is assigned to represent the exception. Each exception is mapped to a distinct HRESULT. When managed code throws an exception, the runtime passes the HRESULT to the COM client. When unmanaged code returns an error, the HRESULT is converted to an exception, which is then thrown by the runtime. For information about HRESULT values and their corresponding .NET Framework exceptions, see [How to: Map HRESULTs and Exceptions](../Topic/How%20to:%20Map%20HRESULTs%20and%20Exceptions.md). See [Common HRESULT Values](http://msdn.microsoft.com/library/windows/desktop/aa378137.aspx) in the Windows documentation for a list of the values you are most likely to encounter.  
+ HRESULT is a 32-bit value, divided into three different fields: a severity code, a facility code, and an error code. The severity code indicates whether the return value represents information, warning, or error. The facility code identifies the area of the system responsible for the error. The error code is a unique number that is assigned to represent the exception. Each exception is mapped to a distinct HRESULT. When managed code throws an exception, the runtime passes the HRESULT to the COM client. When unmanaged code returns an error, the HRESULT is converted to an exception, which is then thrown by the runtime. For information about HRESULT values and their corresponding .NET Framework exceptions, see [How to: Map HRESULTs and Exceptions](~/docs/framework/interop/how-to-map-hresults-and-exceptions.md). See [Common HRESULT Values](http://msdn.microsoft.com/library/windows/desktop/aa378137.aspx) in the Windows documentation for a list of the values you are most likely to encounter.  
   
  Starting with the [!INCLUDE[net_v45](~/includes/net-v45-md.md)], the <xref:System.Exception.HResult%2A> property's setter is protected, whereas its getter is public.  In previous versions of the .NET Framework, both getter and setter are protected.  
   

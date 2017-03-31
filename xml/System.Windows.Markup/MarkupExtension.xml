@@ -23,9 +23,9 @@
 ## Remarks  
  Markup extensions return objects to callers, based on the input of string attribute values or markup elements in XAML. Markup extensions return objects in a more sophisticated way than type converters alone can accomplish. A XAML object writer invokes a type converter because a type or member has a type converter implementation associated with it. From the CLR frame of reference, this means that a type or member is <xref:System.ComponentModel.TypeConverterAttribute> attributed. From the XAML type system perspective, this means that a XAML type or a XAML member has a value for its `TypeConverter` property. The invocation of a type converter is tied to the type or property definition, and is always invoked by XAML processing for these cases. In contrast, a markup extension is more under the control of user code and user-produced markup, and can be applied whenever an application scenario demands it. A markup extension can be invoked and can be used for setting different type-member values, so long as the markup extension's return type is assignable to that value.  
   
- For information on creating a custom markup extension, see <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. For more information on markup extensions in general, see [Markup Extensions for XAML Overview](../Topic/Markup%20Extensions%20for%20XAML%20Overview.md). If you are building on WPF and using or creating markup extensions for XAML, other relevant information can be found in the topic [Markup Extensions and WPF XAML](../Topic/Markup%20Extensions%20and%20WPF%20XAML.md).  
+ For information on creating a custom markup extension, see <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. For more information on markup extensions in general, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md). If you are building on WPF and using or creating markup extensions for XAML, other relevant information can be found in the topic [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
- The <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> method of each markup extension implementation can use an <xref:System.IServiceProvider> at run time that can provide context. This  <xref:System.IServiceProvider> is then queried for specific services that pass information, such as <xref:System.Windows.Markup.IProvideValueTarget> or <xref:System.Windows.Markup.IXamlTypeResolver>. For more information on service contexts for a markup extension, see [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
+ The <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> method of each markup extension implementation can use an <xref:System.IServiceProvider> at run time that can provide context. This  <xref:System.IServiceProvider> is then queried for specific services that pass information, such as <xref:System.Windows.Markup.IProvideValueTarget> or <xref:System.Windows.Markup.IXamlTypeResolver>. For more information on service contexts for a markup extension, see [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
   
  Derived classes should be attributed with <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> to inform consumers of the most specific return type available from the markup extension's <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation.  
   
@@ -54,7 +54,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>A functional markup extension should define its own public default constructor. Additionally, the markup extension should implement constructors that are appropriate for the extension's intended capabilities and markup usage. For more information, see [Markup Extensions for XAML Overview](../Topic/Markup%20Extensions%20for%20XAML%20Overview.md).</para>
+          <para>A functional markup extension should define its own public default constructor. Additionally, the markup extension should implement constructors that are appropriate for the extension's intended capabilities and markup usage. For more information, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).</para>
         </block>
       </Docs>
     </Member>
@@ -119,7 +119,7 @@
   
  In typical usage, the .NET Framework XAML Services and the implemented XAML object writers will provide a service provider to all value converter methods that are invoked during XAML processing. However, for robustness, you should provide code paths for null values both for the service provider itself and for any requested service. Null values might occur if your markup extension is applied in a circumstance where the typical service support provided by a XAML processor infrastructure is not available.  
   
- For more information on available services from the XAML service provider context and how to use them, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md).  
+ For more information on available services from the XAML service provider context and how to use them, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
   
  Implementations that require a certain service to be available in order to produce a useful <see cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" /> result are expected to throw exceptions if that service is not available. The recommended exception to throw is <see cref="T:System.InvalidOperationException" />.  
   

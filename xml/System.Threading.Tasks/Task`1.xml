@@ -50,7 +50,7 @@
  [!code-csharp[System.Threading.Tasks.Task\`1#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.task`1/cs/startnew1.cs#7)]
  [!code-vb[System.Threading.Tasks.Task\`1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.task`1/vb/startnew1.vb#7)]  
   
- For more complete examples, see [Task-based Asynchronous Programming](../Topic/Task-based%20Asynchronous%20Programming.md).  
+ For more complete examples, see [Task-based Asynchronous Programming](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md).  
   
  The <xref:System.Threading.Tasks.Task%601> class also provides constructors that initialize the task but that do not schedule it for execution. For performance reasons, the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> and `StartNew` methods are the preferred mechanism for creating and scheduling computational tasks, but for scenarios where task creation and scheduling must be separated, the constructors may be used, and the task's <xref:System.Threading.Tasks.Task.Start%2A> method may then be used to schedule the task for execution at a later time.  
   
@@ -622,7 +622,7 @@
 ## Remarks  
  The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed. If the continuation criteria specified through the `continuationOptions` parameter are not met, the continuation task will be canceled instead of scheduled.  
   
- For more information, see [Chaining Tasks by Using Continuation Tasks](../Topic/Chaining%20Tasks%20by%20Using%20Continuation%20Tasks.md).  
+ For more information, see [Chaining Tasks by Using Continuation Tasks](~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -851,7 +851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed. If the criteria specified through the `continuationOptions` parameter are not met, the continuation task will be canceled instead of scheduled. For more information, see [Chaining Tasks by Using Continuation Tasks](../Topic/Chaining%20Tasks%20by%20Using%20Continuation%20Tasks.md).  
+ The returned <xref:System.Threading.Tasks.Task> will not be scheduled for execution until the current task has completed. If the criteria specified through the `continuationOptions` parameter are not met, the continuation task will be canceled instead of scheduled. For more information, see [Chaining Tasks by Using Continuation Tasks](~/docs/standard/parallel-programming/chaining-tasks-by-using-continuation-tasks.md).  
   
  ]]></format>
         </remarks>

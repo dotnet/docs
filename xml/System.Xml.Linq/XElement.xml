@@ -2091,7 +2091,7 @@ XNamespace awNamespace = xmlTree.GetNamespaceOfPrefix("aw");
 Console.WriteLine("Namespace: {0}", awNamespace);  
 ```  
   
- When using Visual Basic, you would typically use the [GetXmlNamespace Operator](../Topic/GetXmlNamespace%20Operator%20\(Visual%20Basic\).md) operator, as follows  
+ When using Visual Basic, you would typically use the [GetXmlNamespace Operator](~/docs/visual-basic/language-reference/operators/getxmlnamespace-operator.md) operator, as follows  
   
 ```vb  
   

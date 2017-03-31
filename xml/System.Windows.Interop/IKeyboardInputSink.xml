@@ -17,7 +17,7 @@
   
  If your component contains other components, and maintains a tab order, your component must also implement <xref:System.Windows.Interop.IKeyboardInputSite> and keep track of which component has focus.  
   
- For a discussion of the input architecture specifically implemented for [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] interop, see [Windows Forms and WPF Interoperability Input Architecture](../Topic/Windows%20Forms%20and%20WPF%20Interoperability%20Input%20Architecture.md).  
+ For a discussion of the input architecture specifically implemented for [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] interop, see [Windows Forms and WPF Interoperability Input Architecture](~/docs/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture.md).  
   
  <xref:System.Windows.Interop.HwndSource> and <xref:System.Windows.Interop.HwndHost> each implement the <xref:System.Windows.Interop.IKeyboardInputSink> interface, through explicit interface definitions. The explicit definitions supply default behaviors, and can also be accessed if necessary through an <xref:System.Windows.Interop.IKeyboardInputSink> interface cast of <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>.  
   

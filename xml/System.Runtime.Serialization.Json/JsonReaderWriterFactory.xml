@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] processes JSON messages using a mapping between JSON data and the XML Infoset. Normally, this mapping is hidden from view. However, in some advanced scenarios it may be necessary to manually convert between JSON and XML. In this case, the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> class can be used to create the necessary XML readers and writers. Note that not every XML Infoset element can be mapped to JSON. [!INCLUDE[crabout](~/includes/crabout-md.md)] mapping, see [How to: Serialize and Deserialize JSON Data](../Topic/How%20to:%20Serialize%20and%20Deserialize%20JSON%20Data.md).  
+ [!INCLUDE[indigo1](~/includes/indigo1-md.md)] processes JSON messages using a mapping between JSON data and the XML Infoset. Normally, this mapping is hidden from view. However, in some advanced scenarios it may be necessary to manually convert between JSON and XML. In this case, the <xref:System.Runtime.Serialization.Json.JsonReaderWriterFactory> class can be used to create the necessary XML readers and writers. Note that not every XML Infoset element can be mapped to JSON. [!INCLUDE[crabout](~/includes/crabout-md.md)] mapping, see [How to: Serialize and Deserialize JSON Data](~/docs/framework/wcf/feature-details/how-to-serialize-and-deserialize-json-data.md).  
   
  ]]></format>
     </remarks>
@@ -64,7 +64,7 @@
 ## Remarks  
  This overload does not accept an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](../Topic/Security%20Considerations%20for%20Data.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
  ]]></format>
         </remarks>
@@ -102,7 +102,7 @@
 ## Remarks  
  This overload does not take an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](../Topic/Security%20Considerations%20for%20Data.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
  ]]></format>
         </remarks>
@@ -144,7 +144,7 @@
 ## Remarks  
  This overload does not take an <xref:System.Text.Encoding> parameter. The character encoding (UTF-8, Unicode or Big-Endian Unicode) is auto-detected when the data is read.  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](../Topic/Security%20Considerations%20for%20Data.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
  ]]></format>
         </remarks>
@@ -184,7 +184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](../Topic/Security%20Considerations%20for%20Data.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
  ]]></format>
         </remarks>
@@ -228,7 +228,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](../Topic/Security%20Considerations%20for%20Data.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
  ]]></format>
         </remarks>
@@ -415,7 +415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Each of the overloads uses a <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service (DoS) attacks when reading untrusted data. [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](../Topic/Security%20Considerations%20for%20Data.md).  
+ Each of the overloads uses a <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service (DoS) attacks when reading untrusted data. [!INCLUDE[crabout](~/includes/crabout-md.md)] using <xref:System.Xml.XmlDictionaryReaderQuotas> to prevent Denial of Service attacks when reading untrusted data, see [Security Considerations for Data](~/docs/framework/wcf/feature-details/security-considerations-for-data.md).  
   
  ]]></format>
         </remarks>

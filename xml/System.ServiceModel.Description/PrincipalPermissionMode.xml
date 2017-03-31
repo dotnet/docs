@@ -23,7 +23,7 @@
  [!code-csharp[PrincipalPermissionMode#1](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#1)]
  [!code-vb[PrincipalPermissionMode#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#1)]  
   
- You can also set the behavior in configuration by adding a [\&lt;serviceAuthorization\&gt;](../Topic/%3CserviceAuthorization%3E%20element.md) to the [\&lt;serviceBehaviors\&gt;](../Topic/%3CserviceBehaviors%3E.md) of a configuration file, as shown in the following code.  
+ You can also set the behavior in configuration by adding a [\&lt;serviceAuthorization\&gt;](~/docs/framework/configuring-apps/file-schema/wcf/serviceauthorization-element.md) to the [\&lt;serviceBehaviors\&gt;](~/docs/framework/configuring-apps/file-schema/wcf/servicebehaviors.md) of a configuration file, as shown in the following code.  
   
  [!code-csharp[PrincipalPermissionMode#10](~/samples/snippets/csharp/VS_Snippets_CFX/principalpermissionmode/cs/source.cs#10)]
  [!code-vb[PrincipalPermissionMode#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#10)]  
@@ -55,7 +55,7 @@
   
  [!INCLUDE[crabout](~/includes/crabout-md.md)] the ASP.NET Role provider, see [How To: Use Role Manager in ASP.NET 2.0](http://go.microsoft.com/fwlink/?LinkId=96692).  
   
- [!INCLUDE[crabout](~/includes/crabout-md.md)] using [!INCLUDE[indigo2](~/includes/indigo2-md.md)] and the role provider, see [How to: Use the ASP.NET Role Provider with a Service](../Topic/How%20to:%20Use%20the%20ASP.NET%20Role%20Provider%20with%20a%20Service.md).  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] using [!INCLUDE[indigo2](~/includes/indigo2-md.md)] and the role provider, see [How to: Use the ASP.NET Role Provider with a Service](~/docs/framework/wcf/feature-details/how-to-use-the-aspnet-role-provider-with-a-service.md).  
   
 ## Custom  
  When the property is set to Custom, you must also provide a custom class that implements the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> class. This class is responsible for providing the caller's `IPrincipal` representation inside the <xref:System.IdentityModel.Policy.EvaluationContext.Properties%2A> collection. It must store the `IPrincipal` instance to the properties collection using the "Principal" string key, as shown in the following example.  

@@ -18,7 +18,7 @@
 ## Remarks  
  This class can transform a <xref:System.Windows.Media.Media3D.Point3D> to a <xref:System.Windows.Point> and a <xref:System.Windows.Media.Media3D.Rect3D> to a <xref:System.Windows.Rect>. The <xref:System.Windows.Media.Media3D.Visual3D.TransformToAncestor%2A> method returns a <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D> object.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
     </remarks>
@@ -46,7 +46,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CloneCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CloneCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CloneCurrentValueCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CloneCurrentValueCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -100,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CreateInstanceCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.CreateInstanceCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.GetAsFrozenCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.GetAsFrozenCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.GetCurrentValueAsFrozenCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.GetCurrentValueAsFrozenCore%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -185,7 +185,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.Transform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.Transform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.TransformBounds%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -249,7 +249,7 @@
 ## Remarks  
  Unlike the <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.Transform%2A> method, this method does not throw an exception if the transformation is unsuccessful.  
   
- <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Media.Media3D.GeneralTransform3DTo2D.TryTransform%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

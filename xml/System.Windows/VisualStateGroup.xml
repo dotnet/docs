@@ -30,7 +30,7 @@
   
  Although you can add <xref:System.Windows.VisualState> objects to any element, they are a particularly useful way to enable others to redefine the visual behavior of a <xref:System.Windows.Controls.Control>. If you create a custom control that uses a <xref:System.Windows.Controls.ControlTemplate>, you can specify which states that control can be in by adding a <xref:System.Windows.TemplateVisualStateAttribute> on its class definition. Then anyone who creates a new <xref:System.Windows.Controls.ControlTemplate> for your control can add <xref:System.Windows.VisualState> objects to the template. The <xref:System.Windows.TemplateVisualStateAttribute> enables designer tools, such as Expression Blend, to expose the control's states. States with the same <xref:System.Windows.TemplateVisualStateAttribute.GroupName%2A?displayProperty=fullName> belong in the same <xref:System.Windows.VisualStateGroup>.  
   
- For more information about how to use <xref:System.Windows.VisualStateGroup> objects in a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md). For more information about how to create controls that use the <xref:System.Windows.VisualStateManager>, see [Creating a Control That Has a Customizable Appearance](../Topic/Creating%20a%20Control%20That%20Has%20a%20Customizable%20Appearance.md).  
+ For more information about how to use <xref:System.Windows.VisualStateGroup> objects in a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md). For more information about how to create controls that use the <xref:System.Windows.VisualStateManager>, see [Creating a Control That Has a Customizable Appearance](~/docs/framework/wpf/controls/creating-a-control-that-has-a-customizable-appearance.md).  
   
  The <xref:System.Windows.VisualStateGroup.Transitions%2A> property contains <xref:System.Windows.VisualTransition> objects that are applied when the control transition between states that are defined in the <xref:System.Windows.VisualStateGroup>.  
   
@@ -150,7 +150,7 @@
    
   
 ## Examples  
- The following example creates two <xref:System.Windows.VisualStateGroup> objects that are named `CommonStates` and `FocusStates`. The control will be in exactly one state from each <xref:System.Windows.VisualStateGroup> at all times. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+ The following example creates two <xref:System.Windows.VisualStateGroup> objects that are named `CommonStates` and `FocusStates`. The control will be in exactly one state from each <xref:System.Windows.VisualStateGroup> at all times. For the entire example, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
  [!code-xml[VSMButtonTemplate#5](~/samples/snippets/csharp/VS_Snippets_Wpf/vsmbuttontemplate/csharp/skinnedbutton.xaml#5)]  
   

@@ -39,7 +39,7 @@
    
   
 ## Examples  
- The following code example creates a generic type with two type parameters, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
+ The following code example creates a generic type with two type parameters, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  [!code-cpp[EmitGenericType#1](~/samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
  [!code-csharp[EmitGenericType#1](~/samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]
@@ -2039,7 +2039,7 @@
    
   
 ## Examples  
- The following code example creates a generic type with two type parameters, the second of which has a base type constraint, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
+ The following code example creates a generic type with two type parameters, the second of which has a base type constraint, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  [!code-cpp[EmitGenericType#1](~/samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
  [!code-csharp[EmitGenericType#1](~/samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]
@@ -2156,7 +2156,7 @@
    
   
 ## Examples  
- The following code example creates a generic type with two type parameters, the first of which is constrained to have a default constructor and to be a reference type, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
+ The following code example creates a generic type with two type parameters, the first of which is constrained to have a default constructor and to be a reference type, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  [!code-cpp[EmitGenericType#1](~/samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
  [!code-csharp[EmitGenericType#1](~/samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]
@@ -2209,7 +2209,7 @@
    
   
 ## Examples  
- The following code example creates a generic type with two type parameters, the second of which has two interface constraints, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](../Topic/How%20to:%20Define%20a%20Generic%20Type%20with%20Reflection%20Emit.md).  
+ The following code example creates a generic type with two type parameters, the second of which has two interface constraints, and saves them in the assembly GenericEmitExample1.dll. You can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to view the generated types. For a more detailed explanation of the steps involved in defining a dynamic generic type, see [How to: Define a Generic Type with Reflection Emit](~/docs/framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  [!code-cpp[EmitGenericType#1](~/samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#1)]
  [!code-csharp[EmitGenericType#1](~/samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#1)]

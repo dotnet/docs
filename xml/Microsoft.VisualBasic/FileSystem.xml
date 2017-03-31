@@ -490,7 +490,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `FileClose` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [How to: Read Text from Files with a StreamReader](../Topic/How%20to:%20Read%20Text%20from%20Files%20with%20a%20StreamReader%20\(Visual%20Basic\).md),[How to: Write Text to Files with a StreamWriter](../Topic/How%20to:%20Write%20Text%20to%20Files%20with%20a%20StreamWriter%20in%20Visual%20Basic.md), and [Walkthrough: Manipulating Files and Directories in Visual Basic](../Topic/Walkthrough:%20Manipulating%20Files%20and%20Directories%20in%20Visual%20Basic.md).  
+ The `FileClose` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [How to: Read Text from Files with a StreamReader](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-read-text-from-files-with-a-streamreader.md),[How to: Write Text to Files with a StreamWriter](~/docs/visual-basic/developing-apps/programming/drives-directories-files/how-to-write-text-to-files-with-a-streamwriter.md), and [Walkthrough: Manipulating Files and Directories in Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md).  
   
  If you omit `FileNumbers`, all active files opened by the `FileOpen` function are closed.  
   
@@ -1745,7 +1745,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `FileOpen` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `FileOpen` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  You must open a file before any I/O operation can be performed on it. `FileOpen` allocates a buffer for I/O to the file and determines the mode of access to use with the buffer.  
   
@@ -3261,7 +3261,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3323,7 +3323,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3385,7 +3385,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3447,7 +3447,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3509,7 +3509,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3571,7 +3571,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3633,7 +3633,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3695,7 +3695,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3757,7 +3757,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3819,7 +3819,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3881,7 +3881,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -3943,7 +3943,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Input` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `Input` is usually written to a file by using `Write`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -4006,7 +4006,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `InputString` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `InputString` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with the `InputString` function is usually written to a file by using `Print` or `FilePut`. Use this function only with files opened in `Input` or `Binary` mode.  
   
@@ -4095,7 +4095,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `LineInput` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `LineInput` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  Data read with `LineInput` is usually written to a file by using `Print`.  
   
@@ -4146,7 +4146,7 @@ Result = GetAttr(FName) And vbArchive
 ## Remarks  
  The `Loc` function is zero-based; using it to retrieve the first byte in a file will return 0.  
   
- The `Loc` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Loc` function is provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  The following describes the return value for each file access mode:  
   
@@ -4413,7 +4413,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Print` and `PrintLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Print` and `PrintLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  `Print` does not include a line feed at the end of a line; however, `PrintLine` does include a line feed.  
   
@@ -4480,7 +4480,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Print` and `PrintLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Print` and `PrintLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  `Print` does not include a line feed at the end of a line; however,`PrintLine` does include a line feed.  
   
@@ -5099,7 +5099,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Write` and `WriteLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Write` and `WriteLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  If you omit `Output`, a blank line is printed to the file. Multiple expressions can be separated with a comma.  
   
@@ -5167,7 +5167,7 @@ Result = GetAttr(FName) And vbArchive
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `Write` and `WriteLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](../Topic/File%20Access%20with%20Visual%20Basic.md).  
+ The `Write` and `WriteLine` functions are provided for backward compatibility and may affect performance. For non-legacy applications, the `My.Computer.FileSystem` object provides better performance. For more information, see [File Access with Visual Basic](~/docs/visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
   
  If you omit `Output`, a blank line is printed to the file. Multiple expressions can be separated with a comma.  
   

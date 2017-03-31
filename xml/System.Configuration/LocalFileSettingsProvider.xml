@@ -28,7 +28,7 @@
   
  Application-scoped settings and the default user-scoped settings are stored in a file named `application.exe.config`, which is created in the same directory as the executable file. Application configuration settings are read-only. Specific user data is stored in a file named `user.config`, stored under the user's home directory. If roaming profiles are enabled, two versions of the user configuration file could exist. In such a case, the entries in the roaming version take precedence over duplicated entries in the local user configuration file.  
   
- For more information about application settings, see [Application Settings for Windows Forms](../Topic/Application%20Settings%20for%20Windows%20Forms.md).  
+ For more information about application settings, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).  
   
  ]]></format>
     </remarks>

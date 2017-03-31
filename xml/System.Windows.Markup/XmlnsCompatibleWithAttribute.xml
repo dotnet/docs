@@ -31,7 +31,7 @@
 [assembly: System.Windows.Markup.XmlnsCompatibleWith("http://www.adatum.com/2003/controls", "http://www.adatum.com/2005/controls")]  
 ```  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
  ]]></format>
     </remarks>

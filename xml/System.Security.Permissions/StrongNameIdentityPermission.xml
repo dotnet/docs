@@ -36,7 +36,7 @@
   
  In the .NET Framework versions 1.0 and 1.1, demands on the identity permissions are effective even when the calling assembly is fully trusted. That is, even if the calling assembly has full trust, a demand for an identity permission fails if the assembly does not meet the demanded criteria. In the .NET Framework version 2.0 and later, demands for identity permissions are ineffective if the calling assembly has full trust. This ensures consistency for all permissions and eliminates the treatment of identity permissions as a special case.  
   
- For a complete description of strong names, see the <xref:System.Security.Policy.StrongName> reference page. For more information about strong-named assemblies, see [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md).  
+ For a complete description of strong names, see the <xref:System.Security.Policy.StrongName> reference page. For more information about strong-named assemblies, see [Strong-Named Assemblies](~/docs/framework/app-domains/strong-named-assemblies.md).  
   
  The <xref:System.Security.Permissions.StrongNameIdentityPermission> class is used to define strong-name requirements for accessing the public members of a type. The <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> attribute can be used to define strong-name requirements at the assembly level. In the .NET Framework version 2.0 and later, you can also use the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to specify that all nonpublic types in that assembly are visible to another assembly. For more information, see [Friend Assemblies](../Topic/Friend%20Assemblies%20\(C%23%20and%20Visual%20Basic\).md).  
   
@@ -113,7 +113,7 @@
 ## Remarks  
  The `name` and `version` parameters can be `null` only when the public key is used to identify the assembly. An empty string ("") should not be used in place of `null`. If `name` is an empty string, an <xref:System.ArgumentException> is thrown.  
   
- For more information on names and version numbers of assemblies, see [Strong-Named Assemblies](../Topic/Strong-Named%20Assemblies.md).  
+ For more information on names and version numbers of assemblies, see [Strong-Named Assemblies](~/docs/framework/app-domains/strong-named-assemblies.md).  
   
    
   

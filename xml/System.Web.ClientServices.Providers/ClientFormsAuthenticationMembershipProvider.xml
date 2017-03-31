@@ -16,13 +16,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use client application services to validate users by using forms authentication. To enable forms authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ You can use client application services to validate users by using forms authentication. To enable forms authentication, you configure your application to use the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider> class. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  After configuration, you can validate users by calling the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which internally calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%28System.String%2CSystem.String%29?displayProperty=fullName> method.  
   
  Forms authentication requires that the user specify their credentials through login controls provided by your application. You can retrieve the credentials and pass them to the <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. You can also pass in empty strings or `null` to use a credentials provider. A credentials provider is an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation specified in your application configuration file. You will typically implement the <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider.GetCredentials%2A?displayProperty=fullName> method to display a login dialog box and return a populated <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationCredentials> object. Using a credentials provider enables you to share a single login dialog box among multiple applications.  
   
- The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method authenticates users through the login service indicated by the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ The <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method authenticates users through the login service indicated by the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property. The value of the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ServiceUri%2A> property is typically retrieved from the application configuration file along with other configuration values. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  If the user is successfully authenticated, the service provider sets the `static` <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property to a new <xref:System.Web.ClientServices.ClientRolePrincipal> object that contains a new <xref:System.Web.ClientServices.ClientFormsIdentity> object that contains the user information. If a <xref:System.Web.ClientServices.Providers.ClientRoleProvider> is configured for your application, you can use the <xref:System.Web.ClientServices.ClientRolePrincipal> object to retrieve user role information from the roles service.  
   
@@ -519,7 +519,7 @@
   
 -   `serviceUri`  
   
- For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  ]]></format>
         </remarks>
@@ -965,12 +965,12 @@
 ## Remarks  
  You can use client application services to validate users by using forms authentication. To validate users, you will typically call the `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method, which internally calls the <xref:System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider.ValidateUser%2A?displayProperty=fullName> method. Alternatively, you can call this method directly, as shown in the Example section.  
   
- Forms authentication requires that the user specify their credentials through login controls provided by your application. You can retrieve the credentials and pass them to the <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. You can also pass in empty strings or `null` to use a credentials provider. For more information, see [How to: Implement User Login with Client Application Services](../Topic/How%20to:%20Implement%20User%20Login%20with%20Client%20Application%20Services.md).  
+ Forms authentication requires that the user specify their credentials through login controls provided by your application. You can retrieve the credentials and pass them to the <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> method. You can also pass in empty strings or `null` to use a credentials provider. For more information, see [How to: Implement User Login with Client Application Services](~/docs/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services.md).  
   
    
   
 ## Examples  
- The following example code demonstrates how to use this method to validate the user by using an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation. This example requires that you to configure your application to use a credentials provider. For more information, see [How to: Configure Client Application Services](../Topic/How%20to:%20Configure%20Client%20Application%20Services.md).  
+ The following example code demonstrates how to use this method to validate the user by using an <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementation. This example requires that you to configure your application to use a credentials provider. For more information, see [How to: Configure Client Application Services](~/docs/framework/common-client-technologies/how-to-configure-client-application-services.md).  
   
  [!code-csharp[ClientApplicationServices#306](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#306)]
  [!code-vb[ClientApplicationServices#306](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#306)]  

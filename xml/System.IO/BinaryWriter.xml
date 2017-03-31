@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -169,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -245,7 +245,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -388,7 +388,7 @@
   
  Flushing the stream will not flush its underlying encoder unless you explicitly call `Flush` or <xref:System.IO.BinaryWriter.Close%2A>. Setting <xref:System.IO.StreamWriter.AutoFlush%2A> to `true` means that data will be flushed from the buffer to the stream, but the encoder state will not be flushed. This allows the encoder to keep its state (partial characters) so that it can encode the next block of characters correctly. This scenario affects UTF8 and UTF7 where certain characters can only be encoded after the encoder receives the adjacent character or characters.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -423,7 +423,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -458,7 +458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -500,7 +500,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -550,7 +550,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -607,7 +607,7 @@
   
 -   ISCII  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -657,7 +657,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -722,7 +722,7 @@
   
 -   ISCII  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  Unicode surrogate characters must be written out as pairs together in the same call, not individually. If you require support for surrogate pairs in your application, consider using a character array and the <xref:System.IO.BinaryWriter.Write%2A> method overload.  
   
@@ -780,16 +780,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
    
   
@@ -845,16 +845,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
  ]]></format>
         </remarks>
@@ -900,7 +900,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -956,16 +956,16 @@
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
-|Create a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Write to a text file.|[How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md)|  
-|Read from a text file.|[How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md)|  
-|Append text to a file.|[How to: Open and Append to a Log File](../Topic/How%20to:%20Open%20and%20Append%20to%20a%20Log%20File.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
+|Create a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Write to a text file.|[How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md)|  
+|Read from a text file.|[How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md)|  
+|Append text to a file.|[How to: Open and Append to a Log File](~/docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName><br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName>|  
 |Get the size of a file.|<xref:System.IO.FileInfo.Length%2A?displayProperty=fullName>|  
 |Get the attributes of a file.|<xref:System.IO.File.GetAttributes%2A?displayProperty=fullName>|  
 |Set the attributes of a file.|<xref:System.IO.File.SetAttributes%2A?displayProperty=fullName>|  
 |Determine if a file exists.|<xref:System.IO.File.Exists%2A?displayProperty=fullName>|  
-|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
-|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md)|  
+|Read from a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
+|Write to a binary file.|[How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)|  
   
  ]]></format>
         </remarks>
@@ -1008,7 +1008,7 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1059,7 +1059,7 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1105,7 +1105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1153,7 +1153,7 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1211,7 +1211,7 @@
   
  For example, the string “A” has a length of 1, but when encoded with UTF-16; the length is 2 bytes, so the value written in the prefix is 2, and 3 bytes are written to the stream, including the prefix.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1269,7 +1269,7 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1317,7 +1317,7 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1365,7 +1365,7 @@
 ## Remarks  
  `BinaryWriter` stores this data type in little endian format.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -1410,7 +1410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1468,7 +1468,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1527,7 +1527,7 @@
   
  If `value` will fit in seven bits, it takes only one byte of space. If `value` will not fit in seven bits, the high bit is set on the first byte and written out. `value` is then shifted by seven bits and the next byte is written. This process is repeated until the entire integer has been written.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>

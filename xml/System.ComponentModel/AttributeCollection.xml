@@ -561,7 +561,7 @@
 ## Examples  
  The following code example gets the <xref:System.ComponentModel.DesignerAttribute> from the collection and prints its value. It assumes that `button1` and `textBox1` have been created on a form.  
   
- For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](../Topic/Assembly%20Names.md).  
+ For this code example to run, you must provide the fully qualified assembly name. For information about how to obtain the fully qualified assembly name, see [Assembly Names](~/docs/framework/app-domains/assembly-names.md).  
   
  [!code-cpp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CPP/source.cpp#1)]
  [!code-csharp[Classic AttributeCollection.this1 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic AttributeCollection.this1 Example/CS/source.cs#1)]

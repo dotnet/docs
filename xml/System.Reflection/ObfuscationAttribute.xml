@@ -53,7 +53,7 @@
   
  The `MethodA` method of `Type2` is marked with the value `"default"` for the <xref:System.Reflection.ObfuscationAttribute.Feature%2A> property. It is necessary to specify `false` for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property to avoid excluding `MethodA` from obfuscation, because the default for the <xref:System.Reflection.ObfuscationAttribute.Exclude%2A> property is `true`. The obfuscation tool should not strip the attribute after obfuscation because the <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is `false`. All the other attributes in this code example are stripped after obfuscation, because the <xref:System.Reflection.ObfuscationAttribute.StripAfterObfuscation%2A> property is not specified, and therefore defaults to `true`.  
   
- The code example includes code to display the attributes and their properties. You can also examine the attributes by opening the DLL with the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md).  
+ The code example includes code to display the attributes and their properties. You can also examine the attributes by opening the DLL with the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md).  
   
  [!code-csharp[ObfuscationAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/ObfuscationAttribute/cs/source.cs#1)]
  [!code-vb[ObfuscationAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ObfuscationAttribute/vb/source.vb#1)]  

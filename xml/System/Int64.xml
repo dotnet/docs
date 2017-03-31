@@ -91,7 +91,7 @@
  You can also call the members of the <xref:System.Math> class to perform a wide range of numeric operations, including getting the absolute value of a number, calculating the quotient and remainder from integral division, determining the maximum or minimum value of two long integers, getting the sign of a number, and rounding a number.  
   
 ## Representing an Int64 as a String  
- The <xref:System.Int64> type provides full support for standard and custom numeric format strings. (For more information, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md), [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md), and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).)  
+ The <xref:System.Int64> type provides full support for standard and custom numeric format strings. (For more information, see [Formatting Types](~/docs/standard/base-types/formatting-types.md), [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md), and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
   
  To format an <xref:System.Int64> value as an integral string with no leading zeros, you can call the parameterless <xref:System.Int64.ToString> method. By using the "D" format specifier, you can also include a specified number of leading zeros in the string representation. By using the "N" format specifier, you can include group separators and specify the number of decimal digits to appear in the string representation of the number. By using the "X" format specifier, you can represent an <xref:System.Int64> value as a hexadecimal string. The following example formats the elements in an array of <xref:System.Int64> values in these four ways.  
   
@@ -1543,9 +1543,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -1619,9 +1619,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   
@@ -1687,9 +1687,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  The return value of this instance is formatted with the <xref:System.Globalization.NumberFormatInfo> for the current culture.  
   
@@ -1771,9 +1771,9 @@
   
  The .NET Framework provides extensive formatting support, which is described in greater detail in the following formatting topics:  
   
--   For more information about numeric format specifiers, see [Standard Numeric Format Strings](../Topic/Standard%20Numeric%20Format%20Strings.md) and [Custom Numeric Format Strings](../Topic/Custom%20Numeric%20Format%20Strings.md).  
+-   For more information about numeric format specifiers, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).  
   
--   For more information about formatting, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+-   For more information about formatting, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
    
   

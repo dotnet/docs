@@ -30,14 +30,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Serialization.XmlTypeAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](../Topic/Attributes%20That%20Control%20XML%20Serialization.md).  
+ The <xref:System.Xml.Serialization.XmlTypeAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
   
  You can apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class, structure, enumeration, or interface declaration.  
   
- Apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.XmlTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](../Topic/XML%20Schema%20Definition%20Tool%20\(Xsd.exe\).md). The tool writes the schema, including the type definition.  
+ Apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.XmlTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition.  
   
 > [!NOTE]
->  If you set the <xref:System.Xml.Serialization.XmlTypeAttribute.IncludeInSchema%2A> property to `false`, the [XML Schema Definition Tool (Xsd.exe)](../Topic/XML%20Schema%20Definition%20Tool%20\(Xsd.exe\).md) does not include the type in the schema. By default, for each public class, the XSD tool generates a `complexType` and an element of that type.  
+>  If you set the <xref:System.Xml.Serialization.XmlTypeAttribute.IncludeInSchema%2A> property to `false`, the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md) does not include the type in the schema. By default, for each public class, the XSD tool generates a `complexType` and an element of that type.  
   
  For more information about using attributes, see [Attributes](../Topic/Extending%20Metadata%20Using%20Attributes.md).  
   
@@ -120,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.XmlTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](../Topic/XML%20Schema%20Definition%20Tool%20\(Xsd.exe\).md). The tool writes the schema, including the type definition.  
+ Apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.XmlTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition.  
   
    
   
@@ -273,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.XmlTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](../Topic/XML%20Schema%20Definition%20Tool%20\(Xsd.exe\).md). The tool writes the schema, including the type definition.  
+ Apply the <xref:System.Xml.Serialization.XmlTypeAttribute> to a class to specify the XML type's namespace, the XML type name, and whether to include the type in the XML schema document. To see the results of setting the properties of the <xref:System.Xml.Serialization.XmlTypeAttribute> class, compile your application as an executable or DLL, and pass the resulting file to the [XML Schema Definition Tool (Xsd.exe)](~/docs/framework/serialization/xml-schema-definition-tool-xsd-exe.md). The tool writes the schema, including the type definition.  
   
    
   

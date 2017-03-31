@@ -41,7 +41,7 @@
  Date and time in WMI is represented in DMTF datetime format. This format is explained in WMI SDK documentation. A DMTF datetime string has an UTC offset which this datetime string represents. During conversion to <xref:System.DateTime>, the UTC offset is used to convert the date to the current time zone. According to DMTF format, a particular field can be represented by the character '*'. This will be converted to the <xref:System.DateTime> value of this field that can be represented in <xref:System.DateTime>.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
    
   
@@ -81,7 +81,7 @@
  Date and time in WMI is represented in DMTF datetime format. This format is explained in WMI SDK documentation. The DMTF datetime string represented will be with respect to the UTC offset of the current time zone. The lowest precision in DMTF is microseconds; in <xref:System.DateTime>, the lowest precision is <xref:System.DateTime.Ticks%2A>, which are equivalent to 100 nanoseconds. During conversion, <xref:System.DateTime.Ticks%2A> are converted to microseconds and rounded off to the nearest microsecond.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
    
   
@@ -121,7 +121,7 @@
  Time interval in WMI is represented in DMTF datetime format. This format is explained in WMI SDK documentation. The lowest precision in DMTF is microseconds; in <xref:System.TimeSpan>, the lowest precision is <xref:System.TimeSpan.Ticks%2A>, which is equivalent to 100 nanoseconds. During conversion, <xref:System.TimeSpan.Ticks%2A> are converted to microseconds and rounded off to the nearest microsecond.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
    
   
@@ -161,7 +161,7 @@
  Time interval in WMI is represented in DMTF format. This format is explained in WMI SDK documentation. If the DMTF time interval value is more than that of <xref:System.TimeSpan> then <xref:System.ArgumentOutOfRangeException> is thrown.  
   
 ## .NET Framework Security  
- Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](../Topic/Using%20Libraries%20from%20Partially%20Trusted%20Code.md).  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
   
    
   

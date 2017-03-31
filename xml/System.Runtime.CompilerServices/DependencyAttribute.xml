@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute is used by the [Ngen.exe (Native Image Generator)](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md) to generate native assembly images.  
+ This attribute is used by the [Ngen.exe (Native Image Generator)](~/docs/framework/tools/ngen-exe-native-image-generator.md) to generate native assembly images.  
   
  Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> attribute to a dependent assembly with a value of the <xref:System.Runtime.CompilerServices.LoadHint> enumeration to specify when a referring assembly is to load a dependency.  
   

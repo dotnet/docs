@@ -20,16 +20,16 @@
   
  The binding engine checks each <xref:System.Windows.Controls.ValidationRule> that is associated with a binding every time it transfers an input value, which is the binding target property value, to the binding source property.  
   
- For detailed information about data validation, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For detailed information about data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
- For information about how to validate user-provided data in a dialog box, see [Dialog Boxes Overview](../Topic/Dialog%20Boxes%20Overview.md).  
+ For information about how to validate user-provided data in a dialog box, see [Dialog Boxes Overview](~/docs/framework/wpf/app-development/dialog-boxes-overview.md).  
   
    
   
 ## Examples  
  The following example shows how to implement a validation rule. The input value is invalid if it contains non-numeric characters or if it is outside the lower and upper bounds. If the value of the returned <xref:System.Windows.Controls.ValidationResult> is invalid, the <xref:System.Windows.Controls.ValidationResult.ErrorContent%2A> property is set to the appropriate error message and the <xref:System.Windows.Controls.ValidationResult.IsValid%2A> property is set to `false`.  
   
- For the complete example, see [How to: Implement Binding Validation](../Topic/How%20to:%20Implement%20Binding%20Validation.md).  
+ For the complete example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
  [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]  
   
@@ -102,14 +102,14 @@
   
  Each time the data binding engine transfers a value from the binding target property (from user input) to the binding source property (the underlying data), it checks whether any <xref:System.Windows.Data.Binding.ValidationRules%2A> are defined for that binding. If <xref:System.Windows.Data.Binding.ValidationRules%2A> are defined for the binding, the engine calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> until one of them finds an error or until all of them pass.  
   
- For detailed information about data validation, see [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ For detailed information about data validation, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
    
   
 ## Examples  
  The following example shows how to implement a validation rule. In the following example, the input value is invalid if it contains non-numeric characters or if it is outside the lower and upper bounds. If the input value is invalid, the <xref:System.Windows.Controls.ValidationResult.ErrorContent%2A> property is set to the appropriate error message and the <xref:System.Windows.Controls.ValidationResult.IsValid%2A> property is set to `false`.  
   
- For the complete example, see [How to: Implement Binding Validation](../Topic/How%20to:%20Implement%20Binding%20Validation.md).  
+ For the complete example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
  [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]  
   

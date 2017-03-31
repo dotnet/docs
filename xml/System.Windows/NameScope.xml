@@ -42,9 +42,9 @@
   
  In [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], <xref:System.Windows.NameScope> provides collection interface implementations such that you can access the collections of names that are held by a XAML namescope, including adding to it through calls to an <xref:System.Windows.NameScope.Add%2A> method.  
   
- For more information on XAML namescope concepts, see [WPF XAML Namescopes](../Topic/WPF%20XAML%20Namescopes.md).  
+ For more information on XAML namescope concepts, see [WPF XAML Namescopes](~/docs/framework/wpf/advanced/wpf-xaml-namescopes.md).  
   
- Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](../Topic/XamlName%20Grammar.md).  
+ Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
   
 <a name="xamlTextUsage_NameScope"></a>   
 ## XAML Text Usage  
@@ -115,7 +115,7 @@
 ## Remarks  
  This method basically wraps <xref:System.Windows.NameScope.Add%2A> so that it is not necessary to involve the <xref:System.Collections.Generic.KeyValuePair%602> type in your usage.  
   
- Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](../Topic/XamlName%20Grammar.md).  
+ Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
   
  ]]></format>
         </remarks>
@@ -197,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](../Topic/XamlName%20Grammar.md).  
+ Names in a XAML namescope must use a particular grammar that restricts the strings you might use for inputs of <xref:System.Windows.NameScope> API. See [XamlName Grammar](~/docs/framework/xaml-services/xamlname-grammar.md).  
   
  ]]></format>
         </remarks>

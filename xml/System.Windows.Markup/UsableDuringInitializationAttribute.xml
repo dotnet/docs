@@ -23,7 +23,7 @@
 ## Remarks  
  Top-down is a metaphor that approximates XAML processor behavior when creating the object graph. When built top-down, a class is instantiated, attached to the parent, and then has its properties set. Top-down construction avoids invoking property-changed handlers multiple times. Such handling will ripple up the object graph and therefore eliminating the multiple handler calls provides a performance optimization for startup of the object graph.  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.UsableDuringInitializationAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.UsableDuringInitializationAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 ## WPF Usage Notes  
  In WPF XAML for [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)], top-down construction was built in to the XAML processing for certain classes. The <xref:System.Windows.Markup.UsableDuringInitializationAttribute> attribute formalizes the reporting of the top-down behavior in [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].  

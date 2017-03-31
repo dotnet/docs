@@ -20,7 +20,7 @@
   
  The <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method is called by the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] infrastructure each time an attempt to access a resource is made. The method returns `true` or `false` to allow or deny access, respectively.  
   
- The <xref:System.ServiceModel.ServiceAuthorizationManager> is part of the [!INCLUDE[indigo2](~/includes/indigo2-md.md)]*Identity Model* infrastructure. The Identity Model enables you to create custom authorization policies and custom authorization schemes. [!INCLUDE[crabout](~/includes/crabout-md.md)] how the Identity Model works, see [Managing Claims and Authorization with the Identity Model](../Topic/Managing%20Claims%20and%20Authorization%20with%20the%20Identity%20Model.md).  
+ The <xref:System.ServiceModel.ServiceAuthorizationManager> is part of the [!INCLUDE[indigo2](~/includes/indigo2-md.md)]*Identity Model* infrastructure. The Identity Model enables you to create custom authorization policies and custom authorization schemes. [!INCLUDE[crabout](~/includes/crabout-md.md)] how the Identity Model works, see [Managing Claims and Authorization with the Identity Model](~/docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md).  
   
 ## Custom Authorization  
  This class does not perform any authorization and allows users to access all service operations. To provide more restrictive authorization, you must create a custom authorization manager that checks custom policies. To do this, inherit from this class and override the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method. Specify the instance of the derived class through the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationManager%2A> property.  
@@ -31,15 +31,15 @@
   
  By getting the <xref:System.ServiceModel.OperationContext.RequestContext%2A> property, which returns a <xref:System.ServiceModel.Channels.RequestContext> object, the application can access the entire request message (<xref:System.ServiceModel.Channels.RequestContext.RequestMessage%2A>) and perform the authorization decision accordingly.  
   
- For an example, see [How to: Create a Custom Authorization Manager for a Service](../Topic/How%20to:%20Create%20a%20Custom%20Authorization%20Manager%20for%20a%20Service.md).  
+ For an example, see [How to: Create a Custom Authorization Manager for a Service](~/docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
   
- To create custom authorization policies, implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> class.  For an example, see [How to: Create a Custom Authorization Policy](../Topic/How%20to:%20Create%20a%20Custom%20Authorization%20Policy.md).  
+ To create custom authorization policies, implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> class.  For an example, see [How to: Create a Custom Authorization Policy](~/docs/framework/wcf/extending/how-to-create-a-custom-authorization-policy.md).  
   
- To create a custom claim, use the <xref:System.IdentityModel.Claims.Claim> class.  For an example, see [How to: Create a Custom Claim](../Topic/How%20to:%20Create%20a%20Custom%20Claim.md). To compare custom claims, you must compare claims, as shown in [How to: Compare Claims](../Topic/How%20to:%20Compare%20Claims.md).  
+ To create a custom claim, use the <xref:System.IdentityModel.Claims.Claim> class.  For an example, see [How to: Create a Custom Claim](~/docs/framework/wcf/extending/how-to-create-a-custom-claim.md). To compare custom claims, you must compare claims, as shown in [How to: Compare Claims](~/docs/framework/wcf/extending/how-to-compare-claims.md).  
   
- [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Custom Authorization](../Topic/Custom%20Authorization.md).  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Custom Authorization](~/docs/framework/wcf/extending/custom-authorization.md).  
   
- You can set the type of a custom authorization manager using the [\&lt;serviceAuthorization\&gt;](../Topic/%3CserviceAuthorization%3E%20element.md) in a client application configuration file.  
+ You can set the type of a custom authorization manager using the [\&lt;serviceAuthorization\&gt;](~/docs/framework/configuring-apps/file-schema/wcf/serviceauthorization-element.md) in a client application configuration file.  
   
    
   
@@ -196,7 +196,7 @@
  [!code-csharp[c_CustomAuthMgr#6](~/samples/snippets/csharp/VS_Snippets_CFX/c_customauthmgr/cs/c_customauthmgr.cs#6)]
  [!code-vb[c_CustomAuthMgr#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_customauthmgr/vb/c_customauthmgr.vb#6)]  
   
- For another example, see [How to: Create a Custom Authorization Manager for a Service](../Topic/How%20to:%20Create%20a%20Custom%20Authorization%20Manager%20for%20a%20Service.md).  
+ For another example, see [How to: Create a Custom Authorization Manager for a Service](~/docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
   
  ]]></format>
         </remarks>

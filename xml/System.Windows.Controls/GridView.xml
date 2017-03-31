@@ -32,7 +32,7 @@
   
  To specify a <xref:System.Windows.Controls.GridView> as the view mode for a <xref:System.Windows.Controls.ListView>, set the <xref:System.Windows.Controls.ListView.View%2A> property to a <xref:System.Windows.Controls.GridView> object.  
   
- The <xref:System.Windows.Controls.GridView> class is derived from <xref:System.Windows.Controls.ViewBase>. You can define custom views by inheriting from the <xref:System.Windows.Controls.ViewBase> class that provides the supporting elements for a view. For more information, see [How to: Create a Custom View Mode for a ListView](../Topic/How%20to:%20Create%20a%20Custom%20View%20Mode%20for%20a%20ListView.md).  
+ The <xref:System.Windows.Controls.GridView> class is derived from <xref:System.Windows.Controls.ViewBase>. You can define custom views by inheriting from the <xref:System.Windows.Controls.ViewBase> class that provides the supporting elements for a view. For more information, see [How to: Create a Custom View Mode for a ListView](~/docs/framework/wpf/controls/how-to-create-a-custom-view-mode-for-a-listview.md).  
   
  The following illustration shows an example of a <xref:System.Windows.Controls.ListView> that uses a <xref:System.Windows.Controls.GridView>.  
   
@@ -48,7 +48,7 @@
   
  To style the rows in a <xref:System.Windows.Controls.GridView>, define a style for the <xref:System.Windows.Controls.ListViewItem> controls in the <xref:System.Windows.Controls.ListView>.  
   
- To add visual elements, such as a <xref:System.Windows.Controls.CheckBox> or <xref:System.Windows.Controls.Button> control, to a <xref:System.Windows.Controls.GridView>, use templates or styles. For an example, see [How to: Create ListViewItems with a CheckBox](../Topic/How%20to:%20Create%20ListViewItems%20with%20a%20CheckBox.md).  
+ To add visual elements, such as a <xref:System.Windows.Controls.CheckBox> or <xref:System.Windows.Controls.Button> control, to a <xref:System.Windows.Controls.GridView>, use templates or styles. For an example, see [How to: Create ListViewItems with a CheckBox](~/docs/framework/wpf/controls/how-to-create-listviewitems-with-a-checkbox.md).  
   
    
   
@@ -266,9 +266,9 @@
 ## Remarks  
  The <xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A> property and the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property are both used to define the visual tree for the <xref:System.Windows.Controls.GridViewColumnHeader> objects that represent the column headers in a <xref:System.Windows.Controls.GridView>. The <xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A> property can also define column header content when a <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> is not by specified by defining a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.GridViewColumnHeader> object.  
   
- This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
- When you set styles, there are some restrictions. For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ When you set styles, there are some restrictions. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
 <a name="xamlAttributeUsage_Style"></a>   
 ## XAML Attribute Usage  
@@ -283,13 +283,13 @@
 <a name="xamlValues_Style"></a>   
 ## XAML Values  
  `ResourceExtension`  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  `StyleResourceKey`  
  The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_ColumnHeaderContainerStyle"></a>   
 ## Dependency Property Information  
@@ -355,7 +355,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="dependencyPropertyInfo_ColumnHeaderContextMenu"></a>   
 ## Dependency Property Information  
@@ -472,7 +472,7 @@
 ## Remarks  
  If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property takes precedence.  
   
- This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="xamlAttributeUsage_ColumnHeaderTemplate"></a>   
 ## XAML Attribute Usage  
@@ -484,13 +484,13 @@
 <a name="xamlValues_ColumnHeaderTemplate"></a>   
 ## XAML Values  
  `ResourceExtension`  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  `TemplateResourceKey`  
  The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
   
 > [!NOTE]
->  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](../Topic/Inline%20Styles%20and%20Templates.md). A binding reference using  or  is also possible, but uncommon.  
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
   
 <a name="dependencyPropertyInfo_ColumnHeaderTemplate"></a>   
 ## Dependency Property Information  
@@ -565,7 +565,7 @@
   
  If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property takes precedence.  
   
- This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="xamlAttributeUsage_ColumnHeaderTemplateSelector"></a>   
 ## XAML Attribute Usage  
@@ -588,13 +588,13 @@
 <a name="xamlValues_ColumnHeaderTemplateSelector"></a>   
 ## XAML Values  
  `ResourceExtension`  
- One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](../Topic/XAML%20Resources.md).  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
   
  `DataTemplateSelectorClassKey`  
- The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to the application resource dictionary.  
+ The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to the application resource dictionary.  
   
  `MyDataTemplateSelectorImplementation`  
- A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](../Topic/XAML%20Namespaces%20and%20Namespace%20Mapping%20for%20WPF%20XAML.md).  
+ A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
 <a name="dependencyPropertyInfo_ColumnHeaderTemplateSelector"></a>   
 ## Dependency Property Information  
@@ -651,7 +651,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](../Topic/GridView%20Column%20Header%20Styles%20and%20Templates%20Overview.md).  
+ This property represents one of several ways to lay out and style column headers. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="xamlAttributeUsage_ToolTip"></a>   
 ## XAML Attribute Usage  
@@ -903,7 +903,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this read-only static property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by assigning its static value to another property value. Specifically, this property's static value defines the resource key that is used to look up the default <xref:System.Windows.Controls.ScrollViewer> style of a <xref:System.Windows.Controls.GridView>. To redefine this style, reference the <xref:System.Windows.Controls.GridView.GridViewScrollViewerStyleKey%2A> by using the [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md) and assign that value as the [x:Key Directive](../Topic/x:Key%20Directive.md) of the new <xref:System.Windows.Style>.  
+ You can use this read-only static property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by assigning its static value to another property value. Specifically, this property's static value defines the resource key that is used to look up the default <xref:System.Windows.Controls.ScrollViewer> style of a <xref:System.Windows.Controls.GridView>. To redefine this style, reference the <xref:System.Windows.Controls.GridView.GridViewScrollViewerStyleKey%2A> by using the [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md) and assign that value as the [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of the new <xref:System.Windows.Style>.  
   
 <a name="xamlTextUsage_GridViewScrollViewerStyleKey"></a>   
 ## XAML Text Usage  
@@ -932,9 +932,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this read-only static property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by assigning its static value to another property value. Specifically, this property's static value defines the resource key that is used to look up the default <xref:System.Windows.Controls.ListView> style. To redefine this style, reference the <xref:System.Windows.Controls.GridView.GridViewStyleKey%2A> by using the [x:Static Markup Extension](../Topic/x:Static%20Markup%20Extension.md) and assign that value as the [x:Key Directive](../Topic/x:Key%20Directive.md) of the new <xref:System.Windows.Style>.  
+ You can use this read-only static property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] by assigning its static value to another property value. Specifically, this property's static value defines the resource key that is used to look up the default <xref:System.Windows.Controls.ListView> style. To redefine this style, reference the <xref:System.Windows.Controls.GridView.GridViewStyleKey%2A> by using the [x:Static Markup Extension](~/docs/framework/xaml-services/x-static-markup-extension.md) and assign that value as the [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of the new <xref:System.Windows.Style>.  
   
- You can use this read-only property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] as an [x:Key Directive](../Topic/x:Key%20Directive.md) of a <xref:System.Windows.Style> that redefines the <xref:System.Windows.Style> for the <xref:System.Windows.Controls.ListView>.  
+ You can use this read-only property in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] as an [x:Key Directive](~/docs/framework/xaml-services/x-key-directive.md) of a <xref:System.Windows.Style> that redefines the <xref:System.Windows.Style> for the <xref:System.Windows.Controls.ListView>.  
   
 <a name="xamlTextUsage_GridViewStyleKey"></a>   
 ## XAML Text Usage  

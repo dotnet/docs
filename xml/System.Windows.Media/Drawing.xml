@@ -21,14 +21,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.Drawing> objects are light-weight objects that enable you to add geometric shapes, images, text, and media to an application. <xref:System.Windows.Media.Drawing> objects are considered light-weight because they do not provide support for [Layout](../Topic/Layout.md), [Input Overview](../Topic/Input%20Overview.md), and focus. Because of their performance benefits, drawings are ideal for backgrounds and clip art. You also use drawings when programming at the <xref:System.Windows.Media.Visual> level.  
+ <xref:System.Windows.Media.Drawing> objects are light-weight objects that enable you to add geometric shapes, images, text, and media to an application. <xref:System.Windows.Media.Drawing> objects are considered light-weight because they do not provide support for [Layout](~/docs/framework/wpf/advanced/layout.md), [Input Overview](~/docs/framework/wpf/advanced/input-overview.md), and focus. Because of their performance benefits, drawings are ideal for backgrounds and clip art. You also use drawings when programming at the <xref:System.Windows.Media.Visual> level.  
   
- Because they inherit from the <xref:System.Windows.Freezable> class, <xref:System.Windows.Media.Drawing> objects  provide additional features that make them useful for describing clip art and backgrounds: they can be declared as , shared among multiple objects, made read-only, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ Because they inherit from the <xref:System.Windows.Freezable> class, <xref:System.Windows.Media.Drawing> objects  provide additional features that make them useful for describing clip art and backgrounds: they can be declared as , shared among multiple objects, made read-only, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  There are different types of <xref:System.Windows.Media.Drawing> objects for different types of content: <xref:System.Windows.Media.GeometryDrawing>, <xref:System.Windows.Media.ImageDrawing>,  <xref:System.Windows.Media.DrawingGroup>,  <xref:System.Windows.Media.VideoDrawing>, and  <xref:System.Windows.Media.GlyphRunDrawing>.  
   
 ## Freezable Features  
- A <xref:System.Windows.Media.Drawing> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A <xref:System.Windows.Media.Drawing> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

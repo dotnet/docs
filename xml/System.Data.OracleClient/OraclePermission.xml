@@ -25,11 +25,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
   
  The <xref:System.Data.OracleClient.OraclePermission.IsUnrestricted%2A> property takes precedence over the <xref:System.Data.OracleClient.OraclePermission.AllowBlankPassword%2A> property. Therefore, if you set <xref:System.Data.OracleClient.OraclePermission.AllowBlankPassword%2A> to `false`, you must also set <xref:System.Data.OracleClient.OraclePermission.IsUnrestricted%2A> to `false` to prevent a user from making a connection using a blank password.  
   
- For an example demonstrating how to use security demands, see [Code Access Security and ADO.NET](../Topic/Code%20Access%20Security%20and%20ADO.NET.md).  
+ For an example demonstrating how to use security demands, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
   
  ]]></format>
     </remarks>

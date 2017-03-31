@@ -27,14 +27,14 @@
 ## Remarks  
  One of the ways to specify a binding source is to use the <xref:System.Windows.Data.Binding.RelativeSource%2A?displayProperty=fullName> property. This is the property type of that property. <xref:System.Windows.Data.RelativeSource> is simultaneously a markup extension implementation and a data object. When the extension returns itself (see <xref:System.Windows.Data.RelativeSource.ProvideValue%2A>), the relevant information is contained in the data. The main purpose of the markup extension is to allow a variable-argument constructor syntax in attribute form, so that the <xref:System.Windows.Data.RelativeSourceMode> mode can be defined inline with the two extra arguments for ancestor type and level that the other modes do not require.  
   
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
 <a name="xamlTextUsage_RelativeSource"></a>   
 ## XAML Text Usage  
    
   
 ## Examples  
- The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. Using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property, the value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style). For more information on this example, see [How to: Implement Binding Validation](../Topic/How%20to:%20Implement%20Binding%20Validation.md).  
+ The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. Using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property, the value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style). For more information on this example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
   
  [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
@@ -146,7 +146,7 @@
   
 <a name="xamlTextUsage_AncestorLevel"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
    
   
@@ -183,7 +183,7 @@
   
 <a name="xamlTextUsage_AncestorType"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
    
   
@@ -226,7 +226,7 @@
   
 <a name="xamlTextUsage_Mode"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
  ]]></format>
         </remarks>
@@ -256,7 +256,7 @@
   
 <a name="xamlTextUsage_PreviousData"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
  ]]></format>
         </remarks>
@@ -314,12 +314,12 @@
   
 <a name="xamlTextUsage_Self"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
    
   
 ## Examples  
- The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. See [How to: Implement Binding Validation](../Topic/How%20to:%20Implement%20Binding%20Validation.md) for more information on this example.  
+ The following example shows a style trigger that creates a <xref:System.Windows.Controls.ToolTip> that reports a validation error message. The value of the setter binds to the error content of the current <xref:System.Windows.Controls.TextBox> (the <xref:System.Windows.Controls.TextBox> using the style) using the <xref:System.Windows.Data.Binding.RelativeSource%2A> property. See [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md) for more information on this example.  
   
  [!code-xml[BindValidation#5](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/Window1.xaml#5)]  
   
@@ -387,7 +387,7 @@
 ## Remarks  
  This `ShouldSerialize` method is provided because the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> property does not have a simple default value. This method indicates whether the property has changed from its default value. You typically invoke this method if you are either developing a designer for the <xref:System.Windows.Data.RelativeSource> or developing your own control incorporating the <xref:System.Windows.Data.RelativeSource>.  
   
- For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](../Topic/Defining%20Default%20Values%20with%20the%20ShouldSerialize%20and%20Reset%20Methods.md).  
+ For more information, see [Defining Default Values with the ShouldSerialize and Reset Methods](~/docs/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md).  
   
  ]]></format>
         </remarks>
@@ -452,7 +452,7 @@
   
 <a name="xamlTextUsage_TemplatedParent"></a>   
 ## XAML Text Usage  
- For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](../Topic/RelativeSource%20MarkupExtension.md).  
+ For [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] information, see [RelativeSource MarkupExtension](~/docs/framework/wpf/advanced/relativesource-markupextension.md).  
   
    
   

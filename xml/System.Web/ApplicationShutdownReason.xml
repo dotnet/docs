@@ -66,7 +66,7 @@
         <ReturnType>System.Web.ApplicationShutdownReason</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The compilation system shut the application domain. The <see cref="F:System.Web.ApplicationShutdownReason.BuildManagerChange" /> member is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).</summary>
+        <summary>The compilation system shut the application domain. The <see cref="F:System.Web.ApplicationShutdownReason.BuildManagerChange" /> member is introduced in the .NET Framework version 3.5.  For more information, see [.NET Framework Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).</summary>
       </Docs>
     </Member>
     <Member MemberName="ChangeInGlobalAsax">

@@ -87,7 +87,7 @@ Ribbon menu button control with drop-down open
       <Docs>
         <summary>Gets or sets a value that indicates whether this control can be added directly to the Quick Access Toolbar.</summary>
         <value>
-          <see langword="true" /> if this control can be added directly to the Quick Access Toolbar; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if this control can be added directly to the Quick Access Toolbar; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -137,7 +137,7 @@ Ribbon menu button control with drop-down open
       <Docs>
         <summary>Gets or sets a value that indicates whether the user can resize the drop-down horizontally.</summary>
         <value>
-          <see langword="true" /> if the drop-down can be resized by the user; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the drop-down can be resized by the user; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -187,7 +187,7 @@ Ribbon menu button control with drop-down open
       <Docs>
         <summary>Gets or sets a value that indicates whether the user can resize the drop-down vertically.</summary>
         <value>
-          <see langword="true" /> if the drop-down can be resized by the user; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the drop-down can be resized by the user; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -333,7 +333,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the height of the drop-down.</summary>
-        <value>The height of the drop-down. The registered default is <see cref="F:System.Double.NaN" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The height of the drop-down. The registered default is <see cref="F:System.Double.NaN" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -399,7 +399,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the background of the control when it has focus.</summary>
-        <value>The brush that is used to draw the background of the control when it has focus. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the background of the control when it has focus. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -448,7 +448,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the outer border of the control when it has focus.</summary>
-        <value>The brush that is used to draw the outer border of the control when it has focus. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the outer border of the control when it has focus. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -564,7 +564,7 @@ Ribbon menu button control with drop-down open
       <Docs>
         <summary>Gets a value that indicates whether at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />.</summary>
         <value>
-          <see langword="true" /> if at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if at least one menu item is a <see cref="T:System.Windows.Controls.Ribbon.RibbonGallery" />; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -614,7 +614,7 @@ Ribbon menu button control with drop-down open
       <Docs>
         <summary>Gets or sets a value that indicates whether the drop-down is open.</summary>
         <value>
-          <see langword="true" /> if the drop-down is open; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the drop-down is open; otherwise, <see langword="false" />. The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -664,7 +664,7 @@ Ribbon menu button control with drop-down open
       <Docs>
         <summary>Gets a value that indicates whether the menu drop-down is shown above the menu button.</summary>
         <value>
-          <see langword="true" /> if the menu drop-down is shown above the menu button; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+          <see langword="true" /> if the menu drop-down is shown above the menu button; otherwise, <see langword="false" />. The registered default is <see langword="true" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -837,7 +837,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the keyboard shortcut for the control.</summary>
-        <value>The keyboard shortcut for the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The keyboard shortcut for the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -889,7 +889,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the text that is displayed next to or below the control.</summary>
-        <value>The text that is displayed next to or below the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The text that is displayed next to or below the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -939,7 +939,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the image that is displayed on the control when the image size is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Large" />.</summary>
-        <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -996,7 +996,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the background of the control when the mouse pointer is over it.</summary>
-        <value>The brush that is used to draw the background of the control when the mouse pointer is over it. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the background of the control when the mouse pointer is over it. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1045,7 +1045,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the outer border of the control when the mouse pointer is over it.</summary>
-        <value>The brush that is used to draw the outer border of the control when the mouse pointer is over it. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the outer border of the control when the mouse pointer is over it. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1387,7 +1387,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the background of the control when it is pressed.</summary>
-        <value>The brush that is used to draw the background of the control when it is pressed. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the background of the control when it is pressed. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1436,7 +1436,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the brush that is used to draw the outer border of the control when it is pressed.</summary>
-        <value>The brush that is used to draw the outer border of the control when it is pressed. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The brush that is used to draw the outer border of the control when it is pressed. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1584,7 +1584,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to.</summary>
-        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>A reference to the <see cref="T:System.Windows.Controls.Ribbon.Ribbon" /> that this control belongs to. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1659,7 +1659,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the image that is displayed on the control when the image size is set to <see cref="F:System.Windows.Controls.Ribbon.RibbonImageSize.Small" />.</summary>
-        <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The image to display on the control. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1716,7 +1716,7 @@ Ribbon menu button control with drop-down open
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the descriptive text that is displayed in the ToolTip for this control.</summary>
-        <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The descriptive text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1778,7 +1778,7 @@ Enhanced ToolTip
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the descriptive text that is displayed in the footer of the ToolTip for this control.</summary>
-        <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The descriptive text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1840,7 +1840,7 @@ Enhanced ToolTip
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the image that is displayed in the footer of the ToolTip for this control.</summary>
-        <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The image to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1902,7 +1902,7 @@ Enhanced ToolTip
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the title text that is displayed in the footer of the ToolTip for this control.</summary>
-        <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The title text to display in the footer of the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1964,7 +1964,7 @@ Enhanced ToolTip
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the image that is displayed in the ToolTip for this control.</summary>
-        <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The image to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2026,7 +2026,7 @@ Enhanced ToolTip
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the title text that is displayed in the ToolTip for this control.</summary>
-        <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+        <value>The title text to display in the ToolTip. The registered default is <see langword="null" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

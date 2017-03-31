@@ -1734,7 +1734,7 @@
  Display modes are an integral part of Web Parts applications. When users switch to a different display mode on a Web page, the page will often take on a very different appearance, depending on the purpose of the new display mode. After a display mode has changed, you might want to make certain changes in the user interface (UI), such as hiding or showing certain controls, changing the appearance of selected UI elements, and so on.  
   
 > [!NOTE]
->  For more information on display modes, see [Web Parts Page Display Modes](../Topic/Web%20Parts%20Page%20Display%20Modes.md). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+>  For more information on display modes, see [Web Parts Page Display Modes](../Topic/Web%20Parts%20Page%20Display%20Modes.md). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  ]]></format>
         </remarks>
@@ -1761,7 +1761,7 @@
  Display modes are an integral part of Web Parts applications. When users switch to a different display mode on a Web page, the page will often take on a very different appearance, depending on the purpose of the new display mode. After a user initiates the process of changing to a new display mode by clicking a verb, you might want to make certain changes in the user interface (UI) by using the <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCancelEventArgs.NewDisplayMode%2A> property to determine what the new display mode will be, and then changing various UI elements accordingly. A useful way to do this is to override the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnDisplayModeChanging%2A> method to customize the UI.  
   
 > [!NOTE]
->  For more information on display modes, see [Web Parts Page Display Modes](../Topic/Web%20Parts%20Page%20Display%20Modes.md). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+>  For more information on display modes, see [Web Parts Page Display Modes](../Topic/Web%20Parts%20Page%20Display%20Modes.md). For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  ]]></format>
         </remarks>
@@ -3892,7 +3892,7 @@ protected void mgr1_AuthorizeWebPart(object sender,
  This event can be used in conjunction with the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnSelectedWebPartChanged%2A> method to change the user interface (UI) of a selected control. For example, if the user switches the page to design mode (<xref:System.Web.UI.WebControls.WebParts.WebPartManager.DesignDisplayMode>), and then selects a <xref:System.Web.UI.WebControls.WebParts.WebPart> control with the intent of dragging it to a new position, it is common to change the rendering of the selected control, for example by changing the color of its border or background while it is selected.  
   
 > [!NOTE]
->  For more information on consuming events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+>  For more information on consuming events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  ]]></format>
         </remarks>

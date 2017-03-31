@@ -35,7 +35,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](../Topic/How%20to:%20Access%20Objects%20in%20a%20Windows%20Forms%20DataGridViewComboBoxCell%20Drop-Down%20List.md).  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewButtonColumn> to perform actions on particular rows. In this example, a <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event handler first determines whether a click is on a button cell, then retrieves a business object associated with the row. This example is part of a larger example available in [How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List](~/docs/framework/winforms/controls/access-objects-in-a-wf-datagridviewcomboboxcell-drop-down-list.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/CS/form1.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#100)]  
@@ -174,7 +174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Windows.Forms.DataGridViewCellStyle> returned by this property has an initial <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property value of <xref:System.Windows.Forms.DataGridViewContentAlignment>. This value overrides the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](../Topic/Cell%20Styles%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The default <xref:System.Windows.Forms.DataGridViewCellStyle> returned by this property has an initial <xref:System.Windows.Forms.DataGridViewCellStyle.Alignment%2A> property value of <xref:System.Windows.Forms.DataGridViewContentAlignment>. This value overrides the value specified in the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control, but may be overridden by other cell style properties. For more information, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md).  
   
 > [!NOTE]
 >  When visual styles are enabled, the buttons in a button column are painted using a <xref:System.Windows.Forms.ButtonRenderer> and cell styles specified through properties such as <xref:System.Windows.Forms.DataGridViewButtonColumn.DefaultCellStyle%2A> have no effect.  

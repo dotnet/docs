@@ -27,7 +27,7 @@
   
 -   <xref:System.ServiceModel.Channels.MessageEncoder>  
   
- Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder%2A> to return an instance of your custom <xref:System.ServiceModel.Channels.MessageEncoder>. Then wire up your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory. For more information about custom encoders, see [Data Transfer and Serialization](../Topic/Data%20Transfer%20and%20Serialization.md).  
+ Override the <xref:System.ServiceModel.Channels.MessageEncoderFactory.Encoder%2A> to return an instance of your custom <xref:System.ServiceModel.Channels.MessageEncoder>. Then wire up your custom <xref:System.ServiceModel.Channels.MessageEncoderFactory> to the binding element stack used to configure the service or client by overriding the <xref:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory%2A> method to return an instance of this factory. For more information about custom encoders, see [Data Transfer and Serialization](~/docs/framework/wcf/feature-details/data-transfer-and-serialization.md).  
   
    
   

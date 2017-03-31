@@ -27,7 +27,7 @@
  The values of this enumeration are used to set the <xref:System.Net.WebRequest.AuthenticationLevel%2A> property.  
   
 > [!NOTE]
->  The MutualAuthRequired and MutualAuthRequested values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](../Topic/Internet%20Authentication.md).  
+>  The MutualAuthRequired and MutualAuthRequested values are relevant for Kerberos authentication. Kerberos authentication can be supported directly, or can be used if the Negotiate security protocol is used to select the actual security protocol. For more information about authentication protocols, see [Internet Authentication](~/docs/framework/network-programming/internet-authentication.md).  
   
    
   

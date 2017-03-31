@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For an example of creating a file and writing text to a file, see [How to: Write Text to a File](../Topic/How%20to:%20Write%20Text%20to%20a%20File.md). For an example of reading text from a file, see [How to: Read Text from a File](../Topic/How%20to:%20Read%20Text%20from%20a%20File.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](../Topic/How%20to:%20Read%20and%20Write%20to%20a%20Newly%20Created%20Data%20File.md).  
+ For an example of creating a file and writing text to a file, see [How to: Write Text to a File](~/docs/standard/io/how-to-write-text-to-a-file.md). For an example of reading text from a file, see [How to: Read Text from a File](~/docs/standard/io/how-to-read-text-from-a-file.md). For an example of reading from and writing to a binary file, see [How to: Read and Write to a Newly Created Data File](~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md).  
   
  A `FileAccess` parameter is specified in many of the constructors for <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.FileStream>, and other constructors where it is important to control the kind of access users have to a file.  
   

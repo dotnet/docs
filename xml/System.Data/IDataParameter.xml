@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.IDataParameter> interface allows an inheriting class to implement a Parameter class, which represents a parameter to a Command object. For more information about Parameter classes, see [Configuring Parameters and Parameter Data Types](../Topic/Configuring%20Parameters%20and%20Parameter%20Data%20Types.md).  
+ The <xref:System.Data.IDataParameter> interface allows an inheriting class to implement a Parameter class, which represents a parameter to a Command object. For more information about Parameter classes, see [Configuring Parameters and Parameter Data Types](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
  An application does not create an instance of the <xref:System.Data.IDataParameter> interface directly, but creates an instance of a class that inherits <xref:System.Data.IDataParameter>.  
   
@@ -134,7 +134,7 @@
 ## Remarks  
  The PrvDbType (where Prv represents the provider-specific prefix) and <xref:System.Data.SqlClient.SqlParameter.DbType%2A> are linked. Therefore, setting the <xref:System.Data.SqlClient.SqlParameter.DbType%2A> changes the PrvDbType to a supporting PrvDbType.  
   
- For a list of the supported data types, see the appropriate .NET Framework data provider PrvDbType member. For more information, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For a list of the supported data types, see the appropriate .NET Framework data provider PrvDbType member. For more information, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
  ]]></format>
         </remarks>

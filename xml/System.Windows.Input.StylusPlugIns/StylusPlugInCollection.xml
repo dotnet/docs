@@ -24,7 +24,7 @@
    
   
 ## Examples  
- The following example demonstrates how to add a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to a custom control. To create a control that collects ink, see [Creating an Ink Input Control](../Topic/Creating%20an%20Ink%20Input%20Control.md).  
+ The following example demonstrates how to add a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to a custom control. To create a control that collects ink, see [Creating an Ink Input Control](~/docs/framework/wpf/advanced/creating-an-ink-input-control.md).  
   
  [!code-csharp[StylusPluginSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusPluginSamples/CSharp/StylusControl.cs#3)]
  [!code-vb[StylusPluginSamples#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusPluginSamples/VisualBasic/StylusControl.vb#3)]  

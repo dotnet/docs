@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Because there are several unmanaged string types and only one managed string type, you must use a character set to specify how managed strings should be marshaled to unmanaged code. This enumeration, which provides character set options, is used by <xref:System.Runtime.InteropServices.DllImportAttribute> and <xref:System.Runtime.InteropServices.StructLayoutAttribute>. For a detailed description of the string marshaling and name matching behavior associated with this enumeration, see [Specifying a Character Set](../Topic/Specifying%20a%20Character%20Set.md).  
+ Because there are several unmanaged string types and only one managed string type, you must use a character set to specify how managed strings should be marshaled to unmanaged code. This enumeration, which provides character set options, is used by <xref:System.Runtime.InteropServices.DllImportAttribute> and <xref:System.Runtime.InteropServices.StructLayoutAttribute>. For a detailed description of the string marshaling and name matching behavior associated with this enumeration, see [Specifying a Character Set](~/docs/framework/interop/specifying-a-character-set.md).  
   
    
   

@@ -32,7 +32,7 @@
 ## Remarks  
  This object corresponds to a specific isolated storage scope, where files represented by <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> objects exist. Applications can use isolated storage to save data in their own isolated portion of the file system, without having to specify a particular path within the file system. Since isolated stores are scoped to particular assemblies, most other managed code will not be able to access your code's data (highly trusted managed code and administration tools can access stores from other assemblies). Unmanaged code can access any isolated stores.  
   
- For more information, see [Isolated Storage](../Topic/Isolated%20Storage.md).  
+ For more information, see [Isolated Storage](~/docs/standard/io/isolated-storage.md).  
   
  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
   
@@ -273,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The created directory initially contains no files. If the directory already exists, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method returns without creating a new directory. The [How to: Create Files and Directories in Isolated Storage](../Topic/How%20to:%20Create%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method  
+ The created directory initially contains no files. If the directory already exists, the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method returns without creating a new directory. The [How to: Create Files and Directories in Isolated Storage](~/docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CreateDirectory%2A> method  
   
    
   
@@ -378,7 +378,7 @@
   
  The current size cannot be accurately determined for stores that are participating in a roaming user profile. Because roaming profiles are often cached on multiple client machines and later synchronized with a server, quotas cannot be enforced for such stores and the current size is not reported.  
   
- The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](../Topic/How%20to:%20Anticipate%20Out-of-Space%20Conditions%20with%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A> property.  
+ The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](~/docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.CurrentSize%2A> property.  
   
    
   
@@ -424,7 +424,7 @@
 ## Remarks  
  A directory must be empty before it is deleted. The deleted directory cannot be recovered once deleted.  
   
- The [How to: Delete Files and Directories in Isolated Storage](../Topic/How%20to:%20Delete%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> method.  
+ The [How to: Delete Files and Directories in Isolated Storage](~/docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> method.  
   
    
   
@@ -470,7 +470,7 @@
 ## Remarks  
  The deleted file cannot be recovered once deleted.  
   
- The [How to: Delete Files and Directories in Isolated Storage](../Topic/How%20to:%20Delete%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> method.  
+ The [How to: Delete Files and Directories in Isolated Storage](~/docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> method.  
   
    
   
@@ -756,7 +756,7 @@
   
  For information on getting file names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
   
- The [How to: Find Existing Files and Directories in Isolated Storage](../Topic/How%20to:%20Find%20Existing%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
+ The [How to: Find Existing Files and Directories in Isolated Storage](~/docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
   
    
   
@@ -807,7 +807,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [How to: Enumerate Stores for Isolated Storage](../Topic/How%20to:%20Enumerate%20Stores%20for%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> method.  
+ The [How to: Enumerate Stores for Isolated Storage](~/docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A> method.  
   
  ]]></format>
         </remarks>
@@ -886,7 +886,7 @@
   
  For information about how to find directory names, see the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> method.  
   
- The [How to: Find Existing Files and Directories in Isolated Storage](../Topic/How%20to:%20Find%20Existing%20Files%20and%20Directories%20in%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
+ The [How to: Find Existing Files and Directories in Isolated Storage](~/docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> method.  
   
    
   
@@ -1836,7 +1836,7 @@
 ## Remarks  
  The number of bytes available is constrained by the isolated storage quota set by the administrator. Quota is configured in security policy on the basis of evidence, so the same code can receive a different quota if it is run with different evidence. For example, an application that is run locally and also from a share on an intranet would likely receive different quotas.  
   
- The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](../Topic/How%20to:%20Anticipate%20Out-of-Space%20Conditions%20with%20Isolated%20Storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A> property.  
+ The [How to: Anticipate Out-of-Space Conditions with Isolated Storage](~/docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md) example demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.MaximumSize%2A> property.  
   
    
   
@@ -2199,7 +2199,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method to delete the isolated storage file after its contents have been emptied. The [How to: Delete Stores in Isolated Storage](../Topic/How%20to:%20Delete%20Stores%20in%20Isolated%20Storage.md) example also demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method.  
+ The following code example uses the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method to delete the isolated storage file after its contents have been emptied. The [How to: Delete Stores in Isolated Storage](~/docs/standard/io/how-to-delete-stores-in-isolated-storage.md) example also demonstrates the use of the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A> method.  
   
  [!code-cpp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CPP/source.cpp#16)]
  [!code-csharp[System.IO.IsolatedStorage.IsolatedStorage#16](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.IsolatedStorage.IsolatedStorage/CS/source.cs#16)]

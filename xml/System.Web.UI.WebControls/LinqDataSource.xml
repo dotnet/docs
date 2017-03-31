@@ -2171,7 +2171,7 @@ LinqDataSource1.Where = "Category = \"Sports\"";
 <asp:LinqDataSource ... Where='Category.CompareTo("Sports") >= 0' ... >  
 ```  
   
- You can also use other methods of the <xref:System.String> class, such as <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, and <xref:System.String.Contains%2A>. For more information about how to compare strings, see [Comparing Strings](../Topic/Comparing%20Strings%20in%20the%20.NET%20Framework.md). For more information about Where clause syntax, see [C# Operators](../Topic/C%23%20Operators.md) and [where clause](../Topic/where%20clause%20\(C%23%20Reference\).md).  
+ You can also use other methods of the <xref:System.String> class, such as <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, and <xref:System.String.Contains%2A>. For more information about how to compare strings, see [Comparing Strings](~/docs/standard/base-types/comparing.md). For more information about Where clause syntax, see [C# Operators](../Topic/C%23%20Operators.md) and [where clause](~/docs/csharp/language-reference/keywords/where-clause.md).  
   
  In addition to filtering based on static values that you define when you create the Web page, you can filter based on dynamic values that are evaluated at run time. In that case, you include a named parameter in the <xref:System.Web.UI.WebControls.LinqDataSource.Where%2A> property that acts as a placeholder for the value. You then add a parameter that has the matching name to the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection.  
   

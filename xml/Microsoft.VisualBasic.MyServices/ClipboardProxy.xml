@@ -31,7 +31,7 @@
   
  When accessing the Clipboard remotely, a <xref:System.Threading.ThreadStateException> is thrown unless the accessing thread operates in STA (single-threaded apartment) mode. To resolve this issue, set the `ThreadApartmentState` to `STA`. For more information, see <xref:System.STAThreadAttribute>.  
   
- For more information, see [Storing Data to and Reading from the Clipboard](../Topic/Storing%20Data%20to%20and%20Reading%20from%20the%20Clipboard%20\(Visual%20Basic\).md).  
+ For more information, see [Storing Data to and Reading from the Clipboard](~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md).  
   
 ## Availability by Project Type  
   
@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.Permissions.UIPermission> class controls access to the Clipboard, and the associated <xref:System.Security.Permissions.UIPermissionClipboard> enumeration value indicates the level of access. For more information, see [Additional Security Considerations in Windows Forms](../Topic/Additional%20Security%20Considerations%20in%20Windows%20Forms.md).  
+ The <xref:System.Security.Permissions.UIPermission> class controls access to the Clipboard, and the associated <xref:System.Security.Permissions.UIPermissionClipboard> enumeration value indicates the level of access. For more information, see [Additional Security Considerations in Windows Forms](~/docs/framework/winforms/additional-security-considerations-in-windows-forms.md).  
   
 ## Availability by Project Type  
   

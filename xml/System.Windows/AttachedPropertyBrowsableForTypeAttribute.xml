@@ -29,7 +29,7 @@
   
  This [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] should only be applied on the get accessor of attached property definitions. Do not apply this [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] to the set accessor. Although intuitively it is the set operation that is being made browsable for [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] on relevant elements, it is the presence and characteristics of the get accessor on the property defining element that controls the true behavior.  
   
- For general information on declaring attached properties, see [Attached Properties Overview](../Topic/Attached%20Properties%20Overview.md).  
+ For general information on declaring attached properties, see [Attached Properties Overview](~/docs/framework/wpf/advanced/attached-properties-overview.md).  
   
  ]]></format>
     </remarks>

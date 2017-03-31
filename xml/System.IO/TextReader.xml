@@ -157,7 +157,7 @@
 ## Remarks  
  Call <xref:System.IO.TextReader.Dispose%2A> when you are finished using the <xref:System.IO.TextReader>. The <xref:System.IO.TextReader.Dispose%2A> method leaves the <xref:System.IO.TextReader> in an unusable state. After calling <xref:System.IO.TextReader.Dispose%2A>, you must release all references to the <xref:System.IO.TextReader> so the garbage collector can reclaim the memory that the <xref:System.IO.TextReader> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.IO.TextReader.Dispose%2A> before you release your last reference to the <xref:System.IO.TextReader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.IO.TextReader> object's <xref:System.Object.Finalize%2A> method.  
@@ -208,9 +208,9 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement this method, see [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding this method, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
- For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md).</para>
+ For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md).</para>
         </block>
       </Docs>
     </Member>

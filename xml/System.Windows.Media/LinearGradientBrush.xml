@@ -33,7 +33,7 @@ A diagonal linear gradient with highlighted gradient stops
  It is possible to specify a gradient axis that does not completely fill area being painted. When this occurs, the <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> property determines how the remaining area is painted.  
   
 ## Freezable Features  
- A <xref:System.Windows.Media.LinearGradientBrush> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A <xref:System.Windows.Media.LinearGradientBrush> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

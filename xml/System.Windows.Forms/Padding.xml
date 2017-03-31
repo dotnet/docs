@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.Padding> structure represents the padding or margin associated with a rectangular UI element such as a control. The padding is the internal space between the body of the UI element and its edge. In contrast, a margin is the distance separating the adjoining edges of two adjacent UI elements. Because of structural similarities, <xref:System.Windows.Forms.Padding> is used to represent both padding and margins.  
   
- For a diagram that illustrates the <xref:System.Windows.Forms.Control.Padding%2A> and <xref:System.Windows.Forms.Control.Margin%2A> properties on a control, see [Margin and Padding in Windows Forms Controls](../Topic/Margin%20and%20Padding%20in%20Windows%20Forms%20Controls.md).  
+ For a diagram that illustrates the <xref:System.Windows.Forms.Control.Padding%2A> and <xref:System.Windows.Forms.Control.Margin%2A> properties on a control, see [Margin and Padding in Windows Forms Controls](~/docs/framework/winforms/controls/margin-and-padding-in-windows-forms-controls.md).  
   
  Padding has a different effect on controls that are containers than on controls that are not. For example, in a <xref:System.Windows.Forms.Panel> control, the <xref:System.Windows.Forms.Padding> property defines the spacing between the border of the <xref:System.Windows.Forms.Panel> and its child controls. For a <xref:System.Windows.Forms.Button> control, the <xref:System.Windows.Forms.Padding> property defines the spacing between the border of the <xref:System.Windows.Forms.Button> control and its contained text.  
   
@@ -40,7 +40,7 @@
 ## Examples  
  The following code example demonstrates how to use the Padding property to create an outline around a <xref:System.Windows.Forms.RichTextBox> control.  
   
- For a full code listing, see [How to: Create a Border Around a Windows Forms Control Using Padding](../Topic/How%20to:%20Create%20a%20Border%20Around%20a%20Windows%20Forms%20Control%20Using%20Padding.md).  
+ For a full code listing, see [How to: Create a Border Around a Windows Forms Control Using Padding](~/docs/framework/winforms/controls/how-to-create-a-border-around-a-windows-forms-control-using-padding.md).  
   
  [!code-csharp[System.Windows.Forms.Padding#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Padding/CS/Form1.cs#2)]
  [!code-vb[System.Windows.Forms.Padding#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Padding/VB/Form1.vb#2)]  

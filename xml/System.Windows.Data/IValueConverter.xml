@@ -13,7 +13,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you want to associate a value converter with a binding, create a class that implements the <xref:System.Windows.Data.IValueConverter> interface and then implement the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. Converters can change data from one type to another, translate data based on cultural information, or modify other aspects of the presentation. For examples of some typical converter scenarios, see "Data Conversion" in [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ If you want to associate a value converter with a binding, create a class that implements the <xref:System.Windows.Data.IValueConverter> interface and then implement the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods. Converters can change data from one type to another, translate data based on cultural information, or modify other aspects of the presentation. For examples of some typical converter scenarios, see "Data Conversion" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  Value converters are culture-aware. Both the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods have a `culture` parameter that indicates the cultural information. If cultural information is irrelevant to the conversion, then you can ignore that parameter in your custom converter.  
   

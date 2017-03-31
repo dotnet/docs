@@ -77,11 +77,11 @@
  [!code-csharp[System.Func~3#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Func3.cs#2)]
  [!code-vb[System.Func~3#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~3/vb/Func3.vb#2)]  
   
- You can use the <xref:System.Func%603> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](../Topic/Anonymous%20Methods%20\(C%23%20Programming%20Guide\).md).)  
+ You can use the <xref:System.Func%603> delegate with anonymous methods in C#, as the following example illustrates. (For an introduction to anonymous methods, see [Anonymous Methods](~/docs/csharp/programming-guide/statements-expressions-operators/anonymous-methods.md).)  
   
  [!code-csharp[System.Func~3#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Anon.cs#3)]  
   
- You can also assign a lambda expression to a <xref:System.Func%603> delegate, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](../Topic/Lambda%20Expressions%20\(Visual%20Basic\).md) and [Lambda Expressions](../Topic/Lambda%20Expressions%20\(C%23%20Programming%20Guide\).md).)  
+ You can also assign a lambda expression to a <xref:System.Func%603> delegate, as the following example illustrates. (For an introduction to lambda expressions, see [Lambda Expressions](~/docs/visual-basic/programming-guide/language-features/procedures/lambda-expressions.md) and [Lambda Expressions](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).)  
   
  [!code-csharp[System.Func~3#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Func~3/cs/Lambda.cs#4)]
  [!code-vb[System.Func~3#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Func~3/vb/lambda.vb#4)]  

@@ -26,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a [!INCLUDE[wrt](~/includes/wrt-md.md)] component, all the parameters of a method and the return value must have names. By default, [Winmdexp.exe (Windows Runtime Metadata Export Tool)](../Topic/Winmdexp.exe%20\(Windows%20Runtime%20Metadata%20Export%20Tool\).md) gives the return value the name "value". When you use a component in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app written in JavaScript, you can use this name to retrieve the return value. For example, suppose a component defines a method that has a return value and two `out` parameters (`ByRef` parameters with the <xref:System.Runtime.InteropServices.OutAttribute> attribute in Visual Basic):  
+ In a [!INCLUDE[wrt](~/includes/wrt-md.md)] component, all the parameters of a method and the return value must have names. By default, [Winmdexp.exe (Windows Runtime Metadata Export Tool)](~/docs/framework/tools/winmdexp-exe-windows-runtime-metadata-export-tool.md) gives the return value the name "value". When you use a component in a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app written in JavaScript, you can use this name to retrieve the return value. For example, suppose a component defines a method that has a return value and two `out` parameters (`ByRef` parameters with the <xref:System.Runtime.InteropServices.OutAttribute> attribute in Visual Basic):  
   
 ```csharp  
 public static int ComputeAverage([ReadOnlyArray()] int[] input,  

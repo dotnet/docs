@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Data.PriorityBinding> is a single run-time instance of a <xref:System.Windows.Data.PriorityBindingExpression>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects that are attached to a single binding target property, which receives its value from the first <xref:System.Windows.Data.BindingExpression> object in the collection that returns a value successfully. For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](../Topic/Data%20Binding%20Overview.md).  
+ <xref:System.Windows.Data.PriorityBinding> is a single run-time instance of a <xref:System.Windows.Data.PriorityBindingExpression>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects that are attached to a single binding target property, which receives its value from the first <xref:System.Windows.Data.BindingExpression> object in the collection that returns a value successfully. For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
  The binding engine determines which of the <xref:System.Windows.Data.BindingExpression> objects is the <xref:System.Windows.Data.PriorityBindingExpression.ActiveBindingExpression%2A> based on priority. For more information, see <xref:System.Windows.Data.PriorityBinding>.  
   

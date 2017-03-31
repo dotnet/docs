@@ -746,7 +746,7 @@ total = (UBound(A, 1) + 1) * (UBound(A, 2) + 1) * (UBound(A, 3) + 1)
   
 |Data type represented by `VarName`|Value returned by `VarType`|  
 |----------------------------------------|---------------------------------|  
-|[Nothing](../Topic/Nothing%20\(Visual%20Basic\).md)|`VariantType.Object`|  
+|[Nothing](~/docs/visual-basic/language-reference/nothing.md)|`VariantType.Object`|  
 |<xref:System.DBNull>|`VariantType.Null`|  
 |Enumeration|Underlying data type (`SByte`, `Byte`, `Short`, `UShort`, `Integer`, `UInteger`, `Long`, or `ULong`)|  
 |Array|Bitwise OR of array element type and `VariantType.Array`|  

@@ -93,7 +93,7 @@
   
 -   <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName>  
   
- You can also get the name by using the `/l` option with the [Gacutil.exe (Global Assembly Cache Tool)](../Topic/Gacutil.exe%20\(Global%20Assembly%20Cache%20Tool\).md)  
+ You can also get the name by using the `/l` option with the [Gacutil.exe (Global Assembly Cache Tool)](~/docs/framework/tools/gacutil-exe-gac-tool.md)  
   
  For a partially specified strong name, create an <xref:System.Reflection.AssemblyName> object using the default constructor and set the name and public key. An assembly created using such an <xref:System.Reflection.AssemblyName> can be signed later using the Assembly Linker (Al.exe).  
   
@@ -165,7 +165,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates a dynamic assembly named `MyAssembly.exe` and saves it to your hard disk. After running the example, you can use the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md) to examine the assembly metadata.  
+ The following example creates a dynamic assembly named `MyAssembly.exe` and saves it to your hard disk. After running the example, you can use the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md) to examine the assembly metadata.  
   
  [!code-cpp[AssemblyName_Constructor#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyName_Constructor/CPP/assemblyname_constructor.cpp#1)]
  [!code-csharp[AssemblyName_Constructor#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyName_Constructor/CS/assemblyname_constructor.cs#1)]
@@ -225,7 +225,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
         <exception cref="T:System.IO.FileLoadException">
           <block subset="none" type="note">  
 <para>  
- In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](../Topic/Cross-Platform%20Development%20with%20the%20Portable%20Class%20Library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
+ In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.IO.IOException" />, instead.  
   
 </para>  
 </block>  
@@ -293,7 +293,7 @@ ExampleAssembly, Version=1.0.0.0, Culture=en, PublicKeyToken=a5d015c7d5a0b012
  If the assembly was loaded as a byte array, this property returns the location of the caller of the [Load(Byte\<xref:System.Reflection.Assembly.Load%28System.Byte%5B%5D%29> method overload, not the location of the loaded assembly.  
   
 > [!NOTE]
->  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](../Topic/Best%20Practices%20for%20Assembly%20Loading.md).  
+>  Do not use an <xref:System.Reflection.AssemblyName> with only the <xref:System.Reflection.AssemblyName.CodeBase%2A> property set. The <xref:System.Reflection.AssemblyName.CodeBase%2A> property does not supply any elements of the assembly identity (such as name or version), so loading does not occur according to load-by-identity rules, as you would expect from the <xref:System.Reflection.Assembly.Load%2A> method. Instead, the assembly is loaded using load-from rules. For information about the disadvantages of using the load-from context, see the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName> method overload or [Best Practices for Assembly Loading](~/docs/framework/deployment/best-practices-for-assembly-loading.md).  
   
    
   

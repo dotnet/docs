@@ -1484,7 +1484,7 @@
 |Any other time zone.|<xref:System.DateTimeKind> or <xref:System.DateTimeKind?displayProperty=fullName>|Converts `dateTime` to the specified time zone, and then determines whether that time is ambiguous.|  
 |Any other time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|Determines whether `dateTime` is ambiguous in the specified time zone.|  
   
- The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](../Topic/How%20to:%20Resolve%20Ambiguous%20Times.md).  
+ The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](~/docs/standard/datetime/resolve-ambiguous-times.md).  
   
    
   
@@ -1545,7 +1545,7 @@
 ## Remarks  
  The precise behavior of this method depends on the relationship between the <xref:System.DateTimeOffset.Offset%2A> property of the `dateTimeOffset` parameter and the <xref:System.TimeZoneInfo> object. If the value of the <xref:System.DateTimeOffset.Offset%2A> property corresponds to the current time zone's possible offsets from Coordinated Universal Time (UTC) for that date and time, the method returns the possible offsets. Otherwise, it converts `dateTimeOffset` to the time in the current time zone, and then returns the possible offsets of that date and time.  
   
- The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](../Topic/How%20to:%20Resolve%20Ambiguous%20Times.md).  
+ The order of <xref:System.TimeSpan> objects in the array returned by this method is undefined. However, you can determine which element represents an offset from the time zone's standard time by comparing its value with the time zone's <xref:System.TimeZoneInfo.BaseUtcOffset%2A> property. To map an ambiguous time to a time zone's standard time, see [How to: Resolve Ambiguous Times](~/docs/standard/datetime/resolve-ambiguous-times.md).  
   
  ]]></format>
         </remarks>
@@ -1633,7 +1633,7 @@
   
  The <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> object returned by this method supports the <xref:System.Collections.Generic.IEnumerable%601> interface, which means that it can be iterated using the `foreach` (in C#) or `For Each…Next` (in Visual Basic) statements. Each iteration of the loop provides the next <xref:System.TimeZoneInfo> object in the collection.  
   
- The collection of <xref:System.TimeZoneInfo> objects represents time zones defined on the local computer; it does not necessarily provide complete information for all time zones during all time periods. If your application requires time zones not found on the local computer, you can create custom time zones using the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create Time Zones Without Adjustment Rules](../Topic/How%20to:%20Create%20Time%20Zones%20Without%20Adjustment%20Rules.md) and [How to: Create Time Zones with Adjustment Rules](../Topic/How%20to:%20Create%20Time%20Zones%20with%20Adjustment%20Rules.md).  
+ The collection of <xref:System.TimeZoneInfo> objects represents time zones defined on the local computer; it does not necessarily provide complete information for all time zones during all time periods. If your application requires time zones not found on the local computer, you can create custom time zones using the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create Time Zones Without Adjustment Rules](~/docs/standard/datetime/create-time-zones-without-adjustment-rules.md) and [How to: Create Time Zones with Adjustment Rules](~/docs/standard/datetime/create-time-zones-with-adjustment-rules.md).  
   
  You can also determine whether an individual time zone is defined on the local computer by calling the <xref:System.TimeZoneInfo.FindSystemTimeZoneById%2A> method and providing the identifier of the time zone you want to retrieve as a parameter.  
   
@@ -2444,7 +2444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When assigning a collection that contains <xref:System.TimeZoneInfo> objects to a list control such as the <xref:System.Windows.Forms.ListBox> control, the control automatically calls the <xref:System.TimeZoneInfo.ToString%2A> method to extract a string that describes each object to be represented in the list. As a result, you do not need to store a meaningful description of the object as a string, and the user does not need to use that string to extract the object from the collection. See [How to: Enumerate Time Zones Present on a Computer](../Topic/How%20to:%20Enumerate%20Time%20Zones%20Present%20on%20a%20Computer.md) for more detail.  
+ When assigning a collection that contains <xref:System.TimeZoneInfo> objects to a list control such as the <xref:System.Windows.Forms.ListBox> control, the control automatically calls the <xref:System.TimeZoneInfo.ToString%2A> method to extract a string that describes each object to be represented in the list. As a result, you do not need to store a meaningful description of the object as a string, and the user does not need to use that string to extract the object from the collection. See [How to: Enumerate Time Zones Present on a Computer](~/docs/standard/datetime/enumerate-time-zones.md) for more detail.  
   
  ]]></format>
         </remarks>

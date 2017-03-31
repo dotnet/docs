@@ -32,7 +32,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Resources.ResourceManager> class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized and localized resources have been deployed in [satellite assemblies](../Topic/Creating%20Satellite%20Assemblies%20for%20Desktop%20Apps.md), it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization.  
+ The <xref:System.Resources.ResourceManager> class retrieves resources from a binary .resources file that is embedded in an assembly or from a standalone .resources file. If an app has been localized and localized resources have been deployed in [satellite assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md), it looks up culture-specific resources, provides resource fallback when a localized resource does not exist, and supports resource serialization.  
   
  For more information about creating and managing resources in desktop apps and [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps, see the following sections:  
   
@@ -56,7 +56,7 @@
   
 <a name="desktop"></a>   
 ## Desktop Apps  
- For desktop apps, the<xref:System.Resources.ResourceManager> class retrieves resources from binary resource (.resources) files. Typically, a language compiler or the  [Assembly Linker (AL.exe)](../Topic/Al.exe%20\(Assembly%20Linker\).md) embeds these resource files in an assembly. You can also use a <xref:System.Resources.ResourceManager> object to retrieve resources directly from a .resources file that is not embedded in an assembly, by calling the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A> method.  
+ For desktop apps, the<xref:System.Resources.ResourceManager> class retrieves resources from binary resource (.resources) files. Typically, a language compiler or the  [Assembly Linker (AL.exe)](~/docs/framework/tools/al-exe-assembly-linker.md) embeds these resource files in an assembly. You can also use a <xref:System.Resources.ResourceManager> object to retrieve resources directly from a .resources file that is not embedded in an assembly, by calling the <xref:System.Resources.ResourceManager.CreateFileBasedResourceManager%2A> method.  
   
 > [!CAUTION]
 >  Using standalone .resources files in an ASP.NET app will break XCOPY deployment, because the resources remain locked until they are explicitly released by the <xref:System.Resources.ResourceManager.ReleaseAllResources%2A> method. If you want to deploy resources with your ASP.NET apps, you should compile your .resources files into satellite assemblies.  
@@ -65,7 +65,7 @@
   
 <a name="creating_resources"></a>   
 ### Creating Resources  
- When you develop a resource-based app, you store resource information in text files (files that have a .txt or .restext extension) or XML files (files that have a .resx extension). You then compile the text or XML files with the  [Resource File Generator (Resgen.exe)](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) to create a binary .resources file. You can then embed the resulting .resources file in an executable or library by using a compiler option such as `/resources` for the C# and Visual Basic compilers, or you can embed it in a satellite assembly by using the . If you include a .resx file in your Visual Studio project, Visual Studio handles the compilation and embedding of default and localized resources automatically as part of the build process.  
+ When you develop a resource-based app, you store resource information in text files (files that have a .txt or .restext extension) or XML files (files that have a .resx extension). You then compile the text or XML files with the  [Resource File Generator (Resgen.exe)](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to create a binary .resources file. You can then embed the resulting .resources file in an executable or library by using a compiler option such as `/resources` for the C# and Visual Basic compilers, or you can embed it in a satellite assembly by using the . If you include a .resx file in your Visual Studio project, Visual Studio handles the compilation and embedding of default and localized resources automatically as part of the build process.  
   
  Ideally, you should create resources for every language your app supports, or at least for a meaningful subset of each language. The binary .resources file names follow the naming convention *basename*.*cultureName*.resources, where *basename* is the name of the app or the name of a class, depending on the level of detail you want. The <xref:System.Globalization.CultureInfo.Name%2A?displayProperty=fullName> property is used to determine *cultureName*. A resource for the app's default culture should be named *basename*.resources.  
   
@@ -73,7 +73,7 @@
   
  Note that  allows resources to be marked as private, but you should always mark them as public so they can be accessed by other assemblies. (Because a satellite assembly contains no code, resources that are marked as private are unavailable to your app through any mechanism.)  
   
- For more information about creating, packaging, and deploying resources, see the articles [Creating Resource Files](../Topic/Creating%20Resource%20Files%20for%20Desktop%20Apps.md), [Creating Satellite Assemblies](../Topic/Creating%20Satellite%20Assemblies%20for%20Desktop%20Apps.md), and [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).  
+ For more information about creating, packaging, and deploying resources, see the articles [Creating Resource Files](~/docs/framework/resources/creating-resource-files-for-desktop-apps.md), [Creating Satellite Assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md), and [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
 <a name="instantiating"></a>   
 ### Instantiating a ResourceManager Object  
@@ -122,7 +122,7 @@ vbc ShowTime.vb /resource:strings.resources
   
 <a name="CultureSpecific"></a>   
 ### ResourceManager and Culture-Specific Resources  
- A localized app requires resources to be deployed, as discussed in the article [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md). If the assemblies are properly configured, the resource manager determines which resources to retrieve based on the current thread's <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property. (That property also returns the current thread's UI culture.) For example, if an app is compiled with default English language resources in the main assembly and with French and Russian language resources in two satellite assemblies, and the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property is set to fr-FR, the resource manager retrieves the French resources.  
+ A localized app requires resources to be deployed, as discussed in the article [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md). If the assemblies are properly configured, the resource manager determines which resources to retrieve based on the current thread's <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property. (That property also returns the current thread's UI culture.) For example, if an app is compiled with default English language resources in the main assembly and with French and Russian language resources in two satellite assemblies, and the <xref:System.Threading.Thread.CurrentUICulture%2A?displayProperty=fullName> property is set to fr-FR, the resource manager retrieves the French resources.  
   
  You can set the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> property explicitly or implicitly. The way you set it determines how the <xref:System.Resources.ResourceManager> object retrieves resources based on culture:  
   
@@ -176,7 +176,7 @@ al /embed:Greetings.ru-RU.resources /culture:ru-RU /out:ru-RU\Example.resources.
   
 <a name="retrieving"></a>   
 ### Retrieving Resources  
- You call the <xref:System.Resources.ResourceManager.GetObject%28System.String%29> and <xref:System.Resources.ResourceManager.GetString%28System.String%29> methods to access a specific resource. You can also call the <xref:System.Resources.ResourceManager.GetStream%28System.String%29> method to retrieve non-string resources as a byte array. By default, in an app that has localized resources, these methods return the resource for the culture determined by the current UI culture of the thread that made the call. See the previous section, [ResourceManager and Culture-Specific Resources](#CultureSpecific), for more information about how the current UI culture of a thread is defined. If the resource manager cannot find the resource for the current thread's UI culture, it uses a fallback process to retrieve the specified resource. If the resource manager cannot find any localized resources, it uses the resources of the default culture. For more information about resource fallback rules, see the "Resource Fallback Process" section of the article [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md).  
+ You call the <xref:System.Resources.ResourceManager.GetObject%28System.String%29> and <xref:System.Resources.ResourceManager.GetString%28System.String%29> methods to access a specific resource. You can also call the <xref:System.Resources.ResourceManager.GetStream%28System.String%29> method to retrieve non-string resources as a byte array. By default, in an app that has localized resources, these methods return the resource for the culture determined by the current UI culture of the thread that made the call. See the previous section, [ResourceManager and Culture-Specific Resources](#CultureSpecific), for more information about how the current UI culture of a thread is defined. If the resource manager cannot find the resource for the current thread's UI culture, it uses a fallback process to retrieve the specified resource. If the resource manager cannot find any localized resources, it uses the resources of the default culture. For more information about resource fallback rules, see the "Resource Fallback Process" section of the article [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md).  
   
 > [!NOTE]
 >  If the .resources file specified in the <xref:System.Resources.ResourceManager> class constructor cannot be found, the attempt to retrieve a resource throws a <xref:System.Resources.MissingManifestResourceException> or <xref:System.Resources.MissingSatelliteAssemblyException> exception. For information about dealing with the exception, see the [Handling  MissingManifestResourceException and MissingSatelliteAssemblyException Exceptions](#exception) section later in this topic.  
@@ -240,7 +240,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 ### Resource Versioning  
  Because the main assembly that contains an app's default resources is separate from the app's satellite assemblies, you can release a new version of your main assembly without redeploying the satellite assemblies. You use the <xref:System.Resources.SatelliteContractVersionAttribute> attribute to use existing satellite assemblies and instruct the resource manager not to redeploy them with a new version of your main assembly,  
   
- For more information about versioning support for satellite assemblies, see the article [Retrieving Resources](../Topic/Retrieving%20Resources%20in%20Desktop%20Apps.md).  
+ For more information about versioning support for satellite assemblies, see the article [Retrieving Resources](~/docs/framework/resources/retrieving-resources-in-desktop-apps.md).  
   
 <a name="config"></a>   
 ### \<satelliteassemblies> Configuration File Node  
@@ -274,7 +274,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
   
      For the `Culture` attribute, specify the keyword `neutral` to designate the main assembly and cause the <xref:System.Resources.ResourceManager> class to probe only for the cultures listed in the `<culture>` nodes.  
   
-     For more information about fully qualified assembly names, see the article [Assembly Names](../Topic/Assembly%20Names.md). For more information about strong-named assemblies, see the article [Creating and Using Strong-Named Assemblies](../Topic/Creating%20and%20Using%20Strong-Named%20Assemblies.md).  
+     For more information about fully qualified assembly names, see the article [Assembly Names](~/docs/framework/app-domains/assembly-names.md). For more information about strong-named assemblies, see the article [Creating and Using Strong-Named Assemblies](~/docs/framework/app-domains/creating-and-using-strong-named-assemblies.md).  
   
 -   Specify one or more `<culture>` nodes with a specific culture name, such as "fr-FR", or a neutral culture name, such as "fr".  
   
@@ -295,7 +295,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
    
   
 ## Examples  
- The following example demonstrates how to use an explicit culture and the implicit current UI culture to obtain string resources from a main assembly and a satellite assembly. For more information, see the "Directory Locations for Satellite Assemblies Not Installed in the Global Assembly Cache" section of the [Creating Satellite Assemblies](../Topic/Creating%20Satellite%20Assemblies%20for%20Desktop%20Apps.md) topic.  
+ The following example demonstrates how to use an explicit culture and the implicit current UI culture to obtain string resources from a main assembly and a satellite assembly. For more information, see the "Directory Locations for Satellite Assemblies Not Installed in the Global Assembly Cache" section of the [Creating Satellite Assemblies](~/docs/framework/resources/creating-satellite-assemblies-for-desktop-apps.md) topic.  
   
  To run this example:  
   
@@ -309,7 +309,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
   
     ```  
   
-2.  Use the  [Resource File Generator](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) to generate the rmc.resources resource file from the rmc.txt input file as follows:  
+2.  Use the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.resources resource file from the rmc.txt input file as follows:  
   
     ```  
     resgen rmc.txt  
@@ -327,7 +327,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
   
     ```  
   
-5.  Use the  [Resource File Generator](../Topic/Resgen.exe%20\(Resource%20File%20Generator\).md) to generate the rmc.es-MX.resources resource file from the rmc.es-MX.txt input file as follows:  
+5.  Use the  [Resource File Generator](~/docs/framework/tools/resgen-exe-resource-file-generator.md) to generate the rmc.es-MX.resources resource file from the rmc.es-MX.txt input file as follows:  
   
     ```  
     resgen rmc.es-MX.txt  
@@ -345,7 +345,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
     csc /resource:rmc.resources rmc.cs  
     ```  
   
-7.  Use the  [Assembly Linker](../Topic/Al.exe%20\(Assembly%20Linker\).md) to create a satellite assembly. If the base name of the app is rmc, the satellite assembly name must be rmc.resources.dll. The satellite assembly should be created in the es-MX directory. If es-MX is the current directory, use this command:  
+7.  Use the  [Assembly Linker](~/docs/framework/tools/al-exe-assembly-linker.md) to create a satellite assembly. If the base name of the app is rmc, the satellite assembly name must be rmc.resources.dll. The satellite assembly should be created in the es-MX directory. If es-MX is the current directory, use this command:  
   
     ```  
     al /embed:rmc.es-MX.resources /c:es-MX /out:rmc.resources.dll   
@@ -727,7 +727,7 @@ csc Example.cs /resource:ExampleResources.resources
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method returns a resource manager that retrieves resources from a .resources file that is not embedded in an assembly. You can use this <xref:System.Resources.ResourceManager> object to load resources for an ASP.NET page or to test a <xref:System.Resources.ResourceSet> implementation.  For an example that retrieves resources from a standalone .resources file, see the [Retrieving Resources](../Topic/Retrieving%20Resources%20in%20Desktop%20Apps.md) article.  
+ This method returns a resource manager that retrieves resources from a .resources file that is not embedded in an assembly. You can use this <xref:System.Resources.ResourceManager> object to load resources for an ASP.NET page or to test a <xref:System.Resources.ResourceSet> implementation.  For an example that retrieves resources from a standalone .resources file, see the [Retrieving Resources](~/docs/framework/resources/retrieving-resources-in-desktop-apps.md) article.  
   
  This method lets you specify a <xref:System.Resources.ResourceSet> implementation. If you do not want a specific <xref:System.Resources.ResourceSet> implementation, but would like to use a custom resource file format, you should derive from the <xref:System.Resources.ResourceSet> class, override the <xref:System.Resources.ResourceSet.GetDefaultReader%2A> and <xref:System.Resources.ResourceSet.GetDefaultWriter%2A> methods, and pass that type to this constructor.  
   
@@ -1062,7 +1062,7 @@ ShowNumbers.exe
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resource set that is returned represents the resources that are localized for the specified culture. If the resources have not been localized for that culture and `tryParents` is `true`, <xref:System.Resources.ResourceManager.GetResourceSet%2A> uses resource fallback rules to load an appropriate resource. If `tryParents` is `false` and a culture-specific resource set cannot be found, the method returns `null`. For more information about resource fallback, see "The Resource Fallback Process" section in the [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md) article.  
+ The resource set that is returned represents the resources that are localized for the specified culture. If the resources have not been localized for that culture and `tryParents` is `true`, <xref:System.Resources.ResourceManager.GetResourceSet%2A> uses resource fallback rules to load an appropriate resource. If `tryParents` is `false` and a culture-specific resource set cannot be found, the method returns `null`. For more information about resource fallback, see "The Resource Fallback Process" section in the [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) article.  
   
    
   
@@ -1331,7 +1331,7 @@ csc GetStream.cs /resource:AppResources.resources
 ## Remarks  
   
 ## Desktop Apps  
- In desktop apps, the resource that is returned is localized for the UI culture of the current thread, as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. If the resource has not been localized for that culture, the resource manager probes for a resource by following the steps outlined in the "Resource Fallback Process" section of the [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md) article. If no usable set of localized resources is found, the resource manager falls back on the default culture's resources. If the resource manager cannot load the default culture's resource set, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+ In desktop apps, the resource that is returned is localized for the UI culture of the current thread, as defined by the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property. If the resource has not been localized for that culture, the resource manager probes for a resource by following the steps outlined in the "Resource Fallback Process" section of the [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) article. If no usable set of localized resources is found, the resource manager falls back on the default culture's resources. If the resource manager cannot load the default culture's resource set, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
   
  The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
   
@@ -1424,7 +1424,7 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
 ## Desktop Apps  
  In desktop apps, if `culture` is `null`, the <xref:System.Resources.ResourceManager.GetString%28System.String%2CSystem.Globalization.CultureInfo%29> method uses the current UI culture obtained from the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> property.  
   
- The resource that is returned is localized for the culture specified by the `culture` parameter. If the resource has not been localized for `culture`, the resource manager probes for a resource by following the steps outlined in the "Resource Fallback Process" section of the [Packaging and Deploying Resources](../Topic/Packaging%20and%20Deploying%20Resources%20in%20Desktop%20Apps.md) topic. If no usable set of resources is found, the resource manager falls back on the default culture's resources. If the resource manager cannot load the default culture's resource set, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
+ The resource that is returned is localized for the culture specified by the `culture` parameter. If the resource has not been localized for `culture`, the resource manager probes for a resource by following the steps outlined in the "Resource Fallback Process" section of the [Packaging and Deploying Resources](~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md) topic. If no usable set of resources is found, the resource manager falls back on the default culture's resources. If the resource manager cannot load the default culture's resource set, the method throws a <xref:System.Resources.MissingManifestResourceException> exception or, if the resource set is expected to reside in a satellite assembly, a <xref:System.Resources.MissingSatelliteAssemblyException> exception. If the resource manager can load an appropriate resource set but cannot find a resource named `name`, the method returns `null`.  
   
  The <xref:System.Resources.ResourceManager.IgnoreCase%2A> property determines whether the comparison of `name` with the names of resources is case-insensitive (the default) or case-sensitive.  
   

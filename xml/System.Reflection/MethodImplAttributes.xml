@@ -347,7 +347,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](../Topic/Ngen.exe%20\(Native%20Image%20Generator\).md)) when debugging possible code generation problems.</summary>
+        <summary>Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](~/docs/framework/tools/ngen-exe-native-image-generator.md)) when debugging possible code generation problems.</summary>
       </Docs>
     </Member>
     <Member MemberName="OPTIL">
@@ -447,7 +447,7 @@
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the method is single-threaded through the body. Static methods (<see langword="Shared" /> in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# [lock statement](../Topic/lock%20Statement%20\(C%23%20Reference\).md) or the Visual Basic [SyncLock statement](../Topic/SyncLock%20Statement.md) for this purpose.</summary>
+        <summary>Specifies that the method is single-threaded through the body. Static methods (<see langword="Shared" /> in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# [lock statement](~/docs/csharp/language-reference/keywords/lock-statement.md) or the Visual Basic [SyncLock statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md) for this purpose.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unmanaged">

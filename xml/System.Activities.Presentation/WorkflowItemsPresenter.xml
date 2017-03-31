@@ -22,7 +22,7 @@
 ## Remarks  
  The <xref:System.Activities.Presentation.WorkflowItemsPresenter> is the second key [!INCLUDE[avalon1](~/includes/avalon1-md.md)] control provided by the [!INCLUDE[wf2](~/includes/wf2-md.md)] designer infrastructure that is collection based. While the <xref:System.Activities.Presentation.WorkflowItemPresenter> enables the display and the editing of a single contained element, the <xref:System.Activities.Presentation.WorkflowItemsPresenter> is collection based, displays a visualization, and supports editing of the collection of items provided by the <xref:System.Activities.Presentation.WorkflowItemsPresenter.Items%2A> property. In addition to allowing the multiple items contained in the collection to be visualized and edited, the `WorkflowItemsPresenter` also enables collection-oriented actions, such as inserting an item at a given index in the collection, deleting an item from the collection, and moving an item from one index to another. `WorkflowItemsPresenter` also handles combined actions, such as dragging between the various presenters and allowing that edit to occur in a single, undoable action.Use <xref:System.Activities.Presentation.WorkflowItemPresenter> to present a single object on a design surface.  
   
- For an example of the <xref:System.Activities.Presentation.WorkflowItemsPresenter> in use, see the [Custom Composite Designers - Workflow Items Presenter](../Topic/Custom%20Composite%20Designers%20-%20Workflow%20Items%20Presenter.md) sample.  
+ For an example of the <xref:System.Activities.Presentation.WorkflowItemsPresenter> in use, see the [Custom Composite Designers - Workflow Items Presenter](~/docs/framework/wf/samples/custom-composite-designers-workflow-items-presenter.md) sample.  
   
    
   

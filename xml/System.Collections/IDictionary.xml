@@ -413,7 +413,7 @@
   
  Implementations can vary in whether they allow the key to be `null`.  
   
- The C# language uses the `this`[this](../Topic/this%20\(C%23%20Reference\).md) keyword to define the indexers instead of implementing the <xref:System.Collections.IDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.IDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
+ The C# language uses the `this`[this](~/docs/csharp/language-reference/keywords/this.md) keyword to define the indexers instead of implementing the <xref:System.Collections.IDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.IDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
   
    
   

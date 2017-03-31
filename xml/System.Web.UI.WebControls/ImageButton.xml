@@ -282,7 +282,7 @@
 > [!NOTE]
 >  This event causes the page to be posted back to the server.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -325,7 +325,7 @@
 > [!NOTE]
 >  This event causes the page to post back to the server.  
   
- For more information about handling events, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
    
   
@@ -623,7 +623,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.ImageButton.Click> event is raised when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked. By using the <xref:System.Web.UI.WebControls.ImageButton.OnClick%2A> event handler, you can programmatically determine the coordinates where the image is clicked. You can then code a response, based on the values of these coordinates. Note that the origin (0, 0) is located at the upper left corner of the image.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.ImageButton.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -707,7 +707,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.ImageButton.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](../Topic/How%20to:%20Consume%20Events%20in%20a%20Web%20Forms%20Application.md).  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
   
  The <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   

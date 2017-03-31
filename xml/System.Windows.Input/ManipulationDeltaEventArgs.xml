@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. The example also checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. The example also checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -83,7 +83,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -141,7 +141,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example uses the <xref:System.Windows.Input.ManipulationDeltaEventArgs.DeltaManipulation%2A> property to move, resize, and rotate a <xref:System.Windows.Shapes.Rectangle>. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -198,7 +198,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md).  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event. The example checks whether the <xref:System.Windows.UIElement.ManipulationDelta> event occurred during inertia and whether the rectangle is touching the edge of a window. If those cases are true, the application stops the manipulation to prevent the rectangle from leaving the visible area of the application. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
   
  [!code-csharp[BasicManipulation#ManipulationDelta](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationdelta)]
  [!code-vb[BasicManipulation#ManipulationDelta](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationdelta)]  
@@ -288,7 +288,7 @@
    
   
 ## Examples  
- The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event that calls the <xref:System.Windows.Input.ManipulationDeltaEventArgs.ReportBoundaryFeedback%2A> method when the user moves the element over the edge of its container.  To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](../Topic/Walkthrough:%20Creating%20Your%20First%20Touch%20Application.md) and replace the code in step 5 with this code.  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationDelta> event that calls the <xref:System.Windows.Input.ManipulationDeltaEventArgs.ReportBoundaryFeedback%2A> method when the user moves the element over the edge of its container.  To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md) and replace the code in step 5 with this code.  
   
  [!code-csharp[BasicManipulation#ReportBoundaryFeedback](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/reportboundaryfeedbackexample.xaml.cs#reportboundaryfeedback)]
  [!code-vb[BasicManipulation#ReportBoundaryFeedback](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/reportboundaryfeedbackexample.xaml.vb#reportboundaryfeedback)]  

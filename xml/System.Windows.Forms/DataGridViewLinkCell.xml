@@ -328,7 +328,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewLinkCell.KeyUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnKeyUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -464,7 +464,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewLinkCell.MouseDownUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseDown%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -496,7 +496,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A>. <xref:System.Windows.Forms.DataGridViewLinkCell.MouseLeaveUnsharesRow%2A> must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseLeave%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -528,7 +528,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewLinkCell.MouseMoveUnsharesRow%2A> method is called just before the <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> method. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseMove%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>
@@ -560,7 +560,7 @@
 ## Remarks  
  <xref:System.Windows.Forms.DataGridViewLinkCell.MouseUpUnsharesRow%2A> is called just before <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A>. It must return `true` if the call to <xref:System.Windows.Forms.DataGridViewLinkCell.OnMouseUp%2A> has the effect of unsharing the row containing the cell. It should return `false` otherwise.  
   
- For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](../Topic/Best%20Practices%20for%20Scaling%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ For more information about row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
  ]]></format>
         </remarks>

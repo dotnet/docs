@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class is intended for future use when the .NET Framework Data Provider for OLE DB is enabled for partial trust scenarios. The .NET Framework Data Provider for OLE DB currently requires FullTrust permission. Currently, using the `OleDbPermission` class has no effect. For more information, see [Code Access Security and ADO.NET](../Topic/Code%20Access%20Security%20and%20ADO.NET.md).  
+ This class is intended for future use when the .NET Framework Data Provider for OLE DB is enabled for partial trust scenarios. The .NET Framework Data Provider for OLE DB currently requires FullTrust permission. Currently, using the `OleDbPermission` class has no effect. For more information, see [Code Access Security and ADO.NET](~/docs/framework/data/adonet/code-access-security.md).  
   
  ]]></format>
     </remarks>

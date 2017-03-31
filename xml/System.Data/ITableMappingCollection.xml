@@ -22,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.ITableMappingCollection> interface allows an inheriting class to implement a TableMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](../Topic/DataAdapter%20DataTable%20and%20DataColumn%20Mappings.md).  
+ The <xref:System.Data.ITableMappingCollection> interface allows an inheriting class to implement a TableMapping collection. For more information, see [DataAdapter DataTable and DataColumn Mappings](~/docs/framework/data/adonet/dataadapter-datatable-and-datacolumn-mappings.md).  
   
  An application does not create an instance of the <xref:System.Data.ITableMappingCollection> interface directly, but creates an instance of a class that inherits <xref:System.Data.ITableMappingCollection>.  
   

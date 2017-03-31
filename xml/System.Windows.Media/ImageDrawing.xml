@@ -16,9 +16,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Performance Note:** A <xref:System.Windows.Media.DrawingImage> provides less features then an <xref:System.Windows.Controls.Image> for rendering images, however, <xref:System.Windows.Media.DrawingImage> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](../Topic/Drawing%20Objects%20Overview.md) for more information.  
+ **Performance Note:** A <xref:System.Windows.Media.DrawingImage> provides less features then an <xref:System.Windows.Controls.Image> for rendering images, however, <xref:System.Windows.Media.DrawingImage> provides performance benefits making them ideal for describing backgrounds, clip art, and for low-level drawing with <xref:System.Windows.Media.Visual> objects. See [Drawing Objects Overview](~/docs/framework/wpf/graphics-multimedia/drawing-objects-overview.md) for more information.  
   
- An <xref:System.Windows.Media.ImageDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ An <xref:System.Windows.Media.ImageDrawing> is a type of <xref:System.Windows.Freezable> object and therefore can be frozen to improve performance. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

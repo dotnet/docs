@@ -24,7 +24,7 @@
   
 -   To configure trace sources, create an application config file. This file has a .config extension, for example, XamlPad.exe.config.  
   
- Achieving optimal application performance requires forethought in application design and an understanding of best practices for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] application development. For more information, see [Optimizing WPF Application Performance](../Topic/Optimizing%20WPF%20Application%20Performance.md).  
+ Achieving optimal application performance requires forethought in application design and an understanding of best practices for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] application development. For more information, see [Optimizing WPF Application Performance](~/docs/framework/wpf/advanced/optimizing-wpf-application-performance.md).  
   
    
   
@@ -172,7 +172,7 @@ switchName="SourceSwitch" >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.PresentationTraceSources.GetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Diagnostics.PresentationTraceSources.GetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -197,7 +197,7 @@ switchName="SourceSwitch" >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.PresentationTraceSources.HwndHostSource%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Diagnostics.PresentationTraceSources.HwndHostSource%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -317,7 +317,7 @@ switchName="SourceSwitch" >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.PresentationTraceSources.SetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Diagnostics.PresentationTraceSources.SetTraceLevel%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -359,7 +359,7 @@ switchName="SourceSwitch" >
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Diagnostics.PresentationTraceSources.TraceLevelProperty> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Diagnostics.PresentationTraceSources.TraceLevelProperty> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

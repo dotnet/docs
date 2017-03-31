@@ -41,7 +41,7 @@
    
   
 ## Examples  
- The following code sample demonstrates creating a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Hiring Process](../Topic/Hiring%20Process.md) sample.  
+ The following code sample demonstrates creating a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Hiring Process](~/docs/framework/wf/samples/hiring-process.md) sample.  
   
  [!code-csharp[wfs_HiringRequestProcess#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_hiringrequestprocess/cs/hiringrequestpersistenceparticipant.cs#1)]  
   
@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates creating a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Hiring Process](../Topic/Hiring%20Process.md) sample.  
+ The following code sample demonstrates creating a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Hiring Process](~/docs/framework/wf/samples/hiring-process.md) sample.  
   
  [!code-csharp[wfs_HiringRequestProcess#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_hiringrequestprocess/cs/hiringrequestpersistenceparticipant.cs#1)]  
   
@@ -105,7 +105,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using CollectValues in a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Persistence Participants](../Topic/Persistence%20Participants.md) sample.  
+ The following code sample demonstrates using CollectValues in a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Persistence Participants](~/docs/framework/wf/persistence-participants.md) sample.  
   
  [!code-csharp[wfs_PersistenceParticipants#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_persistenceparticipants/cs/stepcountextension.cs#2)]  
   
@@ -143,7 +143,7 @@
    
   
 ## Examples  
- The following code sample demonstrates using MapValues in a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Corporate Purchase Process](../Topic/Corporate%20Purchase%20Process.md) sample.  
+ The following code sample demonstrates using MapValues in a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Corporate Purchase Process](~/docs/framework/wf/samples/corporate-purchase-process.md) sample.  
   
  [!code-csharp[wfs_PurchaseProcess#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_purchaseprocess/cs/xmlpersistenceparticipant.cs#2)]  
   
@@ -173,7 +173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code sample demonstrates using PublishValues in a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Persistence Participants](../Topic/Persistence%20Participants.md) sample.  
+ The following code sample demonstrates using PublishValues in a class that derives from <xref:System.Activities.Persistence.PersistenceParticipant>. This example is from the [Persistence Participants](~/docs/framework/wf/persistence-participants.md) sample.  
   
  [!code-csharp[wfs_PersistenceParticipants#2](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_persistenceparticipants/cs/stepcountextension.cs#2)]  
   

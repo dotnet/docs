@@ -29,7 +29,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>The exception that is thrown when the format of an argument is invalid, or when a [composite format string](../Topic/Composite%20Formatting.md) is not well formed.</summary>
+    <summary>The exception that is thrown when the format of an argument is invalid, or when a [composite format string](~/docs/standard/base-types/composite-formatting.md) is not well formed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,9 +44,9 @@
   
     -   <xref:System.Boolean>. The <xref:System.Boolean.Parse%28System.String%29?displayProperty=fullName> and <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=fullName> methods require the string to be converted to be "True", "true", "False", or "false". Any other value throws a <xref:System.FormatException> exception.  
   
-    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> and [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](../Topic/Standard%20Date%20and%20Time%20Format%20Strings.md) or [custom format strings](../Topic/Custom%20Date%20and%20Time%20Format%20Strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
+    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> and [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
   
-         For more information about parsing dates and times, see [Parsing Date and Time Strings](../Topic/Parsing%20Date%20and%20Time%20Strings%20in%20the%20.NET%20Framework.md) and the documentation for the method that threw the exception.  
+         For more information about parsing dates and times, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md) and the documentation for the method that threw the exception.  
   
     -   **GUIDs.** The string representation of a GUID must consist of 32 hexadecimal digits (0-F), and must be in one of the five formats output by the <xref:System.Guid.ToString%2A?displayProperty=fullName> method. For more information, see the <xref:System.Guid.Parse%2A?displayProperty=fullName> method.  
   
@@ -54,11 +54,11 @@
   
          All numeric strings are interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. As a result, a numeric string that is parsed by using the conventions of one culture might fail when using the conventions of another.  
   
-         For more information about parsing numeric strings, see [Parsing Numeric Strings](../Topic/Parsing%20Numeric%20Strings%20in%20the%20.NET%20Framework.md) and the documentation for the specific method that threw the exception.  
+         For more information about parsing numeric strings, see [Parsing Numeric Strings](~/docs/standard/base-types/parsing-numeric.md) and the documentation for the specific method that threw the exception.  
   
     -   **Time intervals.** The string to be parsed must be either in fixed culture-insensitive format or in a culture-sensitive format defined by the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. If the string isn't in an appropriate format, or if, at the minimum, the days, hours, and minutes components of the time interval aren't present, the parsing method throws a <xref:System.FormatException> exception. For more information, see the documentation for the <xref:System.TimeSpan> parsing method that threw the exception.  
   
--   A type implements the <xref:System.IFormattable> interface, which supports format strings that define how an object is converted to its string representation, and an invalid format string is used. This is most common in a formatting operation. In the following example, the "Q" standard format string is used in a composite format string to format a number. However, "Q" is not a valid [standard format string](../Topic/Standard%20Numeric%20Format%20Strings.md).  
+-   A type implements the <xref:System.IFormattable> interface, which supports format strings that define how an object is converted to its string representation, and an invalid format string is used. This is most common in a formatting operation. In the following example, the "Q" standard format string is used in a composite format string to format a number. However, "Q" is not a valid [standard format string](~/docs/standard/base-types/standard-numeric-format-strings.md).  
   
      [!code-csharp[System.FormatException#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable1.cs#7)]
      [!code-vb[System.FormatException#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable1.vb#7)]  
@@ -78,7 +78,7 @@
      [!code-csharp[System.FormatException#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/iformattable4.cs#10)]
      [!code-vb[System.FormatException#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/iformattable4.vb#10)]  
   
--   One or more of the indexes of the format items in a [composite format string](../Topic/Composite%20Formatting.md) is greater than the indexes of the items in the object list or parameter array. In the following example, the largest index of a format item in the format string is 3. Because the indexes of items in the object list are zero-based, this format string would require the object list to have four items. Instead, it has only three, `dat`, `temp`, and `scale`, so the code results in a <xref:System.FormatException> exception at run time:.  
+-   One or more of the indexes of the format items in a [composite format string](~/docs/standard/base-types/composite-formatting.md) is greater than the indexes of the items in the object list or parameter array. In the following example, the largest index of a format item in the format string is 3. Because the indexes of items in the object list are zero-based, this format string would require the object list to have four items. Instead, it has only three, `dat`, `temp`, and `scale`, so the code results in a <xref:System.FormatException> exception at run time:.  
   
      [!code-csharp[System.FormatException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example1.cs#1)]
      [!code-vb[System.FormatException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example1.vb#1)]  

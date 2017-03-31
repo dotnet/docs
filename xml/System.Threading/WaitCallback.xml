@@ -45,7 +45,7 @@
   
  If you want to pass information to your callback method, create an object that contains the necessary information and pass it to <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> when you queue your task for execution. Each time your callback method executes, the `state` parameter contains this object.  
   
- For more information about using callbacks to synchronize thread pool threads, see [The Managed Thread Pool](../Topic/The%20Managed%20Thread%20Pool.md).  
+ For more information about using callbacks to synchronize thread pool threads, see [The Managed Thread Pool](~/docs/standard/threading/the-managed-thread-pool.md).  
   
    
   

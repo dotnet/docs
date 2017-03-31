@@ -181,7 +181,7 @@ public class Employees
 ## Remarks  
  Use this property to specify the exact text that defines the column in a Transact-SQL table declaration. Specify the <xref:System.Data.Linq.Mapping.ColumnAttribute.DbType%2A> property only if you plan to use <xref:System.Data.Linq.DataContext.CreateDatabase%2A> to create an instance of the database.  
   
- The default value of <xref:System.Data.Linq.Mapping.ColumnAttribute.DbType%2A> is inferred from the member type. For more information, see [SQL-CLR Type Mapping](../Topic/SQL-CLR%20Type%20Mapping.md).  
+ The default value of <xref:System.Data.Linq.Mapping.ColumnAttribute.DbType%2A> is inferred from the member type. For more information, see [SQL-CLR Type Mapping](~/docs/framework/data/adonet/sql/linq/sql-clr-type-mapping.md).  
   
    
   

@@ -564,7 +564,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
   
 -   You can also supply an <xref:System.Xml.IXmlNamespaceResolver> interface object for namespace resolution to the <xref:System.Xml.XPath.XPathExpression.Compile%2A> method when you create your <xref:System.Xml.XPath.XPathExpression> object.  
   
--   <xref:System.Xml.XPath.XPathExpression.SetContext%2A> accepts <xref:System.Xml.Xsl.XsltContext> as a namespace resolver, so you can implement a custom context and use functions and variables based on <xref:System.Xml.Xsl.IXsltContextFunction> and <xref:System.Xml.Xsl.IXsltContextVariable>. The XPath expression will execute them. For more information, see [User Defined Functions and Variables](../Topic/User%20Defined%20Functions%20and%20Variables.md).  
+-   <xref:System.Xml.XPath.XPathExpression.SetContext%2A> accepts <xref:System.Xml.Xsl.XsltContext> as a namespace resolver, so you can implement a custom context and use functions and variables based on <xref:System.Xml.Xsl.IXsltContextFunction> and <xref:System.Xml.Xsl.IXsltContextVariable>. The XPath expression will execute them. For more information, see [User Defined Functions and Variables](~/docs/standard/data/xml/user-defined-functions-and-variables.md).  
   
    
   
@@ -652,7 +652,7 @@ expression.AddSort("@ISBN", (IComparer)isbn);
   
 -   You can also supply an <xref:System.Xml.IXmlNamespaceResolver> object for namespace resolution to the <xref:System.Xml.XPath.XPathExpression.Compile%2A> method when you create your <xref:System.Xml.XPath.XPathExpression> object.  
   
--   <xref:System.Xml.XPath.XPathExpression.SetContext%2A> accepts <xref:System.Xml.Xsl.XsltContext> as a namespace resolver, so you can implement a custom context and use functions and variables based on <xref:System.Xml.Xsl.IXsltContextFunction> and <xref:System.Xml.Xsl.IXsltContextVariable>. The XPath expression will execute them. For more information, see [User Defined Functions and Variables](../Topic/User%20Defined%20Functions%20and%20Variables.md).  
+-   <xref:System.Xml.XPath.XPathExpression.SetContext%2A> accepts <xref:System.Xml.Xsl.XsltContext> as a namespace resolver, so you can implement a custom context and use functions and variables based on <xref:System.Xml.Xsl.IXsltContextFunction> and <xref:System.Xml.Xsl.IXsltContextVariable>. The XPath expression will execute them. For more information, see [User Defined Functions and Variables](~/docs/standard/data/xml/user-defined-functions-and-variables.md).  
   
    
   

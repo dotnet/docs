@@ -554,7 +554,7 @@
   
  If `fromInclusive` is greater than or equal to `toExclusive`, then the method returns immediately without performing any iterations.  
   
- For an example that uses this method, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../Topic/How%20to:%20Write%20a%20Parallel.For%20Loop%20with%20Thread-Local%20Variables.md).  
+ For an example that uses this method, see [How to: Write a Parallel.For Loop with Thread-Local Variables](~/docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md).  
   
  ]]></format>
         </remarks>
@@ -622,7 +622,7 @@
   
  If `fromInclusive` is greater than or equal to `toExclusive`, then the method returns immediately without performing any iterations.  
   
- For an example that uses this method, see [How to: Write a Parallel.For Loop with Thread-Local Variables](../Topic/How%20to:%20Write%20a%20Parallel.For%20Loop%20with%20Thread-Local%20Variables.md).  
+ For an example that uses this method, see [How to: Write a Parallel.For Loop with Thread-Local Variables](~/docs/standard/parallel-programming/how-to-write-a-parallel-for-loop-with-thread-local-variables.md).  
   
  ]]></format>
         </remarks>
@@ -832,7 +832,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -890,7 +890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -948,7 +948,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
    
   
@@ -1174,7 +1174,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName>method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName>method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -1240,7 +1240,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -1302,7 +1302,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=fullName> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  ]]></format>
         </remarks>
@@ -1542,7 +1542,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
@@ -1611,7 +1611,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  The `localInit` delegate is invoked once for each thread that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
@@ -1826,7 +1826,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each thread returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task’s local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
@@ -1899,7 +1899,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. This overload is provided for scenarios with small loop bodies that might benefit from static range partitioning. Partitioners must support dynamic partitions.  For more information, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md) and [How to: Implement Dynamic Partitions](../Topic/How%20to:%20Implement%20Dynamic%20Partitions.md).  
+ This overload is provided for scenarios where you want to override the default partitioning scheme. For example, small loop bodies might benefit from partitioning the range. The <xref:System.Threading.Tasks.Parallel.ForEach%2A> method expects custom partitioners to support dynamic partitioning. This overload is provided for scenarios with small loop bodies that might benefit from static range partitioning. Partitioners must support dynamic partitions.  For more information, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md) and [How to: Implement Dynamic Partitions](~/docs/standard/parallel-programming/how-to-implement-dynamic-partitions.md).  
   
  The `localInit` delegate is invoked once for each task that participates in the loop's execution and returns the initial local state for each of those tasks. These initial states are passed to the first `body` invocations on each task. Then, every subsequent body invocation returns a possibly modified state value that is passed to the next body invocation. Finally, the last body invocation on each task returns a state value that is passed to the `localFinally` delegate. The `localFinally` delegate is invoked once per task to perform a final action on each task's local state. This delegate might be invoked concurrently on multiple tasks; therefore, you must synchronize access to any shared variables.  
   
@@ -2123,7 +2123,7 @@
   
  No guarantees are made about the order in which the operations execute or whether they execute in parallel. This method does not return until each of the provided operations has completed, regardless of whether completion occurs due to normal or exceptional termination.  
   
- For more information, see [How to: Use Parallel.Invoke to Execute Parallel Operations](../Topic/How%20to:%20Use%20Parallel.Invoke%20to%20Execute%20Parallel%20Operations.md).  
+ For more information, see [How to: Use Parallel.Invoke to Execute Parallel Operations](~/docs/standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md).  
   
    
   
@@ -2179,11 +2179,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method can be used to execute a set of operations, potentially in parallel. The cancellation token passed in with the <xref:System.Threading.Tasks.ParallelOptions> structure enables the caller to cancel the entire operation. For more information, see [Cancellation in Managed Threads](../Topic/Cancellation%20in%20Managed%20Threads.md).  
+ This method can be used to execute a set of operations, potentially in parallel. The cancellation token passed in with the <xref:System.Threading.Tasks.ParallelOptions> structure enables the caller to cancel the entire operation. For more information, see [Cancellation in Managed Threads](~/docs/standard/threading/cancellation-in-managed-threads.md).  
   
  No guarantees are made about the order in which the operations execute or whether they execute in parallel. This method does not return until each of the provided operations has completed, regardless of whether completion occurs due to normal or exceptional termination.  
   
- For more information, see [How to: Use Parallel.Invoke to Execute Parallel Operations](../Topic/How%20to:%20Use%20Parallel.Invoke%20to%20Execute%20Parallel%20Operations.md).  
+ For more information, see [How to: Use Parallel.Invoke to Execute Parallel Operations](~/docs/standard/parallel-programming/how-to-use-parallel-invoke-to-execute-parallel-operations.md).  
   
  ]]></format>
         </remarks>

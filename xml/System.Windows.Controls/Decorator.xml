@@ -35,7 +35,7 @@
 ## Examples  
  The following example adds a <xref:System.Windows.Controls.TextBox> the <xref:System.Windows.Controls.Decorator.Child%2A> property of a <xref:System.Windows.Controls.Border>.  
   
- **Note** The [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Border.Child>` tags around the content of the <xref:System.Windows.Controls.Border>, but it is not necessary because the <xref:System.Windows.Controls.Decorator> applies the <xref:System.Windows.Markup.ContentPropertyAttribute> to the <xref:System.Windows.Controls.Decorator.Child%2A> property. For more information, see [XAML Overview (WPF)](../Topic/XAML%20Overview%20\(WPF\).md).  
+ **Note** The [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] version of the example could use the `<Border.Child>` tags around the content of the <xref:System.Windows.Controls.Border>, but it is not necessary because the <xref:System.Windows.Controls.Decorator> applies the <xref:System.Windows.Markup.ContentPropertyAttribute> to the <xref:System.Windows.Controls.Decorator.Child%2A> property. For more information, see [XAML Overview (WPF)](~/docs/framework/wpf/advanced/xaml-overview-wpf.md).  
   
  [!code-xml[Border_snip#SimpleBorderWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Border_snip/CS/simpleborder.xaml#simpleborderwholepage)]  
   

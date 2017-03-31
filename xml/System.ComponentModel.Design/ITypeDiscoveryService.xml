@@ -54,7 +54,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `baseType` is `null`, all types are returned. Otherwise, only types derived from the specified base type are returned. If `excludeGlobalTypes` is `false`, types from all referenced assemblies are checked. Otherwise, only types from non-Global Assembly Cache (GAC) referenced assemblies are checked. For more information, see [Working with Assemblies and the Global Assembly Cache](../Topic/Working%20with%20Assemblies%20and%20the%20Global%20Assembly%20Cache.md).  
+ If `baseType` is `null`, all types are returned. Otherwise, only types derived from the specified base type are returned. If `excludeGlobalTypes` is `false`, types from all referenced assemblies are checked. Otherwise, only types from non-Global Assembly Cache (GAC) referenced assemblies are checked. For more information, see [Working with Assemblies and the Global Assembly Cache](~/docs/framework/app-domains/working-with-assemblies-and-the-gac.md).  
   
  ]]></format>
         </remarks>

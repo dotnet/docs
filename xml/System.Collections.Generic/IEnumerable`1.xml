@@ -52,7 +52,7 @@
    
   
 ## Examples  
- The following example demonstrates how to implement the <xref:System.Collections.Generic.IEnumerable%601> interface and how to use that implementation to create a LINQ query. When you implement <xref:System.Collections.Generic.IEnumerable%601>, you must also implement <xref:System.Collections.Generic.IEnumerator%601> or, for C# only, you can use the [yield](../Topic/yield%20\(C%23%20Reference\).md) keyword. Implementing <xref:System.Collections.Generic.IEnumerator%601> also requires <xref:System.IDisposable> to be implemented, which you will see in this example.  
+ The following example demonstrates how to implement the <xref:System.Collections.Generic.IEnumerable%601> interface and how to use that implementation to create a LINQ query. When you implement <xref:System.Collections.Generic.IEnumerable%601>, you must also implement <xref:System.Collections.Generic.IEnumerator%601> or, for C# only, you can use the [yield](~/docs/csharp/language-reference/keywords/yield.md) keyword. Implementing <xref:System.Collections.Generic.IEnumerator%601> also requires <xref:System.IDisposable> to be implemented, which you will see in this example.  
   
  [!code-csharp[System.Collections.Generic.IEnumerableEx#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.ienumerableex/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.IEnumerableEx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.ienumerableex/vb/module1.vb#1)]  
@@ -114,7 +114,7 @@
    
   
 ## Examples  
- The following example demonstrates how to implement the <xref:System.Collections.Generic.IEnumerable%601> interface and uses that implementation to create a LINQ query. When you implement <xref:System.Collections.Generic.IEnumerable%601>, you must also implement <xref:System.Collections.Generic.IEnumerator%601> or, for C# only, you can use the [yield](../Topic/yield%20\(C%23%20Reference\).md) keyword. Implementing <xref:System.Collections.Generic.IEnumerator%601> also requires <xref:System.IDisposable> to be implemented, which you will see in this example.  
+ The following example demonstrates how to implement the <xref:System.Collections.Generic.IEnumerable%601> interface and uses that implementation to create a LINQ query. When you implement <xref:System.Collections.Generic.IEnumerable%601>, you must also implement <xref:System.Collections.Generic.IEnumerator%601> or, for C# only, you can use the [yield](~/docs/csharp/language-reference/keywords/yield.md) keyword. Implementing <xref:System.Collections.Generic.IEnumerator%601> also requires <xref:System.IDisposable> to be implemented, which you will see in this example.  
   
  [!code-csharp[System.Collections.Generic.IEnumerableEx#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.ienumerableex/cs/program.cs#1)]
  [!code-vb[System.Collections.Generic.IEnumerableEx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.ienumerableex/vb/module1.vb#1)]  

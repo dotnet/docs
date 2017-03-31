@@ -699,7 +699,7 @@ TextBox with CaretBrush set to blue
         <value>
           <see langword="true" /> if the text box displays selected text when the text box does not have focus; otherwise, <see langword="false" />.  
   
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+ The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -845,7 +845,7 @@ TextBox with CaretBrush set to blue
         <value>
           <see langword="true" /> if the text box has focus and selected text; otherwise, <see langword="false" />.  
   
- The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](../Topic/Dependency%20Property%20Value%20Precedence.md).</value>
+ The registered default is <see langword="false" />. For more information about what can influence the value, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2199,7 +2199,7 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
 ## Remarks  
  Setting <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> clears the undo queue. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to –1, the undo queue is limited only by the memory that is available. When <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is set to 0, undo is disabled on the <xref:System.Windows.Controls.Primitives.TextBoxBase>.  
   
- <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimit%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -2225,7 +2225,7 @@ Selected text in a TextBox with SelectionOpacity set to 0.5
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimitProperty> is introduced in the .NET Framework version 3.5. For more information, see[Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.Primitives.TextBoxBase.UndoLimitProperty> is introduced in the .NET Framework version 3.5. For more information, see[Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

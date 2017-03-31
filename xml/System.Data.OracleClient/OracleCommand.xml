@@ -34,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](../Topic/Oracle%20and%20ADO.NET.md).  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
   
  The <xref:System.Data.OracleClient.OracleCommand> class provides the following methods for executing commands against a data source:  
   
@@ -978,7 +978,7 @@ SELECT * FROM Customers WHERE CustomerID = :pCustomerID
 ## Remarks  
  The default <xref:System.Data.UpdateRowSource> value is `Both` unless the command is automatically generated (as in the case of the <xref:System.Data.OracleClient.OracleCommandBuilder>), in which case the default is `None`.  
   
- For more information about using the <xref:System.Data.UpdateRowSource> property, see [DataAdapter Parameters](../Topic/DataAdapter%20Parameters.md).  
+ For more information about using the <xref:System.Data.UpdateRowSource> property, see [DataAdapter Parameters](~/docs/framework/data/adonet/dataadapter-parameters.md).  
   
  ]]></format>
         </remarks>

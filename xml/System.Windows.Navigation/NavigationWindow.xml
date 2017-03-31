@@ -85,15 +85,15 @@
   
  <xref:System.Windows.Navigation.NavigationWindow> is one of two navigators in [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)], the other being <xref:System.Windows.Controls.Frame>. Essentially, navigator is a class supports navigation and navigation history. Visually, [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] use [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)] as a navigator, to provide an integrated user experience. However, [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] actually use <xref:System.Windows.Navigation.NavigationWindow> as the navigator; the <xref:System.Windows.Application.MainWindow%2A> property of an [!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)] running in [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)] will return a reference to the <xref:System.Windows.Navigation.NavigationWindow>, and the navigation history that is managed by the <xref:System.Windows.Navigation.NavigationWindow> is integrated with the navigation history that is managed by [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)].  
   
- **Content Model:**  <xref:System.Windows.Navigation.NavigationWindow> is a <xref:System.Windows.Controls.ContentControl>, which means that <xref:System.Windows.Navigation.NavigationWindow> can contain content such as text, images, or panels. Also, <xref:System.Windows.Navigation.NavigationWindow> is a root element and, consequently, cannot be part of another element's content. For more information about the content model for <xref:System.Windows.Controls.Button>, see [WPF Content Model](../Topic/WPF%20Content%20Model.md).  
+ **Content Model:**  <xref:System.Windows.Navigation.NavigationWindow> is a <xref:System.Windows.Controls.ContentControl>, which means that <xref:System.Windows.Navigation.NavigationWindow> can contain content such as text, images, or panels. Also, <xref:System.Windows.Navigation.NavigationWindow> is a root element and, consequently, cannot be part of another element's content. For more information about the content model for <xref:System.Windows.Controls.Button>, see [WPF Content Model](~/docs/framework/wpf/controls/wpf-content-model.md).  
   
 ## Customizing the NavigationWindow Control  
- To apply the same property settings to multiple <xref:System.Windows.Navigation.NavigationWindow> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  To see the parts and states that are specific to the <xref:System.Windows.Navigation.NavigationWindow>, see [NavigationWindow Styles and Templates](../Topic/NavigationWindow%20Styles%20and%20Templates.md).  
+ To apply the same property settings to multiple <xref:System.Windows.Navigation.NavigationWindow> controls, use the <xref:System.Windows.FrameworkElement.Style%2A> property. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about creating a <xref:System.Windows.Controls.ControlTemplate>, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  To see the parts and states that are specific to the <xref:System.Windows.Navigation.NavigationWindow>, see [NavigationWindow Styles and Templates](~/docs/framework/wpf/controls/navigationwindow-styles-and-templates.md).  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
 > [!NOTE]
->  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Navigation.NavigationWindow> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](../Topic/Customizing%20the%20Appearance%20of%20an%20Existing%20Control%20by%20Creating%20a%20ControlTemplate.md).  
+>  Setting a visual property will only have an effect if that property is both present in <xref:System.Windows.Navigation.NavigationWindow> control's default template and is set by using a . You can find a list of visual properties in the "Changing the Visual Structure of a Control" section in [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](~/docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md).  
   
    
   
@@ -578,7 +578,7 @@
  See <xref:System.Windows.Navigation.NavigationService.Navigate%28System.Uri%29?displayProperty=fullName>.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](../Topic/Pack%20URIs%20in%20WPF.md).  
+>  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
    
   
@@ -1109,7 +1109,7 @@
  See <xref:System.Windows.Navigation.NavigationService.Source%2A?displayProperty=fullName>.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](../Topic/Pack%20URIs%20in%20WPF.md).  
+>  [!INCLUDE[TLA#tla_uri#initcap#plural](~/includes/tlasharptla-urisharpinitcapsharpplural-md.md)] can be either relative or absolute. For more information, see [Pack URIs in WPF](~/docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
 <a name="dependencyPropertyInfo_NavigationWindowSource"></a>   
 ## Dependency Property Information  

@@ -171,7 +171,7 @@
 ## Remarks  
  The value of `expression` must evaluate to a public property.  
   
- For more information about format strings in the .NET Framework, see [Formatting Types](../Topic/Formatting%20Types%20in%20the%20.NET%20Framework.md).  
+ For more information about format strings in the .NET Framework, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
   
  This method is automatically called when you create data bindings in a rapid application development (RAD) designer such as Visual Studio. You can also use it declaratively to convert the <xref:System.Object> resulting from the data-binding expression to a <xref:System.String>.  To use the method declaratively, use the `<%#   %>` expression syntax, as used in standard ASP.NET data binding.  
   

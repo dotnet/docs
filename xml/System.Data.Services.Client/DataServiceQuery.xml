@@ -56,7 +56,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](../Topic/Asynchronous%20Operations%20\(WCF%20Data%20Services\).md).  
+ The returned <xref:System.IAsyncResult> object is used to determine when the asynchronous operation has completed. For more information, see [Asynchronous Operations](~/docs/framework/data/wcf/asynchronous-operations-wcf-data-services.md).  
   
  The <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> method uses the same semantics as the <xref:System.Data.Services.Client.DataServiceQuery.Execute%2A> method, however <xref:System.Data.Services.Client.DataServiceQuery.BeginExecute%2A> asynchronously sends the request so that the call does not block processing while waiting for the results from the service. According to the standard begin-end asynchronous pattern, the provided callback is invoked when query results are retrieved.  
   

@@ -80,7 +80,7 @@
 |Not thread safe.|<xref:System.Threading.LazyThreadSafetyMode>|`false`|Not applicable.|  
 |Fully thread safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode>|Not applicable.|Not applicable.|  
   
- **Other capabilities** For information about the use of <xref:System.Lazy%601> with thread-static fields, or as the backing store for properties, see [Lazy Initialization](../Topic/Lazy%20Initialization.md).  
+ **Other capabilities** For information about the use of <xref:System.Lazy%601> with thread-static fields, or as the backing store for properties, see [Lazy Initialization](~/docs/framework/performance/lazy-initialization.md).  
   
    
   

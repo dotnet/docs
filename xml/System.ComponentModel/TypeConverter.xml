@@ -37,7 +37,7 @@
   
  **Note** For XAML purposes, a XAML processor searches for the <xref:System.ComponentModel.TypeConverterAttribute> directly, instead of going through <xref:System.ComponentModel.TypeDescriptor>. For cases where you do want a <xref:System.ComponentModel.TypeDescriptor> instance from code, or where you create a shared instance in WPF resources, it is acceptable to construct it directly without referencing <xref:System.ComponentModel.TypeDescriptor> or other reflection and type system support.  
   
- Classes derived from <xref:System.ComponentModel.TypeConverter> are often referenced as part of how a XAML processor converts an attribute or initialization text value from markup (which is inherently a string) and generates an object for a run-time representation. Custom type authors that intend to support a type conversion behavior for XAML typically implement a <xref:System.ComponentModel.TypeConverter> class that supports their own unique `ConvertFrom` behavior from a string. This behavior enables type conversion from the string provided as a XAML attribute value and provides a XAML processor with the support needed to create an object from the string, so that the object can be produced in a parsed object graph. Custom types or members of custom types are indicated by applying <xref:System.ComponentModel.TypeConverterAttribute> to the definitions, with the attribute referencing the custom <xref:System.ComponentModel.TypeConverter> implementation. For more information, see [Type Converters for XAML Overview](../Topic/Type%20Converters%20for%20XAML%20Overview.md).  
+ Classes derived from <xref:System.ComponentModel.TypeConverter> are often referenced as part of how a XAML processor converts an attribute or initialization text value from markup (which is inherently a string) and generates an object for a run-time representation. Custom type authors that intend to support a type conversion behavior for XAML typically implement a <xref:System.ComponentModel.TypeConverter> class that supports their own unique `ConvertFrom` behavior from a string. This behavior enables type conversion from the string provided as a XAML attribute value and provides a XAML processor with the support needed to create an object from the string, so that the object can be produced in a parsed object graph. Custom types or members of custom types are indicated by applying <xref:System.ComponentModel.TypeConverterAttribute> to the definitions, with the attribute referencing the custom <xref:System.ComponentModel.TypeConverter> implementation. For more information, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).  
   
    
   
@@ -360,7 +360,7 @@
 ## Remarks  
  Custom type authors that intend to support a type conversion behavior for XAML typically implement a <xref:System.ComponentModel.TypeConverter> class that supports <xref:System.ComponentModel.TypeConverter.ConvertFrom%2A> behavior from a string. This behavior enables type conversion from the string provided as a XAML attribute value and provides a XAML processor with the support needed to create an object from the string, so that the object can be produced in a parsed object graph. Custom types or members of custom types are indicated by applying <xref:System.ComponentModel.TypeConverterAttribute> to the definitions, with the attribute referencing the custom <xref:System.ComponentModel.TypeConverter> implementation.  
   
- For XAML purposes, you do not typically provide branching implementations based on `culture`. This is because XAML is precompiled in a development environment context, and culture-specific information for runtime XAML is not relevant for XAML type conversion. For more information, see [Type Converters for XAML Overview](../Topic/Type%20Converters%20for%20XAML%20Overview.md).  
+ For XAML purposes, you do not typically provide branching implementations based on `culture`. This is because XAML is precompiled in a development environment context, and culture-specific information for runtime XAML is not relevant for XAML type conversion. For more information, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).  
   
  ]]></format>
         </remarks>
@@ -370,7 +370,7 @@
   
  Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />, so always check it. Also, properties on the context object can return <see langword="null" />.  
   
- For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](../Topic/Type%20Converters%20for%20XAML%20Overview.md).</para>
+ For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).</para>
         </block>
       </Docs>
     </Member>
@@ -683,7 +683,7 @@
         <block subset="none" type="overrides">
           <para>Override this method to provide your own conversion requirements.  
   
- For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](../Topic/Type%20Converters%20for%20XAML%20Overview.md).</para>
+ For implementation patterns for type converters that are used to support XAML and custom types, see [Type Converters for XAML Overview](~/docs/framework/xaml-services/type-converters-for-xaml-overview.md).</para>
         </block>
       </Docs>
     </Member>

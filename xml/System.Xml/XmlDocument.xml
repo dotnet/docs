@@ -26,9 +26,9 @@
   
 ## Remarks  
   
-<a name="Remarks"></a> The <xref:System.Xml.XmlDocument> class is an in-memory representation of an XML document. It implements the W3C [XML Document Object Model (DOM)](../Topic/XML%20Document%20Object%20Model%20\(DOM\).md) Level 1 Core and the Core DOM Level 2.  
+<a name="Remarks"></a> The <xref:System.Xml.XmlDocument> class is an in-memory representation of an XML document. It implements the W3C [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md) Level 1 Core and the Core DOM Level 2.  
   
- *DOM* stands for *document object model*. To read more about it, see [XML Document Object Model (DOM)](../Topic/XML%20Document%20Object%20Model%20\(DOM\).md).  
+ *DOM* stands for *document object model*. To read more about it, see [XML Document Object Model (DOM)](~/docs/standard/data/xml/xml-document-object-model-dom.md).  
   
  You can load XML into the DOM by using the <xref:System.Xml.XmlDocument> class, and then programmatically read, modify, and remove XML in the document.  
   
@@ -85,7 +85,7 @@
   
  **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
   
- **Learn more:** [Reading an XML Document into the DOM](../Topic/Reading%20an%20XML%20Document%20into%20the%20DOM.md)  
+ **Learn more:** [Reading an XML Document into the DOM](~/docs/standard/data/xml/reading-an-xml-document-into-the-dom.md)  
   
 <a name="Validation"></a>   
 ## Validate it against a schema  
@@ -127,7 +127,7 @@
   
  **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
   
- **Learn more:** [Validating an XML Document in the DOM](../Topic/Validating%20an%20XML%20Document%20in%20the%20DOM.md)  
+ **Learn more:** [Validating an XML Document in the DOM](~/docs/standard/data/xml/validating-an-xml-document-in-the-dom.md)  
   
 <a name="Navigate"></a>   
 ## Navigate the document tree  
@@ -217,7 +217,7 @@
   
  **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
   
- **Learn more:** [Select Nodes Using XPath Navigation](../Topic/Select%20Nodes%20Using%20XPath%20Navigation.md)  
+ **Learn more:** [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md)  
   
 <a name="Edit"></a>   
 ## Edit nodes  
@@ -247,7 +247,7 @@
   
  **Complete sample:** [Manipulate XML in-Memory by using the XmlDocument class and other related types](https://code.msdn.microsoft.com/windowsdesktop/Manipulate-XML-in-memory-4b612d6b/view/SourceCode)  
   
- **Learn more:** [Inserting Nodes into an XML Document](../Topic/Inserting%20Nodes%20into%20an%20XML%20Document.md)  
+ **Learn more:** [Inserting Nodes into an XML Document](~/docs/standard/data/xml/inserting-nodes-into-an-xml-document.md)  
   
 <a name="Remove"></a>   
 ## Remove nodes  
@@ -2258,7 +2258,7 @@ elem=doc.CreateElement("xy", "item", "urn:abc");
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
- This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=fullName> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](../Topic/Reading%20XML%20Data%20using%20XPathDocument%20and%20XmlDocument.md).  
+ This method automatically detects the string format of the input XML (for example, UTF-8, ANSI, and so on). If your application needs to know which encoding is used to read the stream, consider using an <xref:System.Xml.XmlTextReader> object to read the stream, and then use the <xref:System.Xml.XmlTextReader.Encoding%2A?displayProperty=fullName> property to determine the encoding. If you need to use a <xref:System.Xml.XmlDocument> object to work with XML, you can use the <xref:System.Xml.XmlTextReader> object to create one. For more information, see [Reading XML Data using XPathDocument and XmlDocument](~/docs/standard/data/xml/reading-xml-data-using-xpathdocument-and-xmldocument.md).  
   
  ]]></format>
         </remarks>
@@ -3574,7 +3574,7 @@ doc.Save(Console.Out);
   
  `Semi-trusted code:` The `XmlResolver` property is set to `null`. External resources are not resolved.  
   
- For more information on security and the `XmlResolver` property, see [Resolving External Resources](../Topic/Resolving%20External%20Resources.md).  
+ For more information on security and the `XmlResolver` property, see [Resolving External Resources](~/docs/standard/data/xml/resolving-external-resources.md).  
   
  This property is a Microsoft extension to the Document Object Model (DOM).  
   

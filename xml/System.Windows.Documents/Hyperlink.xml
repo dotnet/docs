@@ -28,9 +28,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Documents.Hyperlink> implements the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property that you set with the <xref:System.Uri> of the content that should be navigated to when the Hyperlink is clicked. <xref:System.Windows.Documents.Hyperlink> navigation can only occur, however, if either the direct or indirect parent of a <xref:System.Windows.Documents.Hyperlink> is a navigation host, including <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** topic in [Navigation Overview](../Topic/Navigation%20Overview.md).  
+ <xref:System.Windows.Documents.Hyperlink> implements the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property that you set with the <xref:System.Uri> of the content that should be navigated to when the Hyperlink is clicked. <xref:System.Windows.Documents.Hyperlink> navigation can only occur, however, if either the direct or indirect parent of a <xref:System.Windows.Documents.Hyperlink> is a navigation host, including <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame>, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** topic in [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
   
- <xref:System.Windows.Documents.Hyperlink> enforces a strong content model for child content. See [TextElement Content Model Overview](../Topic/TextElement%20Content%20Model%20Overview.md) for more information about the <xref:System.Windows.Documents.Hyperlink> content model.  
+ <xref:System.Windows.Documents.Hyperlink> enforces a strong content model for child content. See [TextElement Content Model Overview](~/docs/framework/wpf/advanced/textelement-content-model-overview.md) for more information about the <xref:System.Windows.Documents.Hyperlink> content model.  
   
  Dependency properties for this control might be set by the control’s default style.  If a property is set by a default style, the property might change from its default value when the control appears in the application. The default style is determined by which desktop theme is used when the application is running.  For more information, see [Default WPF Themes](http://go.microsoft.com/fwlink/?LinkID=158252).  
   
@@ -488,7 +488,7 @@
   
  <block subset="none" type="note">  
 <para>  
- <see cref="T:System.Windows.Documents.Hyperlink" /> can navigate to the value of the <see cref="P:System.Windows.Documents.Hyperlink.NavigateUri" /> property only if either the direct or indirect parent of a <see cref="T:System.Windows.Documents.Hyperlink" /> is a navigation host, including <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** section in [Navigation Overview](../Topic/Navigation%20Overview.md).  
+ <see cref="T:System.Windows.Documents.Hyperlink" /> can navigate to the value of the <see cref="P:System.Windows.Documents.Hyperlink.NavigateUri" /> property only if either the direct or indirect parent of a <see cref="T:System.Windows.Documents.Hyperlink" /> is a navigation host, including <see cref="T:System.Windows.Navigation.NavigationWindow" />, <see cref="T:System.Windows.Controls.Frame" />, or any browser that can host [!INCLUDE[TLA2#tla_xbap#plural](~/includes/tla2sharptla-xbapsharpplural-md.md)] (which includes [!INCLUDE[TLA2#tla_ie7](~/includes/tla2sharptla-ie7-md.md)], [!INCLUDE[TLA2#tla_ie6](~/includes/tla2sharptla-ie6-md.md)], and Firefox 2.0+). For more information, see the **Navigation Hosts** section in [Navigation Overview](~/docs/framework/wpf/app-development/navigation-overview.md).  
   
 </para>  
 </block></value>
@@ -571,7 +571,7 @@
  This method navigates to the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] specified by the <xref:System.Windows.Documents.Hyperlink.NavigateUri%2A> property, and marks the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] as visited.  
   
 > [!IMPORTANT]
->  Depending on the host computer's security configuration, certain forms of navigation (for example, navigating to a [!INCLUDE[TLA#tla_unc](~/includes/tlasharptla-unc-md.md)] path) are not allowed in the Internet zone.  In such cases, this method will demand full trust.  For more information, see [Code Access Security](../Topic/Code%20Access%20Security.md).  
+>  Depending on the host computer's security configuration, certain forms of navigation (for example, navigating to a [!INCLUDE[TLA#tla_unc](~/includes/tlasharptla-unc-md.md)] path) are not allowed in the Internet zone.  In such cases, this method will demand full trust.  For more information, see [Code Access Security](~/docs/framework/misc/code-access-security.md).  
   
  ]]></format>
         </remarks>

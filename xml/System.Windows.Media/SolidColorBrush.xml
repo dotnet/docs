@@ -18,7 +18,7 @@
 ## Remarks  
  For convenience, the <xref:System.Windows.Media.Brushes> class provides a set of commonly used <xref:System.Windows.Media.SolidColorBrush> objects, such as <xref:System.Windows.Media.Brushes.Blue%2A> and <xref:System.Windows.Media.Brushes.Yellow%2A>.  
   
- **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.SolidColorBrush> class provides several special features: <xref:System.Windows.Media.SolidColorBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.SolidColorBrush> class provides several special features: <xref:System.Windows.Media.SolidColorBrush> objects can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
 <a name="xamlAttributeUsage_SolidColorBrush"></a>   
 ## XAML Attribute Usage  

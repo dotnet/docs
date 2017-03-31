@@ -482,7 +482,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -531,7 +531,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ A natural tension exists between performance and preserving order in parallel processing. By default, a parallelized query behaves as if the ordering of the results is arbitrary unless AsOrdered is applied or there is an explicit OrderBy operator in the query. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -620,7 +620,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The source partitioner's GetOrderedPartitions method is used when ordering is enabled, whereas the partitioner's GetPartitions is used if ordering is not enabled (the default). The source partitioner's GetDynamicPartitions and GetDynamicOrderedPartitions are not used. For more information and examples, see [Custom Partitioners for PLINQ and TPL](../Topic/Custom%20Partitioners%20for%20PLINQ%20and%20TPL.md).  
+ The source partitioner's GetOrderedPartitions method is used when ordering is enabled, whereas the partitioner's GetPartitions is used if ordering is not enabled (the default). The source partitioner's GetDynamicPartitions and GetDynamicOrderedPartitions are not used. For more information and examples, see [Custom Partitioners for PLINQ and TPL](~/docs/standard/parallel-programming/custom-partitioners-for-plinq-and-tpl.md).  
   
  ]]></format>
         </remarks>
@@ -701,7 +701,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md) and [How to: Control Ordering in a PLINQ Query](../Topic/How%20to:%20Control%20Ordering%20in%20a%20PLINQ%20Query.md).  
+ For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md) and [How to: Control Ordering in a PLINQ Query](~/docs/standard/parallel-programming/how-to-control-ordering-in-a-plinq-query.md).  
   
  ]]></format>
         </remarks>
@@ -745,7 +745,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- AsUnordered may provide performance benefits when ordering is not required in a portion of a query. By default, PLINQ treats an input sequence as unordered unless OrderBy or AsOrdered is specified. However, if ordering was turned on and is no longer needed, then AsUnordered can be used to turn it off in mid-query, and this may result in performance benefits.The AsUnordered operator itself does not shuffle the source sequence; it simply removes the ordering requirement for subsequent operators. If the source is ordered, subsequent operators might keep that ordering if it is more efficient to do so. AsUnordered can be called anywhere in the query; it does not need to be called immediately after AsParallel. For more information, see [Understanding Speedup in PLINQ](../Topic/Understanding%20Speedup%20in%20PLINQ.md) and [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ AsUnordered may provide performance benefits when ordering is not required in a portion of a query. By default, PLINQ treats an input sequence as unordered unless OrderBy or AsOrdered is specified. However, if ordering was turned on and is no longer needed, then AsUnordered can be used to turn it off in mid-query, and this may result in performance benefits.The AsUnordered operator itself does not shuffle the source sequence; it simply removes the ordering requirement for subsequent operators. If the source is ordered, subsequent operators might keep that ordering if it is more efficient to do so. AsUnordered can be called anywhere in the query; it does not need to be called immediately after AsParallel. For more information, see [Understanding Speedup in PLINQ](~/docs/standard/parallel-programming/understanding-speedup-in-plinq.md) and [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -2351,7 +2351,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -2401,7 +2401,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -2448,7 +2448,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -2496,7 +2496,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the first element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -2543,7 +2543,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is an efficient way to process the output from a parallelized query because it does not require a merge step at the end. For more information, see [Merge Options in PLINQ](../Topic/Merge%20Options%20in%20PLINQ.md) or [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md). Because this method produces a side-effect, it can be used to observe the actual order of execution in a parallel query.  
+ This is an efficient way to process the output from a parallelized query because it does not require a merge step at the end. For more information, see [Merge Options in PLINQ](~/docs/standard/parallel-programming/merge-options-in-plinq.md) or [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md). Because this method produces a side-effect, it can be used to observe the actual order of execution in a parallel query.  
   
  ]]></format>
         </remarks>
@@ -3633,7 +3633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -3683,7 +3683,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -3730,7 +3730,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -3778,7 +3778,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](../Topic/Order%20Preservation%20in%20PLINQ.md).  
+ If the query is not ordered, then the last element is non-deterministic. For more information, see [Order Preservation in PLINQ](~/docs/standard/parallel-programming/order-preservation-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -8683,7 +8683,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The execution mode specifies whether PLINQ will attempt to fall back to sequential execution if it detects certain query shapes. For more information and examples, see [How to: Specify the Execution Mode in PLINQ](../Topic/How%20to:%20Specify%20the%20Execution%20Mode%20in%20PLINQ.md).  
+ The execution mode specifies whether PLINQ will attempt to fall back to sequential execution if it detects certain query shapes. For more information and examples, see [How to: Specify the Execution Mode in PLINQ](~/docs/standard/parallel-programming/how-to-specify-the-execution-mode-in-plinq.md).  
   
  ]]></format>
         </remarks>
@@ -8851,7 +8851,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method binds the query to PLINQ. For more information, see [Parallel LINQ (PLINQ)](../Topic/Parallel%20LINQ%20\(PLINQ\).md).  
+ This method binds the query to PLINQ. For more information, see [Parallel LINQ (PLINQ)](~/docs/standard/parallel-programming/parallel-linq-plinq.md).  
   
  ]]></format>
         </remarks>

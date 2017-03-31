@@ -102,7 +102,7 @@
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This class cannot be used on the current operating system. Windows Server 2003 or Windows XP SP2 is required to use instances of this class.</exception>
         <block subset="none" type="usage">
-          <para>Note: This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>Note: This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -144,7 +144,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -282,7 +282,7 @@
   
  This method does not block while the operation completes. To get an incoming request and block until the operation completes, call the <xref:System.Net.HttpListener.GetContext%2A> method.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
    
   
@@ -301,7 +301,7 @@
         <exception cref="T:System.InvalidOperationException">This object has not been started or is currently stopped.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -343,7 +343,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -435,7 +435,7 @@
   
  Because calling the <xref:System.Net.HttpListener.EndGetContext%2A> method requires the <xref:System.Net.HttpListener> object, this object is typically passed into a callback method by using the state object passed into the <xref:System.Net.HttpListener.BeginGetContext%2A> method. You can obtain this state object by using the <xref:System.IAsyncResult.AsyncState%2A> property of the `asyncResult` object.  
   
- For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](../Topic/Calling%20Synchronous%20Methods%20Asynchronously.md)  
+ For detailed information about using the asynchronous programming model, see [Calling Synchronous Methods Asynchronously](~/docs/standard/asynchronous-programming-patterns/calling-synchronous-methods-asynchronously.md)  
   
    
   
@@ -453,7 +453,7 @@
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Net.HttpListener.EndGetContext(System.IAsyncResult)" /> method was already called for the specified <paramref name="asyncResult" /> object.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -586,7 +586,7 @@
  The <see cref="T:System.Net.HttpListener" /> does not have any Uniform Resource Identifier (URI) prefixes to respond to. See Remarks.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -861,7 +861,7 @@
         <exception cref="T:System.Net.HttpListenerException">A Win32 function call failed. Check the exception's <see cref="P:System.Net.HttpListenerException.ErrorCode" /> property to determine the cause of the exception.</exception>
         <exception cref="T:System.ObjectDisposedException">This object is closed.</exception>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>
@@ -904,7 +904,7 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
         <block subset="none" type="usage">
-          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](../Topic/Network%20Tracing%20in%20the%20.NET%20Framework.md).</para>
+          <para>This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).</para>
         </block>
       </Docs>
     </Member>

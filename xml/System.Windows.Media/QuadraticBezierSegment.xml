@@ -21,7 +21,7 @@
  The <xref:System.Windows.Media.QuadraticBezierSegment> class does not contain a property for the starting point of the line. The starting point of the line is the end point of the previous segment, or the <xref:System.Windows.Media.PathFigure.StartPoint%2A> of the <xref:System.Windows.Media.PathFigure> if no other segments exist.  
   
 ## Freezable Features  
- Because <xref:System.Windows.Media.QuadraticBezierSegment> objects inherit from the <xref:System.Windows.Freezable> class, they provide several special features: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ Because <xref:System.Windows.Media.QuadraticBezierSegment> objects inherit from the <xref:System.Windows.Freezable> class, they provide several special features: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

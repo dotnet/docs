@@ -24,7 +24,7 @@
 > [!IMPORTANT]
 >  When <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> is set to a value greater than the value of <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> and the workflow then goes idle (because of a Delay activity) if the workflow instance has not changed it will be removed from memory by calling Abort, rather than going through the normal unloading process.. This is a runtime optimization and no data is lost, but a developer looking at trace log may see an Abort trace when expecting an Unload trace.  
   
- For an example of how to use this behavior see [Workflow Service Host Extensibility](../Topic/Workflow%20Service%20Host%20Extensibility.md)  
+ For an example of how to use this behavior see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
   
  ]]></format>
     </remarks>

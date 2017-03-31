@@ -293,7 +293,7 @@
  This constructor is used with PKCS12 (PFX) files that contain the certificate's private key. Calling this constructor with the correct password decrypts the private key and saves it to a key container.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate> certificate by specifying a PKCS7 signed file store for `rawData`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -343,7 +343,7 @@
  This constructor creates a new <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object using a byte array and a password that is needed to access the certificate data. It is used with PKCS12 (PFX) files that contain the certificate's private key. Calling this constructor with the correct password decrypts the private key and saves it to a key container.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> certificate by specifying a PKCS7 signed file store for `rawData`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -414,7 +414,7 @@
  This constructor is used with PKCS12 (PFX) files that contain the certificate's private key. Calling this constructor with the correct password decrypts the private key and saves it to a key container.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate> certificate by specifying a PKCS7 signed file store for `fileName`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -464,7 +464,7 @@
  This constructor creates a new <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object using a certificate file name and a password needed to access the certificate. It is used with PKCS12 (PFX) files that contain the certificate's private key. Calling this constructor with the correct password decrypts the private key and saves it to a key container.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> certificate by specifying a PKCS7 signed file store for `fileName`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -511,7 +511,7 @@
  This constructor is used with PKCS12 (PFX) files that contain the certificate's private key. Calling this constructor with the correct password decrypts the private key and saves it to a Microsoft Cryptographic API Cryptographic Service Provider (CSP).  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate> certificate by specifying a PKCS7 signed file store for `rawData`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -563,7 +563,7 @@
  This constructor creates a new <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object using a byte array, a password that is needed to access the certificate data, and a key storage flag. It is used with PKCS12 (PFX) files that contain the certificate's private key. Calling this constructor with the correct password decrypts the private key and saves it to a Microsoft Cryptographic API Cryptographic Service Provider (CSP).  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> certificate by specifying a PKCS7 signed file store for `rawData`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -657,7 +657,7 @@
  This constructor creates a new <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object using a certificate file name, a password needed to access the certificate, and a key storage flag.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  If you create an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> certificate by specifying a PKCS7 signed file store for `fileName`, the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> is created for the certificate that signed the store rather than for any of the certificates within the store.  
   
@@ -1144,7 +1144,7 @@
  You can use this method for certificate types such as Base64-encoded or DER-encoded X.509 certificates, or PFX/PKCS12 certificates. Note that a PFX/PKCS12 certificate can contain more than one certificate. In that case, the first certificate associated with a private key is used or, if no private key is found, the first certificate is used.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  ]]></format>
         </remarks>
@@ -1193,7 +1193,7 @@
  This method accepts a byte array and can be used for certificate types such as Base64-encoded or DER-encoded X.509 certificates or PFX/PKCS12 certificates. Note that a PFX/PKCS12 certificate can contain more than one certificate. In that case, the first certificate associated with a private key is used or, if no private key is found, the first certificate is used.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
    
   
@@ -1246,7 +1246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- **Security Note** Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+ **Security Note** Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  ]]></format>
         </remarks>
@@ -1293,7 +1293,7 @@
  This method can be used populate an <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> object with information from a certificate file, a password, and an <xref:System.Security.Cryptography.X509Certificates.X509KeyStorageFlags> value.  
   
 > [!IMPORTANT]
->  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](../Topic/Ildasm.exe%20\(IL%20Disassembler\).md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
+>  Never hard code a password within your source code.  Hard-coded passwords can be retrieved from an assembly using the [Ildasm.exe (IL Disassembler)](~/docs/framework/tools/ildasm-exe-il-disassembler.md), a hex editor, or by simply opening up the assembly in a text editor such as Notepad.exe.  
   
  ]]></format>
         </remarks>

@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.TextChangedEventArgs.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.TextChangedEventArgs.%23ctor%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -121,7 +121,7 @@
   
  If the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event occurs as a result of a property change, <xref:System.Windows.Controls.TextChangedEventArgs.Changes%2A> is an empty collection.  In the preceding example, if the user bolds the entire string, the <xref:System.Windows.Documents.TextElement.FontWeight%2A> property of the <xref:System.Windows.Documents.Run> is set to <xref:System.Windows.FontWeights.Bold%2A>, but nothing is added or removed from the document, so <xref:System.Windows.Controls.TextChangedEventArgs.Changes%2A> is empty.  
   
- <xref:System.Windows.Controls.TextChangedEventArgs.Changes%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.TextChangedEventArgs.Changes%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

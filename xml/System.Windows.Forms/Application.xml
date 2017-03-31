@@ -326,14 +326,14 @@
 ## Remarks  
  When you run a Windows Form, it creates the new form, which then waits for events to handle. Each time the form handles an event, it processes all the code associated with that event. All other events wait in the queue. While your code handles the event, your application does not respond. For example, the window does not repaint if another window is dragged on top.  
   
- If you call <xref:System.Windows.Forms.Application.DoEvents%2A> in your code, your application can handle the other events. For example, if you have a form that adds data to a <xref:System.Windows.Forms.ListBox> and add <xref:System.Windows.Forms.Application.DoEvents%2A> to your code, your form repaints when another window is dragged over it. If you remove <xref:System.Windows.Forms.Application.DoEvents%2A> from your code, your form will not repaint until the click event handler of the button is finished executing. For more information on messaging, see [User Input in Windows Forms](../Topic/User%20Input%20in%20Windows%20Forms.md).  
+ If you call <xref:System.Windows.Forms.Application.DoEvents%2A> in your code, your application can handle the other events. For example, if you have a form that adds data to a <xref:System.Windows.Forms.ListBox> and add <xref:System.Windows.Forms.Application.DoEvents%2A> to your code, your form repaints when another window is dragged over it. If you remove <xref:System.Windows.Forms.Application.DoEvents%2A> from your code, your form will not repaint until the click event handler of the button is finished executing. For more information on messaging, see [User Input in Windows Forms](~/docs/framework/winforms/user-input-in-windows-forms.md).  
   
  Unlike Visual Basic 6.0, the <xref:System.Windows.Forms.Application.DoEvents%2A> method does not call the <xref:System.Threading.Thread.Sleep%2A?displayProperty=fullName> method.  
   
  Typically, you use this method in a loop to process messages.  
   
 > [!CAUTION]
->  Calling this method causes the current thread to be suspended while all waiting window messages are processed. If a message causes an event to be triggered, then other areas of your application code may execute. This can cause your application to exhibit unexpected behaviors that are difficult to debug. If you perform operations or computations that take a long time, it is often preferable to perform those operations on a new thread. For more information about asynchronous programming, see [Asynchronous Programming Model (APM)](../Topic/Asynchronous%20Programming%20Model%20\(APM\).md).  
+>  Calling this method causes the current thread to be suspended while all waiting window messages are processed. If a message causes an event to be triggered, then other areas of your application code may execute. This can cause your application to exhibit unexpected behaviors that are difficult to debug. If you perform operations or computations that take a long time, it is often preferable to perform those operations on a new thread. For more information about asynchronous programming, see [Asynchronous Programming Model (APM)](~/docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md).  
   
    
   
@@ -837,7 +837,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `ProductName` is taken from the metadata of the assembly containing the main form of the current application. You can set it by setting <xref:System.Reflection.AssemblyProductAttribute> inside of your assembly manifest. For more information, see [Assembly Manifest](../Topic/Assembly%20Manifest.md).  
+ `ProductName` is taken from the metadata of the assembly containing the main form of the current application. You can set it by setting <xref:System.Reflection.AssemblyProductAttribute> inside of your assembly manifest. For more information, see [Assembly Manifest](~/docs/framework/app-domains/assembly-manifest.md).  
   
    
   
@@ -871,7 +871,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Typically, a version number displays as *major number*.*minor number*.*build number*.*private part number*. You can set it explicitly by setting the assembly version within your assembly manifest. For more information, see [Assembly Manifest](../Topic/Assembly%20Manifest.md).  
+ Typically, a version number displays as *major number*.*minor number*.*build number*.*private part number*. You can set it explicitly by setting the assembly version within your assembly manifest. For more information, see [Assembly Manifest](~/docs/framework/app-domains/assembly-manifest.md).  
   
  <xref:System.Windows.Forms.Application.ProductVersion%2A> first looks to see if the assembly containing the main executable has the `AssemblyInformationalVersion` attribute on it. If this attribute exists, it is used for both <xref:System.Windows.Forms.Application.ProductVersion%2A> and <xref:System.Windows.Forms.Application.CommonAppDataPath%2A>. If this attribute does not exist, both properties use the version of the executable file instead.  
   

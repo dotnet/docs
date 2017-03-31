@@ -16,7 +16,7 @@
 ## Remarks  
  Implement the <xref:System.ServiceModel.Description.IContractBehavior> interface to modify, examine, or extend some aspect of contract-wide execution at the application level. Unlike <xref:System.ServiceModel.Description.IServiceBehavior> and <xref:System.ServiceModel.Description.IEndpointBehavior> objects, <xref:System.ServiceModel.Description.IContractBehavior> objects cannot be added to the runtime using an application configuration file; they can only be added programmatically or using an attribute.  
   
- For more information about choosing between service, endpoint, and contract behaviors, see [Configuring and Extending the Runtime with Behaviors](../Topic/Configuring%20and%20Extending%20the%20Runtime%20with%20Behaviors.md).  
+ For more information about choosing between service, endpoint, and contract behaviors, see [Configuring and Extending the Runtime with Behaviors](~/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
 -   Use the <xref:System.ServiceModel.Description.IContractBehavior.AddBindingParameters%2A> method to provide binding elements with custom data to support the behavior.  
   
@@ -60,7 +60,7 @@
   
 -   Create a custom attribute that also implements <xref:System.ServiceModel.Description.IContractBehavior>.  
   
- For more information on programmatically adding <xref:System.ServiceModel.Description.IContractBehavior> types to either the client or service application, see [Configuring and Extending the Runtime with Behaviors](../Topic/Configuring%20and%20Extending%20the%20Runtime%20with%20Behaviors.md).  
+ For more information on programmatically adding <xref:System.ServiceModel.Description.IContractBehavior> types to either the client or service application, see [Configuring and Extending the Runtime with Behaviors](~/docs/framework/wcf/extending/configuring-and-extending-the-runtime-with-behaviors.md).  
   
    
   

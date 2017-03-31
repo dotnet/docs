@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Controls.Control> class is the base class for many of the controls you add to an application. The <xref:System.Windows.Controls.Control> class defines very little behavior; while it is possible to add a <xref:System.Windows.Controls.Control> to your application, it is far more common to add a control that inherits from <xref:System.Windows.Controls.Control>, such as a <xref:System.Windows.Controls.Button> or <xref:System.Windows.Controls.ListBox>.  
   
- The <xref:System.Windows.Controls.Control.Template%2A> property, which is a <xref:System.Windows.Controls.ControlTemplate>, specifies the appearance of the <xref:System.Windows.Controls.Control>. If you want to change the appearance of a control but retain its functionality, you should consider creating a new <xref:System.Windows.Controls.ControlTemplate> instead of creating a new class. For more information, see [Styling and Templating](../Topic/Styling%20and%20Templating.md).  
+ The <xref:System.Windows.Controls.Control.Template%2A> property, which is a <xref:System.Windows.Controls.ControlTemplate>, specifies the appearance of the <xref:System.Windows.Controls.Control>. If you want to change the appearance of a control but retain its functionality, you should consider creating a new <xref:System.Windows.Controls.ControlTemplate> instead of creating a new class. For more information, see [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
   
  If you want to create a control with custom behavior as well as allow others to customize its appearance, your control can inherit from the <xref:System.Windows.Controls.Control> class and define a <xref:System.Windows.Controls.ControlTemplate>.  If you want to extend the behavior of an existing control, you can inherit from a class that inherits from <xref:System.Windows.Controls.Control>.  
   
@@ -44,9 +44,9 @@
   
 -   <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A>  
   
- A common way to use these properties is to bind an element in the <xref:System.Windows.Controls.ControlTemplate> to the property.  For example, if you want your control to change color according to the value of the <xref:System.Windows.Controls.Control.Background%2A> property, you can bind some property of an element in the <xref:System.Windows.Controls.ControlTemplate> to the <xref:System.Windows.Controls.Control.Background%2A>. Use the [TemplateBinding Markup Extension](../Topic/TemplateBinding%20Markup%20Extension.md) to bind properties on a control to an element in the <xref:System.Windows.Controls.ControlTemplate>.  
+ A common way to use these properties is to bind an element in the <xref:System.Windows.Controls.ControlTemplate> to the property.  For example, if you want your control to change color according to the value of the <xref:System.Windows.Controls.Control.Background%2A> property, you can bind some property of an element in the <xref:System.Windows.Controls.ControlTemplate> to the <xref:System.Windows.Controls.Control.Background%2A>. Use the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md) to bind properties on a control to an element in the <xref:System.Windows.Controls.ControlTemplate>.  
   
- <xref:System.Windows.Controls.Control> overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `true`. For more information, see [Dependency Properties Overview](../Topic/Dependency%20Properties%20Overview.md)  
+ <xref:System.Windows.Controls.Control> overrides the metadata of the <xref:System.Windows.UIElement.Focusable%2A> property and sets its default to `true`. For more information, see [Dependency Properties Overview](~/docs/framework/wpf/advanced/dependency-properties-overview.md)  
   
  ]]></format>
     </remarks>
@@ -1029,7 +1029,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.Control.MouseDoubleClick> event by calling the <xref:System.Windows.UIElement.RaiseEvent%2A> method. For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ The control raises the <xref:System.Windows.Controls.Control.MouseDoubleClick> event by calling the <xref:System.Windows.UIElement.RaiseEvent%2A> method. For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1060,7 +1060,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The control raises the <xref:System.Windows.Controls.Control.PreviewMouseDoubleClick> event by calling the <xref:System.Windows.UIElement.RaiseEvent%2A> method.  For more information, see [Routed Events Overview](../Topic/Routed%20Events%20Overview.md).  
+ The control raises the <xref:System.Windows.Controls.Control.PreviewMouseDoubleClick> event by calling the <xref:System.Windows.UIElement.RaiseEvent%2A> method.  For more information, see [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
   
  ]]></format>
         </remarks>
@@ -1329,7 +1329,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.ControlTemplate> specifies the appearance of a <xref:System.Windows.Controls.Control>; if a <xref:System.Windows.Controls.Control> does not have a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.Controls.Control> will not appear in your application. The control author defines the default control template, and the application author can override the <xref:System.Windows.Controls.ControlTemplate> to redefine the visual tree of the control. See [Control Styles and Templates](../Topic/Control%20Styles%20and%20Templates.md) for information and examples of how to change the visual tree of existing controls.  
+ The <xref:System.Windows.Controls.ControlTemplate> specifies the appearance of a <xref:System.Windows.Controls.Control>; if a <xref:System.Windows.Controls.Control> does not have a <xref:System.Windows.Controls.ControlTemplate>, the <xref:System.Windows.Controls.Control> will not appear in your application. The control author defines the default control template, and the application author can override the <xref:System.Windows.Controls.ControlTemplate> to redefine the visual tree of the control. See [Control Styles and Templates](~/docs/framework/wpf/controls/control-styles-and-templates.md) for information and examples of how to change the visual tree of existing controls.  
   
  A <xref:System.Windows.Controls.ControlTemplate> is intended to be a self-contained unit of implementation detail that is invisible to outside users and objects, including <xref:System.Windows.Style> objects. The only way to manipulate the content of the control template is from within the same control template.  
   

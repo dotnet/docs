@@ -31,7 +31,7 @@
   
  When you create a custom element, use the <xref:System.Windows.Documents.TextRange.Save%28System.IO.Stream%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method and set `preserveTextElements` to `true` to preserve the custom element and property values when you serialize it to the disk or clipboard.  
   
- <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
     </remarks>
@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -81,7 +81,7 @@
 ## Remarks  
  When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable%2A> is `true`, the decision to combine adjacent text elements that have identical property values is left up to the <xref:System.Windows.Controls.RichTextBox>.  When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable%2A> is `false`, a <xref:System.Windows.Controls.RichTextBox> does not combine two adjacent text elements.  
   
- <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -109,7 +109,7 @@
 ## Remarks  
  When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly%2A> is `true` and the user copies and pastes part of the content of a custom text element, the formatting is preserved.  When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly%2A> is `false`, the formatting is preserved only if the user copies and pastes all of the content of the custom text element.  
   
- <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

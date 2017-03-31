@@ -23,7 +23,7 @@
  The two control points of a cubic Bezier curve behave like magnets, attracting portions of what would otherwise be a straight line toward themselves and producing a curve. The first control point, <xref:System.Windows.Media.BezierSegment.Point1%2A>, affects the beginning portion of the curve; the second control point, <xref:System.Windows.Media.BezierSegment.Point2%2A>, affects the ending portion of the curve. Note that the curve doesn't necessarily pass through either of the control points; each control point moves its portion of the line toward itself, but not through itself.  
   
 ## Freezable Features  
- A <xref:System.Windows.Media.BezierSegment> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](../Topic/Freezable%20Objects%20Overview.md).  
+ A <xref:System.Windows.Media.BezierSegment> is a type of <xref:System.Windows.Freezable> object. For information about <xref:System.Windows.Freezable> features, such as freezing and cloning, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
   
  ]]></format>
     </remarks>

@@ -19,7 +19,7 @@
   
 -   Media link entry - an AtomPub entry in a data feed that represents an entity and that has a reference to a related media resource.  
   
- For more information, see [Streaming Provider](../Topic/Streaming%20Provider%20\(WCF%20Data%20Services\).md).  
+ For more information, see [Streaming Provider](~/docs/framework/data/wcf/streaming-provider-wcf-data-services.md).  
   
  ]]></format>
     </remarks>
@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A> method provides the implementation to delete a media resource when its associated media link entry is deleted from the data service. For more information, see [Streaming Provider](../Topic/Streaming%20Provider%20\(WCF%20Data%20Services\).md).  
+ The <xref:System.Data.Services.Providers.IDataServiceStreamProvider.DeleteStream%2A> method provides the implementation to delete a media resource when its associated media link entry is deleted from the data service. For more information, see [Streaming Provider](~/docs/framework/data/wcf/streaming-provider-wcf-data-services.md).  
   
  ]]></format>
         </remarks>
@@ -95,7 +95,7 @@
   
 -   `null` - when an If-Match or If-None-Match header is not present in the request.  
   
- The <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A> method is called by the data service runtime to acquire the stream that the data service returns to the client when the client requests the media resource for the specified `entity`, which is a media link entry. For more information, see [Streaming Provider](../Topic/Streaming%20Provider%20\(WCF%20Data%20Services\).md).  
+ The <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetReadStream%2A> method is called by the data service runtime to acquire the stream that the data service returns to the client when the client requests the media resource for the specified `entity`, which is a media link entry. For more information, see [Streaming Provider](~/docs/framework/data/wcf/streaming-provider-wcf-data-services.md).  
   
  ]]></format>
         </remarks>

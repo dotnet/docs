@@ -50,7 +50,7 @@
   
  Scrollbars are not visible on a <xref:System.Windows.Controls.RichTextBox> by default. To make a scrollbar visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> property to <xref:System.Windows.Controls.ScrollBarVisibility> or <xref:System.Windows.Controls.ScrollBarVisibility>.  
   
- Usually, the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect when the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [How to: Detect When Text in a TextBox Has Changed](../Topic/How%20to:%20Detect%20When%20Text%20in%20a%20TextBox%20Has%20Changed.md).  
+ Usually, the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect when the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [How to: Detect When Text in a TextBox Has Changed](~/docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md).  
   
  <xref:System.Windows.Controls.RichTextBox> supports a variety of keyboard commands. For a list of keyboard commands, see <xref:System.Windows.Documents.EditingCommands>.  
   
@@ -331,7 +331,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   

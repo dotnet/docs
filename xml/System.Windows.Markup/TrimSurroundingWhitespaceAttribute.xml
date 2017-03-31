@@ -24,9 +24,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute is applied to specific types that might appear as child elements within whitespace significant content. For more information, see [Whitespace Processing in XAML](../Topic/Whitespace%20Processing%20in%20XAML.md).  
+ This attribute is applied to specific types that might appear as child elements within whitespace significant content. For more information, see [Whitespace Processing in XAML](~/docs/framework/xaml-services/whitespace-processing-in-xaml.md).  
   
- In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](../Topic/Types%20Migrated%20from%20WPF%20to%20System.Xaml.md).  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.TrimSurroundingWhitespaceAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
   
 <a name="xamlTextUsage_TrimSurroundingWhitespaceAttribute"></a>   
 ## XAML Text Usage  

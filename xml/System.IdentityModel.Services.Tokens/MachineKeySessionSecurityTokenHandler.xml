@@ -18,7 +18,7 @@
 ## Remarks  
  By default, the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> class uses the <xref:System.IdentityModel.ProtectedDataCookieTransform> class, which uses the Data Protection API (DPAPI), to protect the session token. The DPAPI provides protection by using the user or machine credentials and stores the key data in the user profile. This means that a session token signed and encrypted on one computer cannot be validated or decrypted on a different computer.  
   
- By contrast, the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> class uses the <xref:System.IdentityModel.Services.MachineKeyTransform> class, which protects the session cookie data by using the cryptographic material specified in the `<machineKey>` element in the configuration file. This means that the same keys (and session tokens) can be used across multiple computers. This is particularly important when an application is deployed in a web farm. For more information about how to use Windows Identity Foundation to protect applications that are deployed in a web farm, see [WIF and Web Farms](../Topic/WIF%20and%20Web%20Farms.md).  
+ By contrast, the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> class uses the <xref:System.IdentityModel.Services.MachineKeyTransform> class, which protects the session cookie data by using the cryptographic material specified in the `<machineKey>` element in the configuration file. This means that the same keys (and session tokens) can be used across multiple computers. This is particularly important when an application is deployed in a web farm. For more information about how to use Windows Identity Foundation to protect applications that are deployed in a web farm, see [WIF and Web Farms](~/docs/framework/security/wif-and-web-farms.md).  
   
  Configure the application to use the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> by adding it to the token handler collection. You must first remove the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> (or any handler derived from the <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> class) from the token handler collection if such a handler is present. This is because <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> derives from <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> and a token handler collection cannot contain multiple handlers of any given type.  
   
@@ -31,7 +31,7 @@
 <machineKey compatibilityMode="Framework45" decryptionKey="CC510D … 8925E6" validationKey="BEAC8 … 6A4B1DE" />  
 ```  
   
- The following XML shows how to add the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> to a token handler collection. The default <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> is first removed from the collection. Token handlers are configured under the [\&lt;securityTokenHandlers\&gt;](../Topic/%3CsecurityTokenHandlers%3E.md) element.  
+ The following XML shows how to add the <xref:System.IdentityModel.Services.Tokens.MachineKeySessionSecurityTokenHandler> to a token handler collection. The default <xref:System.IdentityModel.Tokens.SessionSecurityTokenHandler> is first removed from the collection. Token handlers are configured under the [\&lt;securityTokenHandlers\&gt;](~/docs/framework/configuring-apps/file-schema/wif/securitytokenhandlers.md) element.  
   
 ```xml  
 <securityTokenHandlers>  

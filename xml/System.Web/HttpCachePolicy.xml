@@ -50,7 +50,7 @@
   
  Before the response is served from the Web server cache, all registered handlers are queried to ensure resource validity. If any handler sets a flag indicating that the cached response is not valid, the entry is marked as not valid and expelled from the cache. In this case, as well as when any handler indicates that the cached response should be ignored for this request, the request is then handled as if it were a cache miss.  
   
- <xref:System.Web.HttpCachePolicy.AddValidationCallback%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.AddValidationCallback%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -89,7 +89,7 @@
 ## Remarks  
  If the browser does not recognize cache control directives or extensions, the browser must ignore the unrecognized terms. For more information, see RFC 2616: Hypertext Transfer Protocol -- HTTP/1.1, available on the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
   
- <xref:System.Web.HttpCachePolicy.AppendCacheExtension%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.AppendCacheExtension%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -516,7 +516,7 @@
   
  If <xref:System.Web.HttpCacheability> is set to values other than <xref:System.Web.HttpCacheability> or <xref:System.Web.HttpCacheability>, calling the <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> method with either value for `allow` has no effect.  
   
- <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -552,7 +552,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpCachePolicy.SetCacheability%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetCacheability%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -596,7 +596,7 @@
   
  This method will throw an invalid argument exception if incompatible directives and extensions are combined.  
   
- <xref:System.Web.HttpCachePolicy.SetCacheability%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetCacheability%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -638,7 +638,7 @@
 ## Remarks  
  The `ETag` header is a unique identifier for a specific version of a document. It is used by clients to validate client-cached content to avoid requesting it again. Once an `ETag` header is set, subsequent attempts to set it fail and an exception is thrown.  
   
- <xref:System.Web.HttpCachePolicy.SetETag%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetETag%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -680,7 +680,7 @@
 ## Remarks  
  The<xref:System.Web.HttpCachePolicy.SetETagFromFileDependencies%2A> method sets the `ETag` header by retrieving the last modified time stamps of all files on which the handler is dependent, combining all file names and time stamps into a single string, then hashing that string into a single digest that is used as the `ETag`.  
   
- <xref:System.Web.HttpCachePolicy.SetETagFromFileDependencies%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetETagFromFileDependencies%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -757,7 +757,7 @@
   
  This method will fail if the caching restrictiveness hierarchy is violated.  
   
- <xref:System.Web.HttpCachePolicy.SetLastModified%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetLastModified%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -792,7 +792,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpCachePolicy.SetLastModifiedFromFileDependencies%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetLastModifiedFromFileDependencies%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -832,7 +832,7 @@
   
  The <xref:System.Web.HttpCachePolicy.SetMaxAge%2A> method does not use sliding expiration and will fail if the expiration date violates the principle of restrictiveness.  
   
- <xref:System.Web.HttpCachePolicy.SetMaxAge%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetMaxAge%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
 > [!NOTE]
 >  If the <xref:System.Web.HttpCachePolicy.SetMaxAge%2A> method is called repeatedly, on the second and subsequent calls, the value of the maximum age can only be decreased.  
@@ -872,7 +872,7 @@
 ## Remarks  
  Explicitly denies caching of the document on the origin-server. Once set, all requests for the document are fully processed. When this method is invoked, caching cannot be re-enabled for the current response.  
   
- <xref:System.Web.HttpCachePolicy.SetNoServerCaching%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetNoServerCaching%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -939,7 +939,7 @@
   
  As with other restrictions on caching, once <xref:System.Web.HttpCachePolicy.SetNoTransforms%2A> is called, the `Cache-Control: no-transform` HTTP header cannot be disabled through the <xref:System.Web.HttpCachePolicy> interface.  
   
- <xref:System.Web.HttpCachePolicy.SetNoTransforms%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetNoTransforms%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -983,7 +983,7 @@
   
  This is a convenience method to affect the <xref:System.Web.HttpCachePolicy.VaryByHeaders%2A> property. Passing `true` to the method directs the <xref:System.Web.HttpCachePolicy> to ignore the * value for the <xref:System.Web.HttpCachePolicy.VaryByHeaders%2A> property.  
   
- <xref:System.Web.HttpCachePolicy.SetOmitVaryStar%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetOmitVaryStar%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -1013,7 +1013,7 @@
 ## Remarks  
  The <xref:System.Web.HttpCachePolicy.SetProxyMaxAge%2A> method does not use sliding expiration and will fail if the expiration date violates the principle of restrictiveness.  
   
- <xref:System.Web.HttpCachePolicy.SetProxyMaxAge%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetProxyMaxAge%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1053,7 +1053,7 @@
 ## Remarks  
  The default, which is equivalent to <xref:System.Web.HttpCacheRevalidation>, is to send neither directive in a header unless explicitly specified by this method.  
   
- <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1096,7 +1096,7 @@
   
  If you explicitly set sliding expiration to off (`false`), that setting will be preserved and any attempts to enable sliding expiration will silently fail. This method does not directly map to an HTTP header. It is used by subsequent modules or worker requests to set origin-server cache policy.  
   
- <xref:System.Web.HttpCachePolicy.SetSlidingExpiration%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetSlidingExpiration%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1137,7 +1137,7 @@
   
  This method is provided because some browsers, when refreshing a page view, send HTTP cache invalidation headers to the Web server and evict the page from the cache. When the `validUntilExpires` parameter is `true`, ASP.NET ignores cache invalidation headers and the page remains in the cache until it expires.  
   
- <xref:System.Web.HttpCachePolicy.SetValidUntilExpires%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetValidUntilExpires%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1173,7 +1173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.HttpCachePolicy.SetVaryByCustom%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.SetVaryByCustom%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1243,7 +1243,7 @@
   
  You can set the <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> property by using the `VaryByContentEncodings` attribute of the  directive. You can also add a cache profile to the  element in the Web.config file.  
   
- <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.VaryByContentEncodings%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
@@ -1278,7 +1278,7 @@
 ## Remarks  
  When a cached item has several vary headers, a separate version of the requested document is available from the cache for each HTTP header type.  
   
- <xref:System.Web.HttpCachePolicy.VaryByHeaders%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.VaryByHeaders%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>
@@ -1305,7 +1305,7 @@
 ## Remarks  
  A separate version of the requested document is available from the cache for each named parameter in the <xref:System.Web.HttpCachePolicy.VaryByParams%2A> collection.  
   
- <xref:System.Web.HttpCachePolicy.VaryByParams%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](../Topic/.NET%20Framework%20Versions%20and%20Dependencies.md).  
+ <xref:System.Web.HttpCachePolicy.VaryByParams%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
  ]]></format>
         </remarks>

@@ -35,7 +35,7 @@
    
   
 ## Examples  
- The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Add%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. This example provides an implementation similar to that of [Installutil.exe (Installer Tool)](../Topic/Installutil.exe%20\(Installer%20Tool\).md). It installs assemblies with the options preceding that particular assembly. If an option is not specified for an assembly, the previous assembly's options are taken if there is a previous assembly in the list. If the "/u" or "/uninstall" option is specified, the assemblies are uninstalled. If the "/?" or "/help" option is provided, the help information is displayed to the console.  
+ The following example demonstrates the <xref:System.Configuration.Install.InstallerCollection.Add%2A> method of the <xref:System.Configuration.Install.InstallerCollection> class. This example provides an implementation similar to that of [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md). It installs assemblies with the options preceding that particular assembly. If an option is not specified for an assembly, the previous assembly's options are taken if there is a previous assembly in the list. If the "/u" or "/uninstall" option is specified, the assemblies are uninstalled. If the "/?" or "/help" option is provided, the help information is displayed to the console.  
   
  [!code-cpp[InstallerCollection_Add#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallerCollection_Add/CPP/installercollection_add.cpp#1)]
  [!code-csharp[InstallerCollection_Add#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallerCollection_Add/CS/installercollection_add.cs#1)]

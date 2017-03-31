@@ -23,7 +23,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to process the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event. This code example is part of a larger example provided at [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](../Topic/How%20to:%20Automatically%20Resize%20Cells%20When%20Content%20Changes%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example demonstrates how to process the <xref:System.Windows.Forms.DataGridView.AutoSizeRowsModeChanged> event. This code example is part of a larger example provided at [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/automatically-resize-cells-when-content-changes-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#10)]
@@ -84,7 +84,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs.PreviousModeAutoSized%2A> property to check the previous <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> value for a <xref:System.Windows.Forms.DataGridView>. This code example is part of a larger example provided at [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](../Topic/How%20to:%20Automatically%20Resize%20Cells%20When%20Content%20Changes%20in%20the%20Windows%20Forms%20DataGridView%20Control.md).  
+ The following code example uses the <xref:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs.PreviousModeAutoSized%2A> property to check the previous <xref:System.Windows.Forms.DataGridView.AutoSizeRowsMode%2A> value for a <xref:System.Windows.Forms.DataGridView>. This code example is part of a larger example provided at [How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/automatically-resize-cells-when-content-changes-in-the-datagrid.md).  
   
  [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#10)]
  [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#10)]

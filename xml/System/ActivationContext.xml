@@ -196,7 +196,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call <xref:System.ActivationContext.Dispose%2A> when you are finished using the <xref:System.ActivationContext>. The <xref:System.ActivationContext.Dispose%2A> method leaves the <xref:System.ActivationContext> in an unusable state. After calling <xref:System.ActivationContext.Dispose%2A>, you must release all references to the <xref:System.ActivationContext> so the garbage collector can reclaim the memory that the <xref:System.ActivationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ Call <xref:System.ActivationContext.Dispose%2A> when you are finished using the <xref:System.ActivationContext>. The <xref:System.ActivationContext.Dispose%2A> method leaves the <xref:System.ActivationContext> in an unusable state. After calling <xref:System.ActivationContext.Dispose%2A>, you must release all references to the <xref:System.ActivationContext> so the garbage collector can reclaim the memory that the <xref:System.ActivationContext> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call <xref:System.ActivationContext.Dispose%2A> before you release your last reference to the <xref:System.ActivationContext>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.ActivationContext> object's `Finalize` method.  

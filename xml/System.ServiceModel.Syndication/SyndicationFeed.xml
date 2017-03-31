@@ -346,7 +346,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element. [!INCLUDE[crexample](~/includes/crexample-md.md)] adding an attribute extension, see the [Loosely-Typed Extensions](../Topic/Loosely-Typed%20Extensions%20Sample.md) sample.  
+ An attribute extension is a valid XML attribute that is not specified in either the Atom 1.0 or RSS 2.0 specifications. When serialized to Atom 1.0, each custom attribute in the collection is written to the <`atom`> element. When serialized to RSS 2.0, each custom attribute is written to the <`channel`> element. [!INCLUDE[crexample](~/includes/crexample-md.md)] adding an attribute extension, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
   
    
   
@@ -825,7 +825,7 @@
   
  `<mg:MyElement xmlns:mg="http://myserver/elements" />`  
   
- [!INCLUDE[crexample](~/includes/crexample-md.md)] adding element extensions, see the [Loosely-Typed Extensions](../Topic/Loosely-Typed%20Extensions%20Sample.md) sample.  
+ [!INCLUDE[crexample](~/includes/crexample-md.md)] adding element extensions, see the [Loosely-Typed Extensions](~/docs/framework/wcf/samples/loosely-typed-extensions-sample.md) sample.  
   
    
   

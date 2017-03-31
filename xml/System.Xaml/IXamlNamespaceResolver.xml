@@ -13,7 +13,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Type converters and markup extensions can query for <xref:System.Xaml.IXamlNamespaceResolver> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](../Topic/Type%20Converters%20and%20Markup%20Extensions%20for%20XAML.md) and [Service Contexts Available to Type Converters and Markup Extensions](../Topic/Service%20Contexts%20Available%20to%20Type%20Converters%20and%20Markup%20Extensions.md).  
+ Type converters and markup extensions can query for <xref:System.Xaml.IXamlNamespaceResolver> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md) and [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
   
 ## WPF Usage Notes  
  This interface is also implemented as part of the WPF XAML implementation in the <xref:System.Windows.Markup.XmlnsDictionary> class. <xref:System.Windows.Markup.XmlnsDictionary> stores XAML namespace information and interacts with XAML processors to forward that information to the service context through the same <xref:System.Windows.Markup.IXamlTypeResolver> interface.  

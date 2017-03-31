@@ -151,7 +151,7 @@
 ## Remarks  
  Call `Dispose` when you are finished using the <xref:System.Data.Common.DbDataReader>. The `Dispose` method leaves the <xref:System.Data.Common.DbDataReader> in an unusable state. After calling `Dispose`, you must release all references to the <xref:System.Data.Common.DbDataReader> so the garbage collector can reclaim the memory that the <xref:System.Data.Common.DbDataReader> was occupying.  
   
- For more information, see [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md) and [Implementing a Dispose Method](../Topic/Implementing%20a%20Dispose%20Method.md).  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbagecollection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbagecollection/implementing-dispose.md).  
   
 > [!NOTE]
 >  Always call `Dispose` before you release your last reference to the <xref:System.Data.Common.DbDataReader>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Data.Common.DbDataReader> object's `Finalize` method.  
@@ -735,7 +735,7 @@ private static void GetDataTypes(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -798,7 +798,7 @@ private static void GetDataTypes(String connectiongString) {
 |Guid|Int16|Int32|Int64|  
 |String||||  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -863,7 +863,7 @@ private static void GetDataTypes(String connectiongString) {
 |Guid|Int16|Int32|Int64|  
 |String||||  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1302,7 +1302,7 @@ private static void GetCredits(String connectiongString) {
 ## Remarks  
  <xref:System.Data.Common.DbDataReader.GetStream%2A> only supports the retrieval of values that can be converted to byte arrays.  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1393,7 +1393,7 @@ private static void GetCredits(String connectiongString) {
 ## Remarks  
  <xref:System.Data.Common.DbDataReader.GetTextReader%2A> only supports the retrieval of values that can be converted to character arrays (strings).  
   
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1616,7 +1616,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1667,7 +1667,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -1814,7 +1814,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1857,7 +1857,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1929,7 +1929,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -1972,7 +1972,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -2136,7 +2136,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information, see [SqlClient Streaming Support](../Topic/SqlClient%20Streaming%20Support.md).  
+ For more information, see [SqlClient Streaming Support](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
   
  ]]></format>
         </remarks>
@@ -2153,7 +2153,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>
@@ -2170,7 +2170,7 @@ private static void GetCredits(String connectiongString) {
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about asynchronous programming, see [Asynchronous Programming](../Topic/Asynchronous%20Programming.md).  
+ For more information about asynchronous programming, see [Asynchronous Programming](~/docs/framework/data/adonet/asynchronous-programming.md).  
   
  ]]></format>
         </remarks>

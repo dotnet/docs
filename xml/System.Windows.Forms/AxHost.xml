@@ -43,7 +43,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You typically do not use the <xref:System.Windows.Forms.AxHost> class directly. You can use the [Aximp.exe (Windows Forms ActiveX Control Importer)](../Topic/Aximp.exe%20\(Windows%20Forms%20ActiveX%20Control%20Importer\).md) to generate the wrappers that extend <xref:System.Windows.Forms.AxHost>.  
+ You typically do not use the <xref:System.Windows.Forms.AxHost> class directly. You can use the [Aximp.exe (Windows Forms ActiveX Control Importer)](~/docs/framework/tools/aximp-exe-windows-forms-activex-control-importer.md) to generate the wrappers that extend <xref:System.Windows.Forms.AxHost>.  
   
  The ActiveX Control Importer generates a class that is derived from the <xref:System.Windows.Forms.AxHost> class, and compiles it into a library file (DLL) that can be added as a reference to your application. Alternatively, you can use the `/source` switch with the ActiveX Control Importer and a C# file is generated for your <xref:System.Windows.Forms.AxHost> derived class. You can then make changes to the code and recompile it into a library file.  
   

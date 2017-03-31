@@ -20,11 +20,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Media.MediaTimeline> is a <xref:System.Windows.Media.Animation.Timeline> object which provides control over media timing in the same way that animation timeline objects control animations. For example, a <xref:System.Windows.Media.MediaTimeline> has associated <xref:System.Windows.Media.Animation.Timeline.Duration%2A> and <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> properties can be used to specify when media begins and how long it plays. See [Animation Overview](../Topic/Animation%20Overview.md) for more information on animation timelines.  
+ <xref:System.Windows.Media.MediaTimeline> is a <xref:System.Windows.Media.Animation.Timeline> object which provides control over media timing in the same way that animation timeline objects control animations. For example, a <xref:System.Windows.Media.MediaTimeline> has associated <xref:System.Windows.Media.Animation.Timeline.Duration%2A> and <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> properties can be used to specify when media begins and how long it plays. See [Animation Overview](~/docs/framework/wpf/graphics-multimedia/animation-overview.md) for more information on animation timelines.  
   
  There are two ways to associate a <xref:System.Windows.Media.Animation.Timeline> to a <xref:System.Windows.Controls.MediaElement> using a <xref:System.Windows.Media.MediaTimeline>.  
   
-1.  Inside of a <xref:System.Windows.Media.Animation.Storyboard>, when a <xref:System.Windows.Media.MediaTimeline> is targets a <xref:System.Windows.Controls.MediaElement>, a <xref:System.Windows.Media.MediaClock> will be created and assigned to the <xref:System.Windows.Controls.MediaElement>’s associated player. See [How to: Control a MediaElement by Using a Storyboard](../Topic/How%20to:%20Control%20a%20MediaElement%20by%20Using%20a%20Storyboard.md) for an example;  
+1.  Inside of a <xref:System.Windows.Media.Animation.Storyboard>, when a <xref:System.Windows.Media.MediaTimeline> is targets a <xref:System.Windows.Controls.MediaElement>, a <xref:System.Windows.Media.MediaClock> will be created and assigned to the <xref:System.Windows.Controls.MediaElement>’s associated player. See [How to: Control a MediaElement by Using a Storyboard](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example;  
   
 2.  By explicitly creating a <xref:System.Windows.Media.MediaClock> from a <xref:System.Windows.Media.MediaTimeline> and assigning it to a <xref:System.Windows.Controls.MediaElement>.  
   

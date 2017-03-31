@@ -67,7 +67,7 @@
   
  In members that accept a `searchPattern` parameter, the search string can be any combination of literal characters and two wildcard characters; * and ?. This parameter does not recognize regular expressions. For more information, see the <xref:System.IO.Directory.EnumerateDirectories%28System.String%2CSystem.String%29> method or any other method that uses the `searchPattern` parameter.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  <xref:System.IO.Directory> and <xref:System.IO.DirectoryInfo> are not supported for use in [!INCLUDE[win8_appstore_long](~/includes/win8-appstore-long-md.md)] apps. For information about how to access files and folders in [!INCLUDE[win8_appstore_long](~/includes/win8-appstore-long-md.md)] apps, see [Accessing data and files (Windows Store apps)](http://msdn.microsoft.com/library/windows/apps/hh758319.aspx).  
   
@@ -1232,7 +1232,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  Use the <xref:System.IO.Directory.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a directory.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
   
@@ -1293,7 +1293,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  Use the <xref:System.IO.Directory.GetAccessControl%2A> method to retrieve the access control list (ACL) entries for a directory.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  In NTFS environments, <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights> are granted to the user if the user has <xref:System.Security.AccessControl.FileSystemRights> rights on the parent folder. To deny <xref:System.Security.AccessControl.FileSystemRights> and <xref:System.Security.AccessControl.FileSystemRights>, deny <xref:System.Security.AccessControl.FileSystemRights> on the parent directory.  
   
@@ -1361,7 +1361,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1474,7 +1474,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  The current directory is distinct from the original directory, which is the one from which the process was started.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1536,7 +1536,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1612,7 +1612,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The <xref:System.IO.Directory.EnumerateDirectories%2A> and <xref:System.IO.Directory.GetDirectories%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateDirectories%2A>, you can start enumerating the collection of names before the whole collection is returned; when you use <xref:System.IO.Directory.GetDirectories%2A>, you must wait for the whole array of names to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateDirectories%2A> can be more efficient.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1692,7 +1692,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The <xref:System.IO.Directory.EnumerateDirectories%2A> and <xref:System.IO.Directory.GetDirectories%2A> methods differ as follows: When you use <xref:System.IO.Directory.EnumerateDirectories%2A>, you can start enumerating the collection of names before the whole collection is returned; when you use <xref:System.IO.Directory.GetDirectories%2A>, you must wait for the whole array of names to be returned before you can access the array. Therefore, when you are working with many files and directories, <xref:System.IO.Directory.EnumerateDirectories%2A> can be more efficient.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1760,7 +1760,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1826,7 +1826,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -1919,7 +1919,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2020,7 +2020,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -2088,7 +2088,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2172,7 +2172,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2333,7 +2333,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2394,7 +2394,7 @@ Directory::CreateDirectory("Public\\Html");
   
  If the directory described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2459,7 +2459,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2519,7 +2519,7 @@ Directory::CreateDirectory("Public\\Html");
   
  If the directory described in the `path` parameter does not exist, this method returns 12:00 midnight, January 1, 1601 A.D. (C.E.) Coordinated Universal Time (UTC).  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2568,7 +2568,7 @@ Directory::CreateDirectory("Public\\Html");
 ## Remarks  
  GetLogicalDrives returns all of the accessible drives on a particular machine, including the floppy drive and any optical drives.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2626,7 +2626,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2689,7 +2689,7 @@ Directory::CreateDirectory("Public\\Html");
   
  Trailing spaces are removed from the end of the path parameters before moving the directory.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -2754,7 +2754,7 @@ Directory::CreateDirectory("Public\\Html");
 > [!CAUTION]
 >  The ACL specified for the `directorySecurity` parameter replaces the existing ACL for the directory. To add permissions for a new user, use the <xref:System.IO.Directory.GetAccessControl%2A> method to obtain the existing ACL and modify it.  
   
- An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](../Topic/How%20to:%20Add%20or%20Remove%20Access%20Control%20List%20Entries.md).  
+ An ACL describes individuals and/or groups who have, or do not have, rights to specific actions on the given file or directory. For more information, see [How to: Add or Remove Access Control List Entries](~/docs/standard/io/how-to-add-or-remove-access-control-list-entries.md).  
   
  The <xref:System.IO.Directory.SetAccessControl%2A> method persists only <xref:System.Security.AccessControl.DirectorySecurity> objects that have been modified after object creation.  If a <xref:System.Security.AccessControl.DirectorySecurity> object has not been modified, it will not be persisted to a file.  Therefore, it is not possible to retrieve a <xref:System.Security.AccessControl.DirectorySecurity> object from one file and reapply the same object to another file.  
   
@@ -2895,7 +2895,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
  ]]></format>
         </remarks>
@@ -3014,7 +3014,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -3077,7 +3077,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -3140,7 +3140,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   
@@ -3203,7 +3203,7 @@ Directory::CreateDirectory("Public\\Html");
   
  The `path` parameter is not case-sensitive.  
   
- For a list of common I/O tasks, see [Common I/O Tasks](../Topic/Common%20I-O%20Tasks.md).  
+ For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
    
   

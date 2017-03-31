@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.MetadataExchangeBindings> methods and properties to create system-provided bindings to support WS-Transfer GET metadata exchanges. For more information and examples, see [How to: Publish Metadata for a Service Using a Configuration File](../Topic/How%20to:%20Publish%20Metadata%20for%20a%20Service%20Using%20a%20Configuration%20File.md).  
+ Use the <xref:System.ServiceModel.Description.MetadataExchangeBindings> methods and properties to create system-provided bindings to support WS-Transfer GET metadata exchanges. For more information and examples, see [How to: Publish Metadata for a Service Using a Configuration File](~/docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-a-configuration-file.md).  
   
  See the individual members for details about the composition of the bindings they return.  
   
@@ -70,7 +70,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A> method to return a binding that can be secured at the transport level using certificates. For more information about configuring and using such a metadata endpoint, see [How to: Configure a Custom WS-Metadata Exchange Binding](../Topic/How%20to:%20Configure%20a%20Custom%20WS-Metadata%20Exchange%20Binding.md), [How to: Retrieve Metadata Over a non-MEX Binding](../Topic/How%20to:%20Retrieve%20Metadata%20Over%20a%20non-MEX%20Binding.md), and the sample [Custom Secure Metadata Endpoint](../Topic/Custom%20Secure%20Metadata%20Endpoint.md).  
+ Use the <xref:System.ServiceModel.Description.MetadataExchangeBindings.CreateMexHttpsBinding%2A> method to return a binding that can be secured at the transport level using certificates. For more information about configuring and using such a metadata endpoint, see [How to: Configure a Custom WS-Metadata Exchange Binding](~/docs/framework/wcf/extending/how-to-configure-a-custom-ws-metadata-exchange-binding.md), [How to: Retrieve Metadata Over a non-MEX Binding](~/docs/framework/wcf/extending/how-to-retrieve-metadata-over-a-non-mex-binding.md), and the sample [Custom Secure Metadata Endpoint](~/docs/framework/wcf/samples/custom-secure-metadata-endpoint.md).  
   
  ]]></format>
         </remarks>

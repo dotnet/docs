@@ -1,6 +1,0 @@
-# [<linkedConfiguration> Element](linkedconfiguration-element.md)
-# [Configuration Sections Schema](configuration-sections-schema.md)
-# [<assemblyBinding> Element for <configuration>](assemblybinding-element-for-configuration.md)
-# [Configuration File Schema for the .NET Framework](configuration-file-schema.md)
-# [Application Settings Schema](application-settings-schema.md)
-# [<configuration> Element](configuration-element.md)

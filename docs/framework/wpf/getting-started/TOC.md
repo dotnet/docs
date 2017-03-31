@@ -1,6 +1,0 @@
-# [What's New in WPF Version 4.5](whats-new.md)
-# [WPF Walkthroughs](wpf-walkthroughs.md)
-# [Walkthrough: My First WPF Desktop Application](walkthrough-my-first-wpf-desktop-application.md)
-# [Introduction to WPF in Visual Studio 2015](attributes1.md)
-# [WPF Community Feedback](serialization1.md)
-# [Getting Started (WPF)](getting-started-wpf.md)

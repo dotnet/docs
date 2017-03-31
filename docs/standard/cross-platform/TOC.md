@@ -1,7 +1,0 @@
-# [WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method](windowsruntimestreamextensions-asrandomaccessstream-system-io-stream-method.md)
-# [Cross-Platform Development with the Portable Class Library](cross-platform-development-with-the-portable-class-library.md)
-# [Developing for Multiple Platforms with the .NET Framework](developing-for-multiple-platforms.md)
-# [App Resources for Libraries That Target Multiple Platforms](app-resources-for-libraries-that-target-multiple-platforms.md)
-# [.NET Framework Support for Windows Store Apps and Windows Runtime](support-for-windows-store-apps-and-windows-runtime.md)
-# [Using Portable Class Library with Model-View-View Model](using-portable-class-library-with-model-view-view-model.md)
-# [Passing a URI to the Windows Runtime](passing-a-uri-to-the-windows-runtime.md)

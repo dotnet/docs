@@ -1,5 +1,0 @@
-# [<compilers> Element](compilers-element.md)
-# [Compiler and Language Provider Settings Schema](compiler-and-language-provider-settings-schema.md)
-# [<compiler> Element](compiler-element.md)
-# [<system.codedom> Element](system-codedom-element.md)
-# [<providerOption> Element](provideroption-element.md)

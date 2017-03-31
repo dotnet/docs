@@ -1,5 +1,0 @@
-# [Generic Interfaces](generic-interfaces.md)
-# [Generic Collections in the .NET Framework](generic-collections.md)
-# [Generic Delegates for Manipulating Arrays and Lists](generic-delegates-for-manipulating-arrays-and-lists.md)
-# [Generics in the .NET Framework](generics.md)
-# [Covariance and Contravariance in Generics](covariance-and-contravariance-in-generics.md)

@@ -22,7 +22,7 @@ ms.assetid: e5a72d3e-c14b-4b0a-a978-c5e54a0988c6
 
 ```
 dotnet sln [<SOLUTION_NAME>] add <PROJECT> <PROJECT> ...
-dotnet sln [<SOLUTION_NAME>] add **/**
+dotnet sln [<SOLUTION_NAME>] add **/**.{csproj,fsproj}
 dotnet sln [<SOLUTION_NAME>] remove <PROJECT> <PROJECT> ...
 dotnet sln [<SOLUTION_NAME>] remove **/**
 dotnet sln [<SOLUTION_NAME>] list
@@ -37,7 +37,7 @@ The `dotnet sln` command provides a convenient way to add, remove, and list proj
 
 `add <PROJECT> ...`
 
-`add **/*`
+`add **/*.{csproj,fsproj}`
 
 Adds a project or multiple projects to the solution file. [Globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are supported on Unix/Linux based terminals.
 
@@ -65,11 +65,15 @@ Prints out a short help for the command.
 
 ## Examples
 
-Add a project to a solution:
+Add a C# project to a solution:
 
 `dotnet sln todo.sln add todo-app/todo-app.csproj`
 
-Add a project to the solution in the current directory:
+Add an F# project to a solution:
+
+`dotnet sln todo.sln add todo-app/todo-app.fsproj`
+
+Add a solution in the current directory:
 
 `dotnet sln add todo-app.csproj`
 
@@ -77,6 +81,14 @@ Remove a project from a solution:
 
 `dotnet sln todo.sln remove todo-app/todo-app.csproj`
 
-Add multiple projects to a solution using a globbing pattern:
+Add multiple C# projects to a solution using a globbing pattern:
 
-`dotnet sln add **/**/*.fsproj`
+`dotnet sln todo.sln add **/**/*.csproj`
+
+Add multiple F# projects to a solution using a globbing pattern:
+
+`dotnet sln todo.sln add **/**/*.fsproj`
+
+Add multiple C# and F# projects to a solution using a globbing pattern:
+
+`dotnet sln todo.sln add **/**/*.{csproj,fsproj}`

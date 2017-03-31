@@ -46,7 +46,7 @@ Interoperability enables you to preserve and take advantage of existing investme
  Describes methods to interoperate between C# managed code and unmanaged code.  
   
  [How to: Access Office Interop Objects by Using Visual C# Features](../../../csharp/programming-guide/interop/how-to-access-office-onterop-objects.md)  
- Describes features that are introduced in Visual C# 2010 to facilitate Office programming.  
+ Describes features that are introduced in Visual C# to facilitate Office programming.  
   
  [How to: Use Indexed Properties in COM Interop Programming](../../../csharp/programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md)  
  Describes how to use indexed properties to access COM properties that have parameters.  

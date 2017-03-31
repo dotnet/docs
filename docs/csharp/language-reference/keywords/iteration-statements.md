@@ -44,9 +44,6 @@ You can create loops by using the iteration statements. Iteration statements cau
   
 -   [while](../../../csharp/language-reference/keywords/while.md)  
   
-## Featured Book Chapter  
- [Flow Control](http://go.microsoft.com/fwlink/?LinkId=221229) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

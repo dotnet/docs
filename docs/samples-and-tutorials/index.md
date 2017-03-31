@@ -99,7 +99,7 @@ Many topics show source code and samples that are available for viewing or downl
 
 1. Obtain the dotnet/docs repository for your local system by performing one of the following:
    * [Fork](https://help.github.com/articles/fork-a-repo/) the dotnet/docs repository and [clone](https://help.github.com/articles/cloning-a-repository/) your fork locally.
-   * Clone the dotnet/docs GitHub repository locally.
+   * Clone the dotnet/docs repository locally.
    * Download a ZIP of the dotnet/docs repository to your local system. Un-ZIP the compressed archive.
 1. Navigate within the repository to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample in the topic.
 1. If you intend to run the sample code locally and prefer to run it from a different location on your system, copy the sample's files and folders to your preferred location.
